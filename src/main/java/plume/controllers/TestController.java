@@ -90,4 +90,9 @@ public class TestController {
         return new ModelAndView("404");
     }
 
+    @GetMapping(value="map")
+    public ModelAndView map(){
+        return new ModelAndView("map");
+    }
+
 }
