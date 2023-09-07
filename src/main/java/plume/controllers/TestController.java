@@ -85,4 +85,9 @@ public class TestController {
         return new ModelAndView("subscriptions");
     }
 
+    @GetMapping(value="404")
+    public ModelAndView notFound(){
+        return new ModelAndView("404");
+    }
+
 }
