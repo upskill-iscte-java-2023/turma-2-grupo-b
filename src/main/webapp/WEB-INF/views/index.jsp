@@ -119,7 +119,7 @@
     </div>
   </div>
   <div class="page-wrapper">
-    <header class="header-image-landingpage" style="background-image: url('images/Fotos.png')">
+    <header class="header-image-landingpage" style="background-image: url('../images/Fotos.png')">
       <div class="container">
         <div class="div-block-4">
           <p class="paragraph large"><em class="italic-text-2">Nature&#x27;s Elegance Captured</em></p>
