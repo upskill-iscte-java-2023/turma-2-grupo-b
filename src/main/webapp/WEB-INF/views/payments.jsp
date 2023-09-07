@@ -1,17 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Tue Sep 05 2023 16:28:50 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="64f615e4cfda04626e2eee89" data-wf-site="64f615e4cfda04626e2eee44">
+<html data-wf-page="64f615e4cfda04626e2eeeae" data-wf-site="64f615e4cfda04626e2eee44">
 <head>
   <meta charset="utf-8">
-  <title>challenges</title>
-  <meta content="challenges" property="og:title">
-  <meta content="challenges" property="twitter:title">
+  <title>Payments</title>
+  <meta content="Payments" property="og:title">
+  <meta content="Payments" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../../css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="../../css/styles.css.css" rel="stylesheet" type="text/css">
+  <link href="../../css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -21,7 +21,7 @@
   <link href="../../images/webclip.svg" rel="apple-touch-icon">
 </head>
 <body>
-  <div class="page-wrapper-7">
+  <div class="page-wrapper-11">
     <div class="global-styles w-embed">
       <style>
 /* Make text look crisper and more legible in all browsers */
@@ -195,7 +195,7 @@ margin: 0rem !important;
           <nav role="navigation" id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a3c-f8957a37" class="navbar2_menu is-page-height-tablet w-nav-menu">
             <a href="profile-dashboard.jsp" class="navbar2_link w-nav-link">Dashboard</a>
             <a href="plume-wiki.jsp" class="navbar2_link w-nav-link">Plume Wiki</a>
-            <a href="payments.jsp" class="navbar2_link w-nav-link">Rewards placeholder 🪶</a>
+            <a href="../profile-2/payments.jsp" aria-current="page" class="navbar2_link w-nav-link w--current">Rewards placeholder 🪶</a>
             <div class="mobile-menu-wrap-side">
               <div class="side-bar">
                 <div class="w-layout-grid sidebar-menu-grid">
@@ -243,7 +243,7 @@ margin: 0rem !important;
             </div>
           </nav>
           <div id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a5e-f8957a37" class="navbar2_button-wrapper">
-            <a href="#" class="profile-link w-inline-block"><img src="../../images/profile-image_1profile-image.png" loading="lazy" alt="" class="profile-link-image"></a><button class="user-log-in-log-out-2" data-wf-user-logout="Log Out" data-wf-user-login="Log in" type="button">Log Out</button>
+            <a href="#" class="profile-link w-inline-block"><img src="../../images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image"></a><button class="user-log-in-log-out-2" data-wf-user-logout="Log Out" data-wf-user-login="Log in" type="button">Log Out</button>
             <div class="navbar2_menu-button w-nav-button">
               <div class="menu-icon2">
                 <div class="menu-icon2_line-top"></div>
@@ -261,7 +261,7 @@ margin: 0rem !important;
           <div class="container-medium">
             <div class="padding-section-small">
               <div class="w-layout-grid content-grid">
-                <div id="w-node-d70831f5-0deb-c0c8-6d3d-7e89f771d43c-6e2eee89" class="sidebar-content">
+                <div id="w-node-_82deb8fe-60d0-faef-5ebc-a85f1a5e636c-6e2eeeae" class="sidebar-content">
                   <div class="side-bar">
                     <div class="w-layout-grid sidebar-menu-grid">
                       <a href="profile-dashboard.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a66-4be62a64" class="sidebar-menu-item w-inline-block">
@@ -278,7 +278,7 @@ margin: 0rem !important;
                           </svg></div>
                         <div>My Observations</div>
                       </a>
-                      <a href="../profile-2/challenges.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a6e-4be62a64" aria-current="page" class="sidebar-menu-item w-inline-block w--current">
+                      <a href="challenges.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a6e-4be62a64" class="sidebar-menu-item w-inline-block">
                         <div class="sidemenu-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.5455 9.92543C15.9195 9.26103 16.2313 8.66151 16.4236 8.20521C17.3573 5.98947 16.434 3.44077 14.1769 2.40112C11.9199 1.36148 9.65341 2.4395 8.65871 4.52093C6.75657 3.2157 4.21918 3.40739 2.81989 5.44424C1.42059 7.48108 1.85975 10.142 3.77629 11.594C4.6461 12.253 6.36636 13.2242 7.98596 14.0884M16.2972 11.7499C15.8751 9.482 13.9454 7.82334 11.5156 8.27415C9.08592 8.72497 7.51488 10.9171 7.84335 13.299C8.10725 15.2127 9.56392 19.7027 10.1264 21.394C10.2032 21.6248 10.2415 21.7402 10.3175 21.8206C10.3837 21.8907 10.4717 21.9416 10.5655 21.9638C10.6732 21.9894 10.7923 21.9649 11.0306 21.916C12.7765 21.5575 17.3933 20.574 19.1826 19.8457C21.4096 18.9392 22.5589 16.4841 21.6981 14.153C20.8372 11.8219 18.4723 10.9815 16.2972 11.7499Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg></div>
@@ -297,7 +297,7 @@ margin: 0rem !important;
                           </svg></div>
                         <div>Subscriptions</div>
                       </a>
-                      <a href="payments.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a7a-4be62a64" class="sidebar-menu-item w-inline-block">
+                      <a href="../profile-2/payments.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a7a-4be62a64" aria-current="page" class="sidebar-menu-item w-inline-block w--current">
                         <div class="sidemenu-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M22 10H2M22 11V8.2C22 7.0799 22 6.51984 21.782 6.09202C21.5903 5.7157 21.2843 5.40974 20.908 5.21799C20.4802 5 19.9201 5 18.8 5H5.2C4.0799 5 3.51984 5 3.09202 5.21799C2.7157 5.40973 2.40973 5.71569 2.21799 6.09202C2 6.51984 2 7.0799 2 8.2V15.8C2 16.9201 2 17.4802 2.21799 17.908C2.40973 18.2843 2.71569 18.5903 3.09202 18.782C3.51984 19 4.07989 19 5.2 19H11.5M18 21C18 21 21 19.5701 21 17.4252V14.9229L18.8124 14.1412C18.2868 13.9529 17.712 13.9529 17.1864 14.1412L15 14.9229V17.4252C15 19.5701 18 21 18 21Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg></div>
@@ -310,64 +310,74 @@ margin: 0rem !important;
                   <div class="inner-content">
                     <div class="inner-content-group">
                       <div class="page-title-group">
-                        <h1 class="heading-style-h2">🪶 Challenges</h1>
-                        <p class="text-color-grey">Want unlimited challenges? <a href="subscriptions.jsp" class="text-weight-medium text-color-primary action-link">Upgrade your plan (Free unlimited challenges for everyone!!!!!)</a>
-                        </p>
+                        <h1 class="heading-style-h2">🏡 Rewards</h1>
+                        <p class="text-color-grey">All the rewards you have unlocked so far.</p>
                       </div>
                       <div class="divider"></div>
                     </div>
                     <div class="inner-content-group gap-32px">
-                      <div class="w-layout-grid _3-col-grid art-grid">
-                        <div id="w-node-d70831f5-0deb-c0c8-6d3d-7e89f771d464-6e2eee89" class="art-card"><img src="https://uploads-ssl.webflow.com/64f20700ae99f7afc1a08523/64f20701ae99f7afc1a0859c_Rectangle%2011.png" loading="lazy" alt="" class="art-image">
-                          <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <rect width="32" height="32" rx="8" fill="white"></rect>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9951 10.478C14.4352 9.11477 12.1282 8.8358 10.3366 10.3665C8.39879 12.0223 8.11723 14.8108 9.64965 16.7827C10.2313 17.5312 11.3667 18.6557 12.4577 19.6856C13.5616 20.7275 14.6629 21.712 15.206 22.193C15.2094 22.196 15.2129 22.1991 15.2164 22.2022C15.2674 22.2475 15.331 22.3038 15.3919 22.3497C15.4649 22.4046 15.5696 22.4728 15.7095 22.5145C15.8954 22.57 16.0953 22.57 16.2813 22.5145C16.4211 22.4728 16.5259 22.4046 16.5988 22.3497C16.6597 22.3038 16.7233 22.2475 16.7743 22.2022C16.7779 22.1991 16.7813 22.196 16.7847 22.193C17.3278 21.712 18.4291 20.7275 19.533 19.6856C20.6241 18.6557 21.7594 17.5312 22.3411 16.7827C23.8676 14.8184 23.6295 12.0083 21.6471 10.3607C19.8357 8.85506 17.5533 9.11425 15.9951 10.478Z" fill="#EB5757"></path>
-                            </svg></div>
-                          <div class="art-card-context vertical">
-                            <a href="#" class="flex-box w-inline-block">
-                              <div class="profile-link smaller"><img src="https://uploads-ssl.webflow.com/64f20700ae99f7afc1a08523/64f20701ae99f7afc1a085a5_Ellipse%202.png" loading="lazy" alt="" class="profile-link-image"></div>
-                              <div class="text-size-small text-weight-semibold">Challenge 1</div>
-                            </a>
-                            <div class="content-wrap">
-                              <h2 class="heading-style-h5">Early Bird</h2>
-                              <p class="text-color-grey p-desc">Capture 2 images of birds with brown plumage.<br>Upload to My Observations.</p>
+                      <div aria-describedby="IDREF" role="table" aria-label="NAME" class="table10_component">
+                        <div class="table10_content">
+                          <div class="table10_header-row">
+                            <div role="columnheader" class="table10_column is-header-column is-width-large">
+                              <a fs-cmssort-desc="is-desc" fs-cmssort-element="trigger" fs-cmssort-field="IDENTIFIER" fs-cmssort-asc="is-asc" href="#" class="table10_header-link w-inline-block">
+                                <div class="text-weight-semibold">Plan</div>
+                              </a>
+                            </div>
+                            <div role="columnheader" class="table10_column is-header-column is-width-medium">
+                              <a fs-cmssort-desc="is-desc" fs-cmssort-element="trigger" fs-cmssort-field="IDENTIFIER" fs-cmssort-asc="is-asc" href="#" class="table10_header-link w-inline-block">
+                                <div class="text-weight-semibold">Feathers</div>
+                              </a>
+                            </div>
+                            <div role="columnheader" class="table10_column is-header-column is-width-medium">
+                              <a fs-cmssort-desc="is-desc" fs-cmssort-element="trigger" fs-cmssort-field="IDENTIFIER" fs-cmssort-asc="is-asc" href="#" class="table10_header-link w-inline-block">
+                                <div class="text-weight-semibold">     Status</div>
+                              </a>
                             </div>
                           </div>
-                          <a href="#" class="button-3 is-small w-button">10 FEATHERS 🪶</a>
-                        </div>
-                        <div id="w-node-d70831f5-0deb-c0c8-6d3d-7e89f771d474-6e2eee89" class="art-card"><img src="../../images/Rectangle-11-1_1.png" loading="lazy" alt="" class="art-image">
-                          <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <rect width="32" height="32" rx="8" fill="white"></rect>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9951 10.478C14.4352 9.11477 12.1282 8.8358 10.3366 10.3665C8.39879 12.0223 8.11723 14.8108 9.64965 16.7827C10.2313 17.5312 11.3667 18.6557 12.4577 19.6856C13.5616 20.7275 14.6629 21.712 15.206 22.193C15.2094 22.196 15.2129 22.1991 15.2164 22.2022C15.2674 22.2475 15.331 22.3038 15.3919 22.3497C15.4649 22.4046 15.5696 22.4728 15.7095 22.5145C15.8954 22.57 16.0953 22.57 16.2813 22.5145C16.4211 22.4728 16.5259 22.4046 16.5988 22.3497C16.6597 22.3038 16.7233 22.2475 16.7743 22.2022C16.7779 22.1991 16.7813 22.196 16.7847 22.193C17.3278 21.712 18.4291 20.7275 19.533 19.6856C20.6241 18.6557 21.7594 17.5312 22.3411 16.7827C23.8676 14.8184 23.6295 12.0083 21.6471 10.3607C19.8357 8.85506 17.5533 9.11425 15.9951 10.478Z" fill="#EB5757"></path>
-                            </svg></div>
-                          <div class="art-card-context vertical">
-                            <a href="#" class="flex-box w-inline-block">
-                              <div class="profile-link smaller"><img src="https://uploads-ssl.webflow.com/64f20700ae99f7afc1a08523/64f20701ae99f7afc1a0859e_Ellipse%202-1.png" loading="lazy" alt="" class="profile-link-image"></div>
-                              <div class="text-size-small text-weight-semibold">Challenge 2</div>
-                            </a>
-                            <div class="content-wrap">
-                              <h2 class="heading-style-h5">Make some noise</h2>
-                              <p class="text-color-grey p-desc">Record the calls of 3 different song birds.<br>Upload to My Observations. </p>
+                          <div role="rowgroup" id="w-node-_82deb8fe-60d0-faef-5ebc-a85f1a5e63a8-6e2eeeae" class="table10_list-wrapper">
+                            <div fs-cmssort-element="list" class="table10_list">
+                              <div role="row" class="table10_item">
+                                <div role="cell" class="table10_column is-width-large">
+                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">Beria startup</div>
+                                </div>
+                                <div role="cell" class="table10_column is-width-medium">
+                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">$55.00</div>
+                                </div>
+                                <div role="cell" class="table10_column is-width-medium">
+                                  <div class="table10_status-wrapper">
+                                    <a href="#" class="redeem-button w-button">Redeem</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div role="row" class="table10_item">
+                                <div role="cell" class="table10_column is-width-large">
+                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">Beria startup</div>
+                                </div>
+                                <div role="cell" class="table10_column is-width-medium">
+                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">$55.00</div>
+                                </div>
+                                <div role="cell" class="table10_column is-width-medium">
+                                  <div class="table10_status-wrapper">
+                                    <a href="#" class="redeem-button w-button">Redeem</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div role="row" class="table10_item">
+                                <div role="cell" class="table10_column is-width-large">
+                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">Beria startup</div>
+                                </div>
+                                <div role="cell" class="table10_column is-width-medium">
+                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">$55.00</div>
+                                </div>
+                                <div role="cell" class="table10_column is-width-medium">
+                                  <div class="table10_status-wrapper">
+                                    <a href="#" class="redeem-button w-button">Redeem</a>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
-                          <a href="#" class="button-3 is-small w-button">25 FEATHERS 🪶</a>
-                        </div>
-                        <div id="w-node-fe609cca-d830-785f-5805-6e10c1237086-6e2eee89" class="art-card"><img src="../../images/Rectangle-12-1.png" loading="lazy" alt="" class="art-image">
-                          <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <rect width="32" height="32" rx="8" fill="white"></rect>
-                              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9951 10.478C14.4352 9.11477 12.1282 8.8358 10.3366 10.3665C8.39879 12.0223 8.11723 14.8108 9.64965 16.7827C10.2313 17.5312 11.3667 18.6557 12.4577 19.6856C13.5616 20.7275 14.6629 21.712 15.206 22.193C15.2094 22.196 15.2129 22.1991 15.2164 22.2022C15.2674 22.2475 15.331 22.3038 15.3919 22.3497C15.4649 22.4046 15.5696 22.4728 15.7095 22.5145C15.8954 22.57 16.0953 22.57 16.2813 22.5145C16.4211 22.4728 16.5259 22.4046 16.5988 22.3497C16.6597 22.3038 16.7233 22.2475 16.7743 22.2022C16.7779 22.1991 16.7813 22.196 16.7847 22.193C17.3278 21.712 18.4291 20.7275 19.533 19.6856C20.6241 18.6557 21.7594 17.5312 22.3411 16.7827C23.8676 14.8184 23.6295 12.0083 21.6471 10.3607C19.8357 8.85506 17.5533 9.11425 15.9951 10.478Z" fill="#EB5757"></path>
-                            </svg></div>
-                          <div class="art-card-context vertical">
-                            <a href="#" class="flex-box w-inline-block">
-                              <div class="profile-link smaller"><img src="https://uploads-ssl.webflow.com/64f20700ae99f7afc1a08523/64f20701ae99f7afc1a0859e_Ellipse%202-1.png" loading="lazy" alt="" class="profile-link-image"></div>
-                              <div class="text-size-small text-weight-semibold">Challenge 3</div>
-                            </a>
-                            <div class="content-wrap">
-                              <h2 class="heading-style-h5">Owl Master</h2>
-                              <p class="text-color-grey p-desc">Capture 1 picture of an owl during the night.<br>Upload to My Observations.</p>
-                            </div>
-                          </div>
-                          <a href="#" class="button-3 is-small w-button">50 FEATHERS 🪶</a>
                         </div>
                       </div>
                     </div>

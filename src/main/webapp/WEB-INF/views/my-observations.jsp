@@ -1,17 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Tue Sep 05 2023 16:28:50 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="64f615e4cfda04626e2eee87" data-wf-site="64f615e4cfda04626e2eee44">
+<html data-wf-page="64f615e4cfda04626e2eeeab" data-wf-site="64f615e4cfda04626e2eee44">
 <head>
   <meta charset="utf-8">
-  <title>Account_Settings</title>
-  <meta content="Account_Settings" property="og:title">
-  <meta content="Account_Settings" property="twitter:title">
+  <title>My_Observations</title>
+  <meta content="My_Observations" property="og:title">
+  <meta content="My_Observations" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../../css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="../../css/styles.css.css" rel="stylesheet" type="text/css">
+  <link href="../../css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -21,7 +21,7 @@
   <link href="../../images/webclip.svg" rel="apple-touch-icon">
 </head>
 <body>
-  <div class="page-wrapper-9">
+  <div class="page-wrapper-6">
     <div class="global-styles w-embed">
       <style>
 /* Make text look crisper and more legible in all browsers */
@@ -243,7 +243,7 @@ margin: 0rem !important;
             </div>
           </nav>
           <div id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a5e-f8957a37" class="navbar2_button-wrapper">
-            <a href="#" class="profile-link w-inline-block"><img src="../../images/profile-image_1profile-image.png" loading="lazy" alt="" class="profile-link-image"></a><button class="user-log-in-log-out-2" data-wf-user-logout="Log Out" data-wf-user-login="Log in" type="button">Log Out</button>
+            <a href="#" class="profile-link w-inline-block"><img src="../../images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image"></a><button class="user-log-in-log-out-2" data-wf-user-logout="Log Out" data-wf-user-login="Log in" type="button">Log Out</button>
             <div class="navbar2_menu-button w-nav-button">
               <div class="menu-icon2">
                 <div class="menu-icon2_line-top"></div>
@@ -261,7 +261,7 @@ margin: 0rem !important;
           <div class="container-medium">
             <div class="padding-section-small">
               <div class="w-layout-grid content-grid">
-                <div id="w-node-c9acaef6-219a-a170-edec-586baa1111eb-6e2eee87" class="sidebar-content">
+                <div id="w-node-_310b1e3a-efa8-db61-8866-6a8cc4c069dc-6e2eeeab" class="sidebar-content">
                   <div class="side-bar">
                     <div class="w-layout-grid sidebar-menu-grid">
                       <a href="profile-dashboard.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a66-4be62a64" class="sidebar-menu-item w-inline-block">
@@ -271,7 +271,7 @@ margin: 0rem !important;
                           </svg></div>
                         <div>Home</div>
                       </a>
-                      <a href="my-observations.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a6a-4be62a64" class="sidebar-menu-item w-inline-block">
+                      <a href="../profile-2/my-observations.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a6a-4be62a64" aria-current="page" class="sidebar-menu-item w-inline-block w--current">
                         <div class="sidemenu-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.5 13L7.28446 14.5689C7.54995 15.0999 7.68269 15.3654 7.86003 15.5954C8.01739 15.7996 8.20041 15.9826 8.40455 16.14C8.63462 16.3173 8.9001 16.4501 9.43108 16.7155L11 17.5L9.43108 18.2845C8.9001 18.5499 8.63462 18.6827 8.40455 18.86C8.20041 19.0174 8.01739 19.2004 7.86003 19.4046C7.68269 19.6346 7.54995 19.9001 7.28446 20.4311L6.5 22L5.71554 20.4311C5.45005 19.9001 5.31731 19.6346 5.13997 19.4046C4.98261 19.2004 4.79959 19.0174 4.59545 18.86C4.36538 18.6827 4.0999 18.5499 3.56892 18.2845L2 17.5L3.56892 16.7155C4.0999 16.4501 4.36538 16.3173 4.59545 16.14C4.79959 15.9826 4.98261 15.7996 5.13997 15.5954C5.31731 15.3654 5.45005 15.0999 5.71554 14.5689L6.5 13Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M15 2L16.1786 5.06442C16.4606 5.79765 16.6016 6.16426 16.8209 6.47264C17.0153 6.74595 17.254 6.98475 17.5274 7.17909C17.8357 7.39836 18.2024 7.53937 18.9356 7.82138L22 9L18.9356 10.1786C18.2024 10.4606 17.8357 10.6016 17.5274 10.8209C17.254 11.0153 17.0153 11.254 16.8209 11.5274C16.6016 11.8357 16.4606 12.2024 16.1786 12.9356L15 16L13.8214 12.9356C13.5394 12.2024 13.3984 11.8357 13.1791 11.5274C12.9847 11.254 12.746 11.0153 12.4726 10.8209C12.1643 10.6016 11.7976 10.4606 11.0644 10.1786L8 9L11.0644 7.82138C11.7976 7.53937 12.1643 7.39836 12.4726 7.17909C12.746 6.98475 12.9847 6.74595 13.1791 6.47264C13.3984 6.16426 13.5394 5.79765 13.8214 5.06442L15 2Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -284,7 +284,7 @@ margin: 0rem !important;
                           </svg></div>
                         <div>Challenges</div>
                       </a>
-                      <a href="../profile-2/account-settings.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a72-4be62a64" aria-current="page" class="sidebar-menu-item w-inline-block w--current">
+                      <a href="account-settings.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a72-4be62a64" class="sidebar-menu-item w-inline-block">
                         <div class="sidemenu-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 20C5.33579 17.5226 8.50702 16 12 16C15.493 16 18.6642 17.5226 21 20" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                             <path d="M12 12C14.4853 12 16.5 9.98528 16.5 7.5C16.5 5.01472 14.4853 3 12 3C9.51472 3 7.5 5.01472 7.5 7.5C7.5 9.98528 9.51472 12 12 12Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -310,110 +310,112 @@ margin: 0rem !important;
                   <div class="inner-content">
                     <div class="inner-content-group">
                       <div class="page-title-group">
-                        <h1 class="heading-style-h2">🦤 Account settings</h1>
-                        <p class="text-color-grey">The community loves a good profile</p>
+                        <h1 class="heading-style-h2">📸 My Observations</h1>
+                        <p class="text-color-grey">2 out of 4 collections created, <a href="subscriptions.jsp" class="text-weight-medium text-color-primary action-link">upgrade for more collections</a>
+                        </p>
                       </div>
                       <div class="divider"></div>
                     </div>
                     <div class="inner-content-group gap-32px">
-                      <div class="w-layout-grid _2-col-grid settings">
-                        <div class="content-wrap">
-                          <h2 class="heading-style-h5">Profile Information</h2>
-                          <p class="text-color-grey">Update your account&#x27;s profile information and email address.</p>
-                        </div>
-                        <div class="form_component w-form">
-                          <form id="wf-form-Form" name="wf-form-Form" data-name="Form" method="get" class="form_form" data-wf-page-id="64f615e4cfda04626e2eee87" data-wf-element-id="c9acaef6-219a-a170-edec-586baa111217">
-                            <div class="form_field-wrapper"><label for="Full-name" class="form_label">Name</label><input type="text" class="form_input-2 w-input" maxlength="256" name="Full-name" data-name="Full Name" placeholder="James Baduor" id="Full-name"></div>
-                            <div class="form_field-wrapper"><label for="Email-address" class="form_label">Email address</label><input type="text" class="form_input-2 w-input" maxlength="256" name="Email-address" data-name="Email Address" placeholder="james@email.com" id="Email-address"></div><input type="submit" value="Save changes" data-wait="Please wait..." class="button-3 is-form-submit w-button">
-                          </form>
-                          <div class="form_message-success w-form-done">
-                            <div>Thank you! Your submission has been received!</div>
+                      <div class="collection">
+                        <div class="art-card-context alt">
+                          <div class="content-wrap">
+                            <h2 class="heading-style-h5">Travel to Monsanto</h2>
+                            <p class="text-color-grey">Generate a futuristic winter sports man...</p>
                           </div>
-                          <div class="form_message-error w-form-fail">
-                            <div>Oops! Something went wrong while submitting the form.</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="divider"></div>
-                    </div>
-                    <div class="inner-content-group gap-32px">
-                      <div class="w-layout-grid _2-col-grid settings">
-                        <div class="content-wrap">
-                          <h2 class="heading-style-h5">Update Password</h2>
-                          <p class="text-color-grey">Ensure your account is using a long, random password to stay secure.</p>
-                        </div>
-                        <div class="form_component w-form">
-                          <form id="wf-form-Form" name="wf-form-Form" data-name="Form" method="get" class="form_form" data-wf-page-id="64f615e4cfda04626e2eee87" data-wf-element-id="c9acaef6-219a-a170-edec-586baa111230">
-                            <div class="form_field-wrapper"><label for="Full-name-2" class="form_label">Current Password</label><input type="password" class="form_input-2 w-input" maxlength="256" name="Full-name-2" data-name="Full Name 2" placeholder="" id="Full-name-2" required=""></div>
-                            <div class="form_field-wrapper"><label for="New-Password" class="form_label">Confirm Password</label><input type="password" class="form_input-2 w-input" maxlength="256" name="New-Password" data-name="New Password" placeholder="" id="New-Password" required=""></div>
-                            <div class="form_field-wrapper"><label for="Confirm-Password" class="form_label">New Password</label><input type="password" class="form_input-2 w-input" maxlength="256" name="Confirm-Password" data-name="Confirm Password" placeholder="" id="Confirm-Password" required=""></div><input type="submit" value="Save changes" data-wait="Please wait..." class="button-3 is-form-submit w-button">
-                          </form>
-                          <div class="form_message-success w-form-done">
-                            <div>Thank you! Your submission has been received!</div>
-                          </div>
-                          <div class="form_message-error w-form-fail">
-                            <div>Oops! Something went wrong while submitting the form.</div>
+                          <div class="action-group">
+                            <div data-hover="false" data-delay="0" class="option-menu w-dropdown">
+                              <div class="dropdown-toggle w-dropdown-toggle">
+                                <div class="icon-flex w-embed"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00004 8.66665C8.36824 8.66665 8.66671 8.36818 8.66671 7.99998C8.66671 7.63178 8.36824 7.33331 8.00004 7.33331C7.63184 7.33331 7.33337 7.63178 7.33337 7.99998C7.33337 8.36818 7.63184 8.66665 8.00004 8.66665Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M12.6667 8.66665C13.0349 8.66665 13.3333 8.36818 13.3333 7.99998C13.3333 7.63178 13.0349 7.33331 12.6667 7.33331C12.2985 7.33331 12 7.63178 12 7.99998C12 8.36818 12.2985 8.66665 12.6667 8.66665Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.33329 8.66665C3.70148 8.66665 3.99996 8.36818 3.99996 7.99998C3.99996 7.63178 3.70148 7.33331 3.33329 7.33331C2.96511 7.33331 2.66663 7.63178 2.66663 7.99998C2.66663 8.36818 2.96511 8.66665 3.33329 8.66665Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg></div>
+                              </div>
+                              <nav class="dropdown-list w-dropdown-list">
+                                <a href="#" class="dd-link w-dropdown-link">Rename</a>
+                                <a href="#" class="dd-link w-dropdown-link">Duplicate</a>
+                                <a href="#" class="dd-link danger w-dropdown-link">Delete</a>
+                              </nav>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="divider"></div>
-                    </div>
-                    <div class="inner-content-group gap-32px">
-                      <div class="w-layout-grid _2-col-grid settings">
-                        <div class="content-wrap">
-                          <h2 class="heading-style-h5">Change Profile Picture</h2>
-                          <p class="text-color-grey">We understand profile pictures are important, feel free to change at anytime!</p>
-                        </div>
-                        <div class="form_component w-form">
-                          <form id="wf-form-Form" name="wf-form-Form" data-name="Form" method="get" class="form_form" data-wf-page-id="64f615e4cfda04626e2eee87" data-wf-element-id="259b2179-f865-c71c-1290-47b2e40983a5">
-                            <div class="form_field-wrapper form-profile-photo-upload"><input type="submit" value="&quot;INPUT TYPE = &quot;FILE&quot;&quot;" data-wait="Please wait..." class="w-button"></div><input type="submit" value="Save changes" data-wait="Please wait..." class="button-3 is-form-submit w-button">
-                          </form>
-                          <div class="form_message-success w-form-done">
-                            <div>Thank you! Your submission has been received!</div>
-                          </div>
-                          <div class="form_message-error w-form-fail">
-                            <div>Oops! Something went wrong while submitting the form.</div>
-                          </div>
+                        <div class="w-layout-grid _3-col-grid scroll-grid">
+                          <a id="w-node-_310b1e3a-efa8-db61-8866-6a8cc4c06a18-6e2eeeab" href="#" class="w-inline-block">
+                            <div class="art-card"><img src="../../images/Rectangle-12_1.png" loading="lazy" alt="" class="art-image">
+                              <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <rect width="32" height="32" rx="8" fill="white"></rect>
+                                  <path d="M13.3333 19.3333L15.9999 22M15.9999 22L18.6666 19.3333M15.9999 22V16M21.3333 19.1619C22.1476 18.4893 22.6666 17.4719 22.6666 16.3333C22.6666 14.3083 21.025 12.6667 18.9999 12.6667C18.8543 12.6667 18.718 12.5907 18.644 12.4652C17.7747 10.9899 16.1695 10 14.3333 10C11.5718 10 9.33325 12.2386 9.33325 15C9.33325 16.3774 9.89022 17.6247 10.7912 18.529" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </div>
+                          </a>
+                          <a id="w-node-_310b1e3a-efa8-db61-8866-6a8cc4c06a1c-6e2eeeab" href="#" class="w-inline-block">
+                            <div class="art-card"><img src="../../images/Rectangle-13-1.png" loading="lazy" alt="" class="art-image">
+                              <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <rect width="32" height="32" rx="8" fill="white"></rect>
+                                  <path d="M13.3333 19.3333L15.9999 22M15.9999 22L18.6666 19.3333M15.9999 22V16M21.3333 19.1619C22.1476 18.4893 22.6666 17.4719 22.6666 16.3333C22.6666 14.3083 21.025 12.6667 18.9999 12.6667C18.8543 12.6667 18.718 12.5907 18.644 12.4652C17.7747 10.9899 16.1695 10 14.3333 10C11.5718 10 9.33325 12.2386 9.33325 15C9.33325 16.3774 9.89022 17.6247 10.7912 18.529" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </div>
+                          </a>
+                          <a id="w-node-_310b1e3a-efa8-db61-8866-6a8cc4c06a20-6e2eeeab" href="#" class="w-inline-block">
+                            <div class="art-card"><img src="https://uploads-ssl.webflow.com/64f20700ae99f7afc1a08523/64f20701ae99f7afc1a08596_Rectangle%2011.png" loading="lazy" alt="" class="art-image">
+                              <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <rect width="32" height="32" rx="8" fill="white"></rect>
+                                  <path d="M13.3333 19.3333L15.9999 22M15.9999 22L18.6666 19.3333M15.9999 22V16M21.3333 19.1619C22.1476 18.4893 22.6666 17.4719 22.6666 16.3333C22.6666 14.3083 21.025 12.6667 18.9999 12.6667C18.8543 12.6667 18.718 12.5907 18.644 12.4652C17.7747 10.9899 16.1695 10 14.3333 10C11.5718 10 9.33325 12.2386 9.33325 15C9.33325 16.3774 9.89022 17.6247 10.7912 18.529" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </div>
+                          </a>
                         </div>
                       </div>
                       <div class="divider"></div>
-                    </div>
-                    <div class="inner-content-group gap-32px">
-                      <div class="w-layout-grid _2-col-grid settings">
-                        <div class="content-wrap">
-                          <h2 class="heading-style-h5">Bio</h2>
-                          <p class="text-color-grey">Tell us a little bit about yourself</p>
+                      <div class="collection">
+                        <div class="art-card-context alt">
+                          <div class="content-wrap">
+                            <h2 class="heading-style-h5">Travel to placeholder</h2>
+                            <p class="text-color-grey">Create a starwars-like ai assistant with legs</p>
+                          </div>
+                          <div class="action-group">
+                            <div data-hover="false" data-delay="0" class="option-menu w-dropdown">
+                              <div class="dropdown-toggle w-dropdown-toggle">
+                                <div class="icon-flex w-embed"><svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.00004 8.66665C8.36824 8.66665 8.66671 8.36818 8.66671 7.99998C8.66671 7.63178 8.36824 7.33331 8.00004 7.33331C7.63184 7.33331 7.33337 7.63178 7.33337 7.99998C7.33337 8.36818 7.63184 8.66665 8.00004 8.66665Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M12.6667 8.66665C13.0349 8.66665 13.3333 8.36818 13.3333 7.99998C13.3333 7.63178 13.0349 7.33331 12.6667 7.33331C12.2985 7.33331 12 7.63178 12 7.99998C12 8.36818 12.2985 8.66665 12.6667 8.66665Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3.33329 8.66665C3.70148 8.66665 3.99996 8.36818 3.99996 7.99998C3.99996 7.63178 3.70148 7.33331 3.33329 7.33331C2.96511 7.33331 2.66663 7.63178 2.66663 7.99998C2.66663 8.36818 2.96511 8.66665 3.33329 8.66665Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg></div>
+                              </div>
+                              <nav class="dropdown-list w-dropdown-list">
+                                <a href="#" class="dd-link w-dropdown-link">Rename</a>
+                                <a href="#" class="dd-link w-dropdown-link">Duplicate</a>
+                                <a href="#" class="dd-link danger w-dropdown-link">Delete</a>
+                              </nav>
+                            </div>
+                          </div>
                         </div>
-                        <div class="form_component w-form">
-                          <form id="wf-form-Bio-Form" name="wf-form-Bio-Form" data-name="Bio-Form" method="get" class="form_form bio-form-form" data-wf-page-id="64f615e4cfda04626e2eee87" data-wf-element-id="143d8f35-f080-46a9-45d0-f598f8f19285">
-                            <div class="form_field-wrapper bio-wrapper"><textarea id="Bio-Text" name="Bio-Text" maxlength="5000" data-name="Bio-Text" placeholder="Your Bio Goes Here" class="bio-text-area w-input"></textarea></div><input type="submit" value="Save changes" data-wait="Please wait..." class="button-3 is-form-submit w-button">
-                          </form>
-                          <div class="form_message-success w-form-done">
-                            <div>Thank you! Your submission has been received!</div>
-                          </div>
-                          <div class="form_message-error w-form-fail">
-                            <div>Oops! Something went wrong while submitting the form.</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="divider"></div>
-                    </div>
-                    <div class="inner-content-group gap-32px">
-                      <div class="w-layout-grid _2-col-grid settings">
-                        <div class="content-wrap">
-                          <h2 class="heading-style-h5">Delete Account</h2>
-                          <p class="text-color-grey">Permanently delete your account.</p>
-                        </div>
-                        <div class="form_component w-form">
-                          <form id="wf-form-Form" name="wf-form-Form" data-name="Form" method="get" class="form_form" data-wf-page-id="64f615e4cfda04626e2eee87" data-wf-element-id="c9acaef6-219a-a170-edec-586baa11124d">
-                            <p class="text-color-grey">Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.</p><input type="submit" value="Delete my account" data-wait="Please wait..." class="button-3 is-form-submit margin-top margin-medium background-danger w-button">
-                          </form>
-                          <div class="form_message-success w-form-done">
-                            <div>Thank you! Your submission has been received!</div>
-                          </div>
-                          <div class="form_message-error w-form-fail">
-                            <div>Oops! Something went wrong while submitting the form.</div>
-                          </div>
+                        <div class="w-layout-grid _3-col-grid scroll-grid">
+                          <a id="w-node-_310b1e3a-efa8-db61-8866-6a8cc4c06a3a-6e2eeeab" href="#" class="w-inline-block">
+                            <div class="art-card"><img src="../../images/Rectangle-13.png" loading="lazy" alt="" class="art-image">
+                              <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <rect width="32" height="32" rx="8" fill="white"></rect>
+                                  <path d="M13.3333 19.3333L15.9999 22M15.9999 22L18.6666 19.3333M15.9999 22V16M21.3333 19.1619C22.1476 18.4893 22.6666 17.4719 22.6666 16.3333C22.6666 14.3083 21.025 12.6667 18.9999 12.6667C18.8543 12.6667 18.718 12.5907 18.644 12.4652C17.7747 10.9899 16.1695 10 14.3333 10C11.5718 10 9.33325 12.2386 9.33325 15C9.33325 16.3774 9.89022 17.6247 10.7912 18.529" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </div>
+                          </a>
+                          <a id="w-node-_310b1e3a-efa8-db61-8866-6a8cc4c06a3e-6e2eeeab" href="#" class="w-inline-block">
+                            <div class="art-card"><img src="../../images/Rectangle-12.png" loading="lazy" alt="" class="art-image">
+                              <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <rect width="32" height="32" rx="8" fill="white"></rect>
+                                  <path d="M13.3333 19.3333L15.9999 22M15.9999 22L18.6666 19.3333M15.9999 22V16M21.3333 19.1619C22.1476 18.4893 22.6666 17.4719 22.6666 16.3333C22.6666 14.3083 21.025 12.6667 18.9999 12.6667C18.8543 12.6667 18.718 12.5907 18.644 12.4652C17.7747 10.9899 16.1695 10 14.3333 10C11.5718 10 9.33325 12.2386 9.33325 15C9.33325 16.3774 9.89022 17.6247 10.7912 18.529" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </div>
+                          </a>
+                          <a id="w-node-_310b1e3a-efa8-db61-8866-6a8cc4c06a42-6e2eeeab" href="#" class="w-inline-block">
+                            <div class="art-card"><img src="https://uploads-ssl.webflow.com/64f20700ae99f7afc1a08523/64f20701ae99f7afc1a08597_Rectangle%2011.png" loading="lazy" alt="" class="art-image">
+                              <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <rect width="32" height="32" rx="8" fill="white"></rect>
+                                  <path d="M13.3333 19.3333L15.9999 22M15.9999 22L18.6666 19.3333M15.9999 22V16M21.3333 19.1619C22.1476 18.4893 22.6666 17.4719 22.6666 16.3333C22.6666 14.3083 21.025 12.6667 18.9999 12.6667C18.8543 12.6667 18.718 12.5907 18.644 12.4652C17.7747 10.9899 16.1695 10 14.3333 10C11.5718 10 9.33325 12.2386 9.33325 15C9.33325 16.3774 9.89022 17.6247 10.7912 18.529" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></div>
+                            </div>
+                          </a>
                         </div>
                       </div>
                     </div>

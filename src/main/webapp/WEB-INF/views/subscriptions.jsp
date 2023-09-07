@@ -1,17 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Tue Sep 05 2023 16:28:50 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="64f615e4cfda04626e2eeeae" data-wf-site="64f615e4cfda04626e2eee44">
+<html data-wf-page="64f615e4cfda04626e2eeee9" data-wf-site="64f615e4cfda04626e2eee44">
 <head>
   <meta charset="utf-8">
-  <title>Payments</title>
-  <meta content="Payments" property="og:title">
-  <meta content="Payments" property="twitter:title">
+  <title>Subscriptions</title>
+  <meta content="Subscriptions" property="og:title">
+  <meta content="Subscriptions" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../../css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="../../css/styles.css.css" rel="stylesheet" type="text/css">
+  <link href="../../css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -21,7 +21,7 @@
   <link href="../../images/webclip.svg" rel="apple-touch-icon">
 </head>
 <body>
-  <div class="page-wrapper-11">
+  <div class="page-wrapper-10">
     <div class="global-styles w-embed">
       <style>
 /* Make text look crisper and more legible in all browsers */
@@ -195,7 +195,7 @@ margin: 0rem !important;
           <nav role="navigation" id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a3c-f8957a37" class="navbar2_menu is-page-height-tablet w-nav-menu">
             <a href="profile-dashboard.jsp" class="navbar2_link w-nav-link">Dashboard</a>
             <a href="plume-wiki.jsp" class="navbar2_link w-nav-link">Plume Wiki</a>
-            <a href="../profile-2/payments.jsp" aria-current="page" class="navbar2_link w-nav-link w--current">Rewards placeholder 🪶</a>
+            <a href="payments.jsp" class="navbar2_link w-nav-link">Rewards placeholder 🪶</a>
             <div class="mobile-menu-wrap-side">
               <div class="side-bar">
                 <div class="w-layout-grid sidebar-menu-grid">
@@ -243,7 +243,7 @@ margin: 0rem !important;
             </div>
           </nav>
           <div id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a5e-f8957a37" class="navbar2_button-wrapper">
-            <a href="#" class="profile-link w-inline-block"><img src="../../images/profile-image_1profile-image.png" loading="lazy" alt="" class="profile-link-image"></a><button class="user-log-in-log-out-2" data-wf-user-logout="Log Out" data-wf-user-login="Log in" type="button">Log Out</button>
+            <a href="#" class="profile-link w-inline-block"><img src="../../images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image"></a><button class="user-log-in-log-out-2" data-wf-user-logout="Log Out" data-wf-user-login="Log in" type="button">Log Out</button>
             <div class="navbar2_menu-button w-nav-button">
               <div class="menu-icon2">
                 <div class="menu-icon2_line-top"></div>
@@ -261,7 +261,7 @@ margin: 0rem !important;
           <div class="container-medium">
             <div class="padding-section-small">
               <div class="w-layout-grid content-grid">
-                <div id="w-node-_82deb8fe-60d0-faef-5ebc-a85f1a5e636c-6e2eeeae" class="sidebar-content">
+                <div id="w-node-c1638926-94c0-b37b-c30a-82b7960402be-6e2eeee9" class="sidebar-content">
                   <div class="side-bar">
                     <div class="w-layout-grid sidebar-menu-grid">
                       <a href="profile-dashboard.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a66-4be62a64" class="sidebar-menu-item w-inline-block">
@@ -291,13 +291,13 @@ margin: 0rem !important;
                           </svg></div>
                         <div>Account Settings</div>
                       </a>
-                      <a href="subscriptions.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a76-4be62a64" class="sidebar-menu-item w-inline-block">
+                      <a href="../profile-2/subscriptions.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a76-4be62a64" aria-current="page" class="sidebar-menu-item w-inline-block w--current">
                         <div class="sidemenu-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 6L8 4M8 4L6 2M8 4H6C3.79086 4 2 5.79086 2 8M18 18L16 20M16 20L18 22M16 20H18C20.2091 20 22 18.2091 22 16M10.189 6.5C10.8551 3.91216 13.2042 2 16 2C19.3137 2 22 4.68629 22 8C22 10.7957 20.0879 13.1449 17.5001 13.811M14 16C14 19.3137 11.3137 22 8 22C4.68629 22 2 19.3137 2 16C2 12.6863 4.68629 10 8 10C11.3137 10 14 12.6863 14 16Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg></div>
                         <div>Subscriptions</div>
                       </a>
-                      <a href="../profile-2/payments.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a7a-4be62a64" aria-current="page" class="sidebar-menu-item w-inline-block w--current">
+                      <a href="payments.jsp" id="w-node-_7236d477-f2fc-a836-5bb8-3f0f4be62a7a-4be62a64" class="sidebar-menu-item w-inline-block">
                         <div class="sidemenu-icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M22 10H2M22 11V8.2C22 7.0799 22 6.51984 21.782 6.09202C21.5903 5.7157 21.2843 5.40974 20.908 5.21799C20.4802 5 19.9201 5 18.8 5H5.2C4.0799 5 3.51984 5 3.09202 5.21799C2.7157 5.40973 2.40973 5.71569 2.21799 6.09202C2 6.51984 2 7.0799 2 8.2V15.8C2 16.9201 2 17.4802 2.21799 17.908C2.40973 18.2843 2.71569 18.5903 3.09202 18.782C3.51984 19 4.07989 19 5.2 19H11.5M18 21C18 21 21 19.5701 21 17.4252V14.9229L18.8124 14.1412C18.2868 13.9529 17.712 13.9529 17.1864 14.1412L15 14.9229V17.4252C15 19.5701 18 21 18 21Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                           </svg></div>
@@ -310,71 +310,137 @@ margin: 0rem !important;
                   <div class="inner-content">
                     <div class="inner-content-group">
                       <div class="page-title-group">
-                        <h1 class="heading-style-h2">🏡 Rewards</h1>
-                        <p class="text-color-grey">All the rewards you have unlocked so far.</p>
+                        <h1 class="heading-style-h2">🦜Subscriptions</h1>
+                        <p class="text-color-grey">Packages you have signed up for current plan (Free Plan)</p>
                       </div>
                       <div class="divider"></div>
                     </div>
                     <div class="inner-content-group gap-32px">
-                      <div aria-describedby="IDREF" role="table" aria-label="NAME" class="table10_component">
-                        <div class="table10_content">
-                          <div class="table10_header-row">
-                            <div role="columnheader" class="table10_column is-header-column is-width-large">
-                              <a fs-cmssort-desc="is-desc" fs-cmssort-element="trigger" fs-cmssort-field="IDENTIFIER" fs-cmssort-asc="is-asc" href="#" class="table10_header-link w-inline-block">
-                                <div class="text-weight-semibold">Plan</div>
-                              </a>
+                      <div class="w-layout-grid pricing12_component">
+                        <div class="pricing12_plan normal-plan">
+                          <div class="pricing12_content">
+                            <div class="margin-bottom-2 margin-tiny">
+                              <div class="heading-style-h4">Normal Plan</div>
                             </div>
-                            <div role="columnheader" class="table10_column is-header-column is-width-medium">
-                              <a fs-cmssort-desc="is-desc" fs-cmssort-element="trigger" fs-cmssort-field="IDENTIFIER" fs-cmssort-asc="is-asc" href="#" class="table10_header-link w-inline-block">
-                                <div class="text-weight-semibold">Feathers</div>
-                              </a>
+                            <div class="text-color-grey">Ideal for enthusiastic birdwatchers.</div>
+                            <div class="pricing12_divider"></div>
+                            <div class="margin-vertical margin-xxsmall">
+                              <div class="heading-style-h1">6.99€<span class="heading-style-h4">/mth</span></div>
                             </div>
-                            <div role="columnheader" class="table10_column is-header-column is-width-medium">
-                              <a fs-cmssort-desc="is-desc" fs-cmssort-element="trigger" fs-cmssort-field="IDENTIFIER" fs-cmssort-asc="is-asc" href="#" class="table10_header-link w-inline-block">
-                                <div class="text-weight-semibold">     Status</div>
-                              </a>
+                            <div class="text-block-2">or 69.99€ yearly</div>
+                            <div class="margin-top margin-medium">
+                              <a href="#" class="button-3 max-width-full gradient-background w-button">Upgrade to Normal</a>
+                            </div>
+                            <div class="pricing12_divider"></div>
+                          </div>
+                          <div class="pricing12_feature-list">
+                            <div id="w-node-_3c15793f-4e32-e8d6-3386-732466383dd2-6e2eeee9" class="pricing12_feature">
+                              <div class="pricing12_icon-wrapper">
+                                <div class="pricing-icon-1x1-xsmall-3 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#D1FADF"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.096 7.39004L9.93602 14.3L8.03602 12.27C7.68602 11.94 7.13602 11.92 6.73602 12.2C6.34602 12.49 6.23602 13 6.47602 13.41L8.72602 17.07C8.94602 17.41 9.32601 17.62 9.75601 17.62C10.166 17.62 10.556 17.41 10.776 17.07C11.136 16.6 18.006 8.41004 18.006 8.41004C18.906 7.49004 17.816 6.68004 17.096 7.38004V7.39004Z" fill="#12B76A"></path>
+                                  </svg></div>
+                              </div>
+                              <div>Access to detailed bird info</div>
+                            </div>
+                            <div id="w-node-_3c15793f-4e32-e8d6-3386-732466383dd7-6e2eeee9" class="pricing12_feature">
+                              <div class="pricing12_icon-wrapper">
+                                <div class="pricing-icon-1x1-xsmall-3 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#D1FADF"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.096 7.39004L9.93602 14.3L8.03602 12.27C7.68602 11.94 7.13602 11.92 6.73602 12.2C6.34602 12.49 6.23602 13 6.47602 13.41L8.72602 17.07C8.94602 17.41 9.32601 17.62 9.75601 17.62C10.166 17.62 10.556 17.41 10.776 17.07C11.136 16.6 18.006 8.41004 18.006 8.41004C18.906 7.49004 17.816 6.68004 17.096 7.38004V7.39004Z" fill="#12B76A"></path>
+                                  </svg></div>
+                              </div>
+                              <div>Advanced report analytics</div>
+                            </div>
+                            <div id="w-node-_3c15793f-4e32-e8d6-3386-732466383ddc-6e2eeee9" class="pricing12_feature">
+                              <div class="pricing12_icon-wrapper">
+                                <div class="pricing-icon-1x1-xsmall-3 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#D1FADF"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.096 7.39004L9.93602 14.3L8.03602 12.27C7.68602 11.94 7.13602 11.92 6.73602 12.2C6.34602 12.49 6.23602 13 6.47602 13.41L8.72602 17.07C8.94602 17.41 9.32601 17.62 9.75601 17.62C10.166 17.62 10.556 17.41 10.776 17.07C11.136 16.6 18.006 8.41004 18.006 8.41004C18.906 7.49004 17.816 6.68004 17.096 7.38004V7.39004Z" fill="#12B76A"></path>
+                                  </svg></div>
+                              </div>
+                              <div>Ecotourism discounts</div>
+                            </div>
+                            <div id="w-node-_3c15793f-4e32-e8d6-3386-732466383de1-6e2eeee9" class="pricing12_feature">
+                              <div class="pricing12_icon-wrapper">
+                                <div class="pricing-icon-1x1-xsmall-3 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#D1FADF"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.096 7.39004L9.93602 14.3L8.03602 12.27C7.68602 11.94 7.13602 11.92 6.73602 12.2C6.34602 12.49 6.23602 13 6.47602 13.41L8.72602 17.07C8.94602 17.41 9.32601 17.62 9.75601 17.62C10.166 17.62 10.556 17.41 10.776 17.07C11.136 16.6 18.006 8.41004 18.006 8.41004C18.906 7.49004 17.816 6.68004 17.096 7.38004V7.39004Z" fill="#12B76A"></path>
+                                  </svg></div>
+                              </div>
+                              <div>40GB individual data</div>
+                            </div>
+                            <div id="w-node-_3c15793f-4e32-e8d6-3386-732466383de6-6e2eeee9" class="pricing12_feature">
+                              <div class="pricing12_icon-wrapper">
+                                <div class="pricing-icon-1x1-xsmall-3 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#D1FADF"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.096 7.39004L9.93602 14.3L8.03602 12.27C7.68602 11.94 7.13602 11.92 6.73602 12.2C6.34602 12.49 6.23602 13 6.47602 13.41L8.72602 17.07C8.94602 17.41 9.32601 17.62 9.75601 17.62C10.166 17.62 10.556 17.41 10.776 17.07C11.136 16.6 18.006 8.41004 18.006 8.41004C18.906 7.49004 17.816 6.68004 17.096 7.38004V7.39004Z" fill="#12B76A"></path>
+                                  </svg></div>
+                              </div>
+                              <div>Priority chat and email support</div>
                             </div>
                           </div>
-                          <div role="rowgroup" id="w-node-_82deb8fe-60d0-faef-5ebc-a85f1a5e63a8-6e2eeeae" class="table10_list-wrapper">
-                            <div fs-cmssort-element="list" class="table10_list">
-                              <div role="row" class="table10_item">
-                                <div role="cell" class="table10_column is-width-large">
-                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">Beria startup</div>
+                        </div>
+                        <div class="pricing12_plan premium-plan">
+                          <div class="pricing12_content">
+                            <div class="margin-bottom-2 margin-tiny">
+                              <div class="heading-style-h4">Premium Plan</div>
+                            </div>
+                            <div class="text-color-grey">Ideal for dedicated birdwatchers.</div>
+                            <div class="pricing12_divider"></div>
+                            <div class="margin-vertical margin-xxsmall">
+                              <div class="heading-style-h1">12.99€<span class="heading-style-h4">/mth</span></div>
+                            </div>
+                            <div class="text-block-3">or 129.99€ yearly</div>
+                            <div class="margin-top margin-medium">
+                              <a href="#" class="button-3 max-width-full w-button">Upgrade to Premium</a>
+                            </div>
+                            <div class="pricing12_divider"></div>
+                            <div class="pricing12_feature-list">
+                              <div id="w-node-c1638926-94c0-b37b-c30a-82b79604031b-6e2eeee9" class="pricing12_feature">
+                                <div class="pricing12_icon-wrapper">
+                                  <div class="pricing-icon-1x1-xsmall-3 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#D1FADF"></path>
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.096 7.39004L9.93602 14.3L8.03602 12.27C7.68602 11.94 7.13602 11.92 6.73602 12.2C6.34602 12.49 6.23602 13 6.47602 13.41L8.72602 17.07C8.94602 17.41 9.32601 17.62 9.75601 17.62C10.166 17.62 10.556 17.41 10.776 17.07C11.136 16.6 18.006 8.41004 18.006 8.41004C18.906 7.49004 17.816 6.68004 17.096 7.38004V7.39004Z" fill="#12B76A"></path>
+                                    </svg></div>
                                 </div>
-                                <div role="cell" class="table10_column is-width-medium">
-                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">$55.00</div>
-                                </div>
-                                <div role="cell" class="table10_column is-width-medium">
-                                  <div class="table10_status-wrapper">
-                                    <a href="#" class="redeem-button w-button">Redeem</a>
-                                  </div>
-                                </div>
+                                <div>Full access to bird info</div>
                               </div>
-                              <div role="row" class="table10_item">
-                                <div role="cell" class="table10_column is-width-large">
-                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">Beria startup</div>
+                              <div id="w-node-c1638926-94c0-b37b-c30a-82b796040320-6e2eeee9" class="pricing12_feature">
+                                <div class="pricing12_icon-wrapper">
+                                  <div class="pricing-icon-1x1-xsmall-3 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#D1FADF"></path>
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.096 7.39004L9.93602 14.3L8.03602 12.27C7.68602 11.94 7.13602 11.92 6.73602 12.2C6.34602 12.49 6.23602 13 6.47602 13.41L8.72602 17.07C8.94602 17.41 9.32601 17.62 9.75601 17.62C10.166 17.62 10.556 17.41 10.776 17.07C11.136 16.6 18.006 8.41004 18.006 8.41004C18.906 7.49004 17.816 6.68004 17.096 7.38004V7.39004Z" fill="#12B76A"></path>
+                                    </svg></div>
                                 </div>
-                                <div role="cell" class="table10_column is-width-medium">
-                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">$55.00</div>
-                                </div>
-                                <div role="cell" class="table10_column is-width-medium">
-                                  <div class="table10_status-wrapper">
-                                    <a href="#" class="redeem-button w-button">Redeem</a>
-                                  </div>
-                                </div>
+                                <div>Early access to latest features</div>
                               </div>
-                              <div role="row" class="table10_item">
-                                <div role="cell" class="table10_column is-width-large">
-                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">Beria startup</div>
+                              <div id="w-node-c1638926-94c0-b37b-c30a-82b796040325-6e2eeee9" class="pricing12_feature">
+                                <div class="pricing12_icon-wrapper">
+                                  <div class="pricing-icon-1x1-xsmall-3 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#D1FADF"></path>
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.096 7.39004L9.93602 14.3L8.03602 12.27C7.68602 11.94 7.13602 11.92 6.73602 12.2C6.34602 12.49 6.23602 13 6.47602 13.41L8.72602 17.07C8.94602 17.41 9.32601 17.62 9.75601 17.62C10.166 17.62 10.556 17.41 10.776 17.07C11.136 16.6 18.006 8.41004 18.006 8.41004C18.906 7.49004 17.816 6.68004 17.096 7.38004V7.39004Z" fill="#12B76A"></path>
+                                    </svg></div>
                                 </div>
-                                <div role="cell" class="table10_column is-width-medium">
-                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">$55.00</div>
+                                <div>Access to exclusive discounts</div>
+                              </div>
+                              <div id="w-node-c1638926-94c0-b37b-c30a-82b79604032a-6e2eeee9" class="pricing12_feature">
+                                <div class="pricing12_icon-wrapper">
+                                  <div class="pricing-icon-1x1-xsmall-3 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#D1FADF"></path>
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.096 7.39004L9.93602 14.3L8.03602 12.27C7.68602 11.94 7.13602 11.92 6.73602 12.2C6.34602 12.49 6.23602 13 6.47602 13.41L8.72602 17.07C8.94602 17.41 9.32601 17.62 9.75601 17.62C10.166 17.62 10.556 17.41 10.776 17.07C11.136 16.6 18.006 8.41004 18.006 8.41004C18.906 7.49004 17.816 6.68004 17.096 7.38004V7.39004Z" fill="#12B76A"></path>
+                                    </svg></div>
                                 </div>
-                                <div role="cell" class="table10_column is-width-medium">
-                                  <div class="table10_status-wrapper">
-                                    <a href="#" class="redeem-button w-button">Redeem</a>
-                                  </div>
+                                <div>Unlimited individual data</div>
+                              </div>
+                              <div id="w-node-c1638926-94c0-b37b-c30a-82b79604032f-6e2eeee9" class="pricing12_feature">
+                                <div class="pricing12_icon-wrapper">
+                                  <div class="pricing-icon-1x1-xsmall-3 w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z" fill="#D1FADF"></path>
+                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.096 7.39004L9.93602 14.3L8.03602 12.27C7.68602 11.94 7.13602 11.92 6.73602 12.2C6.34602 12.49 6.23602 13 6.47602 13.41L8.72602 17.07C8.94602 17.41 9.32601 17.62 9.75601 17.62C10.166 17.62 10.556 17.41 10.776 17.07C11.136 16.6 18.006 8.41004 18.006 8.41004C18.906 7.49004 17.816 6.68004 17.096 7.38004V7.39004Z" fill="#12B76A"></path>
+                                    </svg></div>
                                 </div>
+                                <div>Personalized and priority service</div>
                               </div>
                             </div>
                           </div>
