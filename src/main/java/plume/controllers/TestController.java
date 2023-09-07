@@ -80,4 +80,9 @@ public class TestController {
     public ModelAndView profileDashboard(){
         return new ModelAndView("profile-dashboard");
     }
+    @GetMapping(value="subscriptions")
+    public ModelAndView profilesubscriptions(){
+        return new ModelAndView("subscriptions");
+    }
+
 }
