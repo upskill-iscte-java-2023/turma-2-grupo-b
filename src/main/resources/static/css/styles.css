@@ -5610,14 +5610,13 @@ figcaption {
 
 .header-image-landingpage {
   width: 100%;
-  height: 425px;
   max-height: 600px;
   grid-column-gap: 16px;
   grid-row-gap: 16px;
   -webkit-text-fill-color: inherit;
   object-fit: fill;
   background-image: url('../images/Fotos.png');
-  background-position: 50%;
+  background-position: center;
   background-size: cover;
   background-clip: border-box;
   flex-flow: wrap;
@@ -5631,7 +5630,7 @@ figcaption {
   align-self: auto;
   align-items: flex-end;
   margin: -75px 0 0;
-  padding-top: 0;
+  padding-top: 30%;
   padding-bottom: 0;
   display: flex;
   position: relative;
