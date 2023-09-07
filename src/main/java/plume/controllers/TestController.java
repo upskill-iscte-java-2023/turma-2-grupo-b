@@ -50,4 +50,34 @@ public class TestController {
     public ModelAndView conditions(){
         return new ModelAndView("terms-conditions");
     }
+
+    @GetMapping(value="account-settings")
+    public ModelAndView accSettings(){
+        return new ModelAndView("account-settings");
+    }
+
+    @GetMapping(value="challenges")
+    public ModelAndView challenges(){
+        return new ModelAndView("challenges");
+    }
+
+    @GetMapping(value="my-observations")
+    public ModelAndView myObservations(){
+        return new ModelAndView("my-observations");
+    }
+
+    @GetMapping(value="payments")
+    public ModelAndView payments(){
+        return new ModelAndView("payments");
+    }
+
+    @GetMapping(value="plume-wiki")
+    public ModelAndView wiki(){
+        return new ModelAndView("plume-wiki");
+    }
+
+    @GetMapping(value="dashboard")
+    public ModelAndView profileDashboard(){
+        return new ModelAndView("profile-dashboard");
+    }
 }
