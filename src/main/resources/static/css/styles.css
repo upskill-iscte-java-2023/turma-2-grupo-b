@@ -1,8 +1,8 @@
-gmp-map {
+.map {
   height: 100%;
 }
 
-.map_div {
+.map-wrapper {
   height: 98vh;
   width: 100vw;
 }
