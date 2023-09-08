@@ -6130,6 +6130,10 @@ figcaption {
   flex-direction: column;
 }
 
+.art-card-context.alt {
+  flex-direction: column;
+}
+
 .main-content {
   padding-bottom: 3rem;
 }
@@ -9693,6 +9697,19 @@ figcaption {
     padding-right: 0;
     display: block;
   }
+
+  .art-card-context {
+    grid-column-gap: .75rem;
+    grid-row-gap: .75rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .art-card-context.vertical {
+    flex-direction: column;
+  }
+
 
 
 }
