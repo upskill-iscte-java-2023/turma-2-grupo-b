@@ -10,11 +10,13 @@
   <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../../css/webflow.css" rel="stylesheet" type="text/css">
   <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+  <link href="../../css/mapstyles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJBRTp3Y0iJppaKELytW_tmBrF2DDqCpg&callback=initMap">
   <script type="text/javascript">WebFont.load({  google: {    families: ["Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic","Oswald:200,300,400,500,600,700","Inter:regular,500,600,700","Libre Baskerville:regular,italic,700","Volkhov:regular,italic,700,700italic","Noto Serif:regular,italic,700,700italic"]  }});</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <script src="../../js/maps.js" type="text/javascript"></script>
   <link href="../../images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
   <link href="../../images/webclip.svg" rel="apple-touch-icon">
 </head>
@@ -108,18 +110,29 @@
     </address>
     <div class="w-layout-vflex flex-block-2">
       <div class="w-layout-hflex">Banner with info goes here</div>
-      <div class="w-layout-hflex flex-block">
-        <a data-w-id="98717e99-14cf-0431-0634-f7659edaf5c3" href="#" class="button-5 w-button">Upload Picture</a>
-        <a href="#" class="link-block w-inline-block"><img src="../../images/take_picture.png" loading="lazy" alt="" class="image-5"></a>
-        <a data-w-id="6174afc0-5c6f-e9d3-c5e6-5558f4a109b4" href="#" class="link-block-2 w-inline-block"><img src="../../images/Upload_Mobile.png" loading="lazy" alt="" class="image-6"></a>
-      </div>
     </div>
+
 
     <div class="map-wrapper" id="map-wrapper">
       <div class="map" id="map">
-        <script src="../../js/maps.js" type="text/javascript"></script>
+        <!-- Google Map will be rendered here -->
+      </div>
+
+      <div class="button-container" style="z-index: 99">
+        <a class="desktop-button-wrap desktop">
+          <button class="upload-button desktop">
+
+            <span class="button-text">Upload Picture</span>
+            <img src="../../images/Upload_Mobile.png" alt="Upload Picture" class="button-icon">
+          </button>
+        </a>
+        <button class="take-picture-button mobile"></button>
+        <button class="upload-button-mobile mobile"></button>
       </div>
     </div>
+
+
+
 
 
     <div class="footer">

@@ -1,0 +1,160 @@
+/* Map container styles */
+.map-wrapper {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    margin-left: 0.5%;
+    margin-right: 1%;
+}
+
+/* Map styles */
+#map {
+    position: absolute;
+    width: 99%;
+    z-index: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Button container styles */
+
+.button-container {
+    position: absolute;
+    top: 20px; /* Adjust the vertical position as needed */
+    right: 20px; /* Adjust the horizontal position as needed */
+    display: flex;
+    flex-direction: column;
+    z-index: 1; /* Add a higher z-index value */
+}
+
+
+/* Common styles for upload buttons */
+.upload-button {
+    position: absolute;
+    display: inline-flex;
+    background-color: #b83c78;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Add spacing between buttons */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.desktop-button-wrap{
+    position: relative;
+    background: #b83c78;
+    color: #fff1ff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    box-shadow: 0 20px 25px #1a1b1f;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.desktop-button-wrap:hover{
+    width: 200px;
+    border-radius: 20px;
+    transition-delay: 0.5s;
+}
+
+.desktop-button-wrap:before{
+    content: "";
+    position: absolute;
+}
+
+.desktop-button-wrap {
+
+}
+
+.desktop-button-wrap span{
+    display: none;
+    opacity: 0;
+    white-space: nowrap;
+    transition: 0.5s;
+}
+
+.desktop-button-wrap:hover span{
+    display: inline-flex;
+    opacity: 1;
+    transition-delay: 0.55s;
+    transform: translateX(10px);
+}
+
+.button-icon {
+    width: 100%;
+    height: 100%;
+    max-height: 52px;
+    max-width: 52px;
+    margin-right: 18px; /* Add spacing between the image and text */
+}
+
+/* Styles for the upload icon */
+.upload-button-mobile {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    max-width: 52px;
+    max-height: 52px;
+    border-radius: 50%;
+    background-image: url("../../images/Upload_Mobile.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Styles for the take picture button */
+.take-picture-button {
+    display: none; /* Hidden by default */
+    width: 52px;
+    height: 52px;
+    max-width: 52px;
+    max-height: 52px;
+    border-radius: 100%;
+    background-image: url("../../images/take_picture.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Media query for laptops and larger screens */
+@media (min-width: 1024px) {
+    .desktop {
+        display: block; /* Display on laptop and larger screens */
+    }
+}
+
+/* Media query for tablets and smaller screens with a camera */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block; /* Display on tablets and smaller screens */
+    }
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block; /* Display on tablets and smaller screens */
+    }
+}
