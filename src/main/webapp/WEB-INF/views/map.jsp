@@ -19,8 +19,12 @@
   <script src="../../js/maps.js" type="text/javascript"></script>
   <link href="../../images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
   <link href="../../images/webclip.svg" rel="apple-touch-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<!-- Navbar Section -->
   <div data-collapse="medium" data-animation="default" data-duration="400" fs-scrolldisable-element="smart-nav" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
     <div class="navbar-container">
       <a href="#" class="navbar2_logo-link w-nav-brand"><img src="../../images/Untitled-design-26.png" loading="lazy" alt="" class="navbar2_logo desktop"><img src="../../images/1_5.png" loading="lazy" width="150" height="Auto" alt="" class="navbar2_logo show-mobile-only"></a>
@@ -88,29 +92,46 @@
       </div>
     </div>
   </div>
+
+  <!-- page section -->
   <div class="page-wrapper-2">
-    <address id="upolad-form" data-w-id="d107db03-a417-7854-a927-8fe6c65ee5b5" class="section_big_map">
-      <div class="w-layout-grid grid">
-        <div id="w-node-d107db03-a417-7854-a927-8fe6c65ee5b7-6e2eeeaa" class="div-block-7">
-          <h1 class="h1-2">Upload your bird </h1>
-          <p class="p">Accepted files: PNG, JPEG. Maximum size: 15 MB</p>
-        </div>
-        <div class="w-form">
-          <form id="myForm" name="email-form" data-name="Email Form" action="https://hook.us1.make.com/36h413mow3rxt3pnxhxwpmxstz57l8gh" method="post" ms-code-file-upload="form" class="form-3" data-wf-page-id="64f615e4cfda04626e2eeeaa" data-wf-element-id="d107db03-a417-7854-a927-8fe6c65ee5bf"><label for="Message" class="label">Upload a file</label>
-            <div ms-code-file-upload-input="fileToUpload" class="uploader"></div><label for="Message" class="label">Description</label><input type="text" class="input-2 w-input" maxlength="256" name="Message" data-name="Message" placeholder="" id="Message"><input type="submit" value="Submit" data-wait="Please wait..." class="button w-button">
-          </form>
-          <div class="w-form-done">
-            <div>Thank you! Your submission has been received!</div>
-          </div>
-          <div class="w-form-fail">
-            <div>Oops! Something went wrong while submitting the form.</div>
+
+    <div class="w-layout-vflex flex-block-2">
+      <div class="w-layout-hflex"></div>
+    </div>
+
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="upload-modal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background: transparent; border: none">
+          <div class="modal-body">
+            <div class="frame">
+              <div class="center">
+                <div class="title">
+                  <h1>Drop file to upload</h1>
+                </div>
+                <div class="frame">
+                  <div class="center">
+                    <div class="bar"></div>
+                    <div class="title">Drop file to upload</div>
+                    <div class="dropzone">
+                      <div class="content">
+                        <img src="https://100dayscss.com/codepen/upload.svg" class="upload">
+                        <span class="filename"></span>
+                        <input type="file" class="input" style="visibility: hidden">
+                      </div>
+                    </div>
+                    <img src="https://100dayscss.com/codepen/syncing.svg" class="syncing">
+                    <img src="https://100dayscss.com/codepen/checkmark.svg" class="done">
+                    <button type="button" class="upload-btn" name="uploadbutton">Upload file</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </address>
-    <div class="w-layout-vflex flex-block-2">
-      <div class="w-layout-hflex">Banner with info goes here</div>
     </div>
+  </div>
 
 
     <div class="map-wrapper" id="map-wrapper">
@@ -120,21 +141,20 @@
 
       <div class="button-container" style="z-index: 99">
         <a class="desktop-button-wrap desktop">
-          <button class="upload-button desktop">
-
-            <span class="button-text">Upload Picture</span>
+          <button class="upload-button desktop" style="display: flex; justify-content: center; align-items: center" data-bs-toggle="modal" data-bs-target="#modal">
+            <span class="button-text" style="padding-right: 10px">Upload Picture</span>
             <img src="../../images/Upload_Mobile.png" alt="Upload Picture" class="button-icon">
           </button>
         </a>
         <button class="take-picture-button mobile"></button>
-        <button class="upload-button-mobile mobile"></button>
+        <button class="upload-button-mobile mobile" data-bs-toggle="modal" data-bs-target="#modal"></button>
       </div>
     </div>
+<div class="flex-block-2-bottom">bottom bar</div>
 
 
 
-
-
+<!--Footer section -->
     <div class="footer">
       <div class="footer-container w-container">
         <div class="w-layout-grid footer-grid">

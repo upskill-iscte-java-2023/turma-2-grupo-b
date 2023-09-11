@@ -44098,7 +44098,80 @@
     }
   });
 
+    var droppedFiles = false;
+    var fileName = '';
+    var $dropzone = $('.dropzone');
+    var $button = $('.upload-btn');
+    var uploading = false;
+    var $syncing = $('.syncing');
+    var $done = $('.done');
+    var $bar = $('.bar');
+    var timeOut;
 
+    function resetUpload() {
+        fileName = '';
+        $button.html('Upload file');
+        $dropzone.fadeIn();
+        $syncing.removeClass('active');
+        $done.removeClass('active');
+        $bar.removeClass('active');
+        $('.filename').html('');
+        $('.dropzone .upload').show();
+        uploading = false;
+    }
+
+
+    $dropzone.on('drag dragstart dragend dragover dragenter dragleave drop', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+    })
+        .on('dragover dragenter', function() {
+            $dropzone.addClass('is-dragover');
+        })
+        .on('dragleave dragend drop', function() {
+            $dropzone.removeClass('is-dragover');
+        })
+        .on('drop', function(e) {
+            droppedFiles = e.originalEvent.dataTransfer.files;
+            fileName = droppedFiles[0]['name'];
+            $('.filename').html(fileName);
+            $('.dropzone .upload').hide();
+        });
+
+    $("input:file").change(function (){
+        fileName = $(this)[0].files[0].name;
+        $('.filename').html(fileName);
+        $('.dropzone .upload').hide();
+    });
+
+    function startUpload() {
+        if (!uploading && fileName != '' ) {
+            uploading = true;
+            $button.html('Uploading...');
+            $dropzone.fadeOut();
+            $syncing.addClass('active');
+            $done.addClass('active');
+            $bar.addClass('active');
+            timeoutID = window.setTimeout(showDone, 3200);
+        }
+    }
+
+    function showDone() {
+        $button.html('Done');
+        uploading = false;
+    }
+
+    $(document.body).on('click', '.upload-btn', function() {
+        if ($(this).text() === 'Done') {
+            $('#modal').modal('hide');
+        } else {
+            startUpload();
+        }
+    });
+
+    $('#modal').on('show.bs.modal', function() {
+        resetUpload();
+    });
 
 
   // <stdin>
