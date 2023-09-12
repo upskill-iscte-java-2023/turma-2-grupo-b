@@ -20,9 +20,9 @@
 </head>
 <body>
   <div class="w-users-userformpagewrap full-page-wrapper">
-    <a href="index" class="form-page-logo-link w-inline-block"><img src="/images/Untitled-design-26_1.png" loading="lazy" alt="" class="form-page-logo"></a>
+    <a href="/" class="form-page-logo-link w-inline-block"><img src="/images/Untitled-design-26_1.png" loading="lazy" alt="" class="form-page-logo"></a>
     <div class="w-users-usersignupformwrapper admin-form-card">
-      <div tabindex="-1" class="w-users-userformsuccessstate verification-box w-form-success">
+      <div tab/="-1" class="w-users-userformsuccessstate verification-box w-form-success">
         <div class="w-users-userformheader"><img src="/images/Tick-Circle-Icon.svg" alt="" class="icon">
           <h2>Account activated</h2>
         </div>

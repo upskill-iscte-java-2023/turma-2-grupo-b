@@ -20,7 +20,7 @@
 </head>
 <body>
   <div class="w-users-userformpagewrap full-page-wrapper">
-    <a href="index" class="form-page-logo-link w-inline-block"><img src="/images/Untitled-design-26_1.png" loading="lazy" alt="" class="form-page-logo"></a>
+    <a href="/" class="form-page-logo-link w-inline-block"><img src="/images/Untitled-design-26_1.png" loading="lazy" alt="" class="form-page-logo"></a>
     <div class="w-users-userloginformwrapper admin-form-card">
       <form data-wf-user-form-type="login" data-wf-user-form-redirect="/" method="post">
         <div class="w-users-userformheader form-card-header">
