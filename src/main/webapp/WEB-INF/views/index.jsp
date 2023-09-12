@@ -9,22 +9,22 @@
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="/css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic","Oswald:200,300,400,500,600,700","Inter:regular,500,600,700","Libre Baskerville:regular,italic,700","Volkhov:regular,italic,700,700italic","Noto Serif:regular,italic,700,700italic"]  }});</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
-  <link href="images/webclip.svg" rel="apple-touch-icon">
+  <link href="/images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
+  <link href="/images/webclip.svg" rel="apple-touch-icon">
 </head>
 <body class="body">
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-out-quint" data-easing2="ease" data-no-scroll="1" role="banner" class="nav-bar w-nav">
     <div class="uui-navbar07_container-2">
       <a href="#" class="uui-navbar07_logo-link-2 w-nav-brand">
-        <div class="uui-logo_component-2"><img src="images/Untitled-design-26_1.png" loading="lazy" width="Auto" id="plume-home" alt="" class="uui-logo_logotype-2"></div>
+        <div class="uui-logo_component-2"><img src="/images/Untitled-design-26_1.png" loading="lazy" width="Auto" id="plume-home" alt="" class="uui-logo_logotype-2"></div>
       </a>
       <div role="navigation" class="uui-navbar07_menu-2 w-nav-menu">
         <div class="uui-navbar07_menu-left-2">
@@ -137,19 +137,19 @@
               </div>
               <div class="w-layout-grid layout80-list">
                 <div class="layout80_item">
-                  <div class="uui-layout80_image-wrapper"><img src="images/Mockups_site_Plume.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, (max-width: 1279px) 25vw, 317.32501220703125px" srcset="images/Mockups_site_Plume.png 500w, images/Mockups_site_Plume.png 800w, images/Mockups_site_Plume.png 1080w, images/Mockups_site_Plume.png 1524w" alt="Mockup" class="uui-layout80_image"></div>
+                  <div class="uui-layout80_image-wrapper"><img src="/images/Mockups_site_Plume.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, (max-width: 1279px) 25vw, 317.32501220703125px" srcset="images/Mockups_site_Plume.png 500w, images/Mockups_site_Plume.png 800w, images/Mockups_site_Plume.png 1080w, images/Mockups_site_Plume.png 1524w" alt="Mockup" class="uui-layout80_image"></div>
                   <h3 class="uui-heading-xxsmall">Share your findings</h3>
                   <div class="uui-space-xxsmall-2"></div>
                   <div class="uui-text-size-medium-2">Upload both pictures and audio files of your sightings</div>
                 </div>
                 <div class="layout80_item">
-                  <div class="uui-layout80_image-wrapper"><img src="images/community-9.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, (max-width: 1279px) 25vw, 317.3374938964844px" srcset="images/community-9.png 500w, images/community-9.png 800w, images/community-9.png 1080w, images/community-9.png 1524w" alt="Mockup" class="uui-layout80_image"></div>
+                  <div class="uui-layout80_image-wrapper"><img src="/images/community-9.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, (max-width: 1279px) 25vw, 317.3374938964844px" srcset="images/community-9.png 500w, images/community-9.png 800w, images/community-9.png 1080w, images/community-9.png 1524w" alt="Mockup" class="uui-layout80_image"></div>
                   <h3 class="uui-heading-xxsmall">Engage with the community</h3>
                   <div class="uui-space-xxsmall-2"></div>
                   <div class="uui-text-size-medium-2">Keep track of your progress, compare achievements and get in touch with other birders</div>
                 </div>
                 <div class="layout80_item">
-                  <div class="uui-layout80_image-wrapper"><img src="images/lounge-11.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, (max-width: 1279px) 25vw, 317.3374938964844px" srcset="images/lounge-11.png 500w, images/lounge-11.png 800w, images/lounge-11.png 1080w, images/lounge-11.png 1524w" alt="Mockup" class="uui-layout80_image"></div>
+                  <div class="uui-layout80_image-wrapper"><img src="/images/lounge-11.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, (max-width: 1279px) 25vw, 317.3374938964844px" srcset="images/lounge-11.png 500w, images/lounge-11.png 800w, images/lounge-11.png 1080w, images/lounge-11.png 1524w" alt="Mockup" class="uui-layout80_image"></div>
                   <h3 class="uui-heading-xxsmall">Ecotourism </h3>
                   <div class="uui-space-xxsmall-2"></div>
                   <div class="uui-text-size-medium-2">Contribute to the protection of natural and cultural heritage, supporting local economies.</div>
@@ -228,7 +228,7 @@ a {
                       </div>
                       <p data-w-id="191b8052-6286-aced-ff65-0edf1b20eefd" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="standard-paragraph"><span>Every bird counts! Through Plume&#x27;s features, your birdwatching activity will contribute to ongoing research, environmental awareness and sustainability practices.</span></p>
                     </div>
-                    <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef03-6e2eee46" data-w-id="191b8052-6286-aced-ff65-0edf1b20ef03" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="home-benefits_product-images"><img src="images/Mockups-site-Plume-5.png" loading="lazy" sizes="(max-width: 479px) 100vw, 440px" srcset="images/Mockups-site-Plume-5-p-500.png 500w, images/Mockups-site-Plume-5-p-800.png 800w, images/Mockups-site-Plume-5-p-1080.png 1080w, images/Mockups-site-Plume-5.png 1524w" alt="" class="decoration-benefits_trust">
+                    <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef03-6e2eee46" data-w-id="191b8052-6286-aced-ff65-0edf1b20ef03" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="home-benefits_product-images"><img src="/images/Mockups-site-Plume-5.png" loading="lazy" sizes="(max-width: 479px) 100vw, 440px" srcset="images/Mockups-site-Plume-5-p-500.png 500w, images/Mockups-site-Plume-5-p-800.png 800w, images/Mockups-site-Plume-5-p-1080.png 1080w, images/Mockups-site-Plume-5.png 1524w" alt="" class="decoration-benefits_trust">
                       <div class="svg-arrow top-left w-embed"><svg width="500" height="auto" viewbox="0 0 274 246" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g clip-path="url(#clip0_3_252)">
                             <path d="M247.029 126.774C239.87 122.246 234.026 118.963 228.47 115.304C225.269 113.092 221.692 110.591 225.349 104.578C237.422 110.486 249.602 115.166 260.426 122.858C265.039 126.033 265.292 129.442 262.591 134.52C261.626 136.402 260.284 137.995 259.133 139.495C252.518 147.651 245.904 155.807 239.006 163.866C236.801 166.584 234.122 169.297 230.452 166.607C227.158 164.204 227.477 160.518 229.212 157.321C231.236 153.748 233.729 150.654 236.128 147.37C237.855 145.119 239.772 142.776 240.56 139.568C239.418 140.123 238.276 140.677 237.133 141.232C224.378 147.426 218.321 146.6 207.608 137.206C199.151 129.541 192.506 120.761 188.438 110.024C187.42 107.458 186.401 104.892 185.476 102.516C180.93 92.2461 175.258 90.7624 166.85 98.1411C162.551 101.877 159 106.662 155.171 110.875C143.867 123.898 133.906 125.204 119.597 115.201C108.865 107.7 100.046 98.3274 93.5205 86.8997C91.5637 83.3769 89.5139 79.6637 87.079 76.6084C82.9572 71.5471 79.3578 71.4115 75.5191 76.5715C71.2997 81.9164 68.1163 87.9354 64.6495 93.8565C62.1479 97.8963 60.306 102.322 57.5211 106.264C51.7609 114.241 43.8535 118.787 33.7326 116.874C26.1663 115.369 18.5115 113.2 11.1444 110.657C6.3275 108.993 2.47584 105.449 2.44949 98.1634C4.90665 98.8537 6.89008 99.5385 9.06389 100.131C16.8117 102.49 24.5595 104.849 32.5021 106.642C40.1614 108.337 45.6913 104.71 49.3529 98.2239C52.4389 92.4877 54.9582 86.5558 58.1372 81.0098C61.1214 76.0294 64.0126 70.8586 67.9353 66.8349C76.2635 57.8469 87.5355 58.2589 95.3096 67.9031C98.8691 72.2958 101.853 77.4388 104.554 82.4839C110.145 92.4817 118.03 100.424 127.256 106.774C134.977 111.97 138.679 111.35 144.806 104.608C149.88 99.0835 154.485 93.0806 160.214 88.4152C163.845 85.2397 168.98 83.2167 173.917 82.2321C182.462 80.4371 189.249 84.2041 193.251 91.9132C195.296 96.0994 197.244 100.568 198.528 105.124C201.746 115.568 208.684 123.5 216.387 130.589C220.146 133.943 224.113 135.313 229.253 132.817C234.393 130.32 239.901 129.059 247.029 126.774Z" fill="currentColor"></path>
@@ -237,7 +237,7 @@ a {
                     </div>
                   </div>
                   <div class="home-benefits-wrapper margin-top">
-                    <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef0a-6e2eee46" data-w-id="191b8052-6286-aced-ff65-0edf1b20ef0a" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="home-benefits_product-images"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588e1131125b9c_three-lines.svg" loading="lazy" width="48" alt="" class="decoration-benefits_lines-on-right"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588ec753125b8d_decorative-spring.svg" loading="lazy" width="37.5" alt="" class="decoration-benefits_squiggle"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588ede81125b89_dashboard-shadow.svg" loading="lazy" alt="" class="decoration-benefits_shadow"><img src="images/destinos-de-ecoturismo-em-portugal-slide2.jpg" loading="lazy" width="210" sizes="(max-width: 479px) 70vw, 210px" alt="" srcset="images/destinos-de-ecoturismo-em-portugal-slide2-p-500.jpg 500w, images/destinos-de-ecoturismo-em-portugal-slide2-p-800.jpg 800w, images/destinos-de-ecoturismo-em-portugal-slide2-p-1080.jpg 1080w, images/destinos-de-ecoturismo-em-portugal-slide2.jpg 1920w" class="decoration-benefits_churn"><img src="images/cocoon-eco-design-lodges.jpg" loading="lazy" srcset="images/cocoon-eco-design-lodges-p-500.jpg 500w, images/cocoon-eco-design-lodges-p-800.jpg 800w, images/cocoon-eco-design-lodges-p-1080.jpg 1080w, images/cocoon-eco-design-lodges.jpg 1400w" sizes="(max-width: 479px) 100vw, 300px" alt="" class="decoration-benefits-blue-box"><img src="images/Praia-fluvial-de-Monsaraz-Portugal.webp" loading="lazy" width="240" sizes="(max-width: 479px) 70vw, 240px" alt="" srcset="images/Praia-fluvial-de-Monsaraz-Portugal-p-500.webp 500w, images/Praia-fluvial-de-Monsaraz-Portugal-p-800.webp 800w, images/Praia-fluvial-de-Monsaraz-Portugal-p-1080.webp 1080w, images/Praia-fluvial-de-Monsaraz-Portugal.webp 1180w" class="decoration-benefits_sales"></div>
+                    <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef0a-6e2eee46" data-w-id="191b8052-6286-aced-ff65-0edf1b20ef0a" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="home-benefits_product-images"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588e1131125b9c_three-lines.svg" loading="lazy" width="48" alt="" class="decoration-benefits_lines-on-right"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588ec753125b8d_decorative-spring.svg" loading="lazy" width="37.5" alt="" class="decoration-benefits_squiggle"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588ede81125b89_dashboard-shadow.svg" loading="lazy" alt="" class="decoration-benefits_shadow"><img src="/images/destinos-de-ecoturismo-em-portugal-slide2.jpg" loading="lazy" width="210" sizes="(max-width: 479px) 70vw, 210px" alt="" srcset="images/destinos-de-ecoturismo-em-portugal-slide2-p-500.jpg 500w, images/destinos-de-ecoturismo-em-portugal-slide2-p-800.jpg 800w, images/destinos-de-ecoturismo-em-portugal-slide2-p-1080.jpg 1080w, images/destinos-de-ecoturismo-em-portugal-slide2.jpg 1920w" class="decoration-benefits_churn"><img src="/images/cocoon-eco-design-lodges.jpg" loading="lazy" srcset="images/cocoon-eco-design-lodges-p-500.jpg 500w, images/cocoon-eco-design-lodges-p-800.jpg 800w, images/cocoon-eco-design-lodges-p-1080.jpg 1080w, images/cocoon-eco-design-lodges.jpg 1400w" sizes="(max-width: 479px) 100vw, 300px" alt="" class="decoration-benefits-blue-box"><img src="/images/Praia-fluvial-de-Monsaraz-Portugal.webp" loading="lazy" width="240" sizes="(max-width: 479px) 70vw, 240px" alt="" srcset="images/Praia-fluvial-de-Monsaraz-Portugal-p-500.webp 500w, images/Praia-fluvial-de-Monsaraz-Portugal-p-800.webp 800w, images/Praia-fluvial-de-Monsaraz-Portugal-p-1080.webp 1080w, images/Praia-fluvial-de-Monsaraz-Portugal.webp 1180w" class="decoration-benefits_sales"></div>
                     <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef13-6e2eee46" class="home-benefits-content">
                       <div data-w-id="191b8052-6286-aced-ff65-0edf1b20ef14" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="margin-bottom margin-small">
                         <h2 class="h2">Unlock nature, unlock discounts</h2>
@@ -257,22 +257,22 @@ a {
                 </div>
                 <div class="home-process-content_wrapper">
                   <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef52-6e2eee46" class="home-process-block">
-                    <div data-w-id="191b8052-6286-aced-ff65-0edf1b20ef53" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="margin-bottom"><img src="images/1_6.png" loading="lazy" alt="" class="process-image"></div>
+                    <div data-w-id="191b8052-6286-aced-ff65-0edf1b20ef53" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="margin-bottom"><img src="/images/1_6.png" loading="lazy" alt="" class="process-image"></div>
                     <h3 class="h-small">Upload your findings</h3>
                     <p class="standard-paragraph smaller">Either a photograph or a recording, share what you have spotted!</p>
                   </div>
                   <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef59-6e2eee46" class="home-process-block">
-                    <div data-w-id="191b8052-6286-aced-ff65-0edf1b20ef5a" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="margin-bottom"><img src="images/8.png" loading="lazy" alt="" class="process-image"></div>
+                    <div data-w-id="191b8052-6286-aced-ff65-0edf1b20ef5a" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="margin-bottom"><img src="/images/8.png" loading="lazy" alt="" class="process-image"></div>
                     <h3 class="h-small">Complete challenges and obtain achievements</h3>
                     <p class="standard-paragraph smaller">Level up in Plume and keep track of your activities while having fun. Challenge yourself!</p>
                   </div>
                   <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef60-6e2eee46" class="home-process-block">
-                    <div data-w-id="191b8052-6286-aced-ff65-0edf1b20ef61" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="margin-bottom"><img src="images/9.png" loading="lazy" alt="" class="process-image"></div>
+                    <div data-w-id="191b8052-6286-aced-ff65-0edf1b20ef61" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="margin-bottom"><img src="/images/9.png" loading="lazy" alt="" class="process-image"></div>
                     <h3 class="h-small">Get discounts and opportunities with our partners</h3>
                     <p class="standard-paragraph smaller">The more you play, the more you win. Embrace nature and benefit from our ecotouristic associates in your next birdwatching trip!</p>
                   </div>
                   <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef67-6e2eee46" class="home-process-block">
-                    <div data-w-id="191b8052-6286-aced-ff65-0edf1b20ef68" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="margin-bottom"><img src="images/10.png" loading="lazy" alt="" class="process-image"></div>
+                    <div data-w-id="191b8052-6286-aced-ff65-0edf1b20ef68" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="margin-bottom"><img src="/images/10.png" loading="lazy" alt="" class="process-image"></div>
                     <h3 class="h-small">Share with friends and fellow birders</h3>
                     <p class="standard-paragraph smaller">Connect with others and engage with a larger community focused on nature, the environment and animal welfare.</p>
                   </div>
@@ -288,12 +288,12 @@ a {
                     <div class="slider-mask w-slider-mask">
                       <div class="slider-slide w-slide">
                         <div class="testimonial-card">
-                          <div class="testimonial-image-wrap"><img src="https://assets-global.website-files.com/612eb5edd38dcc60eef8c11a/612eb5edd38dccc6fcf8c13e_angle.svg" alt="" class="horizontal-angle"><img src="images/stringio.png" alt="Testimonial Image" sizes="(max-width: 767px) 90vw, (max-width: 1279px) 37vw, 416px" srcset="images/stringio.png 500w, images/stringio.png 750w" class="testimonial-image"></div>
+                          <div class="testimonial-image-wrap"><img src="https://assets-global.website-files.com/612eb5edd38dcc60eef8c11a/612eb5edd38dccc6fcf8c13e_angle.svg" alt="" class="horizontal-angle"><img src="/images/stringio.png" alt="Testimonial Image" sizes="(max-width: 767px) 90vw, (max-width: 1279px) 37vw, 416px" srcset="images/stringio.png 500w, images/stringio.png 750w" class="testimonial-image"></div>
                           <div class="testimonial-content">
                             <div class="height-100px">
                               <h4 class="quote-content">&quot;Partnering with Plume has enriched our extensive collection. Their user-contributed photos and observations give us real-time data that&#x27;s invaluable to our research. Together, we&#x27;re pioneering the next level of birdwatching.&quot;</h4>
                             </div>
-                            <div class="author-block"><img src="images/14.png" alt="" class="author-image">
+                            <div class="author-block"><img src="/images/14.png" alt="" class="author-image">
                               <div>
                                 <h4 class="author-name">The Cornell Lab of Ornithology</h4>
                               </div>
@@ -303,7 +303,7 @@ a {
                       </div>
                       <div class="slider-slide w-slide">
                         <div class="testimonial-card">
-                          <div class="testimonial-image-wrap"><img src="https://assets-global.website-files.com/612eb5edd38dcc60eef8c11a/612eb5edd38dccc6fcf8c13e_angle.svg" alt="" class="horizontal-angle"><img src="images/302361366.jpg" alt="Testimonial Image" sizes="(max-width: 767px) 90vw, (max-width: 1279px) 37vw, 416px" srcset="images/302361366.jpg 500w, images/302361366.jpg 800w, images/302361366.jpg 1024w" class="testimonial-image">
+                          <div class="testimonial-image-wrap"><img src="https://assets-global.website-files.com/612eb5edd38dcc60eef8c11a/612eb5edd38dccc6fcf8c13e_angle.svg" alt="" class="horizontal-angle"><img src="/images/302361366.jpg" alt="Testimonial Image" sizes="(max-width: 767px) 90vw, (max-width: 1279px) 37vw, 416px" srcset="images/302361366.jpg 500w, images/302361366.jpg 800w, images/302361366.jpg 1024w" class="testimonial-image">
                             <a href="#" class="play-button w-inline-block w-lightbox">
                               <script type="application/json" class="w-json">{
   "items": [
@@ -325,7 +325,7 @@ a {
                             <div class="height-100px">
                               <h4 class="quote-content">&quot;Our collaboration with Plume has been a game changer. Their passionate community of birdwatchers aligns perfectly with our eco-conscious travelers. We&#x27;re thrilled to offer special discounts to Plume members, further promoting sustainable and mindful travel.&quot;</h4>
                             </div>
-                            <div class="author-block"><img src="images/1_3.png" alt="" class="author-image">
+                            <div class="author-block"><img src="/images/1_3.png" alt="" class="author-image">
                               <div>
                                 <h4 class="author-name">Reserva Alecrim EcoSuite &amp; Glamping</h4>
                               </div>
@@ -356,10 +356,10 @@ a {
                   </div>
                   <div data-w-id="191b8052-6286-aced-ff65-0edf1b20eee7" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="business-logos_wrapper">
                     <div class="business-logos"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588e6886125b9e_Webflow%20Logo.svg" loading="lazy" alt=""></div>
-                    <div class="business-logos"><img src="images/1_4.png" loading="lazy" alt=""></div>
-                    <div class="business-logos"><img src="images/reserva-1_5.png" loading="lazy" alt=""></div>
-                    <div class="business-logos"><img src="images/National-Geographic-Logo.png" loading="lazy" sizes="(max-width: 767px) 20vw, (max-width: 991px) 19vw, (max-width: 1279px) 12vw, 135.1999969482422px" srcset="images/National-Geographic-Logo.png 500w, images/National-Geographic-Logo.png 800w, images/National-Geographic-Logo.png 1080w, images/National-Geographic-Logo.png 1600w, images/National-Geographic-Logo.png 2000w, images/National-Geographic-Logo.png 3840w" alt=""></div>
-                    <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20eef0-6e2eee46" class="business-logos"><img src="images/upskill_1_6.png" loading="lazy" alt=""></div>
+                    <div class="business-logos"><img src="/images/1_4.png" loading="lazy" alt=""></div>
+                    <div class="business-logos"><img src="/images/reserva-1_5.png" loading="lazy" alt=""></div>
+                    <div class="business-logos"><img src="/images/National-Geographic-Logo.png" loading="lazy" sizes="(max-width: 767px) 20vw, (max-width: 991px) 19vw, (max-width: 1279px) 12vw, 135.1999969482422px" srcset="images/National-Geographic-Logo.png 500w, images/National-Geographic-Logo.png 800w, images/National-Geographic-Logo.png 1080w, images/National-Geographic-Logo.png 1600w, images/National-Geographic-Logo.png 2000w, images/National-Geographic-Logo.png 3840w" alt=""></div>
+                    <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20eef0-6e2eee46" class="business-logos"><img src="/images/upskill_1_6.png" loading="lazy" alt=""></div>
                   </div>
                 </div>
               </div>
@@ -395,7 +395,7 @@ a {
     <div class="footer-container w-container">
       <div class="w-layout-grid footer-grid">
         <div id="w-node-b8d7be4a-ce45-83ab-5947-02d204c8bff0-cf3fcb86" class="footer-logo-block">
-          <a data-ix="logo" href="index.jsp" aria-current="page" class="footer-logo w-nav-brand w--current"><img src="images/Untitled-design-26_1.png" width="204" alt="" class="image-3"></a>
+          <a data-ix="logo" href="index.jsp" aria-current="page" class="footer-logo w-nav-brand w--current"><img src="/images/Untitled-design-26_1.png" width="204" alt="" class="image-3"></a>
           <p class="paragraph small">Built by Potato Labs Inc.<br>for Plumers with lots of Plumage<br></p>
           <div class="spacer _16"></div>
           <div class="paragraph small">© 2023 Potato Labs Inc. All Potatoes Reserved.</div>
@@ -418,6 +418,6 @@ a {
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64f615e4cfda04626e2eee44" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="/js/webflow.js" type="text/javascript"></script>
 </body>
 </html>
