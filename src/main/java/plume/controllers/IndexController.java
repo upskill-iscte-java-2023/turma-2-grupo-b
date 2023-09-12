@@ -12,14 +12,14 @@ import org.springframework.web.servlet.View;
 
 import java.util.Map;
 
-@Controller
+@RestController
 @RequestMapping("/index")
 @CrossOrigin("*")
 public class IndexController {
 
     @GetMapping("/")
-    public String indexController(){
-        return "index";
+    public ModelAndView indexController() {
+        return new ModelAndView("index");
     }
 
 }
