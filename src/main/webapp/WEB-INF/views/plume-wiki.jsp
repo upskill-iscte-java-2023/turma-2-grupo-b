@@ -9,16 +9,16 @@
   <meta content="Plume_Wiki" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
-  <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="../../css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+  <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="/css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic","Oswald:200,300,400,500,600,700","Inter:regular,500,600,700","Libre Baskerville:regular,italic,700","Volkhov:regular,italic,700,700italic","Noto Serif:regular,italic,700,700italic"]  }});</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="../../images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
-  <link href="../../images/webclip.svg" rel="apple-touch-icon">
+  <link href="/images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
+  <link href="/images/webclip.svg" rel="apple-touch-icon">
 </head>
 <body>
   <div class="page-wrapper-5">
@@ -193,9 +193,9 @@ margin: 0rem !important;
         <div class="navbar-container">
           <a href="#" class="navbar2_logo-link w-nav-brand"><img src="../images/Untitled-design-26.png" loading="lazy" alt="" class="navbar2_logo desktop"><img src="../images/1_5.png" loading="lazy" width="150" height="Auto" alt="" class="navbar2_logo show-mobile-only"></a>
           <nav role="navigation" id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a3c-f8957a37" class="navbar2_menu is-page-height-tablet w-nav-menu">
-            <a href="profile-dashboard.jsp" class="navbar2_link w-nav-link">Dashboard</a>
-            <a href="../profile-2/plume-wiki.jsp" aria-current="page" class="navbar2_link w-nav-link w--current">Plume Wiki</a>
-            <a href="payments.jsp" class="navbar2_link w-nav-link">Rewards placeholder 🪶</a>
+            <a href="profile-dashboard" class="navbar2_link w-nav-link">Dashboard</a>
+            <a href="../profile-2/plume-wiki" aria-current="page" class="navbar2_link w-nav-link w--current">Plume Wiki</a>
+            <a href="payments" class="navbar2_link w-nav-link">Rewards placeholder 🪶</a>
             <div class="mobile-menu-wrap-side">
               <div class="side-bar">
                 <div class="w-layout-grid sidebar-menu-grid">

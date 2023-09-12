@@ -96,8 +96,8 @@
               </div>
             </nav>
           </div>
-          <a href="subscription.html" class="uui-navbar07_link-2 w-nav-link">Subscription Plans</a>
-          <a href="our-team.jsp" class="uui-navbar07_link-2 w-nav-link">Our Team</a>
+          <a href="subscription" class="uui-navbar07_link-2 w-nav-link">Subscription Plans</a>
+          <a href="our-team" class="uui-navbar07_link-2 w-nav-link">Our Team</a>
         </div>
         <div class="uui-navbar07_menu-right-2">
           <div class="uui-navbar07_button-wrapper-2">
@@ -137,19 +137,19 @@
               </div>
               <div class="w-layout-grid layout80-list">
                 <div class="layout80_item">
-                  <div class="uui-layout80_image-wrapper"><img src="/images/Mockups_site_Plume.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, (max-width: 1279px) 25vw, 317.32501220703125px" srcset="images/Mockups_site_Plume.png 500w, images/Mockups_site_Plume.png 800w, images/Mockups_site_Plume.png 1080w, images/Mockups_site_Plume.png 1524w" alt="Mockup" class="uui-layout80_image"></div>
+                  <div class="uui-layout80_image-wrapper"><img src="/images/Mockups_site_Plume.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, (max-width: 1279px) 25vw, 317.32501220703125px" srcset="/images/Mockups_site_Plume.png 500w, images/Mockups_site_Plume.png 800w, images/Mockups_site_Plume.png 1080w, images/Mockups_site_Plume.png 1524w" alt="Mockup" class="uui-layout80_image"></div>
                   <h3 class="uui-heading-xxsmall">Share your findings</h3>
                   <div class="uui-space-xxsmall-2"></div>
                   <div class="uui-text-size-medium-2">Upload both pictures and audio files of your sightings</div>
                 </div>
                 <div class="layout80_item">
-                  <div class="uui-layout80_image-wrapper"><img src="/images/community-9.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, (max-width: 1279px) 25vw, 317.3374938964844px" srcset="images/community-9.png 500w, images/community-9.png 800w, images/community-9.png 1080w, images/community-9.png 1524w" alt="Mockup" class="uui-layout80_image"></div>
+                  <div class="uui-layout80_image-wrapper"><img src="/images/community-9.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, (max-width: 1279px) 25vw, 317.3374938964844px" srcset="/images/community-9.png 500w, images/community-9.png 800w, images/community-9.png 1080w, images/community-9.png 1524w" alt="Mockup" class="uui-layout80_image"></div>
                   <h3 class="uui-heading-xxsmall">Engage with the community</h3>
                   <div class="uui-space-xxsmall-2"></div>
                   <div class="uui-text-size-medium-2">Keep track of your progress, compare achievements and get in touch with other birders</div>
                 </div>
                 <div class="layout80_item">
-                  <div class="uui-layout80_image-wrapper"><img src="/images/lounge-11.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, (max-width: 1279px) 25vw, 317.3374938964844px" srcset="images/lounge-11.png 500w, images/lounge-11.png 800w, images/lounge-11.png 1080w, images/lounge-11.png 1524w" alt="Mockup" class="uui-layout80_image"></div>
+                  <div class="uui-layout80_image-wrapper"><img src="/images/lounge-11.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 88vw, (max-width: 1279px) 25vw, 317.3374938964844px" srcset="/images/lounge-11.png 500w, images/lounge-11.png 800w, images/lounge-11.png 1080w, images/lounge-11.png 1524w" alt="Mockup" class="uui-layout80_image"></div>
                   <h3 class="uui-heading-xxsmall">Ecotourism </h3>
                   <div class="uui-space-xxsmall-2"></div>
                   <div class="uui-text-size-medium-2">Contribute to the protection of natural and cultural heritage, supporting local economies.</div>
@@ -228,7 +228,7 @@ a {
                       </div>
                       <p data-w-id="191b8052-6286-aced-ff65-0edf1b20eefd" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="standard-paragraph"><span>Every bird counts! Through Plume&#x27;s features, your birdwatching activity will contribute to ongoing research, environmental awareness and sustainability practices.</span></p>
                     </div>
-                    <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef03-6e2eee46" data-w-id="191b8052-6286-aced-ff65-0edf1b20ef03" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="home-benefits_product-images"><img src="/images/Mockups-site-Plume-5.png" loading="lazy" sizes="(max-width: 479px) 100vw, 440px" srcset="images/Mockups-site-Plume-5-p-500.png 500w, images/Mockups-site-Plume-5-p-800.png 800w, images/Mockups-site-Plume-5-p-1080.png 1080w, images/Mockups-site-Plume-5.png 1524w" alt="" class="decoration-benefits_trust">
+                    <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef03-6e2eee46" data-w-id="191b8052-6286-aced-ff65-0edf1b20ef03" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="home-benefits_product-images"><img src="/images/Mockups-site-Plume-5.png" loading="lazy" sizes="(max-width: 479px) 100vw, 440px" srcset="/images/Mockups-site-Plume-5-p-500.png 500w, images/Mockups-site-Plume-5-p-800.png 800w, images/Mockups-site-Plume-5-p-1080.png 1080w, images/Mockups-site-Plume-5.png 1524w" alt="" class="decoration-benefits_trust">
                       <div class="svg-arrow top-left w-embed"><svg width="500" height="auto" viewbox="0 0 274 246" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g clip-path="url(#clip0_3_252)">
                             <path d="M247.029 126.774C239.87 122.246 234.026 118.963 228.47 115.304C225.269 113.092 221.692 110.591 225.349 104.578C237.422 110.486 249.602 115.166 260.426 122.858C265.039 126.033 265.292 129.442 262.591 134.52C261.626 136.402 260.284 137.995 259.133 139.495C252.518 147.651 245.904 155.807 239.006 163.866C236.801 166.584 234.122 169.297 230.452 166.607C227.158 164.204 227.477 160.518 229.212 157.321C231.236 153.748 233.729 150.654 236.128 147.37C237.855 145.119 239.772 142.776 240.56 139.568C239.418 140.123 238.276 140.677 237.133 141.232C224.378 147.426 218.321 146.6 207.608 137.206C199.151 129.541 192.506 120.761 188.438 110.024C187.42 107.458 186.401 104.892 185.476 102.516C180.93 92.2461 175.258 90.7624 166.85 98.1411C162.551 101.877 159 106.662 155.171 110.875C143.867 123.898 133.906 125.204 119.597 115.201C108.865 107.7 100.046 98.3274 93.5205 86.8997C91.5637 83.3769 89.5139 79.6637 87.079 76.6084C82.9572 71.5471 79.3578 71.4115 75.5191 76.5715C71.2997 81.9164 68.1163 87.9354 64.6495 93.8565C62.1479 97.8963 60.306 102.322 57.5211 106.264C51.7609 114.241 43.8535 118.787 33.7326 116.874C26.1663 115.369 18.5115 113.2 11.1444 110.657C6.3275 108.993 2.47584 105.449 2.44949 98.1634C4.90665 98.8537 6.89008 99.5385 9.06389 100.131C16.8117 102.49 24.5595 104.849 32.5021 106.642C40.1614 108.337 45.6913 104.71 49.3529 98.2239C52.4389 92.4877 54.9582 86.5558 58.1372 81.0098C61.1214 76.0294 64.0126 70.8586 67.9353 66.8349C76.2635 57.8469 87.5355 58.2589 95.3096 67.9031C98.8691 72.2958 101.853 77.4388 104.554 82.4839C110.145 92.4817 118.03 100.424 127.256 106.774C134.977 111.97 138.679 111.35 144.806 104.608C149.88 99.0835 154.485 93.0806 160.214 88.4152C163.845 85.2397 168.98 83.2167 173.917 82.2321C182.462 80.4371 189.249 84.2041 193.251 91.9132C195.296 96.0994 197.244 100.568 198.528 105.124C201.746 115.568 208.684 123.5 216.387 130.589C220.146 133.943 224.113 135.313 229.253 132.817C234.393 130.32 239.901 129.059 247.029 126.774Z" fill="currentColor"></path>
@@ -237,7 +237,7 @@ a {
                     </div>
                   </div>
                   <div class="home-benefits-wrapper margin-top">
-                    <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef0a-6e2eee46" data-w-id="191b8052-6286-aced-ff65-0edf1b20ef0a" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="home-benefits_product-images"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588e1131125b9c_three-lines.svg" loading="lazy" width="48" alt="" class="decoration-benefits_lines-on-right"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588ec753125b8d_decorative-spring.svg" loading="lazy" width="37.5" alt="" class="decoration-benefits_squiggle"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588ede81125b89_dashboard-shadow.svg" loading="lazy" alt="" class="decoration-benefits_shadow"><img src="/images/destinos-de-ecoturismo-em-portugal-slide2.jpg" loading="lazy" width="210" sizes="(max-width: 479px) 70vw, 210px" alt="" srcset="images/destinos-de-ecoturismo-em-portugal-slide2-p-500.jpg 500w, images/destinos-de-ecoturismo-em-portugal-slide2-p-800.jpg 800w, images/destinos-de-ecoturismo-em-portugal-slide2-p-1080.jpg 1080w, images/destinos-de-ecoturismo-em-portugal-slide2.jpg 1920w" class="decoration-benefits_churn"><img src="/images/cocoon-eco-design-lodges.jpg" loading="lazy" srcset="images/cocoon-eco-design-lodges-p-500.jpg 500w, images/cocoon-eco-design-lodges-p-800.jpg 800w, images/cocoon-eco-design-lodges-p-1080.jpg 1080w, images/cocoon-eco-design-lodges.jpg 1400w" sizes="(max-width: 479px) 100vw, 300px" alt="" class="decoration-benefits-blue-box"><img src="/images/Praia-fluvial-de-Monsaraz-Portugal.webp" loading="lazy" width="240" sizes="(max-width: 479px) 70vw, 240px" alt="" srcset="images/Praia-fluvial-de-Monsaraz-Portugal-p-500.webp 500w, images/Praia-fluvial-de-Monsaraz-Portugal-p-800.webp 800w, images/Praia-fluvial-de-Monsaraz-Portugal-p-1080.webp 1080w, images/Praia-fluvial-de-Monsaraz-Portugal.webp 1180w" class="decoration-benefits_sales"></div>
+                    <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef0a-6e2eee46" data-w-id="191b8052-6286-aced-ff65-0edf1b20ef0a" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="home-benefits_product-images"><img src="/images/three_lines.svg" loading="lazy" width="48" alt="" class="decoration-benefits_lines-on-right"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588ec753125b8d_decorative-spring.svg" loading="lazy" width="37.5" alt="" class="decoration-benefits_squiggle"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588ede81125b89_dashboard-shadow.svg" loading="lazy" alt="" class="decoration-benefits_shadow"><img src="/images/destinos-de-ecoturismo-em-portugal-slide2.jpg" loading="lazy" width="210" sizes="(max-width: 479px) 70vw, 210px" alt="" srcset="/images/destinos-de-ecoturismo-em-portugal-slide2-p-500.jpg 500w, images/destinos-de-ecoturismo-em-portugal-slide2-p-800.jpg 800w, images/destinos-de-ecoturismo-em-portugal-slide2-p-1080.jpg 1080w, images/destinos-de-ecoturismo-em-portugal-slide2.jpg 1920w" class="decoration-benefits_churn"><img src="/images/cocoon-eco-design-lodges.jpg" loading="lazy" srcset="/images/cocoon-eco-design-lodges-p-500.jpg 500w, images/cocoon-eco-design-lodges-p-800.jpg 800w, images/cocoon-eco-design-lodges-p-1080.jpg 1080w, images/cocoon-eco-design-lodges.jpg 1400w" sizes="(max-width: 479px) 100vw, 300px" alt="" class="decoration-benefits-blue-box"><img src="/images/Praia-fluvial-de-Monsaraz-Portugal.webp" loading="lazy" width="240" sizes="(max-width: 479px) 70vw, 240px" alt="" srcset="/images/Praia-fluvial-de-Monsaraz-Portugal-p-500.webp 500w, images/Praia-fluvial-de-Monsaraz-Portugal-p-800.webp 800w, images/Praia-fluvial-de-Monsaraz-Portugal-p-1080.webp 1080w, images/Praia-fluvial-de-Monsaraz-Portugal.webp 1180w" class="decoration-benefits_sales"></div>
                     <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20ef13-6e2eee46" class="home-benefits-content">
                       <div data-w-id="191b8052-6286-aced-ff65-0edf1b20ef14" style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="margin-bottom margin-small">
                         <h2 class="h2">Unlock nature, unlock discounts</h2>
@@ -288,7 +288,7 @@ a {
                     <div class="slider-mask w-slider-mask">
                       <div class="slider-slide w-slide">
                         <div class="testimonial-card">
-                          <div class="testimonial-image-wrap"><img src="https://assets-global.website-files.com/612eb5edd38dcc60eef8c11a/612eb5edd38dccc6fcf8c13e_angle.svg" alt="" class="horizontal-angle"><img src="/images/stringio.png" alt="Testimonial Image" sizes="(max-width: 767px) 90vw, (max-width: 1279px) 37vw, 416px" srcset="images/stringio.png 500w, images/stringio.png 750w" class="testimonial-image"></div>
+                          <div class="testimonial-image-wrap"><img src="https://assets-global.website-files.com/612eb5edd38dcc60eef8c11a/612eb5edd38dccc6fcf8c13e_angle.svg" alt="" class="horizontal-angle"><img src="/images/stringio.png" alt="Testimonial Image" sizes="(max-width: 767px) 90vw, (max-width: 1279px) 37vw, 416px" srcset="/images/stringio.png 500w, images/stringio.png 750w" class="testimonial-image"></div>
                           <div class="testimonial-content">
                             <div class="height-100px">
                               <h4 class="quote-content">&quot;Partnering with Plume has enriched our extensive collection. Their user-contributed photos and observations give us real-time data that&#x27;s invaluable to our research. Together, we&#x27;re pioneering the next level of birdwatching.&quot;</h4>
@@ -303,7 +303,7 @@ a {
                       </div>
                       <div class="slider-slide w-slide">
                         <div class="testimonial-card">
-                          <div class="testimonial-image-wrap"><img src="https://assets-global.website-files.com/612eb5edd38dcc60eef8c11a/612eb5edd38dccc6fcf8c13e_angle.svg" alt="" class="horizontal-angle"><img src="/images/302361366.jpg" alt="Testimonial Image" sizes="(max-width: 767px) 90vw, (max-width: 1279px) 37vw, 416px" srcset="images/302361366.jpg 500w, images/302361366.jpg 800w, images/302361366.jpg 1024w" class="testimonial-image">
+                          <div class="testimonial-image-wrap"><img src="https://assets-global.website-files.com/612eb5edd38dcc60eef8c11a/612eb5edd38dccc6fcf8c13e_angle.svg" alt="" class="horizontal-angle"><img src="/images/302361366.jpg" alt="Testimonial Image" sizes="(max-width: 767px) 90vw, (max-width: 1279px) 37vw, 416px" srcset="/images/302361366.jpg 500w, images/302361366.jpg 800w, images/302361366.jpg 1024w" class="testimonial-image">
                             <a href="#" class="play-button w-inline-block w-lightbox">
                               <script type="application/json" class="w-json">{
   "items": [
@@ -313,7 +313,7 @@ a {
       "width": 940,
       "height": 529,
       "thumbnailUrl": "https://i.vimeocdn.com/video/522826368_1280.jpg",
-      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F130820761%3Fapp_id%3D122963&dntp=1&url=https%3A%2F%2Fvimeo.com%2F130820761&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F522826368_1280.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=vimeo\" width=\"940\" height=\"529\" scrolling=\"no\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
+      "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F130820761%3Fapp_id%3D122963&dntp=1&url=https%3A%2F%2Fvimeo.com%2F130820761&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F522826368_1280.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=vimeo\" width=\"940\" height=\"529\" scrolling=\"no\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
       "type": "video"
     }
   ],
@@ -358,7 +358,7 @@ a {
                     <div class="business-logos"><img src="https://assets-global.website-files.com/62263b9f06588ee85f125b71/62263b9f06588e6886125b9e_Webflow%20Logo.svg" loading="lazy" alt=""></div>
                     <div class="business-logos"><img src="/images/1_4.png" loading="lazy" alt=""></div>
                     <div class="business-logos"><img src="/images/reserva-1_5.png" loading="lazy" alt=""></div>
-                    <div class="business-logos"><img src="/images/National-Geographic-Logo.png" loading="lazy" sizes="(max-width: 767px) 20vw, (max-width: 991px) 19vw, (max-width: 1279px) 12vw, 135.1999969482422px" srcset="images/National-Geographic-Logo.png 500w, images/National-Geographic-Logo.png 800w, images/National-Geographic-Logo.png 1080w, images/National-Geographic-Logo.png 1600w, images/National-Geographic-Logo.png 2000w, images/National-Geographic-Logo.png 3840w" alt=""></div>
+                    <div class="business-logos"><img src="/images/National-Geographic-Logo.png" loading="lazy" sizes="(max-width: 767px) 20vw, (max-width: 991px) 19vw, (max-width: 1279px) 12vw, 135.1999969482422px" srcset="/images/National-Geographic-Logo.png 500w, images/National-Geographic-Logo.png 800w, images/National-Geographic-Logo.png 1080w, images/National-Geographic-Logo.png 1600w, images/National-Geographic-Logo.png 2000w, images/National-Geographic-Logo.png 3840w" alt=""></div>
                     <div id="w-node-_191b8052-6286-aced-ff65-0edf1b20eef0-6e2eee46" class="business-logos"><img src="/images/upskill_1_6.png" loading="lazy" alt=""></div>
                   </div>
                 </div>
@@ -370,7 +370,7 @@ a {
     </div>
   </div>
   <div class="header-image---home black-gradient">
-    <div class="div-block-2" style="background-image: url('images/Fotos-12.png')">
+    <div class="div-block-2" style="background-image: url('/images/Fotos-12.png')">
       <div class="container w-container">
         <div class="text-box _550px center-align" style="margin-bottom: 35px">
           <h2 class="heading h2">Don&#x27;t miss our latest news</h2>
@@ -403,16 +403,16 @@ a {
         <div class="footer-links-container">
           <h5 class="footer-header">Website</h5>
           <a href="index.jsp" aria-current="page" class="footer-link w--current">Home</a>
-          <a href="contact.html" class="footer-link">Contact</a>
-          <a href="terms-conditions.html" class="footer-link">Terms &amp; Conditions</a>
-          <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="contact" class="footer-link">Contact</a>
+          <a href="terms-conditions" class="footer-link">Terms &amp; Conditions</a>
+          <a href="privacy-policy" class="footer-link">Privacy Policy</a>
         </div>
         <div class="footer-links-container">
           <h5 class="footer-header">Membership</h5>
           <a href="log-in.jsp" class="footer-link">Sign In</a>
           <a href="sign-up.jsp" class="footer-link">Sign Up</a>
-          <a href="user-account.html" class="footer-link">User Account</a>
-          <a href="reset-password.html" class="footer-link">Reset Password </a>
+          <a href="user-account" class="footer-link">User Account</a>
+          <a href="reset-password" class="footer-link">Reset Password </a>
         </div>
       </div>
     </div>

@@ -9,16 +9,16 @@
   <meta content="challenges" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
-  <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="../../css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="../../css/styles.css" rel="stylesheet" type="text/css">
+  <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="/css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic","Oswald:200,300,400,500,600,700","Inter:regular,500,600,700","Libre Baskerville:regular,italic,700","Volkhov:regular,italic,700,700italic","Noto Serif:regular,italic,700,700italic"]  }});</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="../../images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
-  <link href="../../images/webclip.svg" rel="apple-touch-icon">
+  <link href="/images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
+  <link href="/images/webclip.svg" rel="apple-touch-icon">
 </head>
 <body>
   <div class="page-wrapper-7">
@@ -191,7 +191,7 @@ margin: 0rem !important;
     <main class="main-wrapper-2">
       <div data-collapse="medium" data-animation="default" data-duration="400" fs-scrolldisable-element="smart-nav" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
         <div class="navbar-container">
-          <a href="#" class="navbar2_logo-link w-nav-brand"><img src="../../images/Untitled-design-26.png" loading="lazy" alt="" class="navbar2_logo desktop"><img src="../../images/1_5.png" loading="lazy" width="150" height="Auto" alt="" class="navbar2_logo show-mobile-only"></a>
+          <a href="#" class="navbar2_logo-link w-nav-brand"><img src="/images/Untitled-design-26.png" loading="lazy" alt="" class="navbar2_logo desktop"><img src="/images/1_5.png" loading="lazy" width="150" height="Auto" alt="" class="navbar2_logo show-mobile-only"></a>
           <nav role="navigation" id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a3c-f8957a37" class="navbar2_menu is-page-height-tablet w-nav-menu">
             <a href="profile-dashboard.jsp" class="navbar2_link w-nav-link">Dashboard</a>
             <a href="plume-wiki.jsp" class="navbar2_link w-nav-link">Plume Wiki</a>
@@ -243,7 +243,7 @@ margin: 0rem !important;
             </div>
           </nav>
           <div id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a5e-f8957a37" class="navbar2_button-wrapper">
-            <a href="#" class="profile-link w-inline-block"><img src="../../images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image"></a><button class="user-log-in-log-out-2" data-wf-user-logout="Log Out" data-wf-user-login="Log in" type="button">Log Out</button>
+            <a href="#" class="profile-link w-inline-block"><img src="/images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image"></a><button class="user-log-in-log-out-2" data-wf-user-logout="Log Out" data-wf-user-login="Log in" type="button">Log Out</button>
             <div class="navbar2_menu-button w-nav-button">
               <div class="menu-icon2">
                 <div class="menu-icon2_line-top"></div>
@@ -335,7 +335,7 @@ margin: 0rem !important;
                           </div>
                           <a href="#" class="button-3 is-small w-button">10 FEATHERS 🪶</a>
                         </div>
-                        <div id="w-node-d70831f5-0deb-c0c8-6d3d-7e89f771d474-6e2eee89" class="art-card"><img src="../../images/Rectangle-11-1_1.png" loading="lazy" alt="" class="art-image">
+                        <div id="w-node-d70831f5-0deb-c0c8-6d3d-7e89f771d474-6e2eee89" class="art-card"><img src="/images/Rectangle-11-1_1.png" loading="lazy" alt="" class="art-image">
                           <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <rect width="32" height="32" rx="8" fill="white"></rect>
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9951 10.478C14.4352 9.11477 12.1282 8.8358 10.3366 10.3665C8.39879 12.0223 8.11723 14.8108 9.64965 16.7827C10.2313 17.5312 11.3667 18.6557 12.4577 19.6856C13.5616 20.7275 14.6629 21.712 15.206 22.193C15.2094 22.196 15.2129 22.1991 15.2164 22.2022C15.2674 22.2475 15.331 22.3038 15.3919 22.3497C15.4649 22.4046 15.5696 22.4728 15.7095 22.5145C15.8954 22.57 16.0953 22.57 16.2813 22.5145C16.4211 22.4728 16.5259 22.4046 16.5988 22.3497C16.6597 22.3038 16.7233 22.2475 16.7743 22.2022C16.7779 22.1991 16.7813 22.196 16.7847 22.193C17.3278 21.712 18.4291 20.7275 19.533 19.6856C20.6241 18.6557 21.7594 17.5312 22.3411 16.7827C23.8676 14.8184 23.6295 12.0083 21.6471 10.3607C19.8357 8.85506 17.5533 9.11425 15.9951 10.478Z" fill="#EB5757"></path>
@@ -352,7 +352,7 @@ margin: 0rem !important;
                           </div>
                           <a href="#" class="button-3 is-small w-button">25 FEATHERS 🪶</a>
                         </div>
-                        <div id="w-node-fe609cca-d830-785f-5805-6e10c1237086-6e2eee89" class="art-card"><img src="../../images/Rectangle-12-1.png" loading="lazy" alt="" class="art-image">
+                        <div id="w-node-fe609cca-d830-785f-5805-6e10c1237086-6e2eee89" class="art-card"><img src="/images/Rectangle-12-1.png" loading="lazy" alt="" class="art-image">
                           <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <rect width="32" height="32" rx="8" fill="white"></rect>
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9951 10.478C14.4352 9.11477 12.1282 8.8358 10.3366 10.3665C8.39879 12.0223 8.11723 14.8108 9.64965 16.7827C10.2313 17.5312 11.3667 18.6557 12.4577 19.6856C13.5616 20.7275 14.6629 21.712 15.206 22.193C15.2094 22.196 15.2129 22.1991 15.2164 22.2022C15.2674 22.2475 15.331 22.3038 15.3919 22.3497C15.4649 22.4046 15.5696 22.4728 15.7095 22.5145C15.8954 22.57 16.0953 22.57 16.2813 22.5145C16.4211 22.4728 16.5259 22.4046 16.5988 22.3497C16.6597 22.3038 16.7233 22.2475 16.7743 22.2022C16.7779 22.1991 16.7813 22.196 16.7847 22.193C17.3278 21.712 18.4291 20.7275 19.533 19.6856C20.6241 18.6557 21.7594 17.5312 22.3411 16.7827C23.8676 14.8184 23.6295 12.0083 21.6471 10.3607C19.8357 8.85506 17.5533 9.11425 15.9951 10.478Z" fill="#EB5757"></path>

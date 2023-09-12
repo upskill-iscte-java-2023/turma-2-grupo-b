@@ -46,7 +46,7 @@ function initMap() {
                 // Create a button for panning to the user's location
                 var locationButton = document.createElement("button");
                 locationButton.classList.add("custom-map-button");
-                locationButton.innerHTML = '<img src="../../images/Map_Location_Icon.png" alt="Center on Location">';
+                locationButton.innerHTML = '<img src="/images/Map_Location_Icon.png" alt="Center on Location">';
                 locationButton.style.backgroundSize = 'cover';
                 locationButton.style.backgroundRepeat = 'no-repeat';
                 locationButton.style.backgroundPosition = 'center';

@@ -101,8 +101,8 @@
               </div>
             </nav>
           </div>
-          <a href="subscription.html" aria-current="page" class="uui-navbar07_link-2 w-nav-link w--current">Subscription Plans</a>
-          <a href="our-team.jsp" class="uui-navbar07_link-2 w-nav-link">Our Team</a>
+          <a href="subscription" aria-current="page" class="uui-navbar07_link-2 w-nav-link w--current">Subscription Plans</a>
+          <a href="our-team" class="uui-navbar07_link-2 w-nav-link">Our Team</a>
         </div>
         <div class="uui-navbar07_menu-right-2">
           <div class="uui-navbar07_button-wrapper-2">
@@ -525,24 +525,24 @@
     <div class="footer-container w-container">
       <div class="w-layout-grid footer-grid">
         <div id="w-node-b8d7be4a-ce45-83ab-5947-02d204c8bff0-cf3fcb86" class="footer-logo-block">
-          <a data-ix="logo" href="index.html" class="footer-logo w-nav-brand"><img src="/images/Untitled-design-26_1.png" width="204" alt="" class="image-3"></a>
+          <a data-ix="logo" href="index" class="footer-logo w-nav-brand"><img src="/images/Untitled-design-26_1.png" width="204" alt="" class="image-3"></a>
           <p class="paragraph small">Built by Potato Labs Inc.<br>for Plumers with lots of Plumage<br></p>
           <div class="spacer _16"></div>
           <div class="paragraph small">© 2023 Potato Labs Inc. All Potatoes Reserved.</div>
         </div>
         <div class="footer-links-container">
           <h5 class="footer-header">Website</h5>
-          <a href="index.html" class="footer-link">Home</a>
-          <a href="contact.html" class="footer-link">Contact</a>
-          <a href="terms-conditions.html" class="footer-link">Terms &amp; Conditions</a>
-          <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="index" class="footer-link">Home</a>
+          <a href="contact" class="footer-link">Contact</a>
+          <a href="terms-conditions" class="footer-link">Terms &amp; Conditions</a>
+          <a href="privacy-policy" class="footer-link">Privacy Policy</a>
         </div>
         <div class="footer-links-container">
           <h5 class="footer-header">Membership</h5>
-          <a href="log-in.jsp" class="footer-link">Sign In</a>
-          <a href="sign-up.jsp" class="footer-link">Sign Up</a>
-          <a href="user-account.html" class="footer-link">User Account</a>
-          <a href="reset-password.html" class="footer-link">Reset Password </a>
+          <a href="log-in" class="footer-link">Sign In</a>
+          <a href="sign-up" class="footer-link">Sign Up</a>
+          <a href="user-account" class="footer-link">User Account</a>
+          <a href="reset-password" class="footer-link">Reset Password </a>
         </div>
       </div>
     </div>

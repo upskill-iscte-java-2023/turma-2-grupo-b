@@ -57,21 +57,19 @@ public class SecurityConfiguration {
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests()
                 .requestMatchers("/**").permitAll()
-                .requestMatchers("/css/**",  "/js/**", "/img/**", "/favicon.ico").permitAll();
-                    //auth.requestMatchers("/index/**").permitAll();
-                    //auth.requestMatchers("/auth/**").permitAll();
-                    //auth.requestMatchers("/admin/**").hasRole("ADMIN");
-                    //auth.requestMatchers("/user/**").hasAnyRole("ADMIN", "USER");
-                    //auth.anyRequest().permitAll();}
+                .requestMatchers("/css/**",  "/js/**", "/img/**", "/favicon.ico").permitAll()
+                .requestMatchers("/index/**").permitAll()
+                .requestMatchers("/auth/**").permitAll()
+                .requestMatchers("/admin/**").hasRole("ADMIN")
+                .requestMatchers("/user/**").hasAnyRole("ADMIN", "USER")
+                .anyRequest().permitAll();
 
-        /* http.oauth2ResourceServer()
+         http.oauth2ResourceServer()
                 .jwt()
                 .jwtAuthenticationConverter(jwtAuthenticationConverter());
         http.sessionManagement(
                 session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
         );
-
-         */
 
         return http.build();
     }

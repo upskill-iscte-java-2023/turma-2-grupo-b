@@ -20,21 +20,21 @@
 </head>
 <body>
   <div class="w-users-userformpagewrap full-page-wrapper">
-    <a href="index.html" class="form-page-logo-link w-inline-block"><img src="/images/Untitled-design-26_1.png" loading="lazy" alt="" class="form-page-logo"></a>
+    <a href="index" class="form-page-logo-link w-inline-block"><img src="/images/Untitled-design-26_1.png" loading="lazy" alt="" class="form-page-logo"></a>
     <div class="w-users-usersignupformwrapper admin-form-card">
       <div tabindex="-1" class="w-users-userformsuccessstate verification-box w-form-success">
         <div class="w-users-userformheader"><img src="/images/Tick-Circle-Icon.svg" alt="" class="icon">
           <h2>Account activated</h2>
         </div>
         <p>Your account was created successfully. You can now log in by navigating to the link below.</p>
-        <a href="log-in.jsp" class="button w-button">Go to login</a>
+        <a href="log-in" class="button w-button">Go to login</a>
       </div>
       <form method="post" data-wf-user-form-type="signup">
         <div class="w-users-userformheader form-card-header">
           <h2 class="heading h3">Sign up</h2>
-        </div><input type="email" id="wf-sign-up-email" placeholder="Your email" maxlength="256" name="Email" class="text-field w-input" autocomplete="username" required="" data-wf-user-form-input-type="email"><input type="text" class="text-field w-input" maxlength="256" name="" data-name="field" data-wf-user-field="wf-user-field-name" placeholder="Your Name" fieldtype="" id="wf-sign-up-name" required=""><input type="password" id="wf-sign-up-password" placeholder="Your password" maxlength="256" name="Password" class="text-field w-input" required="" data-wf-user-form-input-type="password"><label class="w-checkbox checkbox-field"><input type="checkbox" class="w-checkbox-input check-box" name="Checkbox" data-name="Checkbox" data-wf-user-field="wf-user-field-accept-privacy" placeholder="" id="wf-sign-up-accept-privacy" required=""><span class="checkbox-label w-form-label" for="Checkbox">I agree to this website&#x27;s <a href="privacy-policy.html" target="_blank">privacy policy</a> and <a href="terms-conditions.html" target="_blank">terms of service</a></span></label><input type="submit" value="Sign Up" data-wait="Please wait..." class="w-users-userformbutton button w-button">
+        </div><input type="email" id="wf-sign-up-email" placeholder="Your email" maxlength="256" name="Email" class="text-field w-input" autocomplete="username" required="" data-wf-user-form-input-type="email"><input type="text" class="text-field w-input" maxlength="256" name="" data-name="field" data-wf-user-field="wf-user-field-name" placeholder="Your Name" fieldtype="" id="wf-sign-up-name" required=""><input type="password" id="wf-sign-up-password" placeholder="Your password" maxlength="256" name="Password" class="text-field w-input" required="" data-wf-user-form-input-type="password"><label class="w-checkbox checkbox-field"><input type="checkbox" class="w-checkbox-input check-box" name="Checkbox" data-name="Checkbox" data-wf-user-field="wf-user-field-accept-privacy" placeholder="" id="wf-sign-up-accept-privacy" required=""><span class="checkbox-label w-form-label" for="Checkbox">I agree to this website&#x27;s <a href="privacy-policy" target="_blank">privacy policy</a> and <a href="terms-conditions" target="_blank">terms of service</a></span></label><input type="submit" value="Sign Up" data-wait="Please wait..." class="w-users-userformbutton button w-button">
         <div class="w-users-userformfooter form-card-footer"><span>Already have an account?</span>
-          <a href="log-in.jsp">Log In</a>
+          <a href="log-in">Log In</a>
         </div>
       </form>
       <div style="display:none" data-wf-user-form-error="true" class="w-users-userformerrorstate w-form-fail">
