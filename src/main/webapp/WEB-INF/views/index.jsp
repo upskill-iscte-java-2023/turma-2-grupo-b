@@ -24,7 +24,7 @@
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-out-quint" data-easing2="ease" data-no-scroll="1" role="banner" class="nav-bar w-nav">
     <div class="uui-navbar07_container-2">
       <a href="#" class="uui-navbar07_logo-link-2 w-nav-brand">
-        <div class="uui-logo_component-2"><img src="/images/Untitled-design-26_1.png" loading="lazy" width="Auto" id="plume-home" alt="" class="uui-logo_logotype-2"></div>
+        <div href="/index" class="uui-logo_component-2"><img src="/images/Untitled-design-26_1.png" loading="lazy" width="Auto" id="plume-home" alt="" class="uui-logo_logotype-2"></div>
       </a>
       <div role="navigation" class="uui-navbar07_menu-2 w-nav-menu">
         <div class="uui-navbar07_menu-left-2">
@@ -44,7 +44,7 @@
                       </svg></div>
                   </div>
                   <div class="uui-navbar07_item-right-2">
-                    <div class="uui-navbar07_item-heading-2">Birds Around Me</div>
+                    <div class="uui-navbar07_item-heading-2">Birds Around Me</div> <!-- change to href -->
                     <div class="uui-text-size-small-2">Search for other user&#x27;s observations and hotspots around you</div>
                   </div>
                 </a>
@@ -55,7 +55,7 @@
                       </svg></div>
                   </div>
                   <div class="uui-navbar07_item-right-2">
-                    <div class="uui-navbar07_item-heading-2">My Profile</div>
+                    <div class="uui-navbar07_item-heading-2">My Profile</div> <!-- change to href -->
                     <div class="uui-text-size-small-2">Check your status, plume level and observations</div>
                   </div>
                 </a>
@@ -67,7 +67,7 @@
                       </svg></div>
                   </div>
                   <div class="uui-navbar07_item-right-2">
-                    <div class="uui-navbar07_item-heading-2">Challenges</div>
+                    <div class="uui-navbar07_item-heading-2">Challenges</div> <!-- change to href-->
                     <div class="uui-text-size-small-2">See how many feather&#x27;s you&#x27;ve gathered</div>
                   </div>
                 </a>
@@ -78,7 +78,7 @@
                       </svg></div>
                   </div>
                   <div class="uui-navbar07_item-right-2">
-                    <div class="uui-navbar07_item-heading-2">Plume Wiki</div>
+                    <div class="uui-navbar07_item-heading-2">Plume Wiki</div> <!-- change to href-->
                     <div class="uui-text-size-small-2">Get to know your favourite species in detail</div>
                   </div>
                 </a>
@@ -89,15 +89,15 @@
                       </svg></div>
                   </div>
                   <div class="uui-navbar07_item-right-2">
-                    <div class="uui-navbar07_item-heading-2">Find a Nest</div>
+                    <div class="uui-navbar07_item-heading-2">Find a Nest</div> <!-- change to href -->
                     <div class="uui-text-size-small-2">Our ecotourism focus, partners and nesting opportunities</div>
                   </div>
                 </a>
               </div>
             </nav>
           </div>
-          <a href="subscription" class="uui-navbar07_link-2 w-nav-link">Subscription Plans</a>
-          <a href="our-team" class="uui-navbar07_link-2 w-nav-link">Our Team</a>
+          <a href="/subscription" class="uui-navbar07_link-2 w-nav-link">Subscription Plans</a>
+          <a href="/our-team" class="uui-navbar07_link-2 w-nav-link">Our Team</a>
         </div>
         <div class="uui-navbar07_menu-right-2">
           <div class="uui-navbar07_button-wrapper-2">
@@ -370,7 +370,7 @@ a {
     </div>
   </div>
   <div class="header-image---home black-gradient">
-    <div class="div-block-2" style="background-image: url('/images/Fotos-12.png')">
+    <div class="div-block-2">
       <div class="container w-container">
         <div class="text-box _550px center-align" style="margin-bottom: 35px">
           <h2 class="heading h2">Don&#x27;t miss our latest news</h2>
@@ -402,17 +402,17 @@ a {
         </div>
         <div class="footer-links-container">
           <h5 class="footer-header">Website</h5>
-          <a href="index.jsp" aria-current="page" class="footer-link w--current">Home</a>
-          <a href="contact" class="footer-link">Contact</a>
-          <a href="terms-conditions" class="footer-link">Terms &amp; Conditions</a>
-          <a href="privacy-policy" class="footer-link">Privacy Policy</a>
+          <a href="/index/login" aria-current="page" class="footer-link w--current">Home</a>
+          <a href="/index/contact" class="footer-link">Contact</a>
+          <a href="/index/terms-conditions" class="footer-link">Terms &amp; Conditions</a>
+          <a href="/index/privacy-policy" class="footer-link">Privacy Policy</a>
         </div>
         <div class="footer-links-container">
           <h5 class="footer-header">Membership</h5>
-          <a href="log-in.jsp" class="footer-link">Sign In</a>
-          <a href="sign-up.jsp" class="footer-link">Sign Up</a>
-          <a href="user-account" class="footer-link">User Account</a>
-          <a href="reset-password" class="footer-link">Reset Password </a>
+          <a href="/index/login" class="footer-link">Sign In</a>
+          <a href="/index/sign-up" class="footer-link">Sign Up</a>
+          <a href="/index/dashboard" class="footer-link">User Account</a>
+          <a href="/index/reset-password" class="footer-link">Reset Password </a>
         </div>
       </div>
     </div>

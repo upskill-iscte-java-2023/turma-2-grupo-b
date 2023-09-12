@@ -2,25 +2,25 @@ package plume.models;
 
 // DTO - Data Transfer Object
 public class RegistrationDTO {
-    private String username;
+    private String email;
     private String password;
 
     public RegistrationDTO(){
         super();
     }
 
-    public RegistrationDTO(String username, String password){
+    public RegistrationDTO(String email, String password){
         super();
-        this.username = username;
+        this.email = email;
         this.password = password;
     }
 
-    public String getUsername(){
-        return this.username;
+    public String getEmail(){
+        return this.email;
     }
 
-    public void setUsername(String username){
-        this.username = username;
+    public void setEmail(String email){
+        this.email = email;
     }
 
     public String getPassword(){
@@ -32,6 +32,6 @@ public class RegistrationDTO {
     }
 
     public String toString(){
-        return "Registration info: username: " + this.username + " password: " + this.password;
+        return "Registration info: username: " + this.email + " password: " + this.password;
     }
 }

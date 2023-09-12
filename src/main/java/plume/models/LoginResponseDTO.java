@@ -25,7 +25,7 @@ public class LoginResponseDTO {
         return this.jwt;
     }
 
-    public void setJwt(String jwt){
+    private void setJwt(String jwt){
         this.jwt = jwt;
     }
 

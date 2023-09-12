@@ -53,18 +53,25 @@ public class SecurityConfiguration {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
-        http
-                .csrf(csrf -> csrf.disable())
-                .authorizeHttpRequests()
-                .requestMatchers("/**").permitAll()
-                .requestMatchers("/css/**",  "/js/**", "/img/**", "/favicon.ico").permitAll()
-                .requestMatchers("/index/**").permitAll()
-                .requestMatchers("/auth/**").permitAll()
-                .requestMatchers("/admin/**").hasRole("ADMIN")
-                .requestMatchers("/user/**").hasAnyRole("ADMIN", "USER")
-                .anyRequest().permitAll();
+        http.formLogin()
+                .loginPage("/index/")
+                .loginProcessingUrl("/auth/login-attempt")
+                .successForwardUrl("/index/")
+                .defaultSuccessUrl("/index/")
 
-         http.oauth2ResourceServer()
+                .and()
+
+                .csrf(csrf -> csrf.disable())
+                .authorizeHttpRequests(auth ->{
+                auth.requestMatchers("/**").permitAll();
+                auth.requestMatchers("/css/**",  "/js/**", "/img/**", "/favicon.ico").permitAll();
+                auth.requestMatchers("/index/**").permitAll();
+                auth.requestMatchers("/auth/**").permitAll();
+                auth.requestMatchers("/admin/**").hasRole("ADMIN");
+                auth.requestMatchers("/user/**").hasAnyRole("ADMIN", "USER");
+                auth.anyRequest().permitAll();
+                });
+        http.oauth2ResourceServer()
                 .jwt()
                 .jwtAuthenticationConverter(jwtAuthenticationConverter());
         http.sessionManagement(

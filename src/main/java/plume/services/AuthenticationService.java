@@ -50,16 +50,16 @@ public class AuthenticationService {
         return userRepository.save(new ApplicationUser(0, username, encodedPassword, authorities));
     }
 
-    public LoginResponseDTO loginUser(String username, String password){
+    public LoginResponseDTO loginUser(String email, String password){
 
         try{
             Authentication auth = authenticationManager.authenticate(
-                    new UsernamePasswordAuthenticationToken(username, password)
+                    new UsernamePasswordAuthenticationToken(email, password)
             );
 
             String token = tokenService.generateJwt(auth);
 
-            return new LoginResponseDTO(userRepository.findByUsername(username).get(), token);
+            return new LoginResponseDTO(userRepository.findByUsername(email).get(), token);
 
         } catch(AuthenticationException e){
             return new LoginResponseDTO(null, "");

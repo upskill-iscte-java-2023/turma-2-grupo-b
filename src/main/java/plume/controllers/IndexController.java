@@ -1,17 +1,10 @@
 package plume.controllers;
 
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.boot.Banner;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.View;
-
-import java.util.Map;
 
 @RestController
 @RequestMapping("/index")
@@ -39,7 +32,7 @@ public class IndexController {
     }
     @GetMapping("/login")
     public ModelAndView loginController() {
-        return new ModelAndView("log-in");
+        return new ModelAndView("login");
     }
     @GetMapping("/signup")
     public ModelAndView signupController() {
@@ -53,4 +46,6 @@ public class IndexController {
     public ModelAndView termsConditionsController() {
         return new ModelAndView("terms-conditions");
     }
+    @GetMapping("/reset-password")
+    public ModelAndView resetPassword() {return new ModelAndView("reset-password");}
 }
