@@ -47,32 +47,36 @@ public class SecurityConfiguration {
     }
 
     @Bean
+    public JwtDecoder jwtDecoder(){
+        return NimbusJwtDecoder.withPublicKey(keys.getPublicKey()).build();
+    }
+
+    @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
         http
                 .csrf(csrf -> csrf.disable())
-                .authorizeHttpRequests(auth -> {
-                    auth.requestMatchers("/css/**",  "/js/**", "/img/**", "/favicon.ico").permitAll();
-                    auth.requestMatchers("/index/**").permitAll();
-                    auth.requestMatchers("/auth/**").permitAll();
-                    auth.requestMatchers("/admin/**").hasRole("ADMIN");
-                    auth.requestMatchers("/user/**").hasAnyRole("ADMIN", "USER");
-                    auth.anyRequest().authenticated();
-                });
+                .authorizeHttpRequests()
+                .requestMatchers("/**").permitAll()
+                .requestMatchers("/css/**",  "/js/**", "/img/**", "/favicon.ico").permitAll();
+                    //auth.requestMatchers("/index/**").permitAll();
+                    //auth.requestMatchers("/auth/**").permitAll();
+                    //auth.requestMatchers("/admin/**").hasRole("ADMIN");
+                    //auth.requestMatchers("/user/**").hasAnyRole("ADMIN", "USER");
+                    //auth.anyRequest().permitAll();}
 
-        http.oauth2ResourceServer()
+        /* http.oauth2ResourceServer()
                 .jwt()
                 .jwtAuthenticationConverter(jwtAuthenticationConverter());
         http.sessionManagement(
                 session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
         );
 
+         */
+
         return http.build();
     }
 
-    @Bean
-    public JwtDecoder jwtDecoder(){
-        return NimbusJwtDecoder.withPublicKey(keys.getPublicKey()).build();
-    }
+
 
     @Bean
     public JwtEncoder jwtEncoder(){
