@@ -25,10 +25,12 @@ public class UserController {
     public ModelAndView myObservationsController(){
         return new ModelAndView("my-observations");
     }
+
     @GetMapping("/my-subscriptions")
     public ModelAndView mysubscriptionsController(){
         return new ModelAndView("my-subscriptions");
     }
+
     @GetMapping("/payments")
     public ModelAndView paymentsController(){
         return new ModelAndView("payments");
@@ -38,6 +40,7 @@ public class UserController {
     public ModelAndView plumeWikiController(){
         return new ModelAndView("plume-wiki");
     }
+
     @GetMapping("/settings")
     public ModelAndView settingsController(){
         return new ModelAndView("account-settings");

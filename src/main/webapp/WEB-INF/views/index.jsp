@@ -123,7 +123,7 @@
       <div class="container">
         <div class="div-block-4">
           <p class="paragraph large"><em class="italic-text-2">Nature&#x27;s Elegance Captured</em></p>
-          <a href="sign-up.jsp" class="button w-button">Start Birding</a>
+          <a href="/index/signup" class="button w-button">Start Birding</a>
         </div>
       </div>
     </header>
