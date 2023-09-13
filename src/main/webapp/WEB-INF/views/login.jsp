@@ -20,7 +20,7 @@
 </head>
 <body>
   <div class="w-users-userformpagewrap full-page-wrapper">
-    <a href="/" class="form-page-logo-link w-inline-block"><img src="/images/Untitled-design-26_1.png" loading="lazy" alt="" class="form-page-logo"></a>
+    <a href="/index/" class="form-page-logo-link w-inline-block"><img src="/images/Untitled-design-26_1.png" loading="lazy" alt="" class="form-page-logo"></a>
     <div class="w-users-userloginformwrapper admin-form-card">
       <form data-wf-user-form-type="login" data-wf-user-form-redirect="/" method="post" action="/auth/login-attempt">
         <div class="w-users-userformheader form-card-header">
@@ -28,7 +28,7 @@
           <p class="paragraph small">Fill in your log in details below.</p>
         </div><input type="email" maxlength="256" placeholder="Your email" name="Email" id="wf-log-in-email" class="text-field w-input" autocomplete="username" required="" data-wf-user-form-input-type="email"><input type="password" maxlength="256" placeholder="Your password" name="Password" id="wf-log-in-password" class="text-field w-input" required="" data-wf-user-form-input-type="password"><input type="submit" value="Log In" data-wait="Please wait..." class="w-users-userformbutton button w-button">
         <div class="w-users-userformfooter form-card-footer"><span>Don&#x27;t have an account?</span>
-          <a href="sign-up">Sign Up</a>
+          <a href="/index/signup">Sign Up</a>
         </div>
       </form>
       <div style="display:none" data-wf-user-form-error="true" class="w-users-userformerrorstate form-error w-form-fail">

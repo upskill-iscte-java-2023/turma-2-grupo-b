@@ -24,7 +24,7 @@
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-out-quint" data-easing2="ease" data-no-scroll="1" role="banner" class="nav-bar w-nav">
     <div class="uui-navbar07_container-2">
       <a href="#" class="uui-navbar07_logo-link-2 w-nav-brand">
-        <div href="/index" class="uui-logo_component-2"><img src="/images/Untitled-design-26_1.png" loading="lazy" width="Auto" id="plume-home" alt="" class="uui-logo_logotype-2"></div>
+        <div href="/index/" class="uui-logo_component-2"><img src="/images/Untitled-design-26_1.png" loading="lazy" width="Auto" id="plume-home" alt="" class="uui-logo_logotype-2"></div>
       </a>
       <div role="navigation" class="uui-navbar07_menu-2 w-nav-menu">
         <div class="uui-navbar07_menu-left-2">
@@ -96,12 +96,12 @@
               </div>
             </nav>
           </div>
-          <a href="/subscription" class="uui-navbar07_link-2 w-nav-link">Subscription Plans</a>
-          <a href="/our-team" class="uui-navbar07_link-2 w-nav-link">Our Team</a>
+          <a href="/index/subscription" class="uui-navbar07_link-2 w-nav-link">Subscription Plans</a>
+          <a href="/index/our-team" class="uui-navbar07_link-2 w-nav-link">Our Team</a>
         </div>
         <div class="uui-navbar07_menu-right-2">
           <div class="uui-navbar07_button-wrapper-2">
-            <a href="#" class="uui-button-secondary-gray-2 show-tablet w-inline-block">
+            <a href="/index/login" class="uui-button-secondary-gray-2 show-tablet w-inline-block">
               <div>Log in</div>
             </a><button class="user-log-in-log-out" data-wf-user-logout="Log Out" data-wf-user-login="Log In" type="button">Log Out</button>
           </div>
@@ -395,23 +395,23 @@ a {
     <div class="footer-container w-container">
       <div class="w-layout-grid footer-grid">
         <div id="w-node-b8d7be4a-ce45-83ab-5947-02d204c8bff0-cf3fcb86" class="footer-logo-block">
-          <a data-ix="logo" href="index.jsp" aria-current="page" class="footer-logo w-nav-brand w--current"><img src="/images/Untitled-design-26_1.png" width="204" alt="" class="image-3"></a>
+          <a data-ix="logo" href="/index/" aria-current="page" class="footer-logo w-nav-brand w--current"><img src="/images/Untitled-design-26_1.png" width="204" alt="" class="image-3"></a>
           <p class="paragraph small">Built by Potato Labs Inc.<br>for Plumers with lots of Plumage<br></p>
           <div class="spacer _16"></div>
           <div class="paragraph small">© 2023 Potato Labs Inc. All Potatoes Reserved.</div>
         </div>
         <div class="footer-links-container">
           <h5 class="footer-header">Website</h5>
-          <a href="/index/login" aria-current="page" class="footer-link w--current">Home</a>
+          <a href="/index/" aria-current="page" class="footer-link w--current">Home</a>
           <a href="/index/contact" class="footer-link">Contact</a>
-          <a href="/index/terms-conditions" class="footer-link">Terms &amp; Conditions</a>
+          <a href="/index/terms" class="footer-link">Terms &amp; Conditions</a>
           <a href="/index/privacy-policy" class="footer-link">Privacy Policy</a>
         </div>
         <div class="footer-links-container">
           <h5 class="footer-header">Membership</h5>
           <a href="/index/login" class="footer-link">Sign In</a>
-          <a href="/index/sign-up" class="footer-link">Sign Up</a>
-          <a href="/index/dashboard" class="footer-link">User Account</a>
+          <a href="/index/signup" class="footer-link">Sign Up</a>
+          <a href="/user/dashboard" class="footer-link">User Account</a>
           <a href="/index/reset-password" class="footer-link">Reset Password </a>
         </div>
       </div>
