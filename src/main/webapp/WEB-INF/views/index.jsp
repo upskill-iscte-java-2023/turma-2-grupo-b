@@ -23,7 +23,7 @@
 <body class="body">
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-out-quint" data-easing2="ease" data-no-scroll="1" role="banner" class="nav-bar w-nav">
     <div class="uui-navbar07_container-2">
-      <a href="#" class="uui-navbar07_logo-link-2 w-nav-brand">
+      <a href="/index/" class="uui-navbar07_logo-link-2 w-nav-brand">
         <div href="/index/" class="uui-logo_component-2"><img src="/images/Untitled-design-26_1.png" loading="lazy" width="Auto" id="plume-home" alt="" class="uui-logo_logotype-2"></div>
       </a>
       <div role="navigation" class="uui-navbar07_menu-2 w-nav-menu">
@@ -44,7 +44,7 @@
                       </svg></div>
                   </div>
                   <div class="uui-navbar07_item-right-2">
-                    <div class="uui-navbar07_item-heading-2">Birds Around Me</div> <!-- change to href -->
+                    <div href="/user/map" class="uui-navbar07_item-heading-2">Birds Around Me</div> <!-- change to href -->
                     <div class="uui-text-size-small-2">Search for other user&#x27;s observations and hotspots around you</div>
                   </div>
                 </a>
