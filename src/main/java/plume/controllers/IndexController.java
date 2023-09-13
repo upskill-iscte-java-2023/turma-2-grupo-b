@@ -30,14 +30,7 @@ public class IndexController {
     public ModelAndView contactController() {
         return new ModelAndView("contact");
     }
-    @GetMapping("/login")
-    public ModelAndView loginController() {
-        return new ModelAndView("login");
-    }
-    @GetMapping("/signup")
-    public ModelAndView signupController() {
-        return new ModelAndView("sign-up");
-    }
+
     @GetMapping("/privacy-policy")
     public ModelAndView ppController() {
         return new ModelAndView("privacy-policy");

@@ -165,8 +165,8 @@
         </div>
         <div class="footer-links-container">
           <h5 class="footer-header">Membership</h5>
-          <a href="/index/login" class="footer-link">Sign In</a>
-          <a href="/index/signup" class="footer-link">Sign Up</a>
+          <a href="/auth/login" class="footer-link">Sign In</a>
+          <a href="/auth/signup" class="footer-link">Sign Up</a>
           <a href="/user/dashboard" class="footer-link">User Account</a>
           <a href="/index/reset-password" class="footer-link">Reset Password </a>
         </div>

@@ -28759,11 +28759,11 @@
       var ERROR_MSG_CLASS = "user-form-error-msg";
       exports.ERROR_MSG_CLASS = ERROR_MSG_CLASS;
       var ERROR_STATE = {
-        /*SIGNUP: "signup-error-state",
+        SIGNUP: "signup-error-state",
         LOGIN: "login-error-state",
         UPDATE_PASSWORD: "update-password-error-state",
         RESET_PASSWORD: "reset-password-error-state",
-        ACCOUNT_UPDATE: "account-update-error-state"*/
+        ACCOUNT_UPDATE: "account-update-error-state"
       };
       exports.ERROR_STATE = ERROR_STATE;
       var ErrorStateToCopy = (errorStateType, id) => {
@@ -28818,11 +28818,11 @@
       };
       exports.SIGNUP_UI_ERROR_CODES = SIGNUP_UI_ERROR_CODES;
       var ERROR_ATTRIBUTE_PREFIX = {
-      /*  SIGNUP: "wf-signup-form",
+       SIGNUP: "wf-signup-form",
         LOGIN: "wf-login-form",
         RESET_PASSWORD: "wf-reset-pw-form",
         UPDATE_PASSWORD: "wf-update-pw-form",
-        ACCOUNT_UPDATE: "wf-account-update-form"*/
+        ACCOUNT_UPDATE: "wf-account-update-form"
       };
       exports.ERROR_ATTRIBUTE_PREFIX = ERROR_ATTRIBUTE_PREFIX;
       var UPDATE_PASSWORD_UI_ERROR_CODES = {
@@ -29208,7 +29208,7 @@
       };
       exports.USYS_UTILITY_KEYS = USYS_UTILITY_KEYS;
       var USYS_DATA_ATTRS = {
-        /*formType: "data-wf-user-form-type",
+        formType: "data-wf-user-form-type",
         inputType: "data-wf-user-form-input-type",
         logout: "data-wf-user-logout",
         login: "data-wf-user-login",
@@ -29223,7 +29223,7 @@
         field: "data-wf-user-field",
         fieldType: "data-wf-user-field-type",
         fileUploadKey: "data-wf-user-file-upload-key",
-        unsavedFileUploadKey: "data-wf-unsaved-user-file-upload-key"*/
+        unsavedFileUploadKey: "data-wf-unsaved-user-file-upload-key"
       };
       exports.USYS_DATA_ATTRS = USYS_DATA_ATTRS;
       var USYS_DOM_CLASS_NAMES = {
@@ -29233,11 +29233,11 @@
       };
       exports.USYS_DOM_CLASS_NAMES = USYS_DOM_CLASS_NAMES;
       var USYS_FORM_TYPES = {
-        /*login: "login",
+        login: "login",
         signup: "signup",
         updatePassword: "updatePassword",
         resetPassword: "resetPassword",
-        account: "userAccount"*/
+        account: "userAccount"
       };
       exports.USYS_FORM_TYPES = USYS_FORM_TYPES;
       var USYS_INPUT_TYPES = {
@@ -29261,7 +29261,7 @@
       };
       exports.USYS_USER_STATES = USYS_USER_STATES;
       var USYS_PAGE_SETTINGS = {
-        /*login: {
+        login: {
           parent: null,
           sortPos: 0,
           utilKey: "usys-log-in",
@@ -29302,7 +29302,7 @@
           utilKey: "usys-user-account",
           slug: "user-account",
           title: "User Account"
-        }*/
+        }
       };
       exports.USYS_PAGE_SETTINGS = USYS_PAGE_SETTINGS;
       var USYS_RESERVED_SLUGS = (0, _utils.values)(USYS_PAGE_SETTINGS).map((pageSettings) => pageSettings.slug);
@@ -29532,11 +29532,11 @@
       }];
       exports.DEFAULT_USER_FIELDS = DEFAULT_USER_FIELDS;
       var SETUP_GUIDE_KEYS = {
-        /*hasVisitedAccessDeniedPage: "hasVisitedAccessDeniedPage",
+        hasVisitedAccessDeniedPage: "hasVisitedAccessDeniedPage",
         hasVisitedLoginPage: "hasVisitedLoginPage",
         hasVisitedSignUpPage: "hasVisitedSignUpPage",
         hasVisitedUserAccountSettings: "hasVisitedUserAccountSettings",
-        hasVisitedUserAccountPage: "hasVisitedUserAccountPage"*/
+        hasVisitedUserAccountPage: "hasVisitedUserAccountPage"
       };
       exports.SETUP_GUIDE_KEYS = SETUP_GUIDE_KEYS;
       var SETUP_GUIDE_ALL_KEYS = (0, _extends2.default)({}, SETUP_GUIDE_KEYS, {
@@ -31765,7 +31765,7 @@
       exports.buildUpdateUsysUserDataMutation = buildUpdateUsysUserDataMutation;
       exports.verifyEmailMutation = exports.updatePasswordMutation = exports.signupMutation = exports.resetPasswordMutation = exports.logoutMutation = exports.loginMutation = exports.getUploadURLMutation = exports.cancelSubscriptionMutation = void 0;
       var _graphqlTag = _interopRequireDefault(require_graphql_tag_umd());
-  /*    var loginMutation = (0, _graphqlTag.default)`
+     var loginMutation = (0, _graphqlTag.default)`
   mutation UserLoginRequest($email: String!, $authPassword: String!) {
     usysCreateSession(email: $email, authPassword: $authPassword) {
       user {
@@ -31776,7 +31776,7 @@
       }
     }
   }
-`*/;
+`;
       exports.loginMutation = loginMutation;
       function buildUpdateUsysUserDataMutation(dataFields) {
         return (0, _graphqlTag.default)`

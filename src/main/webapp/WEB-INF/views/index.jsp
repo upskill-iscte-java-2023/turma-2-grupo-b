@@ -101,9 +101,9 @@
         </div>
         <div class="uui-navbar07_menu-right-2">
           <div class="uui-navbar07_button-wrapper-2">
-            <a href="/index/login" class="uui-button-secondary-gray-2 show-tablet w-inline-block">
+            <a href="/auth/login" class="uui-button-secondary-gray-2 show-tablet w-inline-block">
               <div>Log in</div>
-            </a><button class="user-log-in-log-out" type="button">Log Out</button>
+            </a><button class="user-log-in-log-out" type="button">BANANAS</button>
           </div>
         </div>
       </div>
@@ -123,7 +123,7 @@
       <div class="container">
         <div class="div-block-4">
           <p class="paragraph large"><em class="italic-text-2">Nature&#x27;s Elegance Captured</em></p>
-          <a href="/index/signup" class="button w-button">Start Birding</a>
+          <a href="/auth/signup" class="button w-button">Start Birding</a>
         </div>
       </div>
     </header>
@@ -409,8 +409,8 @@ a {
         </div>
         <div class="footer-links-container">
           <h5 class="footer-header">Membership</h5>
-          <a href="/index/login" class="footer-link">Sign In</a>
-          <a href="/index/signup" class="footer-link">Sign Up</a>
+          <a href="/auth/login" class="footer-link">Sign In</a>
+          <a href="/auth/signup" class="footer-link">Sign Up</a>
           <a href="/user/dashboard" class="footer-link">User Account</a>
           <a href="/index/reset-password" class="footer-link">Reset Password </a>
         </div>

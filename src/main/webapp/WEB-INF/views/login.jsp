@@ -27,8 +27,8 @@
           <h2 class="heading h3">Log in</h2>
           <p class="paragraph small">Fill in your log in details below.</p>
         </div>
-        <input type="email" maxlength="256" placeholder="Your email" name="Email" id="wf-log-in-email" class="text-field w-input" autocomplete="username" required="">
-        <input type="password" maxlength="256" placeholder="Your password" name="Password" id="wf-log-in-password" class="text-field w-input" required="" >
+        <input type="email" maxlength="256" placeholder="Your email" name="username" id="wf-log-in-email" class="text-field w-input" autocomplete="username" required="">
+        <input type="password" maxlength="256" placeholder="Your password" name="password" id="wf-log-in-password" class="text-field w-input" required="" >
         <input type="submit" value="Log In" data-wait="Please wait..." class="w-users-userformbutton button w-button">
         <div class="w-users-userformfooter form-card-footer"><span>Don&#x27;t have an account?</span>
           <a href="/auth/signup">Sign Up</a>

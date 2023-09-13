@@ -3,6 +3,7 @@ package plume.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.view.RedirectView;
 import plume.models.ApplicationUser;
 import plume.models.LoginResponseDTO;
 import plume.models.RegistrationDTO;
@@ -21,20 +22,17 @@ public class AuthenticationController {
         return new ModelAndView("login");
     }
 
-    @PostMapping("/register")
-    public ApplicationUser registerUser(@RequestParam("Email") String email,
-                                        @RequestParam("Name") String name,
-                                        @RequestParam("Password") String password){
-        return authenticationService.registerUser(email,name,password);
-        // add name  and email ??
+    @GetMapping("/signup")
+    public ModelAndView signupPage(){
+        return new ModelAndView("sign-up");
     }
 
-
-    @PostMapping("/login-attempt")
-    public LoginResponseDTO loginUser(@RequestParam("Email") String email,
-                                      @RequestParam("Password") String password){
-        return  authenticationService.loginUser(email,password);
-
-        //TODO logic if successfull.
+    @PostMapping("/register")
+    public RedirectView registerUser(@RequestParam("Email") String email,
+                                        @RequestParam("Name") String name,
+                                        @RequestParam("Password") String password){
+        authenticationService.registerUser(email,name,password);
+        return new RedirectView("/index/subscription");
+        // add name  and email ??
     }
 }
