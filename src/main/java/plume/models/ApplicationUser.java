@@ -17,6 +17,8 @@ public class ApplicationUser implements UserDetails{
     private Integer userId;
     @Column(unique=true)
     private String username;
+
+    private String name;
     private String password;
 
     @ManyToMany(fetch=FetchType.EAGER)
@@ -33,10 +35,11 @@ public class ApplicationUser implements UserDetails{
     }
 
 
-    public ApplicationUser(Integer userId, String username, String password, Set<Role> authorities) {
+    public ApplicationUser(Integer userId, String username, String name, String password, Set<Role> authorities) {
         super();
         this.userId = userId;
         this.username = username;
+        this.name = name;
         this.password = password;
         this.authorities = authorities;
     }
@@ -72,6 +75,10 @@ public class ApplicationUser implements UserDetails{
     @Override
     public String getUsername() {
         return this.username;
+    }
+
+    public String getName(){
+        return this.name;
     }
 
     public void setUsername(String username) {

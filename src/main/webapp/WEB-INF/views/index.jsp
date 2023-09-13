@@ -103,7 +103,7 @@
           <div class="uui-navbar07_button-wrapper-2">
             <a href="/index/login" class="uui-button-secondary-gray-2 show-tablet w-inline-block">
               <div>Log in</div>
-            </a><button class="user-log-in-log-out" data-wf-user-logout="Log Out" data-wf-user-login="Log In" type="button">Log Out</button>
+            </a><button class="user-log-in-log-out" type="button">Log Out</button>
           </div>
         </div>
       </div>
