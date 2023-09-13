@@ -17,13 +17,4 @@ public class MvcConfig {
         resolver.setSuffix(".jsp"); // Assuming you are using JSP templates
         return resolver;
     }
-
-    /*@Bean
-    public SpringTemplateEngine thymeleafTemplateEngine() {
-        SpringTemplateEngine templateEngine = new SpringTemplateEngine();
-        // Configure the template engine as needed
-        return templateEngine;
-    }
-
-     */
 }

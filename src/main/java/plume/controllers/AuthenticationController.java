@@ -33,6 +33,6 @@ public class AuthenticationController {
                                         @RequestParam("Password") String password){
         authenticationService.registerUser(email,name,password);
         return new RedirectView("/index/subscription");
-        // add name  and email ??
+
     }
 }
