@@ -157,8 +157,8 @@
                             <div class="pricing-price">Free</div>
                             <div class="pricing-text-size-medium">Free of charge.</div>
                             <div class="pricing-space-medium"></div>
-                            <a href="#" class="pricing-button-4 w-inline-block">
-                              <div>Choose this plan</div>
+                            <a href="/index/login" class="pricing-button-4 w-inline-block">
+                              <div>Get started</div>
                             </a>
                             <div class="pricing-divider"></div>
                             <div class="pricing-feature-list">
@@ -224,7 +224,7 @@
                             <div class="pricing-price">6.99€<span class="uui-pricing10_price-text">/mth</span></div>
                             <div class="pricing-text-size-medium">Billed monthly.</div>
                             <div class="pricing-space-medium"></div>
-                            <a href="#" class="pricing-button-4 w-inline-block">
+                            <a href="/index/login" class="pricing-button-4 w-inline-block">
                               <div>Get started</div>
                             </a>
                             <div class="pricing-divider"></div>
@@ -286,7 +286,7 @@
                             <div class="pricing-price">12.99€<span class="uui-pricing10_price-text">/mth</span></div>
                             <div class="pricing-text-size-medium">Billed monthly.</div>
                             <div class="pricing-space-medium"></div>
-                            <a href="#" class="pricing-button-4 w-inline-block">
+                            <a href="/index/login" class="pricing-button-4 w-inline-block">
                               <div>Get started</div>
                             </a>
                             <div class="pricing-divider"></div>
@@ -352,7 +352,7 @@
                             <div class="pricing-price">Free<span class="uui-pricing10_price-text"></span></div>
                             <div class="pricing-text-size-medium">Free of charge.</div>
                             <div class="pricing-space-medium"></div>
-                            <a href="#" class="pricing-button-4 w-inline-block">
+                            <a href="/index/login" class="pricing-button-4 w-inline-block">
                               <div>Get started</div>
                             </a>
                             <div class="pricing-divider"></div>
@@ -419,7 +419,7 @@
                             <div class="pricing-price">69.99€<span class="uui-pricing10_price-text">/yr</span></div>
                             <div class="pricing-text-size-medium">Billed once.</div>
                             <div class="pricing-space-medium"></div>
-                            <a href="#" class="pricing-button-4 w-inline-block">
+                            <a href="/index/login" class="pricing-button-4 w-inline-block">
                               <div>Get started</div>
                             </a>
                             <div class="pricing-divider"></div>
@@ -481,7 +481,7 @@
                             <div class="pricing-price">129.99€<span class="uui-pricing10_price-text">/yr</span></div>
                             <div class="pricing-text-size-medium">Billed once.</div>
                             <div class="pricing-space-medium"></div>
-                            <a href="#" class="pricing-button-4 w-inline-block">
+                            <a href="/index/login" class="pricing-button-4 w-inline-block">
                               <div>Get started</div>
                             </a>
                             <div class="pricing-divider"></div>

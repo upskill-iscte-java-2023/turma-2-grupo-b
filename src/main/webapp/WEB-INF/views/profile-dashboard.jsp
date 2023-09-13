@@ -315,7 +315,7 @@ margin: 0rem !important;
                       </div>
                       <div class="w-layout-grid _3-col-grid">
                         <div id="w-node-bfb37d01-f414-f080-2ffe-a5ca8ae291eb-6e2eeeb5" class="div-block-5 w-clearfix">
-                          <a href="#" class="button-4 w-button">Start Birding</a>
+                          <a href="/user/map" class="button-4 w-button">Start Birding</a>
                         </div>
                         <a href="/user/challenges" id="w-node-_0e82330e-8d82-60cb-f282-3dd96d6531e0-6e2eeeb5" class="content-action-card distribute w-inline-block">
                           <div class="action-icon inner">

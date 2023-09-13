@@ -27,11 +27,11 @@
 <!-- Navbar Section -->
   <div data-collapse="medium" data-animation="default" data-duration="400" fs-scrolldisable-element="smart-nav" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
     <div class="navbar-container">
-      <a href="#" class="navbar2_logo-link w-nav-brand"><img src="/images/Untitled-design-26.png" loading="lazy" alt="" class="navbar2_logo desktop"><img src="/images/1_5.png" loading="lazy" width="150" height="Auto" alt="" class="navbar2_logo show-mobile-only"></a>
+      <a href="/index/" class="navbar2_logo-link w-nav-brand"><img src="/images/Untitled-design-26.png" loading="lazy" alt="" class="navbar2_logo desktop"><img src="/images/1_5.png" loading="lazy" width="150" height="Auto" alt="" class="navbar2_logo show-mobile-only"></a>
       <nav role="navigation" id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a3c-f8957a37" class="navbar2_menu is-page-height-tablet w-nav-menu">
-        <a href="profile-2/profile-dashboard" class="navbar2_link w-nav-link">Dashboard</a>
-        <a href="profile-2/plume-wiki" class="navbar2_link w-nav-link">Plume Wiki</a>
-        <a href="profile-2/payments" class="navbar2_link w-nav-link">Rewards placeholder 🪶</a>
+        <a href="/user/dashboard" class="navbar2_link w-nav-link">Dashboard</a>
+        <a href="/user/plume-wiki" class="navbar2_link w-nav-link">Plume Wiki</a>
+        <a href="/user/payments" class="navbar2_link w-nav-link">Rewards placeholder 🪶</a>
         <div class="mobile-menu-wrap-side">
           <div class="side-bar">
             <div class="w-layout-grid sidebar-menu-grid">
@@ -79,7 +79,7 @@
         </div>
       </nav>
       <div id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a5e-f8957a37" class="navbar2_button-wrapper">
-        <a href="#" class="profile-link w-inline-block"><img src="/images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image"></a><button class="user-log-in-log-out-2" data-wf-user-logout="Log Out" data-wf-user-login="Log in" type="button">Log Out</button>
+        <a href="/user/dashboard" class="profile-link w-inline-block"><img src="/images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image"></a><button class="user-log-in-log-out-2" data-wf-user-logout="Log Out" data-wf-user-login="Log in" type="button">Log Out</button>
         <div class="navbar2_menu-button w-nav-button">
           <div class="menu-icon2">
             <div class="menu-icon2_line-top"></div>
@@ -159,24 +159,24 @@
       <div class="footer-container w-container">
         <div class="w-layout-grid footer-grid">
           <div id="w-node-b8d7be4a-ce45-83ab-5947-02d204c8bff0-cf3fcb86" class="footer-logo-block">
-            <a data-ix="logo" href="index" class="footer-logo w-nav-brand"><img src="/images/Untitled-design-26_1.png" width="204" alt="" class="image-3"></a>
+            <a data-ix="logo" href="/index/" class="footer-logo w-nav-brand"><img src="/images/Untitled-design-26_1.png" width="204" alt="" class="image-3"></a>
             <p class="paragraph small">Built by Potato Labs Inc.<br>for Plumers with lots of Plumage<br></p>
             <div class="spacer _16"></div>
             <div class="paragraph small">© 2023 Potato Labs Inc. All Potatoes Reserved.</div>
           </div>
           <div class="footer-links-container">
             <h5 class="footer-header">Website</h5>
-            <a href="index" class="footer-link">Home</a>
-            <a href="contact" class="footer-link">Contact</a>
-            <a href="terms-conditions" class="footer-link">Terms &amp; Conditions</a>
-            <a href="privacy-policy" class="footer-link">Privacy Policy</a>
+            <a href="/index/" class="footer-link">Home</a>
+            <a href="/index/contact" class="footer-link">Contact</a>
+            <a href="/index/terms" class="footer-link">Terms &amp; Conditions</a>
+            <a href="/index/privacy-policy" class="footer-link">Privacy Policy</a>
           </div>
           <div class="footer-links-container">
             <h5 class="footer-header">Membership</h5>
-            <a href="log-in" class="footer-link">Sign In</a>
-            <a href="sign-up" class="footer-link">Sign Up</a>
-            <a href="user-account" class="footer-link">User Account</a>
-            <a href="reset-password" class="footer-link">Reset Password </a>
+            <a href="/index/login" class="footer-link">Sign In</a>
+            <a href="/index/signup" class="footer-link">Sign Up</a>
+            <a href="/user/dashboard" class="footer-link">User Account</a>
+            <a href="/index/reset-password" class="footer-link">Reset Password </a>
           </div>
         </div>
       </div>
