@@ -1,5 +1,8 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html><!--  This site was totally hand made -->
 <!--  Last Published: Tue Sep 05 2023 16:28:50 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="64f615e4cfda04626e2eee46" data-wf-site="64f615e4cfda04626e2eee44">
@@ -101,9 +104,46 @@
         </div>
         <div class="uui-navbar07_menu-right-2">
           <div class="uui-navbar07_button-wrapper-2">
-            <a href="/auth/login" class="uui-button-secondary-gray-2 show-tablet w-inline-block">
-              <div>Log in</div>
-            </a><button class="user-log-in-log-out" type="button">BANANAS</button>
+            <c:choose>
+              <c:when test="${empty requestScope['SPRING_SECURITY_CONTEXT'] or not requestScope['SPRING_SECURITY_CONTEXT'].authentication.authenticated}">
+                <a class="uui-button-secondary-gray-2 show-tablet w-inline-block">
+                  <form method="GET" action="/auth/login">
+                    <button type="submit" class="user-log-in-log-out">
+                      Login
+                    </button>
+                  </form>
+                  <form method="GET" action="/auth/signup">
+                    <button type="submit" class="user-log-in-log-out">
+                      Signup
+                    </button>
+                  </form>
+                </a>
+                <form method="GET" action="/auth/signup">
+                  <button type="submit" class="user-signup">
+                    Signup
+                  </button>
+                </form>
+                <form method="GET" action="/auth/login">
+                  <button type="submit" class="user-log-in-log-out">
+                    Login
+                  </button>
+                </form>
+              </c:when>
+              <c:otherwise>
+                <a class="uui-button-secondary-gray-2 show-tablet w-inline-block">
+                  <form method="GET" action="/auth/login">
+                    <button type="submit" class="user-log-in-log-out">
+                      Logout
+                    </button>
+                  </form>
+                </a>
+                <form method="GET" action="/auth/login">
+                  <button type="submit" class="user-log-in-log-out">
+                    Logout
+                  </button>
+                </form>
+              </c:otherwise>
+            </c:choose>
           </div>
         </div>
       </div>

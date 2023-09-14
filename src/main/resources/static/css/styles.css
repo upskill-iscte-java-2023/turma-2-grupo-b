@@ -3137,6 +3137,23 @@ figcaption {
   position: static;
 }
 
+.user-signup {
+  width: 90px;
+  height: 45px;
+  color: white;
+  object-fit: fill;
+  background-color: #b83c78;
+  border: 1px solid #b83c78;
+  border-radius: 10px;
+  flex: none;
+  align-self: center;
+  padding: .625rem 0;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  position: static;
+}
+
 .button-2 {
   width: 110px;
   height: 45px;
