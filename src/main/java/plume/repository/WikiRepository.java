@@ -14,4 +14,4 @@ public interface WikiRepository extends JpaRepository<PlumeWiki, Integer> {
     List<PlumeWiki> findAll();
 }
 
- */
+

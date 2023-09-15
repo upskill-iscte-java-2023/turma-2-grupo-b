@@ -25,13 +25,13 @@ public class DBController {
         return data;
     }
 
-/*
+
     @GetMapping("/wikidata")
     public List<PlumeWiki> getBirdData() {
         List<PlumeWiki> birdsData = dataService.getAllBirdData();
         return birdsData;
     }
 
- */
+
 
 }
