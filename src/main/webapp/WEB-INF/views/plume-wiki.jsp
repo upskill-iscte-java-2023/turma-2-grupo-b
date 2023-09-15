@@ -19,6 +19,8 @@
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="/images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
   <link href="/images/webclip.svg" rel="apple-touch-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="page-wrapper-5">
@@ -195,7 +197,7 @@ margin: 0rem !important;
           <nav role="navigation" id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a3c-f8957a37" class="navbar2_menu is-page-height-tablet w-nav-menu">
             <a href="/user/dashboard" class="navbar2_link w-nav-link">Dashboard</a>
             <a href="/user/plume-wiki" aria-current="page" class="navbar2_link w-nav-link w--current">Plume Wiki</a>
-            <a href="/user/payments" class="navbar2_link w-nav-link">Rewards placeholder 🪶</a>
+            <a href="/user/payments" class="navbar2_link w-nav-link">Rewards 🪶</a>
             <div class="mobile-menu-wrap-side">
               <div class="side-bar">
                 <div class="w-layout-grid sidebar-menu-grid">
@@ -261,9 +263,9 @@ margin: 0rem !important;
           <div class="container-medium">
             <div class="padding-section-small">
               <div class="text-align-center">
-                <h1 class="heading-style-h2">Discover Birds</h1>
+                <h1 class="heading-style-h2">Discover birds and all about them</h1>
                 <div class="margin-bottom-2 margin-medium">
-                  <p class="text-color-grey">Search 11.000 species of birds via Plume database</p>
+                  <p class="text-color-grey">Search over 400 species of birds via Plume database</p>
                 </div>
               </div>
               <form action="/search" class="search-form w-form"><input type="search" class="form_input-2 is-search-input w-input" autofocus="true" maxlength="256" name="query" placeholder="Type some keyword to find birds" id="search" required=""><input type="submit" value="Search" class="button-3 hide w-button">
@@ -280,15 +282,20 @@ margin: 0rem !important;
                       </svg></div>
                     <div class="art-card-context vertical">
                       <a href="#" class="flex-box w-inline-block">
-                        <div class="profile-link smaller"><img src="../images/Ellipse-2_1Ellipse-2.png" loading="lazy" alt="" class="profile-link-image"></div>
-                        <div class="text-size-small text-weight-semibold">Richard Norman</div>
+                        <%--<div class="profile-link smaller"><img src="../images/Ellipse-2_1Ellipse-2.png" loading="lazy" alt="" class="profile-link-image"></div>
+                        <div class="text-size-small text-weight-semibold">Richard Norman</div> --%>
                       </a>
                       <div class="content-wrap">
-                        <h2 class="heading-style-h5">Black man with long afro</h2>
-                        <p class="text-color-grey p-desc">A black model with long afro staring wild into my eyes</p>
+                        <h2 class="heading-style-h5">${plumeWiki.commonName}</h2>
+                        <h3 class="heading-style-h5">${plumeWiki.scientificName}</h3>
+                        <div>
+                          <img src="https://storage.cloud.google.com/plume-wiki/Certhia%20brachydactyla.jpg" class="rounded float-start" alt="...">
+                        </div>
+
+                        <p class="text-color-grey p-desc">${plumeWiki.description}</p>
                       </div>
                     </div>
-                    <a href="#" class="button-3 is-small w-button">Remix ✨</a>
+                    <a href="#" class="button-3 is-small w-button">More info ✨</a>
                   </div>
                   <div id="w-node-_17034b2c-512c-cefb-60a5-f04579aabe2f-6e2eeeaf" class="art-card with-animation"><img src="../images/Rectangle-11-2.png" loading="lazy" alt="" class="art-image">
                     <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
