@@ -1,4 +1,8 @@
+let openInfoWindow = null;
+
 function initMap() {
+
+
     var map;
     var defaultLocation = { lat: 38.7223, lng: -9.1393 }; // Default location (Lisbon)
     const mapMarkersData = '/api/data';
@@ -169,8 +173,8 @@ function initMap() {
         }
     });
 }*/
-
 function createMarkers(map, data) {
+
     data.forEach(item => {
         // Create content for the marker (including the info window)
         const description = item.description ? item.description : "No Description Available";
@@ -195,7 +199,6 @@ function createMarkers(map, data) {
             content: markerContent, // Custom property to store marker content
         });
 
-        let openInfoWindow = null;
 
 // Add a click event listener to the map to close open info windows
         map.addListener("click", function () {
