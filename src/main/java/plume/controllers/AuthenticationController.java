@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
-import plume.models.LoginResponseDTO;
-import plume.services.AuthenticationService;
+import plume.security.UserAuthenticationProvider;
+import plume.services.AuthService;
 
 @RestController
 @RequestMapping("/auth")
@@ -13,7 +13,7 @@ import plume.services.AuthenticationService;
 public class AuthenticationController {
 
     @Autowired
-    private AuthenticationService authenticationService;
+    private AuthService authenticationService;
 
     @GetMapping("/login")
     public ModelAndView loginPage(){
@@ -25,19 +25,13 @@ public class AuthenticationController {
         return new ModelAndView("sign-up");
     }
 
+
     @PostMapping("/register")
     public RedirectView registerUser(@RequestParam("Email") String email,
                                         @RequestParam("Name") String name,
                                         @RequestParam("Password") String password){
         authenticationService.registerUser(email,name,password);
         return new RedirectView("/index/subscription");
-    }
-
-
-    @PostMapping("/login-attempt")
-    public LoginResponseDTO loginUser(@RequestParam("username") String email,
-                                  @RequestParam("password") String password){
-        return authenticationService.loginUser(email,password);
     }
 
 }

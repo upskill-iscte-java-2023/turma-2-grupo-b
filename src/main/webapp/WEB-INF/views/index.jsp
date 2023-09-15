@@ -131,13 +131,13 @@
               </c:when>
               <c:otherwise>
                 <a class="uui-button-secondary-gray-2 show-tablet w-inline-block">
-                  <form method="GET" action="/auth/login">
+                  <form method="GET" action="/auth/logout">
                     <button type="submit" class="user-log-in-log-out">
                       Logout
                     </button>
                   </form>
                 </a>
-                <form method="GET" action="/auth/login">
+                <form method="GET" action="/auth/logout">
                   <button type="submit" class="user-log-in-log-out">
                     Logout
                   </button>
