@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
-import plume.security.UserAuthenticationProvider;
 import plume.services.AuthService;
 
 @RestController
@@ -24,7 +23,6 @@ public class AuthenticationController {
     public ModelAndView signupPage(){
         return new ModelAndView("sign-up");
     }
-
 
     @PostMapping("/register")
     public RedirectView registerUser(@RequestParam("Email") String email,

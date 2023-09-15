@@ -7,7 +7,7 @@ import plume.models.PlumeWiki;
 import javax.persistence.Entity;
 import java.util.List;
 
-/*
+@Repository
 public interface WikiRepository extends JpaRepository<PlumeWiki, Integer> {
 
     @Override

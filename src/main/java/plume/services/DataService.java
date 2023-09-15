@@ -18,7 +18,7 @@ public class DataService {
         return data;
     }
 
-    /*@Autowired
+    @Autowired
     WikiRepository wikiRepository;
 
     public List<PlumeWiki> getAllBirdData(){

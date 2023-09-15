@@ -1,9 +1,9 @@
 package plume.models;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
-@Table(name="plume_wiki_database")
+@Table(name="plume_wiki")
 public class PlumeWiki {
 
     @Id
@@ -14,15 +14,15 @@ public class PlumeWiki {
     private String commonName;
     private String scientificName;
     private String description;
-    private String taxonName;
+    private String taxonId;
 
-    public PlumeWiki(Integer id, String imageFile, String commonName, String scientificName, String description, String taxonName) {
+    public PlumeWiki(Integer id, String imageFile, String commonName, String scientificName, String description, String taxonId) {
         this.id = id;
         this.imageFile = imageFile;
         this.commonName = commonName;
         this.scientificName = scientificName;
         this.description = description;
-        this.taxonName = taxonName;
+        this.taxonId = taxonId;
     }
 
     public PlumeWiki() {
@@ -72,11 +72,11 @@ public class PlumeWiki {
         this.description = description;
     }
 
-    public String getTaxonName() {
-        return taxonName;
+    public String getTaxonId() {
+        return taxonId;
     }
 
-    public void setTaxonName(String taxonName) {
-        this.taxonName = taxonName;
+    public void setTaxonId(String taxonName) {
+        this.taxonId = taxonName;
     }
 }
