@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html><!--  This site was totally hand made -->
 <!--  Last Published: Thu Sep 07 2023 18:14:17 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="64f615e4cfda04626e2eeeaa" data-wf-site="64f615e4cfda04626e2eee44">
