@@ -1,8 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import="plume.utils.UserAuthenticatedContextVar" %>
-<c:set var="auth" value="<%= plume.utils.UserAuthenticatedContextVar.isAuthenticated() %>"/>
 
 <!DOCTYPE html><!-- This site was totally hand made -->
 <!-- Last Published: Tue Sep 05 2023 16:28:50 GMT+0000 (Coordinated Universal Time) -->

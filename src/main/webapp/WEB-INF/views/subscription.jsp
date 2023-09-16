@@ -1,4 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
 <!DOCTYPE html><!--  This site was totally hand made -->
 <!--  Last Published: Tue Sep 05 2023 16:28:50 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="64f615e4cfda04626e2eeee8" data-wf-site="64f615e4cfda04626e2eee44">
@@ -106,9 +110,28 @@
         </div>
         <div class="uui-navbar07_menu-right-2">
           <div class="uui-navbar07_button-wrapper-2">
-            <a href="#" class="uui-button-secondary-gray-2 show-tablet w-inline-block">
-              <div>Log in</div>
-            </a><button class="user-log-in-log-out" data-wf-user-logout="Log Out" data-wf-user-login="Log In" type="button">Log Out</button>
+            <sec:authorize access="isAuthenticated()">
+                        <a class="profile-img" href="/user/dashboard">
+                            <img src="/images/profile-image_1profile%20image.png" class="profile-img">
+                        </a>
+                        <form method="POST" action="/auth/logout">
+                            <button type="submit" class="user-log-in-log-out" style="background-color: rgba(255, 255, 255, 0.10)">
+                                Logout
+                            </button>
+                        </form>
+                    </sec:authorize>
+                    <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
+                        <form method="GET" action="/auth/login">
+                            <button type="submit" class="user-log-in-log-out">
+                                Login
+                            </button>
+                        </form>
+                        <form method="GET" action="/auth/signup">
+                            <button type="submit" class="user-signup">
+                                Signup
+                            </button>
+                        </form>
+                    </sec:authorize>
           </div>
         </div>
       </div>
