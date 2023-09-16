@@ -320,6 +320,13 @@ button,
   padding: 10px;
   background-color: #ffdede;
 }
+
+.w-form-fail-login {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #ffdede;
+}
+
 label {
   display: block;
   margin-bottom: 5px;

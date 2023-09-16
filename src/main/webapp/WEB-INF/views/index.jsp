@@ -34,7 +34,8 @@
         <a href="/index/" class="uui-navbar07_logo-link-2 w-nav-brand">
             <div href="/index/" class="uui-logo_component-2"><img src="/images/Untitled-design-26_1.png" loading="lazy"
                                                                   width="Auto" id="plume-home" alt=""
-                                                                  class="uui-logo_logotype-2"></div>
+                                                                  class="uui-logo_logotype-2">
+            </div>
         </a>
         <div role="navigation" class="uui-navbar07_menu-2 w-nav-menu">
             <div class="uui-navbar07_menu-left-2">
@@ -152,12 +153,8 @@
             <div class="uui-navbar07_menu-right-2">
                 <div class="uui-navbar07_button-wrapper-2">
                     <sec:authorize access="isAuthenticated()">
-                        <a class="uui-button-secondary-gray-2 show-tablet w-inline-block">
-                            <form method="POST" action="/auth/logout">
-                                <button type="submit" class="user-log-in-log-out">
-                                    Logout
-                                </button>
-                            </form>
+                        <a class="profile-img" href="/user/dashboard">
+                            <img src="/images/profile-image_1profile%20image.png" class="profile-img">
                         </a>
                         <form method="POST" action="/auth/logout">
                             <button type="submit" class="user-log-in-log-out">
@@ -166,26 +163,14 @@
                         </form>
                     </sec:authorize>
                     <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
-                        <a class="uui-button-secondary-gray-2 show-tablet w-inline-block">
-                            <form method="GET" action="/auth/login">
-                                <button type="submit" class="user-log-in-log-out">
-                                    Login
-                                </button>
-                            </form>
-                            <form method="GET" action="/auth/signup">
-                                <button type="submit" class="user-log-in-log-out">
-                                    Signup
-                                </button>
-                            </form>
-                        </a>
-                        <form method="GET" action="/auth/signup">
-                            <button type="submit" class="user-signup">
-                                Signup
-                            </button>
-                        </form>
                         <form method="GET" action="/auth/login">
                             <button type="submit" class="user-log-in-log-out">
                                 Login
+                            </button>
+                        </form>
+                        <form method="GET" action="/auth/signup">
+                            <button type="submit" class="user-signup">
+                                Signup
                             </button>
                         </form>
                     </sec:authorize>

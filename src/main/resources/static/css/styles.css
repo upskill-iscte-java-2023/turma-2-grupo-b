@@ -2470,7 +2470,7 @@ figcaption {
   width: 250px;
   grid-column-gap: .75rem;
   grid-row-gap: .75rem;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center;
   display: flex;
 }
@@ -3761,6 +3761,8 @@ figcaption {
 
 .profile-img {
   border-radius: 50%;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .content {
@@ -7595,7 +7597,7 @@ figcaption {
   }
 
   .uui-navbar07_menu-right-2 {
-    flex-direction: column-reverse;
+    flex-direction: column;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr;
     align-items: stretch;

@@ -30,22 +30,27 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .loginPage("/auth/login")
                 .loginProcessingUrl("/auth/login-attempt")
                 .defaultSuccessUrl("/user/dashboard")
+                .failureUrl("/auth/login?error=true")
+
                 .and()
-                .csrf()
-                .disable()
-                .authorizeRequests()
-                .antMatchers("/css/**", "/images/**", "/js/**").permitAll()
-                .antMatchers("/index/**").permitAll()
-                .antMatchers("/auth/**").permitAll()
-                .antMatchers("/user/**").authenticated()
+
+                    .csrf()
+                    .disable()
+                    .authorizeRequests()
+                    .antMatchers("/css/**", "/images/**", "/js/**").permitAll()
+                    .antMatchers("/index/**").permitAll()
+                    .antMatchers("/auth/**").permitAll()
+                    .antMatchers("/user/**").authenticated()
+
                 .and()
-                .logout()
-                .logoutUrl("/auth/logout")
-                .logoutSuccessUrl("/index/")
-                .permitAll() // Allow anyone to access the logout URL
-                .logoutRequestMatcher(new AntPathRequestMatcher("/auth/logout", "POST")) // Specify the HTTP method
-                .clearAuthentication(true)
-                .deleteCookies("JSESSIONID");
+
+                    .logout()
+                    .logoutUrl("/auth/logout")
+                    .logoutSuccessUrl("/index/")
+                    .permitAll() // Allow anyone to access the logout URL
+                    .logoutRequestMatcher(new AntPathRequestMatcher("/auth/logout", "POST")) // Specify the HTTP method
+                    .clearAuthentication(true)
+                    .deleteCookies("JSESSIONID");
     }
 
     @Override
