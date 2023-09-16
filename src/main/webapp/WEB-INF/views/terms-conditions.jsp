@@ -167,14 +167,19 @@
         <div class="footer-links-container">
           <h5 class="footer-header">Website</h5>
           <a href="/index/" class="footer-link">Home</a>
-          <a href="/index/contact" class="footer-link">Contact</a>
+          <a href="/index/contact" class="footer-link">Contact Us</a>
           <a href="/index/terms" aria-current="page" class="footer-link w--current">Terms &amp; Conditions</a>
           <a href="/index/privacy-policy" class="footer-link">Privacy Policy</a>
         </div>
         <div class="footer-links-container">
           <h5 class="footer-header">Membership</h5>
-          <a href="/auth/login" class="footer-link">Sign In</a>
-          <a href="/auth/signup" class="footer-link">Sign Up</a>
+          <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
+            <a href="/auth/login" class="footer-link">Login</a>
+            <a href="/auth/signup" class="footer-link">Sign Up</a>
+          </sec:authorize>
+          <sec:authorize access="isAuthenticated()">
+            <a href="/auth/logout" class="footer-link">Logout</a>
+          </sec:authorize>
           <a href="/user/dashboard" class="footer-link">User Account</a>
           <a href="/index/reset-password" class="footer-link">Reset Password </a>
         </div>
