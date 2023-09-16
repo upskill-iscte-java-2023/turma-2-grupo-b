@@ -1,7 +1,6 @@
 package plume.models;
 
 
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -29,7 +28,7 @@ public class ApplicationUser implements UserDetails{
             joinColumns = {@JoinColumn(name="user_id")},
             inverseJoinColumns = {@JoinColumn(name="role_id")}
     )
-    private Set<Role> authorities;
+    private Set<RoleModel> authorities;
 
     public ApplicationUser() {
         super();
@@ -37,7 +36,7 @@ public class ApplicationUser implements UserDetails{
     }
 
 
-    public ApplicationUser(Integer userId, String username, String name, String password, Set<Role> authorities) {
+    public ApplicationUser(Integer userId, String username, String name, String password, Set<RoleModel> authorities) {
         super();
         this.userId = userId;
         this.username = username;
@@ -54,7 +53,7 @@ public class ApplicationUser implements UserDetails{
         this.userId = userId;
     }
 
-    public void setAuthorities(Set<Role> authorities) {
+    public void setAuthorities(Set<RoleModel> authorities) {
         this.authorities = authorities;
     }
 

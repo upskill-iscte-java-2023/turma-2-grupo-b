@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="plume_wiki")
-public class PlumeWiki {
+public class PlumeWikiModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -16,7 +16,7 @@ public class PlumeWiki {
     private String description;
     private String taxonId;
 
-    public PlumeWiki(Integer id, String imageFile, String commonName, String scientificName, String description, String taxonId) {
+    public PlumeWikiModel(Integer id, String imageFile, String commonName, String scientificName, String description, String taxonId) {
         this.id = id;
         this.imageFile = imageFile;
         this.commonName = commonName;
@@ -25,7 +25,7 @@ public class PlumeWiki {
         this.taxonId = taxonId;
     }
 
-    public PlumeWiki() {
+    public PlumeWikiModel() {
 
     }
 

@@ -245,7 +245,11 @@ margin: 0rem !important;
             </div>
           </nav>
           <div id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a5e-f8957a37" class="navbar2_button-wrapper">
-            <a href="/user/dashboard" class="profile-link w-inline-block"><img src="../images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image"></a><button class="user-log-in-log-out-2" data-wf-user-logout="Log Out" data-wf-user-login="Log in" type="button">Log Out</button>
+            <a href="/user/dashboard" class="profile-link w-inline-block"><img src="../images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image"></a><form method="POST" action="/auth/logout">
+        <button class="user-log-in-log-out-2"  type="submit">
+        Log Out
+      </button>
+        </form>
             <div class="navbar2_menu-button w-nav-button">
               <div class="menu-icon2">
                 <div class="menu-icon2_line-top"></div>

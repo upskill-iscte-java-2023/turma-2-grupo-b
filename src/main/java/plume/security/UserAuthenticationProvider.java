@@ -23,7 +23,6 @@ public class UserAuthenticationProvider implements AuthenticationProvider {
         ApplicationUser user = authService.validateLogin((String)authentication.getPrincipal(), (String)authentication.getCredentials());
         if(user != null) {
             List<GrantedAuthority> permissions = new ArrayList<>();
-            permissions.add((GrantedAuthority) () -> "ROLE_ADMIN");
             permissions.add((GrantedAuthority) () -> "ROLE_USER");
             return new UsernamePasswordAuthenticationToken(
                     user.getUsername(),

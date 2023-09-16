@@ -5,7 +5,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import plume.models.ApplicationUser;
-import plume.models.Role;
+import plume.models.RoleModel;
 import plume.repository.RoleRepository;
 import plume.repository.UserRepository;
 
@@ -37,11 +37,11 @@ public class AuthServiceImpl implements AuthService {
     public ApplicationUser registerUser(String username, String name, String password){
 
         String encodedPassword = passwordEncoder.encode(password);
-        Role userRole = roleRepository.findByAuthority("USER").get();
+        RoleModel userRoleModel = roleRepository.findByAuthority("USER").get();
 
-        Set<Role> authorities = new HashSet<>();
+        Set<RoleModel> authorities = new HashSet<>();
 
-        authorities.add(userRole);
+        authorities.add(userRoleModel);
 
         return userRepository.save(new ApplicationUser(0, username, name, encodedPassword, authorities));
     }

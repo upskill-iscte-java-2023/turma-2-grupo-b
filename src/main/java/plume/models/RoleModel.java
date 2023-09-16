@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name="roles")
-public class Role implements GrantedAuthority {
+public class RoleModel implements GrantedAuthority {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -16,15 +16,15 @@ public class Role implements GrantedAuthority {
 
     private String authority;
 
-    public Role(){
+    public RoleModel(){
         super();
     }
 
-    public Role(String authority){
+    public RoleModel(String authority){
         this.authority = authority;
     }
 
-    public Role(Integer roleId, String authority){
+    public RoleModel(Integer roleId, String authority){
         this.roleId = roleId;
         this.authority = authority;
     }

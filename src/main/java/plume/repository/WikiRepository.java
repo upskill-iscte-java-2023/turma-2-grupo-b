@@ -2,16 +2,15 @@ package plume.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import plume.models.PlumeWiki;
+import plume.models.PlumeWikiModel;
 
-import javax.persistence.Entity;
 import java.util.List;
 
 @Repository
-public interface WikiRepository extends JpaRepository<PlumeWiki, Integer> {
+public interface WikiRepository extends JpaRepository<PlumeWikiModel, Integer> {
 
     @Override
-    List<PlumeWiki> findAll();
+    List<PlumeWikiModel> findAll();
 }
 
 

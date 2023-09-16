@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import plume.models.PlumeWiki;
+import plume.models.PlumeWikiModel;
 import plume.models.SightingModel;
 import plume.services.DataService;
 
@@ -27,8 +27,8 @@ public class DBController {
 
 
     @GetMapping("/wikidata")
-    public List<PlumeWiki> getBirdData() {
-        List<PlumeWiki> birdsData = dataService.getAllBirdData();
+    public List<PlumeWikiModel> getBirdData() {
+        List<PlumeWikiModel> birdsData = dataService.getAllBirdData();
         return birdsData;
     }
 
