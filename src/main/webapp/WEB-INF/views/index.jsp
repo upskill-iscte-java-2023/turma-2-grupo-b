@@ -22,10 +22,67 @@
         var n = c.documentElement, t = " w-mod-";
         n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
     }(window, document);</script>
+    <script type="text/javascript" src="/js/navscript.js"></script>
     <link href="/images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
     <link href="/images/webclip.svg" rel="apple-touch-icon">
 </head>
 <body class="body">
+
+
+<!-- navbar tablet and below -->
+<div class="nav-wrapper" style="background-image: url('/images/Fotos.png')">
+    <div class="nav-leftwrapper">
+        <a href="/index/">
+            <img src="/images/Untitled-design-26_1.png">
+        </a>
+
+    </div>
+    <div class="nav-rightwrapper">
+        <div class="Hamburger-menu-bg" id="Hamburger-menu-bg"></div>
+        <div id="Hamburger-menu">
+            <div id="Hamburger-menu-bar" onclick="menuOnClick()">
+                <div id="Hamburger-bar1" class="Hamburger-bar"></div>
+                <div id="Hamburger-bar2" class="Hamburger-bar"></div>
+                <div id="Hamburger-bar3" class="Hamburger-bar"></div>
+            </div>
+            <nav class="Hamburger-nav" id="Hamburger-nav">
+                <ul class="hamburger-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="uui-navbar07_button-wrapper-2" id="uui-navbar07_button-wrapper-2">
+            <sec:authorize access="isAuthenticated()">
+                <a class="profile-img" href="/user/dashboard">
+                    <img src="/images/profile-image_1profile%20image.png" class="profile-img">
+                </a>
+                <form method="POST" action="/auth/logout">
+                    <button type="submit" class="user-log-in-log-out">
+                        Logout
+                    </button>
+                </form>
+            </sec:authorize>
+            <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
+                <form method="GET" action="/auth/login">
+                    <button type="submit" class="user-log-in-log-out">
+                        Login
+                    </button>
+                </form>
+                <form method="GET" action="/auth/signup">
+                    <button type="submit" class="user-signup">
+                        Signup
+                    </button>
+                </form>
+            </sec:authorize>
+        </div>
+    </div>
+</div>
+
+<!-- navbar desktop -->
+
 <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-out-quint"
      data-easing2="ease" data-no-scroll="1" role="banner" class="nav-bar w-nav">
     <div class="uui-navbar07_container-2">

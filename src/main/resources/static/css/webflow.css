@@ -1636,7 +1636,7 @@ textarea.w-select {
   float: right;
 }
 [data-nav-menu-open] {
-  display: block !important;
+  display: flex !important;
   position: absolute;
   top: 100%;
   left: 0;
