@@ -1,15 +1,20 @@
 package plume.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
+import plume.services.PlumeWikiService;
 
 @RestController
 @RequestMapping("/user")
 @CrossOrigin("*")
 public class UserController {
+
+    @Autowired
+    PlumeWikiService plumeWikiService;
 
     @GetMapping("/dashboard")
     public ModelAndView dashboardController(){
@@ -38,7 +43,9 @@ public class UserController {
 
     @GetMapping("/plume-wiki")
     public ModelAndView plumeWikiController(){
-        return new ModelAndView("plume-wiki");
+        ModelAndView mav = new ModelAndView("plume-wiki");
+        mav.addObject("plume_wiki", plumeWikiService.getAllBirdData());
+        return mav;
     }
 
     @GetMapping("/settings")

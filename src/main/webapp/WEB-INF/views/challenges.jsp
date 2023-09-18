@@ -17,6 +17,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic","Oswald:200,300,400,500,600,700","Inter:regular,500,600,700","Libre Baskerville:regular,italic,700","Volkhov:regular,italic,700,700italic","Noto Serif:regular,italic,700,700italic"]  }});</script>
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link href="/images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
   <link href="/images/webclip.svg" rel="apple-touch-icon">
 </head>
@@ -329,15 +331,34 @@ margin: 0rem !important;
                             </svg></div>
                           <div class="art-card-context vertical">
                             <a href="#" class="flex-box w-inline-block">
-                              <div class="profile-link smaller"><img src="https://uploads-ssl.webflow.com/64f20700ae99f7afc1a08523/64f20701ae99f7afc1a085a5_Ellipse%202.png" loading="lazy" alt="" class="profile-link-image"></div>
+                              <div class="profile-link smaller"><img src="/images/Challenge1Icon.png" loading="lazy" alt="" class="profile-link-image"></div>
+
                               <div class="text-size-small text-weight-semibold">Challenge 1</div>
+                            </a>
+                            <div class="content-wrap">
+                              <h2 class="heading-style-h5">Welcome!</h2>
+                              <img src="/images/Challenge1Illustration.png" class="img-thumbnail" alt="..." width="300">
+                              <p class="text-color-grey p-desc">Upload 3 pictures taken of birds.<br></p>
+                            </div>
+                          </div>
+                          <a href="#" class="button-3 is-small w-button">10 FEATHERS 🪶</a>
+                        </div>
+                        <div id="w-node-d70831f5-0deb-c0c8-6d3d-7e89f771d474-6e2eee89" class="art-card"><img src="/images/Rectangle-11-1_1.png" loading="lazy" alt="" class="art-image">
+                          <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="32" height="32" rx="8" fill="white"></rect>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9951 10.478C14.4352 9.11477 12.1282 8.8358 10.3366 10.3665C8.39879 12.0223 8.11723 14.8108 9.64965 16.7827C10.2313 17.5312 11.3667 18.6557 12.4577 19.6856C13.5616 20.7275 14.6629 21.712 15.206 22.193C15.2094 22.196 15.2129 22.1991 15.2164 22.2022C15.2674 22.2475 15.331 22.3038 15.3919 22.3497C15.4649 22.4046 15.5696 22.4728 15.7095 22.5145C15.8954 22.57 16.0953 22.57 16.2813 22.5145C16.4211 22.4728 16.5259 22.4046 16.5988 22.3497C16.6597 22.3038 16.7233 22.2475 16.7743 22.2022C16.7779 22.1991 16.7813 22.196 16.7847 22.193C17.3278 21.712 18.4291 20.7275 19.533 19.6856C20.6241 18.6557 21.7594 17.5312 22.3411 16.7827C23.8676 14.8184 23.6295 12.0083 21.6471 10.3607C19.8357 8.85506 17.5533 9.11425 15.9951 10.478Z" fill="#EB5757"></path>
+                          </svg></div>
+                          <div class="art-card-context vertical">
+                            <a href="#" class="flex-box w-inline-block">
+                              <div class="profile-link smaller"><img src="https://uploads-ssl.webflow.com/64f20700ae99f7afc1a08523/64f20701ae99f7afc1a085a5_Ellipse%202.png" loading="lazy" alt="" class="profile-link-image"></div>
+                              <div class="text-size-small text-weight-semibold">Challenge 2</div>
                             </a>
                             <div class="content-wrap">
                               <h2 class="heading-style-h5">Early Bird</h2>
                               <p class="text-color-grey p-desc">Capture 2 images of birds with brown plumage.<br>Upload to My Observations.</p>
                             </div>
                           </div>
-                          <a href="#" class="button-3 is-small w-button">10 FEATHERS 🪶</a>
+                          <a href="#" class="button-3 is-small w-button">15 FEATHERS 🪶</a>
                         </div>
                         <div id="w-node-d70831f5-0deb-c0c8-6d3d-7e89f771d474-6e2eee89" class="art-card"><img src="/images/Rectangle-11-1_1.png" loading="lazy" alt="" class="art-image">
                           <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -347,7 +368,7 @@ margin: 0rem !important;
                           <div class="art-card-context vertical">
                             <a href="#" class="flex-box w-inline-block">
                               <div class="profile-link smaller"><img src="https://uploads-ssl.webflow.com/64f20700ae99f7afc1a08523/64f20701ae99f7afc1a0859e_Ellipse%202-1.png" loading="lazy" alt="" class="profile-link-image"></div>
-                              <div class="text-size-small text-weight-semibold">Challenge 2</div>
+                              <div class="text-size-small text-weight-semibold">Challenge 3</div>
                             </a>
                             <div class="content-wrap">
                               <h2 class="heading-style-h5">Make some noise</h2>
@@ -364,7 +385,7 @@ margin: 0rem !important;
                           <div class="art-card-context vertical">
                             <a href="#" class="flex-box w-inline-block">
                               <div class="profile-link smaller"><img src="https://uploads-ssl.webflow.com/64f20700ae99f7afc1a08523/64f20701ae99f7afc1a0859e_Ellipse%202-1.png" loading="lazy" alt="" class="profile-link-image"></div>
-                              <div class="text-size-small text-weight-semibold">Challenge 3</div>
+                              <div class="text-size-small text-weight-semibold">Challenge 4</div>
                             </a>
                             <div class="content-wrap">
                               <h2 class="heading-style-h5">Owl Master</h2>

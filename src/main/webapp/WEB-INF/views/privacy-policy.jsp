@@ -71,7 +71,7 @@
                   </div>
                   <div class="uui-navbar07_item-right-2">
                     <div class="uui-navbar07_item-heading-2">Challenges</div>
-                    <div class="uui-text-size-small-2">See how many feather&#x27;s you&#x27;ve gathered</div>
+                    <div class="uui-text-size-small-2">See how many feathers you&#x27;ve gathered</div>
                   </div>
                 </a>
                 <a href="/user/plume-wiki" class="uui-navbar07_dropdown-link-2 w-inline-block">
