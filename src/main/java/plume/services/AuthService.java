@@ -1,6 +1,6 @@
 package plume.services;
 
-import plume.models.ApplicationUser;
+import plume.entities.ApplicationUser;
 
 public interface AuthService {
     ApplicationUser validateLogin(String username, String password);

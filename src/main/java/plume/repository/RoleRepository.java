@@ -2,7 +2,7 @@ package plume.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import plume.models.RoleModel;
+import plume.entities.RoleModel;
 
 import java.util.Optional;
 

@@ -7,7 +7,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Component;
-import plume.models.ApplicationUser;
+import plume.entities.ApplicationUser;
 import plume.services.AuthService;
 
 import java.util.ArrayList;

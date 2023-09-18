@@ -1,4 +1,4 @@
-package plume.models;
+package plume.entities;
 
 import javax.persistence.*;
 

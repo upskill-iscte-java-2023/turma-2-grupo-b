@@ -2,10 +2,8 @@ package plume.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import plume.models.PlumeWikiModel;
-import plume.models.SightingModel;
+import plume.entities.SightingModel;
 import plume.repository.SightingRepository;
-import plume.repository.WikiRepository;
 
 import java.util.List;
 
@@ -20,13 +18,6 @@ public class DataService {
         return data;
     }
 
-    @Autowired
-    WikiRepository wikiRepository;
-
-    public List<PlumeWikiModel> getAllBirdData(){
-        List<PlumeWikiModel> birdsData = wikiRepository.findAll();
-        return birdsData;
-    }
 
 
 

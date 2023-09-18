@@ -1,4 +1,4 @@
-package plume.models;
+package plume.entities;
 
 
 import org.springframework.security.core.GrantedAuthority;
