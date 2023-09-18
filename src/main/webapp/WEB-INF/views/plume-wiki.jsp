@@ -382,7 +382,7 @@
                                     <div
                                          class="art-card with-animation"><img src="../images/Rectangle-11.png"
                                                                               loading="lazy" alt="" class="art-image">
-                                        <div class="action-icon w-embed">
+                                        <div class="action-icon w-embed" style="display: none"> //apagar este div desformata todos os blocos, logo, hidden
                                             <svg width="32" height="32" viewbox="0 0 32 32" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <rect width="32" height="32" rx="8" fill="white"></rect>
@@ -393,21 +393,20 @@
                                         </div>
                                         <div class="art-card-context vertical">
                                             <a href="#" class="flex-box w-inline-block">
-                                                    <%--<div class="profile-link smaller"><img src="../images/Ellipse-2_1Ellipse-2.png" loading="lazy" alt="" class="profile-link-image"></div>
-                                                    <div class="text-size-small text-weight-semibold">Richard Norman</div> --%>
                                             </a>
                                             <div class="content-wrap">
-                                                <h3 class="heading-style-h3">${bird.commonName}</h3>
-                                                <h5 class="heading-style-h5">${bird.scientificName}</h5>
+                                                <p class="h4">
+                                                        ${bird.commonName}</p><p>
+                                                <p class="font-italic"><small class="text-muted">${bird.scientificName}</small></p></p>
+                                         <%--       <h5 class="heading-style-h4">${bird.commonName}</h5>
+                                                <h6 class="heading-style-h5">${bird.scientificName}</h6>--%>
                                                 <div>
                                                     <img src="https://storage.googleapis.com/plume-wiki/${bird.scientificName}.jpg"
                                                          class="rounded float-start" alt="...">
                                                 </div>
-
                                                 <p class="text-color-grey p-desc">${bird.description}</p>
                                             </div>
                                         </div>
-                                        <a href="#" class="button-3 is-small w-button">More info ✨</a>
                                     </div>
                                 </c:forEach>
 
@@ -813,7 +812,7 @@
                                         </div>
                                     </div>
                                     <a href="#" class="button-3 is-small w-button">Remix ✨</a>
-                                </div>
+                               </div>
                             </div>
                         </div>
                     </div>
