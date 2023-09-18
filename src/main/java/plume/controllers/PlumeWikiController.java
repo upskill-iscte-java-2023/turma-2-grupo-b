@@ -23,4 +23,5 @@ public class PlumeWikiController {
     public List<PlumeWikiModel> getBirdData() {
         return plumeWikiService.getAllBirdData();
     }
+
 }

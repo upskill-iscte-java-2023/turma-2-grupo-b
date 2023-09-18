@@ -8,32 +8,45 @@
 
 .body{
   overflow-x: hidden;
-
 }
 
 @media (max-width: 991px) {
+
+  .Profile-picture-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    position: relative;
+    right: 15%;
+  }
+
+  .listFonts{
+    font-size: 15px;
+  }
+
 .nav-wrapper {
   width: 100%;
   height: 10vh;
   display: flex;
   flex-direction: row;
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 99999;
   justify-content: space-between;
   background-size: 100% auto; /* Ensure the image covers the entire element horizontally */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-position: center top 10vh;
   background-attachment: fixed;
+  align-items: flex-start;
 }
 
 .nav-leftwrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
+  margin-left: 1%;
 }
 
 .nav-menudropdown{
@@ -62,15 +75,6 @@
     display: none;
   }
 
-  .nav-leftwrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-
   .nav-rightwrapper {
     width: auto;
     display: flex;
@@ -93,7 +97,7 @@
   .Hamburger-bar {
     height: 5px;
     width: 100%;
-    background-color: #181616c4;
+    background-color: #544444;
     display: block;
     border-radius: 5px;
     transition: 0.3s ease;
@@ -118,12 +122,13 @@
 
   .Hamburger-nav li {
     list-style: none;
-    padding: 12px 0;
+    padding: 2px 0;
+    margin-right: -6px;
   }
 
   .Hamburger-nav li a {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
   }
 
@@ -152,6 +157,7 @@
 
   .Hamburger-change {
     display: block;
+    margin-right: -45px;
   }
 
   .Hamburger-change .Hamburger-bar {
@@ -175,6 +181,7 @@
     height: 150vh;
     transform: translate(60%, -30%);
     position: absolute;
+    opacity: 0.75;
   }
 }
 
@@ -7754,6 +7761,8 @@ figcaption {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: stretch;
+    position: relative;
+    top: 20%;
   }
 
   .uui-navbar07_menu-dropdown-2 {
