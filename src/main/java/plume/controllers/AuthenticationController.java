@@ -1,5 +1,6 @@
 package plume.controllers;
 
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -28,9 +29,9 @@ public class AuthenticationController {
     }
 
     @PostMapping("/register")
-    public RedirectView registerUser(@RequestParam("Email") String email,
+    public RedirectView registerUser(@Valid @RequestParam("Email") String email,
                                         @RequestParam("Name") String name,
-                                        @RequestParam("Password") String password){
+                                        @Valid @RequestParam("Password") String password){
         authenticationService.registerUser(email,name,password);
         return new RedirectView("/index/subscription");
     }

@@ -1,6 +1,7 @@
 package plume.models;
 
 
+import jakarta.validation.constraints.NotBlank;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -17,9 +18,12 @@ public class ApplicationUser implements UserDetails{
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer userId;
     @Column(unique=true)
+    @NotBlank(message = "Username is required")
     private String username;
 
     private String name;
+
+    @NotBlank(message = "Password is required")
     private String password;
 
     @ManyToMany(fetch=FetchType.EAGER)
