@@ -14,6 +14,7 @@ import plume.entities.ApplicationUser;
 import plume.repository.UserRepository;
 import plume.services.AuthService;
 import plume.services.EmailService;
+import plume.services.LoggedInUser;
 import plume.services.TokenService;
 import plume.utils.UserAuthenticatedContextVar;
 
@@ -35,7 +36,10 @@ public class AuthenticationController {
     @Autowired
     private EmailService emailService;
 
-    private UserRepository userRepository;
+    @Autowired
+    private LoggedInUser loggedInUser;
+
+    UserRepository userRepository;
 
     private String token;
 
@@ -86,6 +90,8 @@ public class AuthenticationController {
             //Set authenticated status for springboot.
             SecurityContextHolder.getContext().setAuthentication(authentication);
 
+            //Set logged in user
+            loggedInUser.setLoggedInUser(user);
             //Redirect view.
             return new RedirectView("/user/dashboard");
         } else if (user != null && !user.isVerified()) {
