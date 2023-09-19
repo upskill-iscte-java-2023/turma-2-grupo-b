@@ -669,12 +669,6 @@
                                                                                data-wait="Please wait..."
                                                                                class="button dark w-button"></div>
                     </form>
-                    <div class="form-success dark w-form-done">
-                        <div>You&#x27;re all signed up.</div>
-                    </div>
-                    <div class="w-form-fail">
-                        <div>Oops! <br>Something went wrong while submitting the form.<br>Try again!</div>
-                    </div>
                 </div>
             </div>
         </div>

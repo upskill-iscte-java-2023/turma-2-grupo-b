@@ -381,7 +381,7 @@
 
                                 <c:forEach items="${plume_wiki}" var="bird">
                                     <div class="art-card with-animation"><img src="../images/Rectangle-11.png" loading="lazy" alt="" class="art-image">
-                                        <div class="action-icon w-embed" style="display: none"> //apagar este div desformata todos os blocos, logo, hidden
+                                        <div class="action-icon w-embed" style="display: none"> <!-- apagar este div desformata todos os blocos, logo, hidden -->
                                             <svg width="32" height="32" viewbox="0 0 32 32" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
                                                 <rect width="32" height="32" rx="8" fill="white"></rect>
@@ -399,10 +399,11 @@
                                          <%--       <h5 class="heading-style-h4">${bird.commonName}</h5>
                                                 <h6 class="heading-style-h5">${bird.scientificName}</h6>--%>
 
-                                                <div><img src="https://storage.googleapis.com/plume-wiki/${bird.scientificName}.jpg" class="rounded float-start" alt="..."></div>
+                                                <img src="https://storage.googleapis.com/plume-wiki/${bird.scientificName}.jpg" class="rounded float-start" alt="...">
+                                                <div class="overlay"><p>${bird.taxonId}</p></div>
                                                 <p class = "text-color-grey p-desc">${bird.description}</p>
                                             </div>
-                                            <div class="overlay">teste</div>
+
                                         </div>
                                     </div>
                                 </c:forEach>
