@@ -378,10 +378,9 @@
                         </form>
                         <div class="content-wrap margin-top margin-medium">
                             <div class="w-layout-grid _3-col-grid art-grid _4-col">
+
                                 <c:forEach items="${plume_wiki}" var="bird">
-                                    <div
-                                         class="art-card with-animation"><img src="../images/Rectangle-11.png"
-                                                                              loading="lazy" alt="" class="art-image">
+                                    <div class="art-card with-animation"><img src="../images/Rectangle-11.png" loading="lazy" alt="" class="art-image">
                                         <div class="action-icon w-embed" style="display: none"> //apagar este div desformata todos os blocos, logo, hidden
                                             <svg width="32" height="32" viewbox="0 0 32 32" fill="none"
                                                  xmlns="http://www.w3.org/2000/svg">
@@ -391,21 +390,19 @@
                                                       fill="#EB5757"></path>
                                             </svg>
                                         </div>
-                                        <div class="art-card-context vertical">
+                                        <div class= "art-card-context vertical">
                                             <a href="#" class="flex-box w-inline-block">
                                             </a>
-                                            <div class="content-wrap">
-                                                <p class="h4">
-                                                        ${bird.commonName}</p><p>
+                                            <div class="bird-info">
+                                                <p class="h4">${bird.commonName}</p><p>
                                                 <p class="font-italic"><small class="text-muted">${bird.scientificName}</small></p></p>
                                          <%--       <h5 class="heading-style-h4">${bird.commonName}</h5>
                                                 <h6 class="heading-style-h5">${bird.scientificName}</h6>--%>
-                                                <div>
-                                                    <img src="https://storage.googleapis.com/plume-wiki/${bird.scientificName}.jpg"
-                                                         class="rounded float-start" alt="...">
-                                                </div>
-                                                <p class="text-color-grey p-desc">${bird.description}</p>
+
+                                                <div><img src="https://storage.googleapis.com/plume-wiki/${bird.scientificName}.jpg" class="rounded float-start" alt="..."></div>
+                                                <p class = "text-color-grey p-desc">${bird.description}</p>
                                             </div>
+                                            <div class="overlay">teste</div>
                                         </div>
                                     </div>
                                 </c:forEach>
@@ -825,5 +822,16 @@
         type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>
 <script src="../../js/webflow.js" type="text/javascript"></script>
+<%--<script>
+    const artCards = document.querySelectorAll('.art-card');
+
+    artCards.forEach((card) => {
+        const birdInfo = card.querySelector('.bird-info');
+
+        card.addEventListener('click', () => {
+            birdInfo.style.display = birdInfo.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+</script>--%>
 </body>
 </html>
