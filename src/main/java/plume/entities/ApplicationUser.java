@@ -23,6 +23,8 @@ public class ApplicationUser implements UserDetails{
 
     private boolean verified = false;
 
+    private String token;
+
     @NotBlank(message = "Password is required")
     private String password;
 
@@ -45,13 +47,15 @@ public class ApplicationUser implements UserDetails{
     }
 
 
-    public ApplicationUser(Integer userId, String username, String name, String password, Set<RoleModel> authorities) {
+    public ApplicationUser(Integer userId, String username, String name, String password, Set<RoleModel> authorities, boolean verified, String token) {
         super();
         this.userId = userId;
         this.username = username;
         this.name = name;
         this.password = password;
         this.authorities = authorities;
+        this.verified = verified;
+        this.token = token;
     }
 
     public Integer getUserId() {
@@ -130,5 +134,17 @@ public class ApplicationUser implements UserDetails{
 
     public void setVerified(boolean verified) {
         this.verified = verified;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

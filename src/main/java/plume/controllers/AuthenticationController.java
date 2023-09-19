@@ -20,6 +20,7 @@ import plume.utils.UserAuthenticatedContextVar;
 import javax.mail.MessagingException;
 import java.util.Optional;
 
+
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin("*")
@@ -55,47 +56,32 @@ public class AuthenticationController {
                                      @RequestParam("Name") String name,
                                      @Valid @RequestParam("Password") String password) throws MessagingException {
 
-        boolean success = authenticationService.registerUser(email,name,password);
+        boolean success = authenticationService.registerUser(email, name, password);
         if (success) {
-            this.token = tokenService.generateVerificationToken();
-
-            this.pendingVerificationUser = email;
-
-            boolean emailsuccess = emailService.sendVerificationEmail(email, token);
-
-            if (emailsuccess) {
-                return new RedirectView("/auth/signup?success=true");
-            } else {
-                return new RedirectView("/auth/signup?error=true");
-            }
+            return new RedirectView("/auth/signup?success=true");
+        } else {
+            return new RedirectView("/auth/signup?error=true");
         }
-
-        return new RedirectView("/auth/signup?error=true");
     }
 
-    @PostMapping("/register/verification")
-    public RedirectView verifyUser(@RequestHeader("Authorization") String auth) {
-        if (auth != null && auth.startsWith("Bearer")) {
-            String tokenFromMail = auth.substring(7);
-            if (tokenFromMail.equals(token)) {
-                ApplicationUser user = userRepository.getApplicationUserByUsername(pendingVerificationUser);
-                user.setVerified(true);
-                userRepository.save(user);
-                return new RedirectView("/user/dashboard");
-            } else {
-                return new RedirectView("/auth/register?success=true&verification=false");
-            }
+
+    @PostMapping("/verification")
+    public RedirectView verifyUser(@RequestParam("verification-text") String token) {
+        boolean validated = authenticationService.validateUser(token);
+        if (validated) {
+            return new RedirectView("/user/dashboard");
+        } else {
+            return new RedirectView("/auth/signup?success=true&verification=false");
         }
-        return new RedirectView("/auth/register?success=true&verification=false");
     }
 
     @PostMapping("/login-attempt")
     public RedirectView customLogin(@Valid @RequestParam("username") String email,
-                                         @Valid @RequestParam("password") String password){
-        ApplicationUser user = authenticationService.validateLogin(email,password);
-        if (user != null && user.isVerified()){
+                                    @Valid @RequestParam("password") String password) {
+        ApplicationUser user = authenticationService.validateLogin(email, password);
+        if (user != null && user.isVerified()) {
             //Create auth token
-            Authentication authentication = new UsernamePasswordAuthenticationToken(user,null,user.getAuthorities());
+            Authentication authentication = new UsernamePasswordAuthenticationToken(user, null, user.getAuthorities());
 
             //Set authenticated status for springboot.
             SecurityContextHolder.getContext().setAuthentication(authentication);
@@ -110,16 +96,16 @@ public class AuthenticationController {
     }
 
     @PostMapping("/sendReset")
-    public RedirectView resetPassword(@Valid @RequestParam("username") String email){
+    public RedirectView resetPassword(@Valid @RequestParam("username") String email) {
         Optional<ApplicationUser> user = userRepository.findByUsername(email);
 
         String token = tokenService.generateVerificationToken();
 
-        if (user.isPresent()){
-           boolean emailSuccess = emailService.sendResetPasswordEmail(email, token);
-           if (emailSuccess) {
-               return new RedirectView("/auth/sendReset?success=true&"+token);
-           }
+        if (user.isPresent()) {
+            boolean emailSuccess = emailService.sendResetPasswordEmail(email, token);
+            if (emailSuccess) {
+                return new RedirectView("/auth/sendReset?success=true&" + token);
+            }
         }
         return new RedirectView("/auth/sendReset?error=true");
     }

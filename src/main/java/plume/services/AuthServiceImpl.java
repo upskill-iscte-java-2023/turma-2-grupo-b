@@ -1,6 +1,9 @@
 package plume.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -14,6 +17,7 @@ import java.util.Optional;
 import java.util.Set;
 
 
+
 @Service
 public class AuthServiceImpl implements AuthService {
 
@@ -22,6 +26,11 @@ public class AuthServiceImpl implements AuthService {
 
     @Autowired
     private RoleRepository roleRepository;
+
+    @Autowired
+    private TokenService tokenService;
+    @Autowired
+    private EmailService emailService;
 
     private ApplicationUser user;
 
@@ -57,8 +66,30 @@ public class AuthServiceImpl implements AuthService {
 
         authorities.add(userRoleModel);
 
-        userRepository.save(new ApplicationUser(0, username, name, encodedPassword, authorities));
+        String token = tokenService.generateVerificationToken();
+        emailService.sendVerificationEmail(username,token);
+        ApplicationUser createdUser = new ApplicationUser(0, username,name,encodedPassword,authorities,false,token);
+
+        userRepository.save(createdUser);
+
         return true;
+    }
+
+    @Override
+    public boolean validateUser(String token) {
+        ApplicationUser user = userRepository.getApplicationUserByToken(token);
+        if (user != null){
+            user.setVerified(true);
+            user.setToken("");
+            userRepository.save(user);
+            Authentication authentication = new UsernamePasswordAuthenticationToken(user, null, user.getAuthorities());
+
+            //Set authenticated status for springboot.
+            SecurityContextHolder.getContext().setAuthentication(authentication);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public ApplicationUser getUser() {

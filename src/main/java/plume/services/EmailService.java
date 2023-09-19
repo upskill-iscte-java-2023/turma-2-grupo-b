@@ -25,7 +25,8 @@ public class EmailService {
             helper.setSubject("Account Verification");
             helper.setText("Welcome to plume! Just one more step before you can fully utilize our website! \r" +
                     "Click the link or copy the below to verify your account: " +
-                    "<a href='http://example.com/verify?token=" + verificationToken + "'>Verify Email</a>", true);
+                    "<a href='http://example.com/verify?token=" + verificationToken + "'>Verify Email</a>"+
+                    "<h1>"+verificationToken, true);
             //TODO change http path
             javaMailSender.send(message);
             return true;

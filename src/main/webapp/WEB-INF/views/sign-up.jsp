@@ -78,9 +78,9 @@
 
                                         Please Check your Email</h2>
                                     </div>
-                                    <form action="/auth/register/verification" method="POST">
+                                    <form action="/auth/verification" method="POST">
                                         <div>
-                                            <input type="text" id="verification-text"
+                                            <input type="text" name="verification-text" id="verification-text"
                                                    placeholder="Your Verification Code"
                                                    maxlength="7" class="text-field w-input" required
                                                    title="Code field cannot be empty" style="padding-bottom: 10px">
