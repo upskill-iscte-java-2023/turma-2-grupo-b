@@ -6,9 +6,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name="users")
@@ -23,6 +21,8 @@ public class ApplicationUser implements UserDetails{
 
     private String name;
 
+    private boolean verified = false;
+
     @NotBlank(message = "Password is required")
     private String password;
 
@@ -33,6 +33,11 @@ public class ApplicationUser implements UserDetails{
             inverseJoinColumns = {@JoinColumn(name="role_id")}
     )
     private Set<RoleModel> authorities;
+
+    @OneToMany(mappedBy = "user")
+    private List<UserSightingModel> userSightingModels = new ArrayList<>();
+
+
 
     public ApplicationUser() {
         super();
@@ -111,4 +116,19 @@ public class ApplicationUser implements UserDetails{
         return true;
     }
 
+    public List<UserSightingModel> getUserSightingModels() {
+        return userSightingModels;
+    }
+
+    public void setUserSightingModels(List<UserSightingModel> userSightingModels) {
+        this.userSightingModels = userSightingModels;
+    }
+
+    public boolean isVerified() {
+        return verified;
+    }
+
+    public void setVerified(boolean verified) {
+        this.verified = verified;
+    }
 }

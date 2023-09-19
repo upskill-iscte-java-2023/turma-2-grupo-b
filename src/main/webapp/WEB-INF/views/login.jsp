@@ -49,6 +49,13 @@
                 </div>
             </div>
         </c:if>
+        <c:if test="${param.validationfail}">
+            <div class="w-users-userformerrorstate form-error w-form-fail-login">
+                <div class="user-form-error-msg">Your Account is not yet validated, please go to your email and provide the token so we can validate the account
+                    <p>Didn't get an email? <a href="/index/contact">Press here for help</a></p>
+                </div>
+            </div>
+        </c:if>
     </div>
     <a href="/index/reset-password" class="below-card-link">Forgot your password?</a>
 </div>

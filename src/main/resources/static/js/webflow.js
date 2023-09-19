@@ -44145,14 +44145,40 @@
     });
 
     function startUpload() {
-        if (!uploading && fileName != '' ) {
+        if (!uploading && fileName != '') {
             uploading = true;
             $button.html('Uploading...');
-            $dropzone.fadeOut();
-            $syncing.addClass('active');
-            $done.addClass('active');
-            $bar.addClass('active');
-            timeoutID = window.setTimeout(showDone, 3200);
+
+            navigator.geolocation.getCurrentPosition(function (position) {
+                const formData = new FormData();
+                formData.append('file', droppedFiles[0]);
+
+                // Add the geo location data to the form
+                formData.append('latitude', position.coords.latitude.toString());
+                formData.append('longitude', position.coords.longitude.toString());
+
+                // Add data from form fields with specific IDs
+                formData.append('description', $('#description').val());
+                formData.append('observedOn', $('#observedOn').val());
+
+                // Send the file to the server for upload
+                $.ajax({
+                    type: 'POST',
+                    url: '/api/upload', // Server endpoint for file upload
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        showDone();
+                        console.log(response.message); // Log the server's response
+                    },
+                    error: function (error) {
+                        console.error('Error:', error);
+                    },
+                });
+            }, function (error) {
+                console.error('Error getting geo location:', error);
+            });
         }
     }
 

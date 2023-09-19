@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public interface WikiRepository extends JpaRepository<PlumeWikiModel, Integer> {
 
-    public List<PlumeWikiModel> findAll();
+    List<PlumeWikiModel> findAll();
 
 
 }

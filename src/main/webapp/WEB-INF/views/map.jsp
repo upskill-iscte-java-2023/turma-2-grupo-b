@@ -20,7 +20,7 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJBRTp3Y0iJppaKELytW_tmBrF2DDqCpg&callback=initMap">
         <script
             type="text/javascript">WebFont.load({google: {families: ["Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic","Oswald:200,300,400,500,600,700","Inter:regular,500,600,700","Libre Baskerville:regular,italic,700","Volkhov:regular,italic,700,700italic","Noto Serif:regular,italic,700,700italic"]}})
-        ;</script>
+            ;</script>
     <script type="text/javascript">!function (o, c) {
         var n = c.documentElement, t = " w-mod-";
         n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
@@ -166,7 +166,40 @@
         <div class="w-layout-hflex"></div>
     </div>
 
-    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="upload-modal" aria-hidden="true">
+    <!-- First Modal: Continue Button -->
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="continue-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: transparent; border: none">
+                <div class="modal-body">
+                    <div class="frame" style="display: flex; flex-direction: column; justify-content: center">
+                        <div style="padding: 5px">
+                        <h1>Upload your Sighting</h1>
+                        </div>
+                        <div style="padding: 5px">
+                        <label for="description" style="width: 100%">
+                            Description:
+                            <input id="description" type="text" placeholder="add a description" style="width: 100%">
+                        </label>
+                        </div>
+                        <div>
+                            <label for="observedOn" style="padding: 5px; width: 100%">
+                                When was this?
+                            <input type="date" style="padding: 5px;" id="observedOn" placeholder="dd--mm--aaaa">
+                            </label>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: center; margin-top: 20px">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Continue
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- second modal // photo upload -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="upload-modal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content" style="background: transparent; border: none">
                 <div class="modal-body">

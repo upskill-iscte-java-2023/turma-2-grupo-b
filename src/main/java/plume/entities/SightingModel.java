@@ -1,5 +1,7 @@
 package plume.entities;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import javax.persistence.*;
 
 @Entity
@@ -8,20 +10,21 @@ public class SightingModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
-    private String observerd_on_string;
     private String observerd_on;
-    private String url;
     private String image_url;
+    @Lob
+    private byte[] photo;
     private String tag_list;
     private String description;
     private String place_guess;
     private String latitude;
     private String longitude;
-    private String species_guess;
     private String scientific_name;
     private String common_name;
-    private String iconic_taxon_name;
     private String taxon_id;
+
+    @ManyToOne
+    private UserSightingModel userSightingModel;
 
 
     public long getId() {
@@ -32,14 +35,6 @@ public class SightingModel {
         this.id = id;
     }
 
-    public String getObserverd_on_string() {
-        return observerd_on_string;
-    }
-
-    public void setObserverd_on_string(String observerd_on_string) {
-        this.observerd_on_string = observerd_on_string;
-    }
-
     public String getObserverd_on() {
         return observerd_on;
     }
@@ -48,20 +43,28 @@ public class SightingModel {
         this.observerd_on = observerd_on;
     }
 
-    public String getUrl() {
-        return url;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
     public String getImage_url() {
         return image_url;
     }
 
     public void setImage_url(String image_url) {
         this.image_url = image_url;
+    }
+
+    public byte[] getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(byte[] photo) {
+        this.photo = photo;
+    }
+
+    public UserSightingModel getUserSightingModel() {
+        return userSightingModel;
+    }
+
+    public void setUserSightingModel(UserSightingModel userSightingModel) {
+        this.userSightingModel = userSightingModel;
     }
 
     public String getTag_list() {
@@ -104,14 +107,6 @@ public class SightingModel {
         this.longitude = longitude;
     }
 
-    public String getSpecies_guess() {
-        return species_guess;
-    }
-
-    public void setSpecies_guess(String species_guess) {
-        this.species_guess = species_guess;
-    }
-
     public String getScientific_name() {
         return scientific_name;
     }
@@ -126,14 +121,6 @@ public class SightingModel {
 
     public void setCommon_name(String common_name) {
         this.common_name = common_name;
-    }
-
-    public String getIconic_taxon_name() {
-        return iconic_taxon_name;
-    }
-
-    public void setIconic_taxon_name(String iconic_taxon_name) {
-        this.iconic_taxon_name = iconic_taxon_name;
     }
 
     public String getTaxon_id() {

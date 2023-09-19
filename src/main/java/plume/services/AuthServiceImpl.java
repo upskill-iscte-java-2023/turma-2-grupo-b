@@ -10,6 +10,7 @@ import plume.repository.RoleRepository;
 import plume.repository.UserRepository;
 
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Set;
 
 
@@ -22,19 +23,32 @@ public class AuthServiceImpl implements AuthService {
     @Autowired
     private RoleRepository roleRepository;
 
+    private ApplicationUser user;
+
     PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(12);
 
     @Override
     public ApplicationUser validateLogin(String username, String password) {
         ApplicationUser user = userRepository.getApplicationUserByUsername(username);
         if(user != null && passwordEncoder.matches(password, user.getPassword())) {
-            return user;
+            this.user = userRepository.getApplicationUserByUsername(username);
+            if (user.isVerified()) {
+                return user;
+            } else {
+                return null;
+            }
         }
         return null;
     }
 
     @Override
-    public ApplicationUser registerUser(String username, String name, String password){
+    public boolean registerUser(String username, String name, String password){
+
+        Optional<ApplicationUser> user = userRepository.findByUsername(username);
+
+        if (user.isPresent()){
+            return false;
+        }
 
         String encodedPassword = passwordEncoder.encode(password);
         RoleModel userRoleModel = roleRepository.findByAuthority("USER").get();
@@ -43,6 +57,11 @@ public class AuthServiceImpl implements AuthService {
 
         authorities.add(userRoleModel);
 
-        return userRepository.save(new ApplicationUser(0, username, name, encodedPassword, authorities));
+        userRepository.save(new ApplicationUser(0, username, name, encodedPassword, authorities));
+        return true;
+    }
+
+    public ApplicationUser getUser() {
+        return user;
     }
 }
