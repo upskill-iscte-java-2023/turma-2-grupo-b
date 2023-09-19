@@ -1,7 +1,5 @@
 package plume.entities;
 
-import org.springframework.web.multipart.MultipartFile;
-
 import javax.persistence.*;
 
 @Entity
@@ -10,7 +8,7 @@ public class SightingModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
-    private String observerd_on;
+    private String observed_on;
     private String image_url;
     @Lob
     private byte[] photo;
@@ -35,12 +33,12 @@ public class SightingModel {
         this.id = id;
     }
 
-    public String getObserverd_on() {
-        return observerd_on;
+    public String getObserved_on() {
+        return observed_on;
     }
 
-    public void setObserverd_on(String observerd_on) {
-        this.observerd_on = observerd_on;
+    public void setObserved_on(String observed_on) {
+        this.observed_on = observed_on;
     }
 
     public String getImage_url() {

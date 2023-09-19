@@ -8,4 +8,6 @@ public interface AuthService {
     boolean registerUser(String username, String name, String password);
 
     boolean validateUser(String token);
+
+    boolean changePassword(String email,String password, String resetToken);
 }

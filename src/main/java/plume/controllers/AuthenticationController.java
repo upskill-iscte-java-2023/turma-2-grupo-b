@@ -101,19 +101,4 @@ public class AuthenticationController {
         return new RedirectView("/auth/login?error=true");
     }
 
-    @PostMapping("/sendReset")
-    public RedirectView resetPassword(@Valid @RequestParam("username") String email) {
-        Optional<ApplicationUser> user = userRepository.findByUsername(email);
-
-        String token = tokenService.generateVerificationToken();
-
-        if (user.isPresent()) {
-            boolean emailSuccess = emailService.sendResetPasswordEmail(email, token);
-            if (emailSuccess) {
-                return new RedirectView("/auth/sendReset?success=true&" + token);
-            }
-        }
-        return new RedirectView("/auth/sendReset?error=true");
-    }
-
 }

@@ -92,6 +92,19 @@ public class AuthServiceImpl implements AuthService {
         }
     }
 
+    @Override
+    public boolean changePassword(String email, String password, String resetToken) {
+        ApplicationUser user = userRepository.getApplicationUserByUsername(email);
+        if (user != null && user.getToken().equals(resetToken)) {
+           String encondedPassword = passwordEncoder.encode(password);
+           user.setPassword(encondedPassword);
+           user.setToken("");
+           userRepository.save(user);
+           return true;
+        }
+        return false;
+    }
+
     public ApplicationUser getUser() {
         return user;
     }

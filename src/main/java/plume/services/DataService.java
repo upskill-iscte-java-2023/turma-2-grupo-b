@@ -2,7 +2,6 @@ package plume.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 import plume.entities.ApplicationUser;
 import plume.entities.SightingModel;
 import plume.entities.UserSightingModel;
@@ -29,7 +28,7 @@ public class DataService {
 
         SightingModel sightingModel = new SightingModel();
         sightingModel.setDescription(description);
-        sightingModel.setObserverd_on(observerdOn);
+        sightingModel.setObserved_on(observerdOn);
         sightingModel.setLatitude(lat);
         sightingModel.setLongitude(lng);
         sightingModel.setPhoto(file);
