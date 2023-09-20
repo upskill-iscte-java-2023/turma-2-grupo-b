@@ -261,20 +261,45 @@
           <div class="spacer _32"></div>
           <div class="form-card">
             <div class="form w-form">
-              <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form" data-wf-page-id="64f615e4cfda04626e2eee8b" data-wf-element-id="8d34d8cc-5d0c-97cb-e06c-d4d71db618a2">
+              <form id="email-form" name="email-form" method="POST" action="/index/requesthelp" class="form">
                 <div class="w-layout-grid form-2-grid">
-                  <div class="field-block"><label for="First-Name">First name</label><input type="text" class="text-field w-input" maxlength="256" name="First-Name" data-name="First Name" placeholder="Your first name" id="First-Name" required=""></div>
-                  <div class="field-block"><label for="Last-Name">Last name</label><input type="text" class="text-field w-input" maxlength="256" name="Last-Name" data-name="Last Name" placeholder="Your last name" id="Last-Name" required=""></div>
+                  <div class="field-block">
+                    <label for="First-Name">
+                      First name
+                    </label>
+                    <input type="text" class="text-field w-input" maxlength="256" name="First-Name" placeholder="Your first name" id="First-Name" required="">
+                  </div>
+                  <div class="field-block">
+                    <label for="Last-Name">
+                      Last name
+                    </label>
+                    <input type="text" class="text-field w-input" maxlength="256" name="Last-Name" placeholder="Your last name" id="Last-Name" required="">
+                  </div>
                 </div>
-                <div class="field-block"><label for="Email">Email</label><input type="email" class="text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="example@email.com" id="Email" required=""></div>
-                <div class="field-block"><label for="Message">Your Message</label><textarea placeholder="Enter message here" maxlength="5000" data-name="Message" name="Message" id="Message" required="" class="text-area w-input"></textarea></div><input type="submit" value="Send Message" data-wait="Please wait..." class="button no-margin w-button">
+                <div class="field-block">
+                  <label for="Email">
+                    Email
+                  </label>
+                  <input type="email" class="text-field w-input" maxlength="256" name="Email" placeholder="example@email.com" id="Email" required="">
+                </div>
+                <div class="field-block"><label for="Message">
+                  Your Message
+                </label>
+                  <textarea placeholder="Enter message here" maxlength="5000" name="Message" id="Message" required="" class="text-area w-input">
+                  </textarea>
+                </div>
+                <input type="submit" value="Send Message" data-wait="Please wait..." class="button no-margin w-button">
               </form>
+              <c:if test="${param.success}">
               <div class="form-success w-form-done">
                 <div>Your request has been submitted and we will get to you shortly.</div>
               </div>
+              </c:if>
+              <c:if test="${param.error}">
               <div class="form-error w-form-fail">
                 <div>Oops! Something went wrong. Please fill in the required fields and try again.</div>
               </div>
+              </c:if>
             </div>
           </div>
         </div>

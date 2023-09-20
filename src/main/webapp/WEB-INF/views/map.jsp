@@ -246,8 +246,11 @@
                 <img src="/images/Upload_Mobile.png" alt="Upload Picture" class="button-icon">
             </button>
         </a>
-        <button class="take-picture-button mobile"></button>
+        <div class="file-input-wrapper mobile">
+        <input type="file" accept="image/" capture="environment" id="camera-photo">
+            <label for="camera-photo" class="take-picture-button "></label>
         <button class="upload-button-mobile mobile" data-bs-toggle="modal" data-bs-target="#modal"></button>
+        </div>
     </div>
 </div>
 <div class="flex-block-2-bottom">bottom bar</div>

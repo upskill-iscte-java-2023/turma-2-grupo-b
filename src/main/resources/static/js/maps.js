@@ -111,68 +111,6 @@ function initMap() {
             });
     }
 }
-
-/*function createMap(defaultLocation) {
-    return new Promise((resolve, reject) => {
-        // Check if geolocation is supported by the browser
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                // User's current location
-                var userLocation = {
-                    lat: position.coords.latitude, lng: position.coords.longitude,
-                };
-
-                // Create the map centered on the user's location
-                const map = new google.maps.Map(document.getElementById("map"), {
-                    center: userLocation,
-                    zoom: 10, // Adjust the zoom level as needed
-                    disableDefaultUI: true, // Disable default UI controls
-                    styles: [// Customize map style to remove default markers
-                        {
-                            featureType: "poi", elementType: "labels", stylers: [{ visibility: "off" }],
-                        }, {
-                            featureType: "transit", elementType: "labels", stylers: [{ visibility: "off" }],
-                        },
-                    ],
-                });
-
-                resolve(map);
-            }, function () {
-                // Handle geolocation error, default to Lisbon
-                const map = new google.maps.Map(document.getElementById("map"), {
-                    center: defaultLocation,
-                    zoom: 20, // Adjust the zoom level as needed
-                    disableDefaultUI: true, // Disable default UI controls
-                    styles: [// Customize map style to remove default markers
-                        {
-                            featureType: "poi", elementType: "labels", stylers: [{ visibility: "off" }],
-                        }, {
-                            featureType: "transit", elementType: "labels", stylers: [{ visibility: "off" }],
-                        },
-                    ],
-                });
-
-                resolve(map);
-            });
-        } else {
-            // Geolocation not supported, default to Lisbon
-            const map = new google.maps.Map(document.getElementById("map"), {
-                center: defaultLocation,
-                zoom: 10, // Adjust the zoom level as needed
-                disableDefaultUI: true, // Disable default UI controls
-                styles: [// Customize map style to remove default markers
-                    {
-                        featureType: "poi", elementType: "labels", stylers: [{ visibility: "off" }],
-                    }, {
-                        featureType: "transit", elementType: "labels", stylers: [{ visibility: "off" }],
-                    },
-                ],
-            });
-
-            resolve(map);
-        }
-    });
-}*/
 function createMarkers(map, data) {
 
     data.forEach(item => {
@@ -223,6 +161,65 @@ function createMarkers(map, data) {
         });
     });
 
+    let stream;
+    const videoElement = document.getElementById('videoElement');
+    const captureButton = document.getElementById('captureButton');
+    const fileInput = document.getElementById('fileInput');
+
+    // Access the user's camera
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (cameraStream) {
+            stream = cameraStream;
+            videoElement.srcObject = stream;
+        })
+        .catch(function (error) {
+            console.error('Error accessing camera:', error);
+        });
+
+    // Capture a photo from the camera
+    captureButton.addEventListener('click', function () {
+        if (stream) {
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            canvas.width = videoElement.videoWidth;
+            canvas.height = videoElement.videoHeight;
+            context.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+
+            // Convert the captured frame to a blob
+            canvas.toBlob(function (blob) {
+                const url = URL.createObjectURL(blob);
+                fileInput.files = [new File([blob], 'photo.jpg', { type: 'image/jpeg' })];
+            }, 'image/jpeg', 0.95);
+        }
+    });
+
+    // Upload the selected photo
+    uploadButton.addEventListener('click', function () {
+        const file = fileInput.files[0];
+        if (file) {
+            const formData = new FormData();
+            formData.append('file', file);
+            formData.append('description', 'Description');
+            formData.append('observedOn', '2023-09-19'); // Example date
+            formData.append('latitude', '12.3456'); // Example latitude
+            formData.append('longitude', '78.9101'); // Example longitude
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (response.ok) {
+                        console.log('File uploaded successfully');
+                    } else {
+                        console.error('File upload failed');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+    });
 
 
 }

@@ -134,8 +134,25 @@
 
 
 /* Styles for the take picture button */
+.file-input-wrapper {
+    display: none;
+    position: relative;
+}
+
+/* Hide the default file input */
+.file-input-wrapper input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
 .take-picture-button {
-    display: none; /* Hidden by default */
+    /* Your existing button styles */
+    display: block; /* Change this to "block" if it's not already */
     width: 52px;
     height: 52px;
     max-width: 52px;

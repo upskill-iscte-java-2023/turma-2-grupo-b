@@ -72,4 +72,29 @@ public class EmailService {
             return false;
         }
     }
+
+    public boolean sendHelpEmail(String name, String email, String message) {
+        try {
+            SimpleMailMessage emailMessage = new SimpleMailMessage();
+            emailMessage.setTo("sousa.j1993@gmail.com");
+            emailMessage.setSubject("Plume help request");
+            emailMessage.setText(message + " " + name);
+
+            MimeMessage autoMimeMessage = javaMailSender.createMimeMessage();
+            MimeMessageHelper autoResponse = new MimeMessageHelper(autoMimeMessage,true);
+            autoResponse.setTo(email);
+            autoResponse.setSubject("Plume Support Request");
+            autoResponse.setText("<h1>Hello " + name + "</h1>" +
+                    "<p>Thank you for reaching out to us, your help request is under analysis and we'll get back" +
+                    "to you as soon as possible</p>" +
+                    "<p> Happy birding! </p>",true);
+
+            javaMailSender.send(emailMessage);
+            javaMailSender.send(autoMimeMessage);
+
+            return true;
+        } catch (MailException | MessagingException e) {
+            return false;
+        }
+    }
 }

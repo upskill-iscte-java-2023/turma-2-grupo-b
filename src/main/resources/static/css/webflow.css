@@ -309,12 +309,13 @@ button,
   margin: 0 0 15px;
 }
 .w-form-done {
-  display: none;
+  display: block;
   padding: 20px;
   text-align: center;
   background-color: #dddddd;
 }
 .w-form-fail {
+  display: block;
   margin-top: 10px;
   padding: 10px;
   background-color: #ffdede;

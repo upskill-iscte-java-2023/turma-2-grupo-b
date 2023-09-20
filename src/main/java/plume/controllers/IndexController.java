@@ -77,4 +77,20 @@ public class IndexController {
         }
         return new RedirectView("/index/reset-password?reset=true&resetsucess=false");
     }
+
+    @PostMapping("/requesthelp")
+    public RedirectView sendHelpEmail(@RequestParam("First-Name") String fName,
+                                      @RequestParam("Last-Name") String lName,
+                                      @RequestParam("Email") String email,
+                                      @RequestParam("Message") String message){
+        String name = fName + " " + lName;
+
+        boolean success = emailService.sendHelpEmail(name,email,message);
+
+        if (success){
+            return new RedirectView("/index/contact?success=true");
+        } else {
+            return new RedirectView(("/index/contact?error=true"));
+        }
+    }
 }
