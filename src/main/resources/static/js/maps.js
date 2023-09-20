@@ -116,12 +116,20 @@ function createMarkers(map, data) {
     data.forEach(item => {
         // Create content for the marker (including the info window)
         const description = item.description ? item.description : "No Description Available";
+        let birdPhoto;
+
+
+        if (item.image_url != null) {
+            birdPhoto = item.image_url;
+        } else {
+            birdPhoto = item.photo;
+        }
 
         const markerContent = `
     <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
         <h3>${item.common_name}</h3>
         <div style="border-radius: 50%; overflow: hidden; width: 100px; height: 100px; margin-bottom: 10px;">
-            <img src="${item.image_url || 'default_marker_icon.png'}" alt="Marker Image" style="width: 100%; height: 100%; object-fit: cover; object-position: center center; border-radius: 50%;" />
+            <img src="${birdPhoto}" alt="Marker Image" style="width: 100%; height: 100%; object-fit: cover; object-position: center center; border-radius: 50%;" />
         </div>
         <p>${description}</p>
     </div>`;
@@ -160,67 +168,6 @@ function createMarkers(map, data) {
             infowindow.open(map, marker);
         });
     });
-
-    let stream;
-    const videoElement = document.getElementById('videoElement');
-    const captureButton = document.getElementById('captureButton');
-    const fileInput = document.getElementById('fileInput');
-
-    // Access the user's camera
-    navigator.mediaDevices.getUserMedia({ video: true })
-        .then(function (cameraStream) {
-            stream = cameraStream;
-            videoElement.srcObject = stream;
-        })
-        .catch(function (error) {
-            console.error('Error accessing camera:', error);
-        });
-
-    // Capture a photo from the camera
-    captureButton.addEventListener('click', function () {
-        if (stream) {
-            const canvas = document.createElement('canvas');
-            const context = canvas.getContext('2d');
-            canvas.width = videoElement.videoWidth;
-            canvas.height = videoElement.videoHeight;
-            context.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
-
-            // Convert the captured frame to a blob
-            canvas.toBlob(function (blob) {
-                const url = URL.createObjectURL(blob);
-                fileInput.files = [new File([blob], 'photo.jpg', { type: 'image/jpeg' })];
-            }, 'image/jpeg', 0.95);
-        }
-    });
-
-    // Upload the selected photo
-    uploadButton.addEventListener('click', function () {
-        const file = fileInput.files[0];
-        if (file) {
-            const formData = new FormData();
-            formData.append('file', file);
-            formData.append('description', 'Description');
-            formData.append('observedOn', '2023-09-19'); // Example date
-            formData.append('latitude', '12.3456'); // Example latitude
-            formData.append('longitude', '78.9101'); // Example longitude
-
-            fetch('/upload', {
-                method: 'POST',
-                body: formData
-            })
-                .then(response => {
-                    if (response.ok) {
-                        console.log('File uploaded successfully');
-                    } else {
-                        console.error('File upload failed');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-        }
-    });
-
 
 }
 

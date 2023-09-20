@@ -24,14 +24,15 @@ public class DataService {
         return data;
     }
 
-    public void storeSighting(byte[] file, String description, String observerdOn, String lat, String lng, ApplicationUser user){
+    public void storeSighting(String url, String description, String observerdOn, String lat, String lng, ApplicationUser user){
+
 
         SightingModel sightingModel = new SightingModel();
+        sightingModel.setImage_url(url);
         sightingModel.setDescription(description);
         sightingModel.setObserved_on(observerdOn);
         sightingModel.setLatitude(lat);
         sightingModel.setLongitude(lng);
-        sightingModel.setPhoto(file);
 
         sightingRepository.save(sightingModel);
 

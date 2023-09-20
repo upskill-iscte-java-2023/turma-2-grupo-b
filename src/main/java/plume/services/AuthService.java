@@ -10,4 +10,6 @@ public interface AuthService {
     boolean validateUser(String token);
 
     boolean changePassword(String email,String password, String resetToken);
+
+    ApplicationUser getUser();
 }

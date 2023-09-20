@@ -4,15 +4,9 @@ package plume.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import plume.entities.PlumeWikiModel;
 import plume.entities.SightingModel;
-import plume.repository.WikiRepository;
-import plume.services.AuthServiceImpl;
-import plume.services.DataService;
-import plume.services.PlumeWikiService;
+import plume.services.*;
 
-import java.awt.datatransfer.FlavorTable;
 import java.io.IOException;
 import java.util.List;
 
@@ -24,7 +18,10 @@ public class DBController {
     private DataService dataService;
 
     @Autowired
-    private AuthServiceImpl authService;
+    private AuthService authService;
+
+    @Autowired
+    private GCPStorageService gcpStorageService;
 
     @GetMapping("/data")
     public List<SightingModel> getData(){
@@ -39,9 +36,8 @@ public class DBController {
                            @RequestParam("latitude") String lat,
                            @RequestParam("longitude") String lng) throws IOException {
 
-        byte[] fileBytes = file.getBytes();
-
-        dataService.storeSighting(fileBytes, description, observedOn, lat, lng, authService.getUser());
+        String url = gcpStorageService.uploadFileToBucket(file);
+        dataService.storeSighting(url, description, observedOn, lat, lng, authService.getUser());
     }
 
 }
