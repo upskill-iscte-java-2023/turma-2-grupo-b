@@ -17,11 +17,12 @@
   right: 0;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  border-radius: 10px;
+  background-color: #B83C78;
 }
 
 .overlay:hover {
-  opacity: 1;
+  opacity: 60%;
 }
 
 .text {
@@ -34,6 +35,24 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.bird-header {
+  /*max-width: 100%;*/
+  height: 2.5em;
+  /*white-space: nowrap;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0px;
+}
+
+.font-italic {
+  margin-top: -10px;
+}
+
+.bird-image {
+  height: 185px;
+  width: auto;
 }
 
 .nav-wrapper {
@@ -10050,6 +10069,7 @@ figcaption {
 
   .text-color-grey.p-desc {
     font-size: .875rem;
+    /*margin-top: -10rem;*/
   }
 
   .content-grid {

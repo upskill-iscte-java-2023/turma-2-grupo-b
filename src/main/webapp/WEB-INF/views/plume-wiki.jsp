@@ -394,13 +394,13 @@
                                             <a href="#" class="flex-box w-inline-block">
                                             </a>
                                             <div class="bird-info">
-                                                <p class="h4">${bird.commonName}</p><p>
+                                                <p class="h5 bird-header">${bird.commonName}</p><p>
                                                 <p class="font-italic"><small class="text-muted">${bird.scientificName}</small></p></p>
                                          <%--       <h5 class="heading-style-h4">${bird.commonName}</h5>
                                                 <h6 class="heading-style-h5">${bird.scientificName}</h6>--%>
 
-                                                <img src="https://storage.googleapis.com/plume-wiki/${bird.scientificName}.jpg" class="rounded float-start" alt="...">
-                                                <div class="overlay"><p>${bird.taxonId}</p></div>
+                                                <img src="https://storage.googleapis.com/plume-wiki/${bird.scientificName}.jpg" class="bird-image rounded float-start" alt="...">
+                                                <div class="overlay"><p>Taxon ID: ${bird.taxonId}</p></div>
                                                 <p class = "text-color-grey p-desc">${bird.description}</p>
                                             </div>
 
