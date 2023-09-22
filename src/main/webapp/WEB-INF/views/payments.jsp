@@ -325,7 +325,7 @@ margin: 0rem !important;
                           <div class="table10_header-row">
                             <div role="columnheader" class="table10_column is-header-column is-width-large">
                               <a fs-cmssort-desc="is-desc" fs-cmssort-element="trigger" fs-cmssort-field="IDENTIFIER" fs-cmssort-asc="is-asc" href="#" class="table10_header-link w-inline-block">
-                                <div class="text-weight-semibold">Plan</div>
+                                <div class="text-weight-semibold">Reward</div>
                               </a>
                             </div>
                             <div role="columnheader" class="table10_column is-header-column is-width-medium">
@@ -343,23 +343,12 @@ margin: 0rem !important;
                             <div fs-cmssort-element="list" class="table10_list">
                               <div role="row" class="table10_item">
                                 <div role="cell" class="table10_column is-width-large">
-                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">Beria startup</div>
+                                  <a href="https://badoca.com/">
+                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">Badoca Park Experience</div>
+                                  </a>
                                 </div>
                                 <div role="cell" class="table10_column is-width-medium">
-                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">$55.00</div>
-                                </div>
-                                <div role="cell" class="table10_column is-width-medium">
-                                  <div class="table10_status-wrapper">
-                                    <a href="#" class="redeem-button w-button">Redeem</a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div role="row" class="table10_item">
-                                <div role="cell" class="table10_column is-width-large">
-                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">Beria startup</div>
-                                </div>
-                                <div role="cell" class="table10_column is-width-medium">
-                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">$55.00</div>
+                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">20 🪶</div>
                                 </div>
                                 <div role="cell" class="table10_column is-width-medium">
                                   <div class="table10_status-wrapper">
@@ -369,10 +358,27 @@ margin: 0rem !important;
                               </div>
                               <div role="row" class="table10_item">
                                 <div role="cell" class="table10_column is-width-large">
-                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">Beria startup</div>
+                                  <a href="https://evoa.pt/en/accueil">
+                                    <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">EVOA Daily Tour</div>
+                                  </a>
                                 </div>
                                 <div role="cell" class="table10_column is-width-medium">
-                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">$55.00</div>
+                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">50 🪶</div>
+                                </div>
+                                <div role="cell" class="table10_column is-width-medium">
+                                  <div class="table10_status-wrapper">
+                                    <a href="#" class="redeem-button w-button">Redeem</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div role="row" class="table10_item">
+                                <div role="cell" class="table10_column is-width-large">
+                                  <a href="https://pt.reservaalecrim.com/">
+                                    <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">Alecrim Glamping</div>
+                                  </a>
+                                </div>
+                                <div role="cell" class="table10_column is-width-medium">
+                                  <div fs-cmssort-type="date" fs-cmssort-field="IDENTIFIER" class="truncate-width">150 🪶</div>
                                 </div>
                                 <div role="cell" class="table10_column is-width-medium">
                                   <div class="table10_status-wrapper">
