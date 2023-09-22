@@ -1,4 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
+<%@ page import="plume.services.AuthServiceImpl" %>
+<% 
 <!DOCTYPE html><!--  This site was totally hand made -->
 <!--  Last Published: Tue Sep 05 2023 16:28:50 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="64f615e4cfda04626e2eee87" data-wf-site="64f615e4cfda04626e2eee44">
@@ -243,7 +246,8 @@ margin: 0rem !important;
             </div>
           </nav>
           <div id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a5e-f8957a37" class="navbar2_button-wrapper">
-            <a href="/user/dashboard" class="profile-link w-inline-block"><img src="/images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image"></a><form method="POST" action="/auth/logout">
+            <a href="/user/dashboard" class="profile-link w-inline-block">
+              <img src="" loading="lazy" alt="<%=AuthServiceImpl.get%>" class="profile-link-image"></a><form method="POST" action="/auth/logout">
         <button class="user-log-in-log-out-2"  type="submit">
         Log Out
       </button>
@@ -326,7 +330,7 @@ margin: 0rem !important;
                           <p class="text-color-grey">Update your account&#x27;s profile information and email address.</p>
                         </div>
                         <div class="form_component w-form">
-                          <form id="wf-form-Form" name="wf-form-Form" data-name="Form" method="get" class="form_form" data-wf-page-id="64f615e4cfda04626e2eee87" data-wf-element-id="c9acaef6-219a-a170-edec-586baa111217">
+                          <form id="wf-form-Form1" name="wf-form-Form" data-name="Form" method="get" class="form_form" data-wf-page-id="64f615e4cfda04626e2eee87" data-wf-element-id="c9acaef6-219a-a170-edec-586baa111217">
                             <div class="form_field-wrapper"><label for="Full-name" class="form_label">Name</label><input type="text" class="form_input-2 w-input" maxlength="256" name="Full-name" data-name="Full Name" placeholder="James Baduor" id="Full-name"></div>
                             <div class="form_field-wrapper"><label for="Email-address" class="form_label">Email address</label><input type="text" class="form_input-2 w-input" maxlength="256" name="Email-address" data-name="Email Address" placeholder="james@email.com" id="Email-address"></div><input type="submit" value="Save changes" data-wait="Please wait..." class="button-3 is-form-submit w-button">
                           </form>
@@ -369,8 +373,11 @@ margin: 0rem !important;
                           <p class="text-color-grey">We understand profile pictures are important, feel free to change at anytime!</p>
                         </div>
                         <div class="form_component w-form">
-                          <form id="wf-form-Form" name="wf-form-Form" data-name="Form" method="get" class="form_form" data-wf-page-id="64f615e4cfda04626e2eee87" data-wf-element-id="259b2179-f865-c71c-1290-47b2e40983a5">
-                            <div class="form_field-wrapper form-profile-photo-upload"><input type="submit" value="&quot;INPUT TYPE = &quot;FILE&quot;&quot;" data-wait="Please wait..." class="w-button"></div><input type="submit" value="Save changes" data-wait="Please wait..." class="button-3 is-form-submit w-button">
+                          <form id="wf-form-Form2" name="wf-form-Form" method="POST" action="/api/upload-photo" class="form_form" enctype="multipart/form-data">
+                            <div class="form_field-wrapper form-profile-photo-upload">
+                              <input type="file" name="profile-pic-path" data-wait="Please wait..." class="w-button">
+                            </div>
+                            <input type="submit" value="Save changes" data-wait="Please wait..." class="button-3 is-form-submit w-button">
                           </form>
                           <div class="form_message-success w-form-done">
                             <div>Thank you! Your submission has been received!</div>
@@ -409,7 +416,7 @@ margin: 0rem !important;
                           <p class="text-color-grey">Permanently delete your account.</p>
                         </div>
                         <div class="form_component w-form">
-                          <form id="wf-form-Form" name="wf-form-Form" data-name="Form" method="get" class="form_form" data-wf-page-id="64f615e4cfda04626e2eee87" data-wf-element-id="c9acaef6-219a-a170-edec-586baa11124d">
+                          <form id="wf-form-Form3" name="wf-form-Form" data-name="Form" method="get" class="form_form" data-wf-page-id="64f615e4cfda04626e2eee87" data-wf-element-id="c9acaef6-219a-a170-edec-586baa11124d">
                             <p class="text-color-grey">Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.</p><input type="submit" value="Delete my account" data-wait="Please wait..." class="button-3 is-form-submit margin-top margin-medium background-danger w-button">
                           </form>
                           <div class="form_message-success w-form-done">

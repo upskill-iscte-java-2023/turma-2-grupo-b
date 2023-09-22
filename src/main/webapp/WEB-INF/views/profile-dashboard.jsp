@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="plume.entities.LoggedInUserEntity" %>
-<% String user = LoggedInUserEntity.getName(); %>
+<% String user = LoggedInUserEntity.getUser().getName(); %>
 <!DOCTYPE html><!-- This site was totally hand made -->
 <!-- Last Published: Tue Sep 05 2023 16:28:50 GMT+0000 (Coordinated Universal Time) -->
 <html data-wf-page="64f615e4cfda04626e2eeeb5" data-wf-site="64f615e4cfda04626e2eee44">

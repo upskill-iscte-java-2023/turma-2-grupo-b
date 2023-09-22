@@ -3,6 +3,7 @@ package plume.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import plume.entities.LoggedInUserEntity;
 import plume.services.PlumeWikiService;
 import plume.services.ProfilePicService;
 import plume.services.UserService;
@@ -17,7 +18,9 @@ public class UserController {
 
     @GetMapping("/dashboard")
     public ModelAndView dashboardController(){
-        return new ModelAndView("profile-dashboard");
+        ModelAndView model = new ModelAndView("profile-dashboard");
+        model.addObject(LoggedInUserEntity.getUser());
+        return model;
     }
 
     @GetMapping("/map")

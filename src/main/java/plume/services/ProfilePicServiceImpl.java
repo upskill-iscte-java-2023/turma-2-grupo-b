@@ -14,10 +14,7 @@ public class ProfilePicServiceImpl implements ProfilePicService {
 
     @Override
     public void storeProfilePic(String url, ApplicationUser user) {
-
-
         user.setProfilePicPath(url);
         userRepository.save(user);
-
     }
 }

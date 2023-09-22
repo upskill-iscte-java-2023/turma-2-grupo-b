@@ -6,7 +6,7 @@ import java.util.List;
 
 @Entity
 @Table(name="user_sighting")
-public class UserSightingModel {
+public class UserSightingEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -16,7 +16,7 @@ public class UserSightingModel {
     @JoinColumn(name = "user_id") // Add a foreign key column in the user_sighting table
     private ApplicationUser user;
 
-    @OneToMany(mappedBy = "userSightingModel")
+    @OneToMany(mappedBy = "userSightingEntity")
     private List<SightingModel> sightings = new ArrayList<>();
 
     public long getId() {

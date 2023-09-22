@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import plume.entities.ApplicationUser;
 import plume.entities.SightingModel;
-import plume.entities.UserSightingModel;
+import plume.entities.UserSightingEntity;
 import plume.repository.SightingRepository;
 import plume.repository.UserSightingRepository;
 
@@ -36,12 +36,12 @@ public class DataService {
 
         sightingRepository.save(sightingModel);
 
-        UserSightingModel userSightingModel = new UserSightingModel();
+        UserSightingEntity userSightingEntity = new UserSightingEntity();
 
-        userSightingModel.setUser(user);
-        userSightingModel.setSightings(sightingModel);
+        userSightingEntity.setUser(user);
+        userSightingEntity.setSightings(sightingModel);
 
-        userSightingRepository.save(userSightingModel);
+        userSightingRepository.save(userSightingEntity);
 
     }
 

@@ -2,10 +2,6 @@ package plume.entities;
 
 
 import jakarta.validation.constraints.NotBlank;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -44,7 +40,7 @@ public class ApplicationUser implements UserDetails{
     private Set<RoleModel> authorities;
 
     @OneToMany(mappedBy = "user")
-    private List<UserSightingModel> userSightingModels = new ArrayList<>();
+    private List<UserSightingEntity> userSightingEntities = new ArrayList<>();
 
 
 
@@ -127,12 +123,12 @@ public class ApplicationUser implements UserDetails{
         return true;
     }
 
-    public List<UserSightingModel> getUserSightingModels() {
-        return userSightingModels;
+    public List<UserSightingEntity> getUserSightingModels() {
+        return userSightingEntities;
     }
 
-    public void setUserSightingModels(List<UserSightingModel> userSightingModels) {
-        this.userSightingModels = userSightingModels;
+    public void setUserSightingModels(List<UserSightingEntity> userSightingEntities) {
+        this.userSightingEntities = userSightingEntities;
     }
 
     public boolean isVerified() {

@@ -11,7 +11,7 @@ public class LoggedInUserImp implements LoggedInUser {
 
     @Override
     public void setLoggedInUser(ApplicationUser user) {
-        LoggedInUserEntity.setName(user.getName());
+        LoggedInUserEntity.setUser(user);
     }
 
     @Override

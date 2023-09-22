@@ -66,9 +66,16 @@
                 <h2 class="heading h3">Reset Password</h2>
                 <p class="paragraph small">Confirm your new password.</p>
             </div>
+            <c:if test="${!param.hidden }">
             <input type="password" minlength="5" maxlength="256" placeholder="Enter your new password" name="password"
                    id="reset-password-field" aria-describedby="wf-reset-password-paragraph" class="text-field w-input"
                    required="" data-wf-user-form-input-type="password">
+            </c:if>
+            <c:if test="${param.hidden }">
+            <input type="password" minlength="5" maxlength="256" placeholder="Enter your new password" name="password"
+                   id="reset-password-field" aria-describedby="wf-reset-password-paragraph" class="text-field w-input"
+                   disabled>
+            </c:if>
             <input type="hidden" name="token" value="<%= PendingResetEntity.getToken()%>">
             <input type="hidden" name="email" value="<%= PendingResetEntity.getUsername()%>">
             <input type="submit" value="Create New Password" data-wait="Please wait..."
@@ -78,7 +85,7 @@
     <c:if test="${param.reset && param.resetsuccess}">
         <p>Password reset successfully.</p>
     </c:if>
-    <c:if test="${!param.reset && !param.resetsuccess}">
+    <c:if test="${param.reset && !param.resetsuccess}">
         <p>Something went wrong, please contact us.</p>
     </c:if>
     <a href="/auth/login" class="below-card-link">Return to Login</a>

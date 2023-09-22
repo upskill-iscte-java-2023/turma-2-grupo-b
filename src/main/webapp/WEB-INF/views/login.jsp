@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <!DOCTYPE html><!-- This site was totally hand made -->
 <!-- Last Published: Tue Sep 05 2023 16:28:50 GMT+0000 (Coordinated Universal Time) -->
 <html>
@@ -41,6 +42,7 @@
             <div class="w-users-userformfooter form-card-footer"><span>Don&#x27;t have an account?</span>
                 <a href="/auth/signup">Sign Up</a>
             </div>
+     <!--    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/> -->
         </form>
         <c:if test="${param.error}">
             <div class="w-users-userformerrorstate form-error w-form-fail-login">

@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 import plume.entities.ApplicationUser;
+import plume.entities.LoggedInUserEntity;
 import plume.repository.UserRepository;
 import plume.services.AuthService;
 import plume.services.EmailService;
@@ -25,9 +26,16 @@ public class IndexController {
     @Autowired
     UserRepository userRepository;
 
+
     @GetMapping("/")
     public ModelAndView indexController() {
-        return new ModelAndView("index");
+        ModelAndView model = new ModelAndView("index");
+
+        if (LoggedInUserEntity.isLoggedIn()) {
+            model.addObject(LoggedInUserEntity.getUser());
+        }
+
+        return model;
     }
 
     @GetMapping("/our-team")

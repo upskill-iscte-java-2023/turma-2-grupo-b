@@ -2,14 +2,23 @@ package plume.entities;
 
 public class LoggedInUserEntity {
 
-    private static String name;
+    private static ApplicationUser user;
 
-    public static void setName(String name) {
-        LoggedInUserEntity.name = name;
+
+    public static ApplicationUser getUser() {
+        return user;
     }
 
-    public static String getName() {
-        return name;
+    public static void setUser(ApplicationUser user) {
+        LoggedInUserEntity.user = user;
+    }
+
+    public static boolean isLoggedIn(){
+        if (user == null){
+            return false;
+        } else {
+            return true;
+        }
     }
 
 

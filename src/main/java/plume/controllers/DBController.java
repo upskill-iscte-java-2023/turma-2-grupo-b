@@ -4,6 +4,7 @@ package plume.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.view.RedirectView;
 import plume.entities.SightingModel;
 import plume.services.*;
 
@@ -45,11 +46,16 @@ public class DBController {
 
 
 
-    @PostMapping("/account-settings/upload-photo")
-    public void uploadPhotoController(@RequestParam("profile-pic-path") MultipartFile file) throws IOException {
+    @PostMapping("/upload-photo")
+    public RedirectView uploadPhotoController(@RequestParam("profile-pic-path") MultipartFile file) throws IOException {
         String url = gcpStorageService.uploadFileToBucket(file);
         profilePicService.storeProfilePic(url, authService.getUser());
+        return new RedirectView("/user/settings?success");
     }
+
+
+
+
 
 
 }

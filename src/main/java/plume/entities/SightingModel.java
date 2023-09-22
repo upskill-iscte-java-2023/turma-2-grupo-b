@@ -22,7 +22,7 @@ public class SightingModel {
     private String taxon_id;
 
     @ManyToOne
-    private UserSightingModel userSightingModel;
+    private UserSightingEntity userSightingEntity;
 
 
     public long getId() {
@@ -57,12 +57,12 @@ public class SightingModel {
         this.photo = photo;
     }
 
-    public UserSightingModel getUserSightingModel() {
-        return userSightingModel;
+    public UserSightingEntity getUserSightingModel() {
+        return userSightingEntity;
     }
 
-    public void setUserSightingModel(UserSightingModel userSightingModel) {
-        this.userSightingModel = userSightingModel;
+    public void setUserSightingModel(UserSightingEntity userSightingEntity) {
+        this.userSightingEntity = userSightingEntity;
     }
 
     public String getTag_list() {
