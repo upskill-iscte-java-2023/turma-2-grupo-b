@@ -23,6 +23,9 @@ public class DBController {
     @Autowired
     private GCPStorageService gcpStorageService;
 
+    @Autowired
+    private ProfilePicService profilePicService;
+
     @GetMapping("/data")
     public List<SightingModel> getData(){
         List<SightingModel> data = dataService.getAllData();
@@ -39,5 +42,14 @@ public class DBController {
         String url = gcpStorageService.uploadFileToBucket(file);
         dataService.storeSighting(url, description, observedOn, lat, lng, authService.getUser());
     }
+
+
+
+    @PostMapping("/account-settings/upload-photo")
+    public void uploadPhotoController(@RequestParam("profile-pic-path") MultipartFile file) throws IOException {
+        String url = gcpStorageService.uploadFileToBucket(file);
+        profilePicService.storeProfilePic(url, authService.getUser());
+    }
+
 
 }

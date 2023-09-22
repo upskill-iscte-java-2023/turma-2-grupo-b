@@ -2,11 +2,16 @@ package plume.entities;
 
 
 import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.util.*;
+
 
 @Entity
 @Table(name="users")
@@ -24,6 +29,8 @@ public class ApplicationUser implements UserDetails{
     private boolean verified = false;
 
     private String token;
+
+    private String profilePicPath;
 
     @NotBlank(message = "Password is required")
     private String password;
@@ -146,5 +153,9 @@ public class ApplicationUser implements UserDetails{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setProfilePicPath(String url) {
+        this.profilePicPath = url;
     }
 }
