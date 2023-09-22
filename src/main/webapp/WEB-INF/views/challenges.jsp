@@ -324,16 +324,16 @@ margin: 0rem !important;
                     </div>
                     <div class="inner-content-group gap-32px">
                       <div class="w-layout-grid _3-col-grid art-grid">
-                        <div id="w-node-d70831f5-0deb-c0c8-6d3d-7e89f771d464-6e2eee89" class="art-card"><img src="https://uploads-ssl.webflow.com/64f20700ae99f7afc1a08523/64f20701ae99f7afc1a0859c_Rectangle%2011.png" loading="lazy" alt="" class="art-image">
+                        <div id="w-node-d70831f5-0deb-c0c8-6d3d-7e89f771d464-6e2eee89" class="art-card">
                           <div class="action-icon w-embed"><svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <rect width="32" height="32" rx="8" fill="white"></rect>
                               <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9951 10.478C14.4352 9.11477 12.1282 8.8358 10.3366 10.3665C8.39879 12.0223 8.11723 14.8108 9.64965 16.7827C10.2313 17.5312 11.3667 18.6557 12.4577 19.6856C13.5616 20.7275 14.6629 21.712 15.206 22.193C15.2094 22.196 15.2129 22.1991 15.2164 22.2022C15.2674 22.2475 15.331 22.3038 15.3919 22.3497C15.4649 22.4046 15.5696 22.4728 15.7095 22.5145C15.8954 22.57 16.0953 22.57 16.2813 22.5145C16.4211 22.4728 16.5259 22.4046 16.5988 22.3497C16.6597 22.3038 16.7233 22.2475 16.7743 22.2022C16.7779 22.1991 16.7813 22.196 16.7847 22.193C17.3278 21.712 18.4291 20.7275 19.533 19.6856C20.6241 18.6557 21.7594 17.5312 22.3411 16.7827C23.8676 14.8184 23.6295 12.0083 21.6471 10.3607C19.8357 8.85506 17.5533 9.11425 15.9951 10.478Z" fill="#EB5757"></path>
                             </svg></div>
                           <div class="art-card-context vertical">
-                            <a href="#" class="flex-box w-inline-block">
-                              <div class="profile-link smaller"><img src="/images/Challenge1Icon.png" loading="lazy" alt="" class="profile-link-image"></div>
+                            <a href="#" class="flex-box w-inline-block" style="text-align: left">
+                              <div class="profile-link smaller" style="text-align: left"><img src="/images/Challenge1Icon.png" loading="lazy" alt="" class="profile-link-image"></div>
 
-                              <div class="text-size-small text-weight-semibold">Challenge 1</div>
+                              <div class="text-size-small text-weight-semibold" style="text-align: left;">Challenge 1</div>
                             </a>
                             <div class="content-wrap">
                               <h2 class="heading-style-h5">Welcome!</h2>
