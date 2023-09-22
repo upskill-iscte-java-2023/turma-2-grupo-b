@@ -195,7 +195,7 @@ margin: 0rem !important;
           <nav role="navigation" id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a3c-f8957a37" class="navbar2_menu is-page-height-tablet w-nav-menu">
             <a href="/user/dashboard" class="navbar2_link w-nav-link">Dashboard</a>
             <a href="/user/plume-wiki" class="navbar2_link w-nav-link">Plume Wiki</a>
-            <a href="/user/payments" aria-current="page" class="navbar2_link w-nav-link w--current">Rewards placeholder 🪶</a>
+            <a href="/user/payments" aria-current="page" class="navbar2_link w-nav-link w--current">Rewards 🪶</a>
             <div class="mobile-menu-wrap-side">
               <div class="side-bar">
                 <div class="w-layout-grid sidebar-menu-grid">

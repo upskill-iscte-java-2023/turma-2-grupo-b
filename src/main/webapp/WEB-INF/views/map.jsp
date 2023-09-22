@@ -48,7 +48,7 @@
              class="navbar2_menu is-page-height-tablet w-nav-menu">
             <a href="/user/dashboard" class="navbar2_link w-nav-link">Dashboard</a>
             <a href="/user/plume-wiki" class="navbar2_link w-nav-link">Plume Wiki</a>
-            <a href="/user/payments" class="navbar2_link w-nav-link">Rewards placeholder 🪶</a>
+            <a href="/user/payments" class="navbar2_link w-nav-link">Rewards 🪶</a>
             <div class="mobile-menu-wrap-side">
                 <div class="side-bar">
                     <div class="w-layout-grid sidebar-menu-grid">
