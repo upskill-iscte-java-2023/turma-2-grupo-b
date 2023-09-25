@@ -834,5 +834,23 @@
         });
     });
 </script>--%>
+
+<script>
+    $(document).ready(function() {
+        $('#search').on('input', function() {
+            let searchTerm = $(this).val().toLowerCase();
+
+            $('.art-card.with-animation').each(function() {
+                let birdCommonName = $(this).find('.h5.bird-header').text().toLowerCase();
+                let birdScientificName = $(this).find('.text-muted').text().toLowerCase();
+                if (birdCommonName.indexOf(searchTerm) !== -1 || birdScientificName.indexOf(searchTerm) !== -1) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
