@@ -204,7 +204,7 @@
                     <div class="frame">
                         <div class="center">
                             <div class="title">
-                                <h1>Drop file to upload</h1>
+                                <h1></h1>
                             </div>
                             <div class="frame">
                                 <div class="center">
@@ -248,7 +248,7 @@
         <input type="file" accept="image/" capture="environment" id="camera-photo">
             <label for="camera-photo" class="take-picture-button "></label>
         </div>
-        <input type="file" accept="image/" id="mobile-upload">
+        <input type="file" accept="image/" id="mobile-upload" class="mobile" style="display: none;">
         <label for="mobile-upload" class="upload-button-mobile mobile"></label>
 
     </div>

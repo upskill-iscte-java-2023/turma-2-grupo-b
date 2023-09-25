@@ -5,9 +5,12 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import plume.entities.LoggedInUserEntity;
+import plume.entities.SightingModel;
 import plume.services.*;
 
 import javax.xml.crypto.Data;
+import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping("/user")
@@ -41,12 +44,22 @@ public class UserController {
     public ModelAndView myObservationsController(){
         ModelAndView model = new ModelAndView("my-observations");
         model.addObject("user",authService.getCurrentUser());
-        try {
-            model.addObject("sightings", dataService.getSightingsByUser(authService.getCurrentUser()).subList(0,3));
-        } catch (IndexOutOfBoundsException e){
 
+        List<SightingModel> userSightings = dataService.getSightingsByUser(authService.getCurrentUser());
+
+        List<SightingModel> latestSightings = new ArrayList<>();
+
+        if (userSightings.isEmpty()) {
+            return model;
+        } else {
+            // Determine the number of latest sightings to retrieve (up to 3)
+            int numLatestSightings = Math.min(userSightings.size(), 3);
+
+            // Retrieve the latest sightings using subList
+            latestSightings = userSightings.subList(0, numLatestSightings);
+            model.addObject("sightings",latestSightings);
+            return model;
         }
-        return model;
     }
 
     @GetMapping("/my-subscriptions")
