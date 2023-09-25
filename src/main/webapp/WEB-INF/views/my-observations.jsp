@@ -12,6 +12,7 @@
     <link href="../css/normalize.css" rel="stylesheet" type="text/css">
     <link href="../css/webflow.css" rel="stylesheet" type="text/css">
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -447,7 +448,7 @@
                                     <div class="inner-content-group">
                                         <div class="page-title-group">
                                             <h1 class="heading-style-h2">📸 My Observations</h1>
-                                            <p class="text-color-grey">2 out of 4 collections created, <a
+                                            <p class="text-color-grey">3 out of 4 collections created, <a
                                                     href="/user/my-subscriptions"
                                                     class="text-weight-medium text-color-primary action-link">upgrade
                                                 for more collections</a>
@@ -456,6 +457,103 @@
                                         <div class="divider"></div>
                                     </div>
                                     <div class="inner-content-group gap-32px">
+                                        <div class="collection">
+                                            <div class="art-card-context alt">
+                                                <div class="content-wrap">
+                                                    <h2 class="heading-style-h5">Observations</h2>
+                                                    <p class="text-color-grey">Latest uploads</p>
+                                                </div>
+                                                <div class="action-group">
+                                                    <div data-hover="false" data-delay="0"
+                                                         class="option-menu w-dropdown">
+                                                        <div class="dropdown-toggle w-dropdown-toggle">
+                                                            <div class="icon-flex w-embed">
+                                                                <svg width="16" height="16" viewbox="0 0 16 16"
+                                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M8.00004 8.66665C8.36824 8.66665 8.66671 8.36818 8.66671 7.99998C8.66671 7.63178 8.36824 7.33331 8.00004 7.33331C7.63184 7.33331 7.33337 7.63178 7.33337 7.99998C7.33337 8.36818 7.63184 8.66665 8.00004 8.66665Z"
+                                                                          stroke="black" stroke-width="2"
+                                                                          stroke-linecap="round"
+                                                                          stroke-linejoin="round"></path>
+                                                                    <path d="M12.6667 8.66665C13.0349 8.66665 13.3333 8.36818 13.3333 7.99998C13.3333 7.63178 13.0349 7.33331 12.6667 7.33331C12.2985 7.33331 12 7.63178 12 7.99998C12 8.36818 12.2985 8.66665 12.6667 8.66665Z"
+                                                                          stroke="black" stroke-width="2"
+                                                                          stroke-linecap="round"
+                                                                          stroke-linejoin="round"></path>
+                                                                    <path d="M3.33329 8.66665C3.70148 8.66665 3.99996 8.36818 3.99996 7.99998C3.99996 7.63178 3.70148 7.33331 3.33329 7.33331C2.96511 7.33331 2.66663 7.63178 2.66663 7.99998C2.66663 8.36818 2.96511 8.66665 3.33329 8.66665Z"
+                                                                          stroke="black" stroke-width="2"
+                                                                          stroke-linecap="round"
+                                                                          stroke-linejoin="round"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <nav class="dropdown-list w-dropdown-list">
+                                                            <a href="#" class="dd-link w-dropdown-link">Rename</a>
+                                                            <a href="#" class="dd-link w-dropdown-link">Duplicate</a>
+                                                            <a href="#"
+                                                               class="dd-link danger w-dropdown-link">Delete</a>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-layout-grid _3-col-grid scroll-grid">
+                                                <a id="w-node-_310b1e3a-efa8-db61-8866-6a8cc4c06a18-6e2eeeab" href="#"
+                                                   class="w-inline-block">
+<%--                                                    <div class="art-card"><img--%>
+<%--                                                            src="/static/images/My-Observations_Img1.png" loading="lazy"--%>
+<%--                                                            sizes="(max-width: 479px) 100vw, (max-width: 991px) 89vw, (max-width: 1279px) 66vw, 736.1875px"--%>
+<%--                                                            srcset="../images/My-Observations_Img1.png 500w, ../images/My-Observations_Img1.png 800w, ../images/My-Observations_Img1.png 844w"--%>
+<%--                                                            alt="" class="art-image">--%>
+<%--                                                        <div class="action-icon w-embed">--%>
+<%--                                                            <svg width="32" height="32" viewbox="0 0 32 32" fill="none"--%>
+<%--                                                                 xmlns="http://www.w3.org/2000/svg">--%>
+<%--                                                                <rect width="32" height="32" rx="8" fill="white"></rect>--%>
+<%--                                                                <path d="M13.3333 19.3333L15.9999 22M15.9999 22L18.6666 19.3333M15.9999 22V16M21.3333 19.1619C22.1476 18.4893 22.6666 17.4719 22.6666 16.3333C22.6666 14.3083 21.025 12.6667 18.9999 12.6667C18.8543 12.6667 18.718 12.5907 18.644 12.4652C17.7747 10.9899 16.1695 10 14.3333 10C11.5718 10 9.33325 12.2386 9.33325 15C9.33325 16.3774 9.89022 17.6247 10.7912 18.529"--%>
+<%--                                                                      stroke="black" stroke-width="2"--%>
+<%--                                                                      stroke-linecap="round"--%>
+<%--                                                                      stroke-linejoin="round"></path>--%>
+<%--                                                            </svg>--%>
+<%--                                                        </div>--%>
+<%--                                                    </div>--%>
+<%--                                                </a>--%>
+<%--                                                <a id="w-node-_310b1e3a-efa8-db61-8866-6a8cc4c06a1c-6e2eeeab" href="#"--%>
+<%--                                                   class="w-inline-block">--%>
+<%--                                                    <div class="art-card"><img src="../images/My-Observations_Img2.png"--%>
+<%--                                                                               loading="lazy"--%>
+<%--                                                                               sizes="(max-width: 479px) 100vw, (max-width: 991px) 89vw, (max-width: 1279px) 66vw, 736.1875px"--%>
+<%--                                                                               srcset="../images/My-Observations_Img2.png 500w, ../images/My-Observations_Img2.png 800w, ../images/My-Observations_Img2.png 844w"--%>
+<%--                                                                               alt="" class="art-image">--%>
+<%--                                                        <div class="action-icon w-embed">--%>
+<%--                                                            <svg width="32" height="32" viewbox="0 0 32 32" fill="none"--%>
+<%--                                                                 xmlns="http://www.w3.org/2000/svg">--%>
+<%--                                                                <rect width="32" height="32" rx="8" fill="white"></rect>--%>
+<%--                                                                <path d="M13.3333 19.3333L15.9999 22M15.9999 22L18.6666 19.3333M15.9999 22V16M21.3333 19.1619C22.1476 18.4893 22.6666 17.4719 22.6666 16.3333C22.6666 14.3083 21.025 12.6667 18.9999 12.6667C18.8543 12.6667 18.718 12.5907 18.644 12.4652C17.7747 10.9899 16.1695 10 14.3333 10C11.5718 10 9.33325 12.2386 9.33325 15C9.33325 16.3774 9.89022 17.6247 10.7912 18.529"--%>
+<%--                                                                      stroke="black" stroke-width="2"--%>
+<%--                                                                      stroke-linecap="round"--%>
+<%--                                                                      stroke-linejoin="round"></path>--%>
+<%--                                                            </svg>--%>
+<%--                                                        </div>--%>
+<%--                                                    </div>--%>
+<%--                                                </a>--%>
+<%--                                                <a id="w-node-_310b1e3a-efa8-db61-8866-6a8cc4c06a20-6e2eeeab" href="#"--%>
+<%--                                                   class="w-inline-block">--%>
+<%--                                                    <div class="art-card"><img src="../images/My-Observations_Img3.png"--%>
+<%--                                                                               loading="lazy"--%>
+<%--                                                                               sizes="(max-width: 479px) 100vw, (max-width: 991px) 89vw, (max-width: 1279px) 66vw, 736.1875px"--%>
+<%--                                                                               srcset="../images/My-Observations_Img3.png 500w, ../images/My-Observations_Img3.png 800w, ../images/My-Observations_Img3.png 844w"--%>
+<%--                                                                               alt="" class="art-image">--%>
+<%--                                                        <div class="action-icon w-embed">--%>
+<%--                                                            <svg width="32" height="32" viewbox="0 0 32 32" fill="none"--%>
+<%--                                                                 xmlns="http://www.w3.org/2000/svg">--%>
+<%--                                                                <rect width="32" height="32" rx="8" fill="white"></rect>--%>
+<%--                                                                <path d="M13.3333 19.3333L15.9999 22M15.9999 22L18.6666 19.3333M15.9999 22V16M21.3333 19.1619C22.1476 18.4893 22.6666 17.4719 22.6666 16.3333C22.6666 14.3083 21.025 12.6667 18.9999 12.6667C18.8543 12.6667 18.718 12.5907 18.644 12.4652C17.7747 10.9899 16.1695 10 14.3333 10C11.5718 10 9.33325 12.2386 9.33325 15C9.33325 16.3774 9.89022 17.6247 10.7912 18.529"--%>
+<%--                                                                      stroke="black" stroke-width="2"--%>
+<%--                                                                      stroke-linecap="round"--%>
+<%--                                                                      stroke-linejoin="round"></path>--%>
+<%--                                                            </svg>--%>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
                                         <div class="collection">
                                             <div class="art-card-context alt">
                                                 <div class="content-wrap">

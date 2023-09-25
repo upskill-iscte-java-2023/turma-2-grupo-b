@@ -10,10 +10,11 @@
     <title>Map</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Webflow" name="generator">
-    <link href="/css/normalize.css" rel="stylesheet" type="text/css">
     <link href="/css/webflow.css" rel="stylesheet" type="text/css">
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
     <link href="/css/mapstyles.css" rel="stylesheet" type="text/css">
+    <link href="/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
     <script async defer
@@ -172,20 +173,17 @@
             <div class="modal-content" style="background-color: transparent; border: none">
                 <div class="modal-body">
                     <div class="frame" style="display: flex; flex-direction: column; justify-content: center">
+<%--                        <img src="../images/UploadSightinglogotest.png" alt="Upload Sighting modal logo" class="centered-image">--%>
                         <div style="padding: 5px">
                         <h1>Upload your Sighting</h1>
                         </div>
                         <div style="padding: 5px">
-                        <label for="description" style="width: 100%">
-                            Description:
-                            <input id="description" type="text" placeholder="add a description" style="width: 100%">
-                        </label>
+                            <label for="description">Description:</label>
+                            <input id="description" type="text" placeholder="add a description">
                         </div>
-                        <div>
-                            <label for="observedOn" style="padding: 5px; width: 100%">
-                                When was this?
+                        <div style="padding: 5px">
+                            <label for="observedOn" style="width: 100%">When was this?</label>
                             <input type="date" style="padding: 5px;" id="observedOn" placeholder="dd--mm--aaaa">
-                            </label>
                         </div>
                         <div style="display: flex; align-items: center; justify-content: center; margin-top: 20px">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">

@@ -272,15 +272,16 @@
   margin-top: -200px;
   margin-left: -200px;
   border-radius: 2px;
+    opacity: 0.9;
   box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
-  background: #3A92AF;
-  background: -webkit-linear-gradient(bottom left, #3A92AF 0%, #5CA05A 100%);
-  background: -moz-linear-gradient(bottom left, #3A92AF 0%, #5CA05A 100%);
-  background: -o-linear-gradient(bottom left, #3A92AF 0%, #5CA05A 100%);
-  background: linear-gradient(to top right, #3A92AF 0%, #5CA05A 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3A92AF', endColorstr='#5CA05A',GradientType=1 );
+  background: #d16076;
+  background: -webkit-linear-gradient(bottom left, #d48292 0%, #d48292 100%);
+  background: -moz-linear-gradient(bottom left, #d48292 0%, #d48292 100%);
+  background: -o-linear-gradient(bottom left, #d48292 0%, #d48292 100%);
+  background: linear-gradient(to top right, #d48292 0%, #d48292 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D16076', endColorstr='#E393A5',GradientType=1 );
   color: #fff;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: Ubuntu, Helvetica, sans-serif, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   border-radius: 20px;
@@ -357,18 +358,18 @@
   height: 40px;
   left: 80px;
   bottom: 24px;
-  background: #6ECE3B;
+  background: #544444;
   border-radius: 3px;
   text-align: center;
   line-height: 40px;
   font-size: 14px;
-  box-shadow: 0 2px 0 0 #498C25;
+  box-shadow: 0 2px 0 0 #b83c78;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
 .upload-btn:hover {
-  box-shadow: 0 2px 0 0 #498C25, 0 2px 10px 0 #6ECE3B;
+  box-shadow: 0 2px 0 0 #d48292, 0 2px 10px 0 #d16076;
 }
 
 .bar {
@@ -765,8 +766,9 @@ img {
 }
 
 label {
-  color: #626a72;
+  color: #FFFFFF;
   margin-bottom: 6px;
+  font-family: Ubuntu, sans-serif;
   font-size: 15px;
   font-weight: 400;
   display: block;
@@ -873,6 +875,29 @@ figcaption {
   background-image: url('../images/Fotos-9.png'), url('../images/Fotos-10.png'), radial-gradient(circle at 0%, rgba(255, 1, 1, .15), rgba(0, 0, 0, 0) 47%), radial-gradient(circle at 40% 130%, rgba(122, 167, 255, .41), rgba(0, 0, 0, 0) 58%);
   background-position: 0 0, 0 0, 0 0, 0 0;
   background-size: cover, cover, auto, auto;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #b83c78 !important;
+  border-color: #b83c78 !important;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #544444 !important;
+  border-color: #544444 !important;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgb(184, 60, 120);
+}
+
+.btn-primary:active {
+  color: #fff;
+  background-color: #b83c78;
+  border-color: #b83c78;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .button {
@@ -2064,6 +2089,84 @@ figcaption {
   margin-bottom: 16px;
   font-size: 64px;
   line-height: 1.15em;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+/* Style the h1 element inside the modal */
+.modal-body h1 {
+  font-size: 24px; /* Adjust the font size as needed */
+  text-align: center;
+}
+
+/* Style the input elements */
+label {
+  width: 100%;
+}
+
+label[for="observedOn"] input[type="date"] {
+  color: #544444;
+}
+#observedOn {
+  color: #544444;
+}
+
+label[for="observedOn"] input[type="date"] {
+}
+
+label[for="description"] {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#description {
+  color: #544444;
+}
+
+/* Style the centered image to fit within the modal */
+.centered-image {
+  max-width: 25%;
+  height: 25%;
+  margin-bottom: 10px; /* Adjust this margin as needed */
+  display: block;
+  /*margin: 0 auto;*/
+}
+
+/*input[type="text"],*/
+/*input[type="date"] {*/
+/*  width: 100%;*/
+/*  padding: 5px;*/
+/*}*/
+
+/* Style the button */
+.btn-primary {
+  /* Add your custom button styles here */
+  background-color: #b83c78;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Add any additional styles for the button's container if needed */
+.modal-body .frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Center the button */
+.modal-body .frame .btn-primary {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Adjust the modal background */
+.modal.fade {
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the modal */
 }
 
 .error-3 {
