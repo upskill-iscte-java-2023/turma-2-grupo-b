@@ -1,7 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="plume.entities.LoggedInUserEntity" %>
-<% String user = LoggedInUserEntity.getUser().getName(); %>
 <!DOCTYPE html><!-- This site was totally hand made -->
 <!-- Last Published: Tue Sep 05 2023 16:28:50 GMT+0000 (Coordinated Universal Time) -->
 <html data-wf-page="64f615e4cfda04626e2eeeb5" data-wf-site="64f615e4cfda04626e2eee44">
@@ -128,8 +126,9 @@
             </div>
         </nav>
         <div id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a5e-f8957a37" class="navbar2_button-wrapper">
-            <a href="/user/dashboard" class="profile-link w-inline-block"><img
-                    src="/images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image"></a>
+            <a href="/user/dashboard" class="profile-link w-inline-block">
+                <img src="${user.profilePicPath}" loading="lazy" alt="" class="profile-link-image">
+            </a>
             <form method="POST" action="/auth/logout">
                 <button class="user-log-in-log-out-2" type="submit">
                     Log Out
@@ -446,7 +445,7 @@
                                 <div class="inner-content">
                                     <div class="inner-content-group">
                                         <div class="page-title-group">
-                                            <h1 class="heading-style-h2">🌿Hey <%=user%>!</h1>
+                                            <h1 class="heading-style-h2">🌿Hey ${user.name}!</h1>
                                             <p class="text-color-grey">Glad you&#x27;re with us!</p>
                                         </div>
                                         <div class="w-layout-grid _3-col-grid">

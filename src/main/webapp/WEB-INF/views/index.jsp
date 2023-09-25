@@ -49,8 +49,8 @@
                 <ul class="hamburger-list">
                     <sec:authorize access="isAuthenticated()">
                     <li class="Profile-picture-list">
-                        <a class="profile-img" href="/user/dashboard">
-                            <img src="/images/profile-image_1profile%20image.png" class="profile-img">
+                        <a href="/user/dashboard" class="profile-link w-inline-block">
+                            <img src="${user.profilePicPath}" loading="lazy" alt="" class="profile-link-image">
                         </a>
                         <form method="POST" action="/auth/logout">
                             <button type="submit" class="user-log-in-log-out">
@@ -219,8 +219,8 @@
             <div class="uui-navbar07_menu-right-2">
                 <div class="uui-navbar07_button-wrapper-2">
                     <sec:authorize access="isAuthenticated()">
-                        <a class="profile-img" href="/user/dashboard">
-                            <img src="/images/profile-image_1profile%20image.png" class="profile-img">
+                        <a href="/user/dashboard" class="profile-link w-inline-block">
+                            <img src="${user.profilePicPath}" loading="lazy" alt="" class="profile-link-image">
                         </a>
                         <form method="POST" action="/auth/logout">
                             <button type="submit" class="user-log-in-log-out">
@@ -700,7 +700,9 @@
                 <sec:authorize access="isAuthenticated()">
                     <a href="/auth/logout" class="footer-link">Logout</a>
                 </sec:authorize>
+                <sec:authorize access="isAuthenticated()">
                 <a href="/user/dashboard" class="footer-link">User Account</a>
+                </sec:authorize>
                 <a href="/index/reset-password" class="footer-link">Reset Password </a>
             </div>
         </div>

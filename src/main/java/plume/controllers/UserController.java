@@ -26,20 +26,23 @@ public class UserController {
     @GetMapping("/dashboard")
     public ModelAndView dashboardController(){
         ModelAndView model = new ModelAndView("profile-dashboard");
-        model.addObject(LoggedInUserEntity.getUser());
+        model.addObject("user",authService.getCurrentUser());
         return model;
     }
 
     @GetMapping("/map")
     public ModelAndView mapController(){
-        return new ModelAndView("map");
+        ModelAndView model = new ModelAndView("map");
+        model.addObject("user",authService.getCurrentUser());
+        return model;
     }
 
     @GetMapping("/my-observations")
     public ModelAndView myObservationsController(){
         ModelAndView model = new ModelAndView("my-observations");
+        model.addObject("user",authService.getCurrentUser());
         try {
-            model.addObject("Sightings", dataService.getSightingsByUser(authService.getCurrentUser()).subList(0,3));
+            model.addObject("sightings", dataService.getSightingsByUser(authService.getCurrentUser()).subList(0,3));
         } catch (IndexOutOfBoundsException e){
 
         }
@@ -48,29 +51,38 @@ public class UserController {
 
     @GetMapping("/my-subscriptions")
     public ModelAndView mysubscriptionsController(){
-        return new ModelAndView("my-subscriptions");
+        ModelAndView model = new ModelAndView("my-subscriptions");
+        model.addObject("user",authService.getCurrentUser());
+        return model;
     }
 
     @GetMapping("/payments")
     public ModelAndView paymentsController(){
-        return new ModelAndView("payments");
+        ModelAndView model = new ModelAndView("payments");
+        model.addObject("user",authService.getCurrentUser());
+        return model;
     }
 
     @GetMapping("/plume-wiki")
     public ModelAndView plumeWikiController(){
-        ModelAndView mav = new ModelAndView("plume-wiki");
-        mav.addObject("plume_wiki", plumeWikiService.getAllBirdData());
-        return mav;
+        ModelAndView model = new ModelAndView("plume-wiki");
+        model.addObject("user",authService.getCurrentUser());
+        model.addObject("plume_wiki", plumeWikiService.getAllBirdData());
+        return model;
     }
 
     @GetMapping("/settings")
     public ModelAndView settingsController(){
-        return new ModelAndView("account-settings");
+        ModelAndView model = new ModelAndView("account-settings");
+        model.addObject("user",authService.getCurrentUser());
+        return model;
     }
 
     @GetMapping("/challenges")
     public ModelAndView challengesController(){
-        return new ModelAndView("challenges");
+        ModelAndView model = new ModelAndView("challenges");
+        model.addObject("user",authService.getCurrentUser());
+        return model;
     }
 
 

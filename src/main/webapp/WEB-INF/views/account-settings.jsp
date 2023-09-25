@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
-<%@ page import="plume.services.AuthServiceImpl" %>
+
 <!DOCTYPE html><!-- This site was totally hand made -->
 <!-- Last Published: Tue Sep 05 2023 16:28:50 GMT+0000 (Coordinated Universal Time) -->
 <html data-wf-page="64f615e4cfda04626e2eee87" data-wf-site="64f615e4cfda04626e2eee44">
@@ -326,7 +326,7 @@
                 </nav>
                 <div id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a5e-f8957a37" class="navbar2_button-wrapper">
                     <a href="/user/dashboard" class="profile-link w-inline-block">
-                        <img src="" loading="lazy" alt="" class="profile-link-image">
+                        <img src="${user.profilePicPath}" loading="lazy" alt="" class="profile-link-image">
                     </a>
                     <form method="POST" action="/auth/logout">
                         <button class="user-log-in-log-out-2" type="submit">
@@ -479,12 +479,7 @@
                                                     <input type="submit" value="Save changes" data-wait="Please wait..."
                                                            class="button-3 is-form-submit w-button">
                                                 </form>
-                                                <div class="form_message-success w-form-done">
-                                                    <div>Thank you! Your submission has been received!</div>
-                                                </div>
-                                                <div class="form_message-error w-form-fail">
-                                                    <div>Oops! Something went wrong while submitting the form.</div>
-                                                </div>
+
                                             </div>
                                         </div>
                                         <div class="divider"></div>
@@ -506,14 +501,16 @@
                                                         Password</label><input type="password"
                                                                                class="form_input-2 w-input"
                                                                                maxlength="256" name="Full-name-2"
-                                                                               data-name="Full Name 2" placeholder=""
+                                                                               data-name="Full Name 2"
+                                                                               placeholder="Current Password"
                                                                                id="Full-name-2" required=""></div>
                                                     <div class="form_field-wrapper"><label for="New-Password"
                                                                                            class="form_label">Confirm
                                                         Password</label><input type="password"
                                                                                class="form_input-2 w-input"
                                                                                maxlength="256" name="New-Password"
-                                                                               data-name="New Password" placeholder=""
+                                                                               data-name="New Password"
+                                                                               placeholder="New Password"
                                                                                id="New-Password" required=""></div>
                                                     <div class="form_field-wrapper"><label for="Confirm-Password"
                                                                                            class="form_label">New
@@ -521,17 +518,12 @@
                                                                                class="form_input-2 w-input"
                                                                                maxlength="256" name="Confirm-Password"
                                                                                data-name="Confirm Password"
-                                                                               placeholder="" id="Confirm-Password"
+                                                                               placeholder="Confirm Password"
+                                                                               id="Confirm-Password"
                                                                                required=""></div>
                                                     <input type="submit" value="Save changes" data-wait="Please wait..."
                                                            class="button-3 is-form-submit w-button">
                                                 </form>
-                                                <div class="form_message-success w-form-done">
-                                                    <div>Thank you! Your submission has been received!</div>
-                                                </div>
-                                                <div class="form_message-error w-form-fail">
-                                                    <div>Oops! Something went wrong while submitting the form.</div>
-                                                </div>
                                             </div>
                                         </div>
                                         <div class="divider"></div>
@@ -548,18 +540,17 @@
                                                       action="/api/upload-photo" class="form_form"
                                                       enctype="multipart/form-data">
                                                     <div class="form_field-wrapper form-profile-photo-upload">
-                                                        <input type="file" name="profile-pic-path"
-                                                               data-wait="Please wait..." class="w-button">
+                                                        <label for="profile_pic_photo_upload"
+                                                               class="button-3 is-form-submit" style="width: 30%; height: 80px;">
+                                                            Upload Profile Picture
+                                                            <input type="file" name="profile-pic-path"
+                                                                   data-wait="Please wait..." class="w-button"
+                                                                   id="profile_pic_photo_upload" style="opacity: 0;">
+                                                        </label>
                                                     </div>
                                                     <input type="submit" value="Save changes" data-wait="Please wait..."
                                                            class="button-3 is-form-submit w-button">
                                                 </form>
-                                                <div class="form_message-success w-form-done">
-                                                    <div>Thank you! Your submission has been received!</div>
-                                                </div>
-                                                <div class="form_message-error w-form-fail">
-                                                    <div>Oops! Something went wrong while submitting the form.</div>
-                                                </div>
                                             </div>
                                         </div>
                                         <div class="divider"></div>
@@ -585,12 +576,6 @@
                                                     <input type="submit" value="Save changes" data-wait="Please wait..."
                                                            class="button-3 is-form-submit w-button">
                                                 </form>
-                                                <div class="form_message-success w-form-done">
-                                                    <div>Thank you! Your submission has been received!</div>
-                                                </div>
-                                                <div class="form_message-error w-form-fail">
-                                                    <div>Oops! Something went wrong while submitting the form.</div>
-                                                </div>
                                             </div>
                                         </div>
                                         <div class="divider"></div>
@@ -614,12 +599,6 @@
                                                                                   data-wait="Please wait..."
                                                                                   class="button-3 is-form-submit margin-top margin-medium background-danger w-button">
                                                 </form>
-                                                <div class="form_message-success w-form-done">
-                                                    <div>Thank you! Your submission has been received!</div>
-                                                </div>
-                                                <div class="form_message-error w-form-fail">
-                                                    <div>Oops! Something went wrong while submitting the form.</div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>

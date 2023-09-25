@@ -140,7 +140,7 @@
         </nav>
         <div id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a5e-f8957a37" class="navbar2_button-wrapper">
             <a href="/user/dashboard" class="profile-link w-inline-block">
-                <img src="/images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image">
+                <img src="${user.profilePicPath}" loading="lazy" alt="" class="profile-link-image">
             </a>
             <form method="POST" action="/auth/logout">
                 <button class="user-log-in-log-out-2" type="submit">
@@ -248,7 +248,8 @@
         <input type="file" accept="image/" capture="environment" id="camera-photo">
             <label for="camera-photo" class="take-picture-button "></label>
         </div>
-        <button class="upload-button-mobile mobile" data-bs-toggle="modal" data-bs-target="#modal"></button>
+        <input type="file" accept="image/" id="mobile-upload">
+        <label for="mobile-upload" class="upload-button-mobile mobile"></label>
 
     </div>
 </div>
@@ -282,7 +283,9 @@
                 <sec:authorize access="isAuthenticated()">
                     <a href="/auth/logout" class="footer-link">Logout</a>
                 </sec:authorize>
-                <a href="/user/dashboard" class="footer-link">User Account</a>
+                <sec:authorize access="isAuthenticated()">
+                    <a href="/user/dashboard" class="footer-link">User Account</a>
+                </sec:authorize>
                 <a href="/index/reset-password" class="footer-link">Reset Password </a>
             </div>
         </div>

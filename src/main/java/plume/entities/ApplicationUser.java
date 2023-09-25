@@ -46,7 +46,7 @@ public class ApplicationUser implements UserDetails{
     }
 
 
-    public ApplicationUser(Integer userId, String username, String name, String password, Set<RoleModel> authorities, boolean verified, String token) {
+    public ApplicationUser(Integer userId, String username, String name, String password, Set<RoleModel> authorities, boolean verified, String token, String profilePicPath) {
         super();
         this.userId = userId;
         this.username = username;
@@ -55,6 +55,7 @@ public class ApplicationUser implements UserDetails{
         this.authorities = authorities;
         this.verified = verified;
         this.token = token;
+        this.profilePicPath = profilePicPath;
     }
 
     public Integer getUserId() {
@@ -139,6 +140,10 @@ public class ApplicationUser implements UserDetails{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getProfilePicPath() {
+        return profilePicPath;
     }
 
     public void setProfilePicPath(String url) {

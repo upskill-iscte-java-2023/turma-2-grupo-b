@@ -30,39 +30,81 @@ public class IndexController {
     @GetMapping("/")
     public ModelAndView indexController() {
         ModelAndView model = new ModelAndView("index");
-
-        if (LoggedInUserEntity.isLoggedIn()) {
-            model.addObject(LoggedInUserEntity.getUser());
+        ApplicationUser user = authService.getCurrentUser();
+        if (user != null) {
+            model.addObject("user",authService.getCurrentUser());
         }
-
         return model;
     }
 
     @GetMapping("/our-team")
     public ModelAndView ourTeamController() {
-        return new ModelAndView("our-team");
+
+        ModelAndView model = new ModelAndView("our-team");
+
+        ApplicationUser user = authService.getCurrentUser();
+        if (user != null) {
+            model.addObject("user",authService.getCurrentUser());
+        }
+        return model;
     }
 
     @GetMapping("/subscription")
     public ModelAndView subscriptionController() {
-        return new ModelAndView("subscription");
+
+        ModelAndView model = new ModelAndView("subscription");
+
+        ApplicationUser user = authService.getCurrentUser();
+        if (user != null) {
+            model.addObject("user",authService.getCurrentUser());
+        }
+        return model;
     }
 
     @GetMapping("/contact")
     public ModelAndView contactController() {
-        return new ModelAndView("contact");
+
+        ModelAndView model = new ModelAndView("contact");
+
+        ApplicationUser user = authService.getCurrentUser();
+        if (user != null) {
+            model.addObject("user",authService.getCurrentUser());
+        }
+        return model;
     }
 
     @GetMapping("/privacy-policy")
     public ModelAndView ppController() {
-        return new ModelAndView("privacy-policy");
+
+        ModelAndView model = new ModelAndView("privacy-policy");
+
+        ApplicationUser user = authService.getCurrentUser();
+        if (user != null) {
+            model.addObject("user",authService.getCurrentUser());
+        }
+        return model;
     }
     @GetMapping("/terms")
     public ModelAndView termsConditionsController() {
-        return new ModelAndView("terms-conditions");
+
+        ModelAndView model = new ModelAndView("terms-conditions");
+
+        ApplicationUser user = authService.getCurrentUser();
+        if (user != null) {
+            model.addObject("user",authService.getCurrentUser());
+        }
+        return model;
     }
     @GetMapping("/reset-password")
-    public ModelAndView resetPassword() {return new ModelAndView("reset-password");}
+    public ModelAndView resetPassword() {
+
+        ModelAndView model = new ModelAndView("reset-password");
+        ApplicationUser user = authService.getCurrentUser();
+        if (user != null) {
+            model.addObject("user", authService.getCurrentUser());
+        }
+        return model;
+    }
 
     @PostMapping("/sendreset")
     public RedirectView confirmResetEmail(@RequestParam("email") String email){

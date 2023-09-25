@@ -2646,6 +2646,7 @@ label[for="description"] {
   flex: 1;
   font-size: 14px;
   display: inline-block;
+  color: #1d1d1d;
 }
 
 .white-text-link {

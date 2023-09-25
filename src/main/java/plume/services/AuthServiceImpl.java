@@ -65,7 +65,10 @@ public class AuthServiceImpl implements AuthService {
 
         String token = tokenService.generateVerificationToken();
         emailService.sendVerificationEmail(username,token);
-        ApplicationUser createdUser = new ApplicationUser(0, username,name,encodedPassword,authorities,false,token);
+
+        String defaultProfilePicUrl = "https://storage.googleapis.com/plume-wiki/default_profile_img.png";
+
+        ApplicationUser createdUser = new ApplicationUser(0, username,name,encodedPassword,authorities,false,token, defaultProfilePicUrl);
 
         userRepository.save(createdUser);
 
@@ -105,10 +108,15 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public ApplicationUser getCurrentUser(){
 
-        ApplicationUser user = (ApplicationUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        if(user != null && user.getUserId() != null) {
-            return user;
+        Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+
+        if (principal instanceof ApplicationUser) {
+            ApplicationUser user = (ApplicationUser) principal;
+            if (user != null && user.getUserId() != null) {
+                return user;
+            }
         }
+        //Thank you José.
         return null;
     }
 

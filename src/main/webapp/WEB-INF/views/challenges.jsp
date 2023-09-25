@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html><!--  This site was totally hand made -->
 <!--  Last Published: Tue Sep 05 2023 16:28:50 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="64f615e4cfda04626e2eee89" data-wf-site="64f615e4cfda04626e2eee44">
@@ -245,7 +246,10 @@ margin: 0rem !important;
             </div>
           </nav>
           <div id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a5e-f8957a37" class="navbar2_button-wrapper">
-            <a href="/user/dashboard" class="profile-link w-inline-block"><img src="/images/profile-image_1profile image.png" loading="lazy" alt="" class="profile-link-image"></a><form method="POST" action="/auth/logout">
+              <a href="/user/dashboard" class="profile-link w-inline-block">
+                  <img src="${user.profilePicPath}" loading="lazy" alt="" class="profile-link-image">
+              </a>
+              <form method="POST" action="/auth/logout">
         <button class="user-log-in-log-out-2"  type="submit">
         Log Out
       </button>
