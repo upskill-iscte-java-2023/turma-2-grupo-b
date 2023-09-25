@@ -32,15 +32,12 @@ public class AuthServiceImpl implements AuthService {
     @Autowired
     private EmailService emailService;
 
-    private ApplicationUser user;
-
     PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(12);
 
     @Override
     public ApplicationUser validateLogin(String username, String password) {
         ApplicationUser user = userRepository.getApplicationUserByUsername(username);
         if(user != null && passwordEncoder.matches(password, user.getPassword())) {
-            this.user = userRepository.getApplicationUserByUsername(username);
             if (user.isVerified()) {
                 return user;
             } else {
@@ -105,7 +102,14 @@ public class AuthServiceImpl implements AuthService {
         return false;
     }
 
-    public ApplicationUser getUser() {
-        return user;
+    @Override
+    public ApplicationUser getCurrentUser(){
+
+        ApplicationUser user = (ApplicationUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        if(user != null && user.getUserId() != null) {
+            return user;
+        }
+        return null;
     }
+
 }

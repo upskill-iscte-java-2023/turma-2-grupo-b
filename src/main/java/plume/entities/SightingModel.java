@@ -1,6 +1,7 @@
 package plume.entities;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 
 @Entity
 @Table(name="sightings")
@@ -8,13 +9,9 @@ public class SightingModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
-    private String observed_on;
+    private LocalDate observedOn;
     private String image_url;
-    @Lob
-    private byte[] photo;
-    private String tag_list;
     private String description;
-    private String place_guess;
     private String latitude;
     private String longitude;
     private String scientific_name;
@@ -22,7 +19,7 @@ public class SightingModel {
     private String taxon_id;
 
     @ManyToOne
-    private UserSightingEntity userSightingEntity;
+    private ApplicationUser user;
 
 
     public long getId() {
@@ -33,12 +30,12 @@ public class SightingModel {
         this.id = id;
     }
 
-    public String getObserved_on() {
-        return observed_on;
+    public LocalDate getObservedOn() {
+        return observedOn;
     }
 
-    public void setObserved_on(String observed_on) {
-        this.observed_on = observed_on;
+    public void setObservedOn(LocalDate observedOn) {
+        this.observedOn = observedOn;
     }
 
     public String getImage_url() {
@@ -49,44 +46,12 @@ public class SightingModel {
         this.image_url = image_url;
     }
 
-    public byte[] getPhoto() {
-        return photo;
-    }
-
-    public void setPhoto(byte[] photo) {
-        this.photo = photo;
-    }
-
-    public UserSightingEntity getUserSightingModel() {
-        return userSightingEntity;
-    }
-
-    public void setUserSightingModel(UserSightingEntity userSightingEntity) {
-        this.userSightingEntity = userSightingEntity;
-    }
-
-    public String getTag_list() {
-        return tag_list;
-    }
-
-    public void setTag_list(String tag_list) {
-        this.tag_list = tag_list;
-    }
-
     public String getDescription() {
         return description;
     }
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getPlace_guess() {
-        return place_guess;
-    }
-
-    public void setPlace_guess(String place_guess) {
-        this.place_guess = place_guess;
     }
 
     public String getLatitude() {
@@ -127,5 +92,13 @@ public class SightingModel {
 
     public void setTaxon_id(String taxon_id) {
         this.taxon_id = taxon_id;
+    }
+
+    public ApplicationUser getUser() {
+        return user;
+    }
+
+    public void setUser(ApplicationUser user) {
+        this.user = user;
     }
 }

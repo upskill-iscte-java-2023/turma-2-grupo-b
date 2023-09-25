@@ -9,6 +9,8 @@ import plume.entities.SightingModel;
 import plume.services.*;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @RestController
@@ -36,12 +38,14 @@ public class DBController {
     @PostMapping("/upload")
     public void uploadFile(@RequestParam("file") MultipartFile file,
                            @RequestParam("description") String description,
-                           @RequestParam("observedOn") String observedOn,
+                           @RequestParam("observedOn") String date,
                            @RequestParam("latitude") String lat,
                            @RequestParam("longitude") String lng) throws IOException {
 
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate observedOn = LocalDate.parse(date,formatter);
         String url = gcpStorageService.uploadFileToBucket(file);
-        dataService.storeSighting(url, description, observedOn, lat, lng, authService.getUser());
+        dataService.storeSighting(url, description, observedOn, lat, lng, authService.getCurrentUser());
     }
 
 
@@ -49,7 +53,7 @@ public class DBController {
     @PostMapping("/upload-photo")
     public RedirectView uploadPhotoController(@RequestParam("profile-pic-path") MultipartFile file) throws IOException {
         String url = gcpStorageService.uploadFileToBucket(file);
-        profilePicService.storeProfilePic(url, authService.getUser());
+        profilePicService.storeProfilePic(url, authService.getCurrentUser());
         return new RedirectView("/user/settings?success");
     }
 

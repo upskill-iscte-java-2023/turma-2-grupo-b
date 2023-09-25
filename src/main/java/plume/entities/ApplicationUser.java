@@ -39,10 +39,6 @@ public class ApplicationUser implements UserDetails{
     )
     private Set<RoleModel> authorities;
 
-    @OneToMany(mappedBy = "user")
-    private List<UserSightingEntity> userSightingEntities = new ArrayList<>();
-
-
 
     public ApplicationUser() {
         super();
@@ -123,13 +119,7 @@ public class ApplicationUser implements UserDetails{
         return true;
     }
 
-    public List<UserSightingEntity> getUserSightingModels() {
-        return userSightingEntities;
-    }
 
-    public void setUserSightingModels(List<UserSightingEntity> userSightingEntities) {
-        this.userSightingEntities = userSightingEntities;
-    }
 
     public boolean isVerified() {
         return verified;

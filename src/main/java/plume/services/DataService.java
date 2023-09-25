@@ -2,11 +2,10 @@ package plume.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.time.LocalDate;
 import plume.entities.ApplicationUser;
 import plume.entities.SightingModel;
-import plume.entities.UserSightingEntity;
 import plume.repository.SightingRepository;
-import plume.repository.UserSightingRepository;
 
 import java.util.List;
 
@@ -16,33 +15,27 @@ public class DataService {
     @Autowired
     SightingRepository sightingRepository;
 
-    @Autowired
-    UserSightingRepository userSightingRepository;
-
     public List<SightingModel> getAllData(){
         List<SightingModel> data = sightingRepository.findAll();
         return data;
     }
 
-    public void storeSighting(String url, String description, String observerdOn, String lat, String lng, ApplicationUser user){
+    public void storeSighting(String url, String description, LocalDate observerdOn, String lat, String lng, ApplicationUser user) {
 
-
+        // Create a new SightingModel
         SightingModel sightingModel = new SightingModel();
         sightingModel.setImage_url(url);
         sightingModel.setDescription(description);
-        sightingModel.setObserved_on(observerdOn);
+        sightingModel.setObservedOn(observerdOn);
         sightingModel.setLatitude(lat);
         sightingModel.setLongitude(lng);
+        sightingModel.setUser(user);
 
         sightingRepository.save(sightingModel);
+    }
 
-        UserSightingEntity userSightingEntity = new UserSightingEntity();
-
-        userSightingEntity.setUser(user);
-        userSightingEntity.setSightings(sightingModel);
-
-        userSightingRepository.save(userSightingEntity);
-
+    public List<SightingModel> getSightingsByUser(ApplicationUser user){
+        return sightingRepository.findByUser(user);
     }
 
 }

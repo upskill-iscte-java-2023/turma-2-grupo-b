@@ -11,5 +11,5 @@ public interface AuthService {
 
     boolean changePassword(String email,String password, String resetToken);
 
-    ApplicationUser getUser();
+    ApplicationUser getCurrentUser();
 }

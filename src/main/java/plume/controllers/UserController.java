@@ -1,12 +1,13 @@
 package plume.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import plume.entities.LoggedInUserEntity;
-import plume.services.PlumeWikiService;
-import plume.services.ProfilePicService;
-import plume.services.UserService;
+import plume.services.*;
+
+import javax.xml.crypto.Data;
 
 @RestController
 @RequestMapping("/user")
@@ -15,6 +16,12 @@ public class UserController {
 
     @Autowired
     PlumeWikiService plumeWikiService;
+
+    @Autowired
+    DataService dataService;
+
+    @Autowired
+    AuthService authService;
 
     @GetMapping("/dashboard")
     public ModelAndView dashboardController(){
@@ -30,7 +37,13 @@ public class UserController {
 
     @GetMapping("/my-observations")
     public ModelAndView myObservationsController(){
-        return new ModelAndView("my-observations");
+        ModelAndView model = new ModelAndView("my-observations");
+        try {
+            model.addObject("Sightings", dataService.getSightingsByUser(authService.getCurrentUser()).subList(0,3));
+        } catch (IndexOutOfBoundsException e){
+
+        }
+        return model;
     }
 
     @GetMapping("/my-subscriptions")
