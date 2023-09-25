@@ -473,6 +473,29 @@
                                     <div class="inner-content-group">
                                         <div class="page-title-group">
                                             <h2 class="heading-style-h3">Your Recent Observations</h2>
+                                            <c:forEach var="sighting" items="${sightings}">
+                                                <a id="art-card-holder" href="#"
+                                                   class="w-inline-block">
+                                                    <div class="art-card"><img
+                                                            loading="lazy"
+                                                            sizes="(max-width: 479px) 100vw, (max-width: 991px) 89vw, (max-width: 1279px) 66vw, 736.1875px"
+                                                            src="${sighting.image_url}"
+
+                                                            alt="" class="art-image"
+                                                            sizes="(max-width: 479px) 100vw, (max-width: 991px) 89vw, (max-width: 1279px) 66vw, 736.1875px">
+                                                        <div class="action-icon w-embed">
+                                                            <svg width="32" height="32" viewbox="0 0 32 32" fill="none"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <rect width="32" height="32" rx="8" fill="white"></rect>
+                                                                <path d="M13.3333 19.3333L15.9999 22M15.9999 22L18.6666 19.3333M15.9999 22V16M21.3333 19.1619C22.1476 18.4893 22.6666 17.4719 22.6666 16.3333C22.6666 14.3083 21.025 12.6667 18.9999 12.6667C18.8543 12.6667 18.718 12.5907 18.644 12.4652C17.7747 10.9899 16.1695 10 14.3333 10C11.5718 10 9.33325 12.2386 9.33325 15C9.33325 16.3774 9.89022 17.6247 10.7912 18.529"
+                                                                      stroke="black" stroke-width="2"
+                                                                      stroke-linecap="round"
+                                                                      stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </c:forEach>
                                             <p class="text-color-grey">Continue where you left off</p>
                                         </div>
 

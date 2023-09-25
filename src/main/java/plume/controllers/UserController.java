@@ -30,7 +30,22 @@ public class UserController {
     public ModelAndView dashboardController(){
         ModelAndView model = new ModelAndView("profile-dashboard");
         model.addObject("user",authService.getCurrentUser());
-        return model;
+
+        List<SightingModel> userSightings = dataService.getSightingsByUser(authService.getCurrentUser());
+
+        List<SightingModel> latestSightings = new ArrayList<>();
+
+        if (userSightings.isEmpty()) {
+            return model;
+        } else {
+            // Determine the number of latest sightings to retrieve (up to 3)
+            int numLatestSightings = Math.min(userSightings.size(), 3);
+
+            // Retrieve the latest sightings using subList
+            latestSightings = userSightings.subList(0, numLatestSightings);
+            model.addObject("sightings", latestSightings);
+            return model;
+        }
     }
 
     @GetMapping("/map")
