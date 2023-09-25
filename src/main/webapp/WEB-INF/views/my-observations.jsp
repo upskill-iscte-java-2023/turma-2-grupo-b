@@ -461,15 +461,46 @@
                                             <div class="art-card-context alt">
                                                 <div class="content-wrap">
                                                     <h2 class="heading-style-h5">Observations</h2>
+                                                    <p class="text-color-grey">Latest uploads</p>
+                                                    <div class="action-group">
+                                                        <div data-hover="false" data-delay="0"
+                                                             class="option-menu w-dropdown">
+                                                            <div class="dropdown-toggle w-dropdown-toggle">
+                                                                <div class="icon-flex w-embed">
+                                                                    <svg width="16" height="16" viewbox="0 0 16 16"
+                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M8.00004 8.66665C8.36824 8.66665 8.66671 8.36818 8.66671 7.99998C8.66671 7.63178 8.36824 7.33331 8.00004 7.33331C7.63184 7.33331 7.33337 7.63178 7.33337 7.99998C7.33337 8.36818 7.63184 8.66665 8.00004 8.66665Z"
+                                                                              stroke="black" stroke-width="2"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round"></path>
+                                                                        <path d="M12.6667 8.66665C13.0349 8.66665 13.3333 8.36818 13.3333 7.99998C13.3333 7.63178 13.0349 7.33331 12.6667 7.33331C12.2985 7.33331 12 7.63178 12 7.99998C12 8.36818 12.2985 8.66665 12.6667 8.66665Z"
+                                                                              stroke="black" stroke-width="2"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round"></path>
+                                                                        <path d="M3.33329 8.66665C3.70148 8.66665 3.99996 8.36818 3.99996 7.99998C3.99996 7.63178 3.70148 7.33331 3.33329 7.33331C2.96511 7.33331 2.66663 7.63178 2.66663 7.99998C2.66663 8.36818 2.96511 8.66665 3.33329 8.66665Z"
+                                                                              stroke="black" stroke-width="2"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round"></path>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                            <nav class="dropdown-list w-dropdown-list">
+                                                                <a href="#" class="dd-link w-dropdown-link">Rename</a>
+                                                                <a href="#" class="dd-link w-dropdown-link">Duplicate</a>
+                                                                <a href="#"
+                                                                   class="dd-link danger w-dropdown-link">Delete</a>
+                                                            </nav>
+                                                        </div>
+                                                    </div>
+
                                                     <c:forEach var="sighting" items="${sightings}">
                                                     <a id="art-card-holder" href="#"
                                                        class="w-inline-block">
-                                                        <div class="art-card"><img
+                                                        <div class="art-card-observations"><img
                                                                 loading="lazy"
                                                                 sizes="(max-width: 479px) 100vw, (max-width: 991px) 89vw, (max-width: 1279px) 66vw, 736.1875px"
                                                                 src="${sighting.image_url}"
-
-                                                                alt="" class="art-image"
+                                                                alt="" class="art-image-observations"
                                                                 sizes="(max-width: 479px) 100vw, (max-width: 991px) 89vw, (max-width: 1279px) 66vw, 736.1875px">
                                                             <div class="action-icon w-embed">
                                                                 <svg width="32" height="32" viewbox="0 0 32 32" fill="none"
@@ -484,42 +515,15 @@
                                                         </div>
                                                     </a>
                                                     </c:forEach>
-                                                    <p class="text-color-grey">Latest uploads</p>
                                                 </div>
-                                                <div class="action-group">
-                                                    <div data-hover="false" data-delay="0"
-                                                         class="option-menu w-dropdown">
-                                                        <div class="dropdown-toggle w-dropdown-toggle">
-                                                            <div class="icon-flex w-embed">
-                                                                <svg width="16" height="16" viewbox="0 0 16 16"
-                                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M8.00004 8.66665C8.36824 8.66665 8.66671 8.36818 8.66671 7.99998C8.66671 7.63178 8.36824 7.33331 8.00004 7.33331C7.63184 7.33331 7.33337 7.63178 7.33337 7.99998C7.33337 8.36818 7.63184 8.66665 8.00004 8.66665Z"
-                                                                          stroke="black" stroke-width="2"
-                                                                          stroke-linecap="round"
-                                                                          stroke-linejoin="round"></path>
-                                                                    <path d="M12.6667 8.66665C13.0349 8.66665 13.3333 8.36818 13.3333 7.99998C13.3333 7.63178 13.0349 7.33331 12.6667 7.33331C12.2985 7.33331 12 7.63178 12 7.99998C12 8.36818 12.2985 8.66665 12.6667 8.66665Z"
-                                                                          stroke="black" stroke-width="2"
-                                                                          stroke-linecap="round"
-                                                                          stroke-linejoin="round"></path>
-                                                                    <path d="M3.33329 8.66665C3.70148 8.66665 3.99996 8.36818 3.99996 7.99998C3.99996 7.63178 3.70148 7.33331 3.33329 7.33331C2.96511 7.33331 2.66663 7.63178 2.66663 7.99998C2.66663 8.36818 2.96511 8.66665 3.33329 8.66665Z"
-                                                                          stroke="black" stroke-width="2"
-                                                                          stroke-linecap="round"
-                                                                          stroke-linejoin="round"></path>
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                        <nav class="dropdown-list w-dropdown-list">
-                                                            <a href="#" class="dd-link w-dropdown-link">Rename</a>
-                                                            <a href="#" class="dd-link w-dropdown-link">Duplicate</a>
-                                                            <a href="#"
-                                                               class="dd-link danger w-dropdown-link">Delete</a>
-                                                        </nav>
-                                                    </div>
-                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <br>
+                                <br>
+                                <br>
                                 <div class="collection">
                                     <div class="art-card-context alt">
                                         <div class="content-wrap">
@@ -617,11 +621,14 @@
                                         </a>
                                     </div>
                                 </div>
+                                <br>
+                                <br>
+                                <br>
                                 <div class="divider"></div>
                                 <div class="collection">
                                     <div class="art-card-context alt">
                                         <div class="content-wrap">
-                                            <h2 class="heading-style-h5">Trip to the bitches!</h2>
+                                            <h2 class="heading-style-h5">Trip to the beach!</h2>
                                             <p class="text-color-grey">Some of the local birbs by the sea</p>
                                         </div>
                                         <div class="action-group">

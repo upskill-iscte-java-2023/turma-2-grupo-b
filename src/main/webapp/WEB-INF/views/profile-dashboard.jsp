@@ -470,9 +470,11 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <br>
                                     <div class="inner-content-group">
                                         <div class="page-title-group">
                                             <h2 class="heading-style-h3">Your Recent Observations</h2>
+                                            <div class="w-layout-grid _3-col-grid scroll-grid"
                                             <c:forEach var="sighting" items="${sightings}">
                                                 <a id="art-card-holder" href="#"
                                                    class="w-inline-block">
@@ -496,9 +498,9 @@
                                                     </div>
                                                 </a>
                                             </c:forEach>
+                                        </div>
                                             <p class="text-color-grey">Continue where you left off</p>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
