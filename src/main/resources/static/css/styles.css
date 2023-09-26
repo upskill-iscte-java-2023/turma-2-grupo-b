@@ -6785,6 +6785,23 @@ label[for="description"] {
   font-weight: 600;
 }
 
+.button-3-profile {
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  overflow: hidden;
+  line-height: 1;
+}
+
+.button-3-profile.is-form-submit {
+  background-color: #544444;
+  display: block;
+}
+
 .button-3.is-navbar2-button {
   border-radius: .75rem;
   padding-top: .5rem;
@@ -6985,6 +7002,10 @@ label[for="description"] {
   color: #66758a;
   margin-top: -5px;
   margin-bottom: -5px;
+}
+
+.text-color-pink {
+  color: #B83C78;
 }
 
 .navbar2_menu {

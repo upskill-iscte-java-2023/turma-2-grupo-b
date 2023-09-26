@@ -530,7 +530,7 @@
                                     </div>
                                     <div class="inner-content-group gap-32px">
                                         <div class="w-layout-grid _2-col-grid settings">
-                                            <div class="content-wrap">
+                                            <div class="content-wrap" style="width: 405.2px;">
                                                 <h2 class="heading-style-h5">Change Profile Picture</h2>
                                                 <p class="text-color-grey">We understand profile pictures are important,
                                                     feel free to change at anytime!</p>
@@ -541,7 +541,7 @@
                                                       enctype="multipart/form-data">
                                                     <div class="form_field-wrapper form-profile-photo-upload">
                                                         <label for="profile_pic_photo_upload"
-                                                               class="button-3 is-form-submit" style="width: 30%; height: 80px;">
+                                                               class="button-3-profile is-form-submit" style="width: 155.9px; height: 44px; padding-top: 7px">
                                                             Upload Profile Picture
                                                             <input type="file" name="profile-pic-path"
                                                                    data-wait="Please wait..." class="w-button"
