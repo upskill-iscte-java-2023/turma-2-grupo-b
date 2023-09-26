@@ -57,7 +57,7 @@
                     <li><a class="listFonts" href="/index/subscription">Subscriptions</a></li>
                     <li><a class="listFonts" href="/index/our-team">Our Team</a></li>
                     <sec:authorize access="isAuthenticated()">
-                        <li><a class="listFonts" href="/user/map">Birds Around Me</a></li>
+                        <li><a class="listFonts" href="/user/map">Start Birding</a></li>
                         <li><a class="listFonts" href="/user/challenges">Challenges</a></li>
                         <li><a class="listFonts" href="/user/plume-wiki">Plume Wiki</a></li>
                         <li><a class="listFonts" href="/user/dashboard">My Profile</a></li>
