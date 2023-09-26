@@ -7613,6 +7613,7 @@ label[for="description"] {
   background-image: url('../images/Fotos_1.png');
   background-position: 50%;
   background-size: cover;
+  border-radius: 1rem;
 }
 
 .div-block-6 {
