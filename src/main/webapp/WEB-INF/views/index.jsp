@@ -124,7 +124,7 @@
                                         </div>
                                     </div>
                                     <div class="uui-navbar07_item-right-2">
-                                        <div class="uui-navbar07_item-heading-2">Birds Around Me</div>
+                                        <div class="uui-navbar07_item-heading-2">Start Birding</div>
                                         <div class="uui-text-size-small-2">Search for other user&#x27;s observations and
                                             hotspots around you
                                         </div>

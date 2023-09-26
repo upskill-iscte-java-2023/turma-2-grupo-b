@@ -167,7 +167,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content" style="background-color: transparent; border: none">
                 <div class="modal-body">
-                    <div class="frame" style="display: flex; flex-direction: column; justify-content: center">
+                    <--<div class="frame" style="display: flex; flex-direction: column; justify-content: center">
 <%--                        <img src="../images/UploadSightinglogotest.png" alt="Upload Sighting modal logo" class="centered-image">--%>
                         <div style="padding: 5px">
                         <h1>Upload your Sighting</h1>

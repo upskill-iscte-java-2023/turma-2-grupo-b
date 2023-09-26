@@ -2755,7 +2755,7 @@ label[for="description"] {
 }
 
 .uui-text-size-small-2 {
-  color: #475467;
+  color: rgba(0,0,0,0.6);
   letter-spacing: normal;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
   font-size: .875rem;
@@ -3610,10 +3610,10 @@ label[for="description"] {
 }
 
 .uui-text-size-medium-2 {
-  color: #475467;
+  color: rgb(0 0 0/60%);
   letter-spacing: normal;
   font-family: Inter, sans-serif;
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.5;
 }
 
@@ -5597,6 +5597,7 @@ label[for="description"] {
   margin-bottom: 1rem;
   font-size: 1.1rem;
   line-height: 1.7rem;
+  text-align: initial;
 }
 
 .standard-paragraph.smaller {
@@ -5638,7 +5639,7 @@ label[for="description"] {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
-  margin-bottom: 3rem;
+  margin-bottom: -3rem;
   display: grid;
 }
 
@@ -5691,7 +5692,7 @@ label[for="description"] {
 }
 
 .padding-vertical {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 
 .decoration-benefits_trust {
@@ -5818,13 +5819,13 @@ label[for="description"] {
 }
 
 .quote-content {
-  color: #272d4e;
+  color: rgba(0, 0, 0, 0.6);
   margin-top: 0;
   margin-bottom: 0;
   font-family: Inter, sans-serif;
   font-size: .95rem;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.7;
 }
 
 .author-image {
@@ -10558,4 +10559,7 @@ label[for="description"] {
   #w-node-_191b8052-6286-aced-ff65-0edf1b20ef03-6e2eee46, #w-node-_081d123c-6057-580f-c33d-430aa3fadf58-6e2eeeed {
     grid-area: 1 / 1 / 2 / 2;
   }
+
+
+
 }
