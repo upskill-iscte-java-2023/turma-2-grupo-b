@@ -217,16 +217,17 @@
             </a>
           </sec:authorize>
           <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
-            <form method="GET" action="/auth/login">
-              <button type="submit" class="user-log-in-log-out">
-                Login
-              </button>
-            </form>
             <form method="GET" action="/auth/signup">
               <button type="submit" class="user-signup">
                 Signup
               </button>
             </form>
+            <form method="GET" action="/auth/login">
+              <button type="submit" class="user-log-in-log-out">
+                Login
+              </button>
+            </form>
+
           </sec:authorize>
         </div>
       </div>
