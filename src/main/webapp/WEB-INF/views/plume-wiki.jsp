@@ -850,6 +850,11 @@
                 }
             });
         });
+    });$('#search').on('keydown', function(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            e.stopPropagation();
+        }
     });
 </script>
 </body>
