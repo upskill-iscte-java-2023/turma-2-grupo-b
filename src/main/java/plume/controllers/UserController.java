@@ -31,19 +31,12 @@ public class UserController {
         ModelAndView model = new ModelAndView("profile-dashboard");
         model.addObject("user",authService.getCurrentUser());
 
-        List<SightingModel> userSightings = dataService.getSightingsByUser(authService.getCurrentUser());
-
-        List<SightingModel> latestSightings = new ArrayList<>();
+        List<SightingModel> userSightings = dataService.getLatestSightingsByUser(authService.getCurrentUser());
 
         if (userSightings.isEmpty()) {
             return model;
         } else {
-            // Determine the number of latest sightings to retrieve (up to 3)
-            int numLatestSightings = Math.min(userSightings.size(), 3);
-
-            // Retrieve the latest sightings using subList
-            latestSightings = userSightings.subList(0, numLatestSightings);
-            model.addObject("sightings", latestSightings);
+            model.addObject("sightings", userSightings);
             return model;
         }
     }
@@ -60,21 +53,13 @@ public class UserController {
         ModelAndView model = new ModelAndView("my-observations");
         model.addObject("user",authService.getCurrentUser());
 
-        List<SightingModel> userSightings = dataService.getSightingsByUser(authService.getCurrentUser());
+        List<SightingModel> userSightings = dataService.getLatestSightingsByUser(authService.getCurrentUser());
 
-        List<SightingModel> latestSightings = new ArrayList<>();
-
-        if (userSightings.isEmpty()) {
-            return model;
-        } else {
-            // Determine the number of latest sightings to retrieve (up to 3)
-            int numLatestSightings = Math.min(userSightings.size(), 3);
-
-            // Retrieve the latest sightings using subList
-            latestSightings = userSightings.subList(0, numLatestSightings);
-            model.addObject("sightings",latestSightings);
+        if (!userSightings.isEmpty()){
+            model.addObject("sightings",userSightings);
             return model;
         }
+        return model;
     }
 
     @GetMapping("/my-subscriptions")

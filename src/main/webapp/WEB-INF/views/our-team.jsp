@@ -51,11 +51,6 @@
                             <a href="/user/dashboard" class="profile-link w-inline-block">
                                 <img src="${user.profilePicPath}" loading="lazy" alt="" class="profile-link-image">
                             </a>
-                            <form method="POST" action="/auth/logout">
-                                <button type="submit" class="user-log-in-log-out">
-                                    Logout
-                                </button>
-                            </form>
                         </li>
                     </sec:authorize>
                     <li><a class="listFonts" href="/index/subscription">Subscriptions</a></li>
@@ -221,11 +216,6 @@
                         <a href="/user/dashboard" class="profile-link w-inline-block">
                             <img src="${user.profilePicPath}" loading="lazy" alt="" class="profile-link-image">
                         </a>
-                        <form method="POST" action="/auth/logout">
-                            <button type="submit" class="user-log-in-log-out">
-                                Logout
-                            </button>
-                        </form>
                     </sec:authorize>
                     <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
                         <form method="GET" action="/auth/login">

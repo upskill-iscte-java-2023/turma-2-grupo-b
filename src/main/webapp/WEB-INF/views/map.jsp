@@ -41,8 +41,8 @@
 <div data-collapse="medium" data-animation="default" data-duration="400" fs-scrolldisable-element="smart-nav"
      data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
     <div class="navbar-container">
-        <a href="/index/" class="navbar2_logo-link w-nav-brand"><img src="/images/Untitled-design-26.png" loading="lazy"
-                                                                     alt="" class="navbar2_logo desktop"><img
+        <a href="/index/" class="navbar2_logo-link w-nav-brand"><img src="../../../images/Untitled-design-26.png"
+                                                                     loading="lazy" alt="" class="navbar2_logo desktop"><img
                 src="/images/1_5.png" loading="lazy" width="150" height="Auto" alt=""
                 class="navbar2_logo show-mobile-only"></a>
         <nav role="navigation" id="w-node-_2cc41a78-d014-b7fd-7229-2969f8957a3c-f8957a37"
@@ -142,11 +142,6 @@
             <a href="/user/dashboard" class="profile-link w-inline-block">
                 <img src="${user.profilePicPath}" loading="lazy" alt="" class="profile-link-image">
             </a>
-            <form method="POST" action="/auth/logout">
-                <button class="user-log-in-log-out-2" type="submit">
-                    Log Out
-                </button>
-            </form>
             <div class="navbar2_menu-button w-nav-button">
                 <div class="menu-icon2">
                     <div class="menu-icon2_line-top"></div>
@@ -248,9 +243,10 @@
         <input type="file" accept="image/" capture="environment" id="camera-photo">
             <label for="camera-photo" class="take-picture-button "></label>
         </div>
+        <form id="image-upload-form" enctype="multipart/form-data">
         <input type="file" accept="image/" id="mobile-upload" class="mobile" style="display: none;">
         <label for="mobile-upload" class="upload-button-mobile mobile"></label>
-
+        </form>
     </div>
 </div>
 <div class="flex-block-2-bottom">bottom bar</div>

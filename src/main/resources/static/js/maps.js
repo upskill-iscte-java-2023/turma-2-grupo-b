@@ -169,6 +169,97 @@ function createMarkers(map, data) {
         });
     });
 
+
+    $(document).ready(function() {
+        $('#mobile-upload').change(function() {
+            // Get the user's location
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var latitude = position.coords.latitude;
+                    var longitude = position.coords.longitude;
+
+
+                    // Get the current date as a string in the 'yyyy-MM-dd' format
+                    var currentDate = new Date().toISOString().slice(0, 10);
+
+                    // Create a new FormData object
+                    var formData = new FormData();
+
+                    // Get the selected file from the file input
+                    var fileInput = document.getElementById('mobile-upload');
+                    var selectedFile = fileInput.files[0];
+
+                    // Append the file to the FormData
+                    formData.append('file', selectedFile);
+
+                    formData.append("observedOn", currentDate); // Current date as a Date object
+                    formData.append("description", "Custom description to be added later");
+                    formData.append("latitude", latitude);
+                    formData.append("longitude", longitude);
+
+                    $.ajax({
+                        type: 'POST',
+                        url: '/api/upload',
+                        data: formData,
+                        contentType: false,
+                        processData: false,
+                        success: function(response) {
+                            // Handle success response from the server
+                            console.log(response.message);
+                        },
+                        error: function(error) {
+                            // Handle error
+                            console.error('Error:', error);
+                        },
+                    });
+                });
+            } else {
+                console.log("Geolocation is not available.");
+            }
+        });
+    });
+
+
+    $(document).ready(function() {
+        $('#camera-photo').change(function() {
+            // Create a new FormData object
+            var formData = new FormData();
+
+            // Get the selected file from the camera input
+            var cameraInput = document.getElementById('camera-photo');
+            var selectedFile = cameraInput.files[0];
+
+            // Append the file to the FormData
+            formData.append('file', selectedFile);
+
+            // Get the current date as a string in the 'yyyy-MM-dd' format
+            var currentDate = new Date().toISOString().slice(0, 10);
+
+            // Append other fields to the FormData
+            formData.append('observedOn', currentDate);
+            formData.append('description', 'Custom description to be added later - Mobile');
+            formData.append('latitude', '38.770574');
+            formData.append('longitude', '-9.3340266');
+
+            // Send the FormData in the AJAX request
+            $.ajax({
+                type: 'POST',
+                url: '/api/upload',
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: function(response) {
+                    // Handle success response from the server
+                    console.log(response.message);
+                },
+                error: function(error) {
+                    // Handle error
+                    console.error('Error:', error);
+                },
+            });
+        });
+    });
+
 }
 
 // Initialize the map

@@ -333,11 +333,6 @@
                     <a href="/user/dashboard" class="profile-link w-inline-block">
                         <img src="${user.profilePicPath}" loading="lazy" alt="" class="profile-link-image">
                     </a>
-                    <form method="POST" action="/auth/logout">
-                        <button class="user-log-in-log-out-2" type="submit">
-                            Log Out
-                        </button>
-                    </form>
                     <div class="navbar2_menu-button w-nav-button">
                         <div class="menu-icon2">
                             <div class="menu-icon2_line-top"></div>
