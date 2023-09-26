@@ -479,13 +479,7 @@
                                             <c:forEach var="sighting" items="${sightings}">
                                                 <a id="art-card-holder" href="#"
                                                    class="w-inline-block">
-                                                    <div class="art-card"><img
-                                                            loading="lazy"
-                                                            sizes="(max-width: 479px) 100vw, (max-width: 991px) 89vw, (max-width: 1279px) 66vw, 736.1875px"
-                                                            src="${sighting.image_url}"
-
-                                                            alt="" class="art-image"
-                                                            sizes="(max-width: 479px) 100vw, (max-width: 991px) 89vw, (max-width: 1279px) 66vw, 736.1875px">
+                                                    <div class="art-card-observations" style="background-image: url(${sighting.image_url});">
                                                         <div class="action-icon w-embed">
                                                             <svg width="32" height="32" viewbox="0 0 32 32" fill="none"
                                                                  xmlns="http://www.w3.org/2000/svg">
