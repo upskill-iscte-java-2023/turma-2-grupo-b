@@ -2840,7 +2840,7 @@ label[for="description"] {
   width: 250px;
   grid-column-gap: .75rem;
   grid-row-gap: .75rem;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   display: flex;
 }
