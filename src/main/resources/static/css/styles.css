@@ -8490,7 +8490,7 @@ label[for="description"] {
   .menu-icon2_line-bottom, .menu-icon2_line-top {
     width: 24px;
     height: 2px;
-    background-color: #000;
+    background-color: #544444;
     padding-bottom: 0;
     padding-right: 0;
   }
@@ -8541,7 +8541,7 @@ label[for="description"] {
   .menu-icon2_line-middle {
     width: 24px;
     height: 2px;
-    background-color: #000;
+    background-color: #544444;
     justify-content: center;
     align-items: center;
     margin-top: 6px;

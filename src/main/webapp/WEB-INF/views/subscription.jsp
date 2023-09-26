@@ -61,7 +61,7 @@
           <li><a class="listFonts" href="/index/subscription">Subscriptions</a></li>
           <li><a class="listFonts" href="/index/our-team">Our Team</a></li>
           <sec:authorize access="isAuthenticated()">
-            <li><a class="listFonts" href="/user/map">Birds Around Me</a></li>
+            <li><a class="listFonts" href="/user/map">Start Birding</a></li>
             <li><a class="listFonts" href="/user/challenges">Challenges</a></li>
             <li><a class="listFonts" href="/user/plume-wiki">Plume Wiki</a></li>
             <li><a class="listFonts" href="/user/dashboard">My Profile</a></li>
@@ -126,7 +126,7 @@
                     </div>
                   </div>
                   <div class="uui-navbar07_item-right-2">
-                    <div class="uui-navbar07_item-heading-2">Birds Around Me</div>
+                    <div class="uui-navbar07_item-heading-2">Start Birding</div>
                     <div class="uui-text-size-small-2">Search for other user&#x27;s observations and
                       hotspots around you
                     </div>
