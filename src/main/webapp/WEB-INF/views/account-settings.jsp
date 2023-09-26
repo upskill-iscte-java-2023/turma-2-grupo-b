@@ -530,7 +530,7 @@
                                     </div>
                                     <div class="inner-content-group gap-32px">
                                         <div class="w-layout-grid _2-col-grid settings">
-                                            <div class="content-wrap" style="width: 405.2px;">
+                                            <div class="content-wrap">
                                                 <h2 class="heading-style-h5">Change Profile Picture</h2>
                                                 <p class="text-color-grey">We understand profile pictures are important,
                                                     feel free to change at anytime!</p>
