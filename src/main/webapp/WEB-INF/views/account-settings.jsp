@@ -24,7 +24,7 @@
     }(window, document);</script>
     <link href="/images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
     <link href="/images/webclip.svg" rel="apple-touch-icon">
-    <script type="text/javascript" src="/js/navscript.js" ></script>
+    <script type="text/javascript" src="/js/navscript.js"></script>
 </head>
 <body>
 <div class="page-wrapper-9">
@@ -245,22 +245,26 @@
                             <sec:authorize access="isAuthenticated()">
                                 <li class="Profile-picture-list">
                                     <a href="/user/dashboard" class="profile-link w-inline-block">
-                                        <img src="${user.profilePicPath}" loading="lazy" alt="" class="profile-link-image">
+                                        <img src="${user.profilePicPath}" loading="lazy" alt=""
+                                             class="profile-link-image">
                                     </a>
                                 </li>
                             </sec:authorize>
                             <li><a class="listFonts" href="/user/dashboard">Dashboard</a></li>
                             <li><a class="listFonts" href="/user/plume-wiki">Plume Wiki</a></li>
-                            <li><a class="listFonts" href="/user/payments" class="navbar2_link w-nav-link">Rewards 🪶</a></li>
+                            <li><a class="listFonts" href="/user/payments" class="navbar2_link w-nav-link">Rewards 🪶</a>
+                            </li>
                             <li><a class="listFonts" href="/user/my-observations">My Observations</a></li>
                             <li><a class="listFonts" href="/user/challenges">Challenges</a></li>
                             <li><a class="listFonts" href="/user/settings">Account Settings</a></li>
                             <li><a class="listFonts" href="/user/my-subscriptions">Subscriptions</a></li>
-                            <li><form method="POST" action="/auth/logout">
-                                <button type="submit" class="user-log-in-log-out">
-                                    Logout
-                                </button>
-                            </form></li>
+                            <li>
+                                <form method="POST" action="/auth/logout">
+                                    <button type="submit" class="user-log-in-log-out">
+                                        Logout
+                                    </button>
+                                </form>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -484,11 +488,12 @@
                                             </div>
                                             <div>Rewards</div>
                                         </a>
-                                        <div><form method="POST" action="/auth/logout">
-                                            <button type="submit" class="user-log-in-log-out">
-                                                Logout
-                                            </button>
-                                        </form>
+                                        <div>
+                                            <form method="POST" action="/auth/logout">
+                                                <button type="submit" class="user-log-in-log-out">
+                                                    Logout
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -510,22 +515,25 @@
                                                     information and email address.</p>
                                             </div>
                                             <div class="form_component w-form">
-                                                <form id="wf-form-Form1" name="wf-form-Form" data-name="Form"
-                                                      method="get" class="form_form"
-                                                      data-wf-page-id="64f615e4cfda04626e2eee87"
-                                                      data-wf-element-id="c9acaef6-219a-a170-edec-586baa111217">
-                                                    <div class="form_field-wrapper"><label for="Full-name"
-                                                                                           class="form_label">Name</label><input
-                                                            type="text" class="form_input-2 w-input" maxlength="256"
-                                                            name="Full-name" data-name="Full Name"
-                                                            placeholder="James Baduor" id="Full-name"></div>
-                                                    <div class="form_field-wrapper"><label for="Email-address"
-                                                                                           class="form_label">Email
-                                                        address</label><input type="text" class="form_input-2 w-input"
-                                                                              maxlength="256" name="Email-address"
-                                                                              data-name="Email Address"
-                                                                              placeholder="james@email.com"
-                                                                              id="Email-address"></div>
+                                                <form id="wf-form-Form1" name="name-email-form" method="POST" action="/api/submitinformation">
+                                                    <div class="form_field-wrapper">
+                                                        <label for="full-name" class="form_label" style="color: #544444">
+                                                            Name
+                                                        </label>
+                                                        <input
+                                                                type="text" class="form_input-2 w-input" maxlength="256"
+                                                                name="full-name"
+                                                                placeholder="James Baduor" id="full-name">
+                                                    </div>
+                                                    <div class="form_field-wrapper">
+                                                        <label for="email" class="form_label" style="color: #544444">
+                                                            Email address
+                                                        </label>
+                                                        <input type="text" class="form_input-2 w-input"
+                                                               maxlength="256" name="email"
+                                                               placeholder="james@email.com"
+                                                               id="email">
+                                                    </div>
                                                     <input type="submit" value="Save changes" data-wait="Please wait..."
                                                            class="button-3 is-form-submit w-button">
                                                 </form>
@@ -591,7 +599,8 @@
                                                       enctype="multipart/form-data">
                                                     <div class="form_field-wrapper form-profile-photo-upload">
                                                         <label for="profile_pic_photo_upload"
-                                                               class="button-3-profile is-form-submit" style="width: 155.9px; height: 44px; padding-top: 7px">
+                                                               class="button-3-profile is-form-submit"
+                                                               style="width: 155.9px; height: 44px; padding-top: 7px">
                                                             Upload Profile Picture
                                                             <input type="file" name="profile-pic-path"
                                                                    data-wait="Please wait..." class="w-button"

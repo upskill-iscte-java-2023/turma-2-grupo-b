@@ -58,9 +58,4 @@ public class DBController {
         return new RedirectView("/user/settings?success");
     }
 
-
-
-
-
-
 }

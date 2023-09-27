@@ -2,8 +2,6 @@ package plume.controllers;
 
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -14,12 +12,9 @@ import plume.entities.ApplicationUser;
 import plume.repository.UserRepository;
 import plume.services.AuthService;
 import plume.services.EmailService;
-import plume.services.LoggedInUser;
 import plume.services.TokenService;
-import plume.utils.UserAuthenticatedContextVar;
 
 import javax.mail.MessagingException;
-import java.util.Optional;
 
 
 @RestController
@@ -35,9 +30,6 @@ public class AuthenticationController {
 
     @Autowired
     private EmailService emailService;
-
-    @Autowired
-    private LoggedInUser loggedInUser;
 
     UserRepository userRepository;
 
@@ -90,8 +82,6 @@ public class AuthenticationController {
             //Set authenticated status for springboot.
             SecurityContextHolder.getContext().setAuthentication(authentication);
 
-            //Set logged in user
-            loggedInUser.setLoggedInUser(user);
             //Redirect view.
             return new RedirectView("/user/dashboard");
         } else if (user != null && !user.isVerified()) {
