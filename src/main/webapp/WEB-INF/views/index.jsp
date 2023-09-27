@@ -236,15 +236,7 @@
                 </div>
             </div>
         </div>
-        <div class="uui-navbar07_menu-button-2 w-nav-button">
-            <div class="menu-icon_component-2">
-                <div class="menu-icon_line-top-2"></div>
-                <div class="menu-icon_line-middle-2">
-                    <div class="menu-icon_line-middle-inner-2"></div>
-                </div>
-                <div class="menu-icon_line-bottom-2"></div>
-            </div>
-        </div>
+
     </div>
 </div>
 <div class="page-wrapper">

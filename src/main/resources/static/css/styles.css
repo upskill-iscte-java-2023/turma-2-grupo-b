@@ -71,6 +71,10 @@
 
 @media (max-width: 991px) {
 
+  .maintain-desktop{
+    display: none !important;
+  }
+
   .Profile-picture-list{
     display: flex;
     justify-content: space-around;
@@ -2837,6 +2841,15 @@ label[for="description"] {
 }
 
 .uui-navbar07_button-wrapper-2 {
+  width: 250px;
+  grid-column-gap: .75rem;
+  grid-row-gap: .75rem;
+  flex-direction: row-reverse;
+  align-items: center;
+  display: flex;
+}
+
+.uui-navbar07_button-wrapper-2-change {
   width: 250px;
   grid-column-gap: .75rem;
   grid-row-gap: .75rem;

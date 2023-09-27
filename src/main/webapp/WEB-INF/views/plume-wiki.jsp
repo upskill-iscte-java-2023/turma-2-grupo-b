@@ -28,6 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/navscript.js"></script>
 </head>
 <body>
 <div class="page-wrapper-5">
@@ -227,8 +228,53 @@
         </style>
     </div>
     <main class="main-wrapper-2">
+        <!-- Navbar Tablet and Below -->
+        <div class="nav-wrapper" style="background-image: url('/images/Fotos.png')">
+            <div class="nav-leftwrapper">
+                <a href="/index/" style="position: relative; top: 5px;">
+                    <img src="/images/Untitled-design-26_1.png">
+                </a>
+
+            </div>
+            <div class="nav-rightwrapper">
+                <div class="Hamburger-menu-bg" id="Hamburger-menu-bg"></div>
+                <div id="Hamburger-menu">
+                    <div id="Hamburger-menu-bar" onclick="menuOnClick()">
+                        <div id="Hamburger-bar1" class="Hamburger-bar"></div>
+                        <div id="Hamburger-bar2" class="Hamburger-bar"></div>
+                        <div id="Hamburger-bar3" class="Hamburger-bar"></div>
+                    </div>
+                    <nav class="Hamburger-nav" id="Hamburger-nav">
+                        <ul class="hamburger-list">
+                            <sec:authorize access="isAuthenticated()">
+                                <li class="Profile-picture-list">
+                                    <a href="/user/dashboard" class="profile-link w-inline-block">
+                                        <img src="${user.profilePicPath}" loading="lazy" alt="" class="profile-link-image">
+                                    </a>
+                                </li>
+                            </sec:authorize>
+                            <li><a class="listFonts" href="/user/dashboard">Dashboard</a></li>
+                            <li><a class="listFonts" href="/user/plume-wiki">Plume Wiki</a></li>
+                            <li><a class="listFonts" href="/user/payments" class="navbar2_link w-nav-link">Rewards 🪶</a></li>
+                            <li><a class="listFonts" href="/user/my-observations">My Observations</a></li>
+                            <li><a class="listFonts" href="/user/challenges">Challenges</a></li>
+                            <li><a class="listFonts" href="/user/settings">Account Settings</a></li>
+                            <li><a class="listFonts" href="/user/my-subscriptions">Subscriptions</a></li>
+                            <li><form method="POST" action="/auth/logout">
+                                <button type="submit" class="user-log-in-log-out">
+                                    Logout
+                                </button>
+                            </form></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar Desktop -->
+
         <div data-collapse="medium" data-animation="default" data-duration="400" fs-scrolldisable-element="smart-nav"
-             data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
+             data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav maintain-desktop">
             <div class="navbar-container">
                 <a href="/index/" class="navbar2_logo-link w-nav-brand"><img src="../images/Untitled-design-26.png"
                                                                              loading="lazy" alt=""
