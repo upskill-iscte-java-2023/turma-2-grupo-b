@@ -5,6 +5,23 @@
     overflow: hidden !important;
 }
 
+.custom-map-button img {
+    position: relative;
+    right: -10%;
+}
+
+.custom-map-button {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-color: #ffff;
+
+}
+
+.modal-body .frame {
+    border-radius: 1rem;
+}
+
 
 .map-wrapper {
     position: relative;

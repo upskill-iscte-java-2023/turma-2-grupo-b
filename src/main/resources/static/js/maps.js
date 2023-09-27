@@ -40,10 +40,13 @@ function initMap() {
             // Create a button for panning to the user's location
             var locationButton = document.createElement("button");
             locationButton.classList.add("custom-map-button");
-            locationButton.innerHTML = '<img src="/images/mapmarker6.png" alt="Center on Location">';
-            /*locationButton.style.backgroundSize = 'cover';
+            locationButton.innerHTML = '<img src="/images/User_Location_Icon3.png" alt="Center on Location">';
+            locationButton.style.backgroundSize = 'cover';
             locationButton.style.backgroundRepeat = 'no-repeat';
-            locationButton.style.backgroundPosition = 'center';*/
+            locationButton.style.backgroundPosition = 'center';
+
+
+
             map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(locationButton);
 
             locationButton.addEventListener("click", function () {
