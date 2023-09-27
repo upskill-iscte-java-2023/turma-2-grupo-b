@@ -26,7 +26,7 @@
         var n = c.documentElement, t = " w-mod-";
         n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
     }(window, document);</script>
-    <script src="../../js/maps.js" type="text/javascript"></script>
+    <script src="/js/maps.js" type="text/javascript"></script>
     <link href="/images/Favicon 1-2.png" rel="shortcut icon" type="image/x-icon">
     <link href="/images/webclip.svg" rel="apple-touch-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -39,7 +39,7 @@
 <body>
 
 <!-- Navbar Tablet and Below -->
-<div class="nav-wrapper" style="background-image: url('/images/Fotos.png')">
+<div class="nav-wrapper">
     <div class="nav-leftwrapper">
         <a href="/index/" style="position: relative; top: 5px;">
             <img src="/images/Untitled-design-26_1.png">
@@ -82,7 +82,7 @@
         </div>
     </div>
 </div>
-
+<!-- end of navbar tablet and below -->
 <!-- navbar Desktop -->
 
 <div data-collapse="medium" data-animation="default" data-duration="400" fs-scrolldisable-element="smart-nav"
@@ -203,7 +203,7 @@
         </div>
     </div>
 </div>
-
+<!-- end of navbar desktop -->
 
 <!-- page section -->
 <div class="page-wrapper-2">
@@ -297,12 +297,13 @@
             </button>
         </a>
         <div class="file-input-wrapper mobile">
+            <form id="camera-photo-form">
             <input type="file" accept="image/" capture="environment" id="camera-photo">
             <label for="camera-photo" class="take-picture-button "></label>
+            </form>
         </div>
         <input type="file" accept="image/" id="mobile-upload" class="mobile" style="display: none;">
         <label for="mobile-upload" class="upload-button-mobile mobile"></label>
-
     </div>
 </div>
 <div class="flex-block-2-bottom">bottom bar</div>
