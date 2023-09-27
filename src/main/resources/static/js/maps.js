@@ -32,18 +32,18 @@ function initMap() {
             // Create a marker for the user's location (blue dot)
             var userMarker = new google.maps.Marker({
                 position: userLocation, map: map, title: "Your Location", icon: {
-                    url: "../../images/User_Location_Icon.png", // Blue dot icon
-                    scaledSize: new google.maps.Size(32, 32),
+                    url: "../../images/User_Location_Icon3.png", // user marker icon
+                    scaledSize: new google.maps.Size(38, 38),
                 },
             });
 
             // Create a button for panning to the user's location
             var locationButton = document.createElement("button");
             locationButton.classList.add("custom-map-button");
-            locationButton.innerHTML = '<img src="/images/Map_Location_Icon.png" alt="Center on Location">';
-            locationButton.style.backgroundSize = 'cover';
+            locationButton.innerHTML = '<img src="/images/mapmarker6.png" alt="Center on Location">';
+            /*locationButton.style.backgroundSize = 'cover';
             locationButton.style.backgroundRepeat = 'no-repeat';
-            locationButton.style.backgroundPosition = 'center';
+            locationButton.style.backgroundPosition = 'center';*/
             map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(locationButton);
 
             locationButton.addEventListener("click", function () {
@@ -140,8 +140,8 @@ function createMarkers(map, data) {
             map: map,
             title: item.common_name,
             icon: {
-                url: '/images/mapmarker7.png', // You can specify a default marker icon
-                scaledSize: new google.maps.Size(45, 45),
+                url: '/images/mapmarker10.png', // You can specify a default marker icon
+                scaledSize: new google.maps.Size(36, 36),
             },
             content: markerContent, // Custom property to store marker content
         });
