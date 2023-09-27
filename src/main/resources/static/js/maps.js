@@ -139,8 +139,8 @@ function createMarkers(map, data) {
             map: map,
             title: item.common_name,
             icon: {
-                url: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png', // You can specify a default marker icon
-                scaledSize: new google.maps.Size(32, 32),
+                url: '/images/mapmarker2.png', // You can specify a default marker icon
+                scaledSize: new google.maps.Size(45, 45),
             },
             content: markerContent, // Custom property to store marker content
         });
