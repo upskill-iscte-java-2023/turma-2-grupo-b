@@ -259,7 +259,6 @@ function createMarkers(map, data) {
             });
         });
     });
-
 }
 
 // Initialize the map
