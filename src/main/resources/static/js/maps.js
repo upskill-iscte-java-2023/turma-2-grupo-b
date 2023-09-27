@@ -134,12 +134,13 @@ function createMarkers(map, data) {
         <p>${description}</p>
     </div>`;
 
+        //map markers!!!
         const marker = new google.maps.Marker({
             position: { lat: parseFloat(item.latitude), lng: parseFloat(item.longitude) },
             map: map,
             title: item.common_name,
             icon: {
-                url: '/images/mapmarker2.png', // You can specify a default marker icon
+                url: '/images/mapmarker7.png', // You can specify a default marker icon
                 scaledSize: new google.maps.Size(45, 45),
             },
             content: markerContent, // Custom property to store marker content
