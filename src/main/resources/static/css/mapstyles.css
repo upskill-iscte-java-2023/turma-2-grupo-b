@@ -1,4 +1,11 @@
 /* Map container styles */
+
+.gm-style-iw {
+    border-radius: 1rem !important;
+    overflow: hidden !important;
+}
+
+
 .map-wrapper {
     position: relative;
     height: 70vh;
@@ -11,12 +18,11 @@
 /* Map styles */
 #map {
     position: absolute;
-    width: 99%;
+    width: 100%;
     z-index: 0;
     height: 100%;
     z-index: 0;
-    margin-left: 0.5%;
-    margin-right: 0.3%;
+
 }
 
 /* Button container styles */
