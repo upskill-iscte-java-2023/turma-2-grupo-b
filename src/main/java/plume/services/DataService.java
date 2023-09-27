@@ -24,12 +24,13 @@ public class DataService {
         return data;
     }
 
-    public void storeSighting(String url, String description, LocalDate observerdOn, String lat, String lng, ApplicationUser user) {
+    public void storeSighting(String url, String description, String simplename, LocalDate observerdOn, String lat, String lng, ApplicationUser user) {
 
         // Create a new SightingModel
         SightingModel sightingModel = new SightingModel();
         sightingModel.setImage_url(url);
         sightingModel.setDescription(description);
+        sightingModel.setCommon_name(simplename);
         sightingModel.setObservedOn(observerdOn);
         sightingModel.setLatitude(lat);
         sightingModel.setLongitude(lng);

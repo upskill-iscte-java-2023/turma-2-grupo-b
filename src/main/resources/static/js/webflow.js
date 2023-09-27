@@ -44159,6 +44159,7 @@
 
                 // Add data from form fields with specific IDs
                 formData.append('description', $('#description').val());
+                formData.append('simplename', $('#simplename').val());
                 formData.append('observedOn', $('#observedOn').val());
 
                 // Send the file to the server for upload

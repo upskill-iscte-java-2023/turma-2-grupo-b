@@ -26,14 +26,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-            //    .formLogin()
-            //     .loginPage("/auth/login")
-            //    .loginProcessingUrl("/auth/login-attempt")
-            //    .defaultSuccessUrl("/user/dashboard")
-            //    .failureUrl("/auth/login?error=true")
-
-            //    .and()
-
                     .csrf()
                     .disable()
                     .authorizeRequests()

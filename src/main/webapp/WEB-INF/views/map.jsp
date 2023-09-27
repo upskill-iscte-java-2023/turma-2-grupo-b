@@ -34,7 +34,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
             crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/navscript.js" ></script>
+    <script type="text/javascript" src="/js/navscript.js"></script>
 </head>
 <body>
 
@@ -70,11 +70,13 @@
                     <li><a class="listFonts" href="/user/challenges">Challenges</a></li>
                     <li><a class="listFonts" href="/user/settings">Account Settings</a></li>
                     <li><a class="listFonts" href="/user/my-subscriptions">Subscriptions</a></li>
-                    <li><form method="POST" action="/auth/logout">
-                        <button type="submit" class="user-log-in-log-out">
-                            Logout
-                        </button>
-                    </form></li>
+                    <li>
+                        <form method="POST" action="/auth/logout">
+                            <button type="submit" class="user-log-in-log-out">
+                                Logout
+                            </button>
+                        </form>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -203,7 +205,6 @@
 </div>
 
 
-
 <!-- page section -->
 <div class="page-wrapper-2">
 
@@ -216,23 +217,30 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content" style="background-color: transparent; border: none">
                 <div class="modal-body">
-                    <--<div class="frame" style="display: flex; flex-direction: column; justify-content: center">
-<%--                        <img src="../images/UploadSightinglogotest.png" alt="Upload Sighting modal logo" class="centered-image">--%>
+                    <--
+                    <div class="frame"
+                         style="display: flex; flex-direction: column; justify-content: center; align-items: center">
+                        <%--                        <img src="../images/UploadSightinglogotest.png" alt="Upload Sighting modal logo" class="centered-image">--%>
                         <div style="padding: 5px">
-                        <h1>Upload your Sighting</h1>
+                            <h1 style="font-size: 32px">Upload your Sighting</h1>
                         </div>
-                        <div style="padding: 5px">
+                        <div style="padding: 5px; width: 90%; display: flex; flex-direction: column">
                             <label for="description">Description:</label>
-                            <input id="description" type="text" placeholder="add a description">
+                            <input id="description" type="text" placeholder="add a description" style="height: 40px">
                         </div>
-                        <div style="padding: 5px">
+                        <div style="padding: 5px; width: 90%; display: flex; flex-direction: column">
+                            <label for="simplename">Guess your bird:</label>
+                            <input id="simplename" type="text" placeholder="guess the species" style="height: 40px">
+                        </div>
+                        <div style="padding: 5px; width: 90%; display: flex; flex-direction: column">
                             <label for="observedOn" style="width: 100%">When was this?</label>
                             <input type="date" style="padding: 5px;" id="observedOn" placeholder="dd--mm--aaaa">
                         </div>
                         <div style="display: flex; align-items: center; justify-content: center; margin-top: 20px">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
-                            Continue
-                        </button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modal2">
+                                Continue
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -253,7 +261,7 @@
                             <div class="frame">
                                 <div class="center">
                                     <div class="bar"></div>
-                                    <div class="title">Drop file to upload</div>
+                                    <div class="title">Drag and Nest your Photo</div>
                                     <div class="dropzone">
                                         <div class="content">
                                             <img src="https://100dayscss.com/codepen/upload.svg" class="upload">
@@ -289,7 +297,7 @@
             </button>
         </a>
         <div class="file-input-wrapper mobile">
-        <input type="file" accept="image/" capture="environment" id="camera-photo">
+            <input type="file" accept="image/" capture="environment" id="camera-photo">
             <label for="camera-photo" class="take-picture-button "></label>
         </div>
         <input type="file" accept="image/" id="mobile-upload" class="mobile" style="display: none;">

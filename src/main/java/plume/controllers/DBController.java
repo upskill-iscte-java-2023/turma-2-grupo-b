@@ -38,6 +38,7 @@ public class DBController {
     @PostMapping("/upload")
     public void uploadFile(@RequestParam("file") MultipartFile file,
                            @RequestParam("description") String description,
+                           @RequestParam("simplename") String simplename,
                            @RequestParam("observedOn") String date,
                            @RequestParam("latitude") String lat,
                            @RequestParam("longitude") String lng) throws IOException {
@@ -45,7 +46,7 @@ public class DBController {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDate observedOn = LocalDate.parse(date,formatter);
         String url = gcpStorageService.uploadFileToBucket(file);
-        dataService.storeSighting(url, description, observedOn, lat, lng, authService.getCurrentUser());
+        dataService.storeSighting(url, description, simplename, observedOn, lat, lng, authService.getCurrentUser());
     }
 
 
