@@ -18,7 +18,7 @@ import javax.mail.MessagingException;
 
 
 @RestController
-@RequestMapping("/Plume/auth")
+@RequestMapping("/auth")
 @CrossOrigin("*")
 public class AuthenticationController {
 

@@ -29,18 +29,18 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                     .csrf()
                     .disable()
                     .authorizeRequests()
-                    .antMatchers("/Plume/css/**", "/Plume/images/**", "/Plume/js/**").permitAll()
-                    .antMatchers("/Plume/index/**").permitAll()
-                    .antMatchers("/Plume/auth/**").permitAll()
-                    .antMatchers("/Plume/user/**").authenticated()
+                    .antMatchers("/css/**", "/images/**", "/js/**").permitAll()
+                    .antMatchers("/index/**").permitAll()
+                    .antMatchers("/auth/**").permitAll()
+                    .antMatchers("/user/**").authenticated()
 
                 .and()
 
                     .logout()
-                    .logoutUrl("/Plume/auth/logout")
-                    .logoutSuccessUrl("/Plume/index/")
+                    .logoutUrl("/auth/logout")
+                    .logoutSuccessUrl("/index/")
                     .permitAll() // Allow anyone to access the logout URL
-                    .logoutRequestMatcher(new AntPathRequestMatcher("/Plume/auth/logout", "POST")) // Specify the HTTP method
+                    .logoutRequestMatcher(new AntPathRequestMatcher("/auth/logout", "POST")) // Specify the HTTP method
                     .clearAuthentication(true)
                     .deleteCookies("JSESSIONID");
     }
