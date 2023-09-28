@@ -13,7 +13,7 @@ import plume.services.EmailService;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/index")
+@RequestMapping("/Plume/index")
 @CrossOrigin("*")
 public class IndexController {
 

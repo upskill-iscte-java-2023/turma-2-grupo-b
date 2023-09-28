@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/Plume/user")
 @CrossOrigin("*")
 public class UserController {
 
