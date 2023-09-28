@@ -459,7 +459,7 @@
                                          style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
                                          class="margin-bottom"><img src="/images/1_6.png" loading="lazy" alt=""
                                                                     class="process-image"></div>
-                                    <h3 class="h-small">Upload your findings</h3>
+                                    <h3 class="h-small">Share your top bird discoveries</h3>
                                     <p class="standard-paragraph smaller">Either a photograph or a recording, share what
                                         you have spotted!</p>
                                 </div>
@@ -479,7 +479,7 @@
                                          style="-webkit-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 70px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
                                          class="margin-bottom"><img src="/images/9.png" loading="lazy" alt=""
                                                                     class="process-image"></div>
-                                    <h3 class="h-small">Get discounts and opportunities with our partners</h3>
+                                    <h3 class="h-small">Get discounts and opportunities</h3>
                                     <p class="standard-paragraph smaller">The more you play, the more you win. Embrace
                                         nature and benefit from our ecotouristic associates in your next birdwatching
                                         trip!</p>

@@ -1317,7 +1317,7 @@ figcaption {
 }
 
 .rich-text {
-  color: #1d1d1d;
+  color: rgba(0,0,0,60%);
   text-align: left;
 }
 
@@ -3409,7 +3409,7 @@ label[for="description"] {
 }
 
 .pricing-text-size-medium {
-  color: #475467;
+  color: rgba(0,0,0,60%);
   letter-spacing: normal;
   flex: 0 auto;
   align-self: auto;
@@ -6583,7 +6583,7 @@ label[for="description"] {
 }
 
 .team-section p {
-  color: #544444;
+  color: rgba(0,0,0,60%);
   font-family: Inter, sans-serif;
 }
 
@@ -7059,9 +7059,9 @@ label[for="description"] {
 }
 
 .text-color-grey {
-  color: #66758a;
+  color: rgba(0,0,0,60%);
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .text-color-grey2 {
@@ -7653,7 +7653,7 @@ label[for="description"] {
   border-radius: 17px;
   display: inline-block;
   position: relative;
-  top: 79%;
+  top: 77%;
   bottom: auto;
   left: -2%;
   right: auto;

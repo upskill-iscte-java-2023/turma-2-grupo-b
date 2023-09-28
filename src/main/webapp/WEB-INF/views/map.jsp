@@ -226,15 +226,15 @@
                         </div>
                         <div style="padding: 5px; width: 90%; display: flex; flex-direction: column">
                             <label for="description">Description:</label>
-                            <input id="description" type="text" placeholder="add a description" style="height: 40px">
+                            <input id="description" type="text"  style="height: 40px">
                         </div>
                         <div style="padding: 5px; width: 90%; display: flex; flex-direction: column">
                             <label for="simplename">Guess your bird:</label>
-                            <input id="simplename" type="text" placeholder="guess the species" style="height: 40px">
+                            <input id="simplename" type="text" style="height: 40px">
                         </div>
                         <div style="padding: 5px; width: 90%; display: flex; flex-direction: column">
                             <label for="observedOn" style="width: 100%">When was this?</label>
-                            <input type="date" style="padding: 5px;" id="observedOn" placeholder="dd--mm--aaaa">
+                            <input type="date" style="padding: 5px;" id="observedOn">
                         </div>
                         <div style="display: flex; align-items: center; justify-content: center; margin-top: 20px">
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
