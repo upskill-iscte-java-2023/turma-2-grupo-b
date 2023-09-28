@@ -11,7 +11,7 @@
     <groupId>plume</groupId>
     <artifactId>Plume</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>Plume</name>
     <description>Spring Boot, Spring Security, authenticated backend</description>
     <properties>
