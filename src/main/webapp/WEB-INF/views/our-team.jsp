@@ -53,6 +53,22 @@
                             </a>
                         </li>
                     </sec:authorize>
+                    <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
+                        <li><a class="listFonts">
+                            <form method="GET" action="/auth/login">
+                                <button type="submit" class="user-log-in-log-out">
+                                    Login
+                                </button>
+                            </form>
+                        </a></li>
+                        <li><a class="listFonts">
+                            <form method="GET" action="/auth/signup">
+                                <button type="submit" class="user-signup">
+                                    Signup
+                                </button>
+                            </form>
+                        </a></li>
+                    </sec:authorize>
                     <li><a class="listFonts" href="/index/subscription">Subscriptions</a></li>
                     <li><a class="listFonts" href="/index/our-team">Our Team</a></li>
                     <sec:authorize access="isAuthenticated()">
@@ -63,20 +79,6 @@
                     </sec:authorize>
                 </ul>
             </nav>
-        </div>
-        <div class="uui-navbar07_button-wrapper-2" id="uui-navbar07_button-wrapper-2">
-            <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
-                <form method="GET" action="/auth/login" class="tabletform">
-                    <button type="submit" class="user-log-in-log-out tablet" id="login">
-                        Login
-                    </button>
-                </form>
-                <form method="GET" action="/auth/signup" class="tabletform">
-                    <button type="submit" class="user-signup tablet" id="signup">
-                        Signup
-                    </button>
-                </form>
-            </sec:authorize>
         </div>
     </div>
 </div>
@@ -218,29 +220,22 @@
                         </a>
                     </sec:authorize>
                     <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
-                        <form method="GET" action="/auth/login">
-                            <button type="submit" class="user-log-in-log-out">
-                                Login
-                            </button>
-                        </form>
                         <form method="GET" action="/auth/signup">
-                            <button type="submit" class="user-signup">
+                            <button type="submit" class="user-signup desktop">
                                 Signup
                             </button>
                         </form>
+                        <form method="GET" action="/auth/login">
+                            <button type="submit" class="user-log-in-log-out desktop">
+                                Login
+                            </button>
+                        </form>
+
                     </sec:authorize>
                 </div>
             </div>
         </div>
-        <div class="uui-navbar07_menu-button-2 w-nav-button">
-            <div class="menu-icon_component-2">
-                <div class="menu-icon_line-top-2"></div>
-                <div class="menu-icon_line-middle-2">
-                    <div class="menu-icon_line-middle-inner-2"></div>
-                </div>
-                <div class="menu-icon_line-bottom-2"></div>
-            </div>
-        </div>
+
     </div>
 </div>
 <div class="team-section">
@@ -252,7 +247,7 @@
     </div>
     <div class="team-grid">
         <div id="w-node-_1e5719c8-07f6-9a95-cd0c-f07fc20c3750-6e2eeead" class="team-card spark-stacked">
-            <a href="#" class="w-inline-block"><img src="/images/avatar-50_1avatar-50.webp" loading="eager" width="80"
+            <a href="#" class="w-inline-block"><img src="/images/Joana-Our-Team.png" loading="eager" width="80"
                                                     alt="" class="team-images"></a>
             <div class="team-member-details">
                 <p class="spark-bold-heading"><span>Joana Freitas</span></p>
@@ -260,7 +255,7 @@
             </div>
         </div>
         <div id="w-node-_1e5719c8-07f6-9a95-cd0c-f07fc20c375d-6e2eeead" class="team-card spark-stacked">
-            <a href="#" class="w-inline-block"><img src="/images/avatar-45_1avatar-45.webp" loading="eager" width="80"
+            <a href="#" class="w-inline-block"><img src="/images/Vitoria-Our-Team.png" loading="eager" width="80"
                                                     alt="" class="team-images"></a>
             <div class="team-member-details">
                 <p class="spark-bold-heading">Vitória Freitas</p>
@@ -268,7 +263,7 @@
             </div>
         </div>
         <div id="w-node-_1e5719c8-07f6-9a95-cd0c-f07fc20c376a-6e2eeead" class="team-card spark-stacked">
-            <a href="#" class="w-inline-block"><img src="/images/avatar-40_1avatar-40.webp" loading="eager" width="80"
+            <a href="#" class="w-inline-block"><img src="/images/Miguel-Our-Team.png" loading="eager" width="80"
                                                     alt="" class="team-images"></a>
             <div class="team-member-details">
                 <p class="spark-bold-heading">Miguel Devezas</p>
@@ -276,7 +271,7 @@
             </div>
         </div>
         <div id="w-node-_1e5719c8-07f6-9a95-cd0c-f07fc20c3777-6e2eeead" class="team-card spark-stacked">
-            <a href="#" class="w-inline-block"><img src="/images/avatar-38_1avatar-38.webp" loading="eager" width="80"
+            <a href="#" class="w-inline-block"><img src="/images/Joao-Our-Team.jpeg" loading="eager" width="80"
                                                     alt="" class="team-images"></a>
             <div class="team-member-details">
                 <p class="spark-bold-heading">João Sousa</p>

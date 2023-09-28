@@ -7,6 +7,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Component;
+import plume.Exceptions.InvalidLoginException;
+import plume.Exceptions.NotVerifiedException;
 import plume.entities.ApplicationUser;
 import plume.services.AuthService;
 
@@ -20,7 +22,14 @@ public class UserAuthenticationProvider implements AuthenticationProvider {
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-        ApplicationUser user = authService.validateLogin((String)authentication.getPrincipal(), (String)authentication.getCredentials());
+        ApplicationUser user = null;
+
+        try {
+            user = authService.validateLogin((String)authentication.getPrincipal(), (String)authentication.getCredentials());
+        } catch (InvalidLoginException | NotVerifiedException e) {
+            return null;
+        }
+
         if(user != null) {
             List<GrantedAuthority> permissions = new ArrayList<>();
             permissions.add((GrantedAuthority) () -> "ROLE_USER");

@@ -44150,11 +44150,14 @@
             uploading = true;
             $button.html('Uploading...');
 
+
             navigator.geolocation.getCurrentPosition(function (position) {
                 const formData = new FormData();
                 formData.append('file', droppedFiles[0]);
 
-                // Add the geo location data to the form
+
+                // Attempt to add the geo location data to the form
+
                 formData.append('latitude', position.coords.latitude.toString());
                 formData.append('longitude', position.coords.longitude.toString());
 
@@ -44179,7 +44182,34 @@
                     },
                 });
             }, function (error) {
-                console.error('Error getting geo location:', error);
+                console.error('Error getting geo location, delivering static info');
+
+                const formData = new FormData();
+                formData.append('file', droppedFiles[0]);
+
+                formData.append('latitude', '38.770574')
+                formData.append('longitude', '-9.3340266')
+
+                // Add data from form fields with specific IDs
+                formData.append('description', $('#description').val());
+                formData.append('simplename', $('#simplename').val());
+                formData.append('observedOn', $('#observedOn').val());
+
+                // Send the file to the server for upload
+                $.ajax({
+                    type: 'POST',
+                    url: '/api/upload', // Server endpoint for file upload
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        showDone();
+                        console.log(response.message); // Log the server's response
+                    },
+                    error: function (error) {
+                        console.error('Error:', error);
+                    },
+                });
             });
         }
     }

@@ -8,6 +8,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
+import plume.Exceptions.InvalidLoginException;
+import plume.Exceptions.NotVerifiedException;
 import plume.entities.ApplicationUser;
 import plume.repository.UserRepository;
 import plume.services.AuthService;
@@ -74,7 +76,18 @@ public class AuthenticationController {
     @PostMapping("/login-attempt")
     public RedirectView customLogin(@Valid @RequestParam("username") String email,
                                     @Valid @RequestParam("password") String password) {
-        ApplicationUser user = authenticationService.validateLogin(email, password);
+        ApplicationUser user = new ApplicationUser();
+        try {
+             user = authenticationService.validateLogin(email, password);
+
+        } catch (InvalidLoginException e){
+
+            return new RedirectView("/auth/login?error=true");
+        } catch (NotVerifiedException e) {
+
+            return new RedirectView("/auth/login?notverified=true");
+        }
+
         if (user != null && user.isVerified()) {
             //Create auth token
             Authentication authentication = new UsernamePasswordAuthenticationToken(user, null, user.getAuthorities());
@@ -84,8 +97,6 @@ public class AuthenticationController {
 
             //Redirect view.
             return new RedirectView("/user/dashboard");
-        } else if (user != null && !user.isVerified()) {
-            return new RedirectView("auth/login?validationfail=true");
         }
         //Return user to error page on bad login attempt.
         return new RedirectView("/auth/login?error=true");

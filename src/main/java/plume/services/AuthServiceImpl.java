@@ -7,6 +7,8 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import plume.Exceptions.InvalidLoginException;
+import plume.Exceptions.NotVerifiedException;
 import plume.entities.ApplicationUser;
 import plume.entities.RoleModel;
 import plume.repository.RoleRepository;
@@ -35,16 +37,17 @@ public class AuthServiceImpl implements AuthService {
     PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(12);
 
     @Override
-    public ApplicationUser validateLogin(String username, String password) {
+    public ApplicationUser validateLogin(String username, String password) throws InvalidLoginException, NotVerifiedException {
         ApplicationUser user = userRepository.getApplicationUserByUsername(username);
+
         if(user != null && passwordEncoder.matches(password, user.getPassword())) {
             if (user.isVerified()) {
                 return user;
             } else {
-                return null;
+                throw new NotVerifiedException();
             }
         }
-        return null;
+        throw new InvalidLoginException();
     }
 
     @Override

@@ -42,7 +42,7 @@
             <div class="w-users-userformfooter form-card-footer"><span>Don&#x27;t have an account?</span>
                 <a href="/auth/signup">Sign Up</a>
             </div>
-     <!--    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/> -->
+            <!--    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/> -->
         </form>
         <c:if test="${param.error}">
             <div class="w-users-userformerrorstate form-error w-form-fail-login">
@@ -51,13 +51,25 @@
                 </div>
             </div>
         </c:if>
-        <c:if test="${param.validationfail}">
-            <div class="w-users-userformerrorstate form-error w-form-fail-login">
-                <div class="user-form-error-msg">Your Account is not yet validated, please go to your email and provide the token so we can validate the account
-                    <p>Didn't get an email? <a href="/index/contact">Press here for help</a></p>
-                </div>
+        <c:if test="${param.notverified}">
+        <div class="w-users-userformerrorstate form-error w-form-fail-login">
+            <div class="user-form-error-msg">
+                <p>Your account has not been verified yet. Please check your email (Check Spam if needed)</p>
+                <p>Retrieve the token and paste it on the box bellow</p>
+                <form action="/auth/verification" method="POST">
+                    <div>
+                        <input type="text" name="verification-text" id="verification-text"
+                               placeholder="Your Verification Code"
+                               maxlength="7" class="text-field w-input" required
+                               title="Code field cannot be empty" style="padding-bottom: 10px">
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: center">
+                        <input type="submit" class="w-users-userformbutton button w-button"
+                               id="codeSubmit" style="width: 50%; padding-top: 10px">
+                    </div>
             </div>
-        </c:if>
+        </div>
+            </c:if>
     </div>
     <a href="/index/reset-password" class="below-card-link">Forgot your password?</a>
 </div>

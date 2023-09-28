@@ -203,7 +203,7 @@ public class EmailService {
                             "          <!-- start copy -->\n" +
                             "          <tr>\n" +
                             "            <td align=\"left\" bgcolor=\"#ffffff\" style=\"padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;\">\n" +
-                            "              <p style=\"margin: 0;\">Copy the code below to confirm your email address. If you didn't create an account with <a href=\"https://localhost:8080\">Plume</a>, you can safely delete this email.</p>\n" +
+                            "              <p style=\"margin: 0;\">Copy the code below to confirm your email address. If you didn't create an account with <a href=\"http://http://64.226.88.119:8080\">Plume</a>, you can safely delete this email.</p>\n" +
                             "            </td>\n" +
                             "          </tr>\n" +
                             "          <!-- end copy -->\n" +
@@ -450,7 +450,7 @@ public class EmailService {
                             "                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\n" +
                             "                      <tr>\n" +
                             "                        <td align=\"center\" bgcolor=\"#1a82e2\" style=\"border-radius: 6px;\">\n" +
-                            "                           <a href='http://localhost:8080/index/reset-password?reset=" + verificationToken + "' target='_blank' style='display: inline-block; padding: 16px 36px; font-family: \"Source Sans Pro\", Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;'>Reset Password</a>" +
+                            "                           <a href='http://http://64.226.88.119:8080/index/reset-password?reset=" + verificationToken + "' target='_blank' style='display: inline-block; padding: 16px 36px; font-family: \"Source Sans Pro\", Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;'>Reset Password</a>" +
                             "                        </td>\n" +
                             "                      </tr>\n" +
                             "                    </table>\n" +

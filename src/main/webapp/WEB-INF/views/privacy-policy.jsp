@@ -52,6 +52,22 @@
               </a>
             </li>
           </sec:authorize>
+          <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
+            <li><a class="listFonts">
+              <form method="GET" action="/auth/login">
+                <button type="submit" class="user-log-in-log-out">
+                  Login
+                </button>
+              </form>
+            </a></li>
+            <li><a class="listFonts">
+              <form method="GET" action="/auth/signup">
+                <button type="submit" class="user-signup">
+                  Signup
+                </button>
+              </form>
+            </a></li>
+          </sec:authorize>
           <li><a class="listFonts" href="/index/subscription">Subscriptions</a></li>
           <li><a class="listFonts" href="/index/our-team">Our Team</a></li>
           <sec:authorize access="isAuthenticated()">
@@ -62,20 +78,6 @@
           </sec:authorize>
         </ul>
       </nav>
-    </div>
-    <div class="uui-navbar07_button-wrapper-2" id="uui-navbar07_button-wrapper-2">
-      <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
-        <form method="GET" action="/auth/login" class="tabletform">
-          <button type="submit" class="user-log-in-log-out tablet" id="login">
-            Login
-          </button>
-        </form>
-        <form method="GET" action="/auth/signup" class="tabletform">
-          <button type="submit" class="user-signup tablet" id="signup">
-            Signup
-          </button>
-        </form>
-      </sec:authorize>
     </div>
   </div>
 </div>
@@ -218,12 +220,12 @@
           </sec:authorize>
           <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
             <form method="GET" action="/auth/signup">
-              <button type="submit" class="user-signup">
+              <button type="submit" class="user-signup desktop">
                 Signup
               </button>
             </form>
             <form method="GET" action="/auth/login">
-              <button type="submit" class="user-log-in-log-out">
+              <button type="submit" class="user-log-in-log-out desktop">
                 Login
               </button>
             </form>
@@ -232,15 +234,7 @@
         </div>
       </div>
     </div>
-    <div class="uui-navbar07_menu-button-2 w-nav-button">
-      <div class="menu-icon_component-2">
-        <div class="menu-icon_line-top-2"></div>
-        <div class="menu-icon_line-middle-2">
-          <div class="menu-icon_line-middle-inner-2"></div>
-        </div>
-        <div class="menu-icon_line-bottom-2"></div>
-      </div>
-    </div>
+
   </div>
 </div>
   <div class="header-image---home black-gradient">

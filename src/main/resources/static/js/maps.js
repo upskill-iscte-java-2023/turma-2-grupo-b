@@ -81,9 +81,26 @@ function initMap() {
                         featureType: "transit", elementType: "labels", stylers: [{ visibility: "off" }],
                     },
                 ],
+
             });
+
+            // Fetch data and create markers
+            fetch(mapMarkersData)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Could not retrieve db data for sightings ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    createMarkers(map, data); // Call the function with the map and data
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
         });
     } else {
+
         // Geolocation not supported, default to Lisbon
         map = new google.maps.Map(document.getElementById("map"), {
             center: defaultLocation,
@@ -97,6 +114,7 @@ function initMap() {
                 },
             ],
         });
+
 
         // Fetch data and create markers
         fetch(mapMarkersData)
@@ -112,8 +130,12 @@ function initMap() {
             .catch(error => {
                 console.error('Error:', error);
             });
+
+
+
     }
 }
+
 function createMarkers(map, data) {
 
     data.forEach(item => {
