@@ -11,7 +11,7 @@ import plume.services.PlumeWikiService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/Plume/api")
 @CrossOrigin("*")
 public class PlumeWikiController {
 
