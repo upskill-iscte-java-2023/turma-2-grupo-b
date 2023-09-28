@@ -111,9 +111,9 @@ public class IndexController {
         Optional<ApplicationUser> user = userRepository.findByUsername(email);
         if (user.isPresent()){
             emailService.sendResetPasswordEmail(email);
-            return new RedirectView("/Plume/index/reset-password?success=true");
+            return new RedirectView("/index/reset-password?success=true");
         }
-        return new RedirectView("/Plume/index/reset-password?error=true");
+        return new RedirectView("/index/reset-password?error=true");
     }
     
 
@@ -123,9 +123,9 @@ public class IndexController {
                                          @RequestParam("password") String password){
         boolean success = authService.changePassword(email,password,resetToken);
         if (success){
-            return new RedirectView("/Plume/index/reset-password?reset=true&resetsuccess=true");
+            return new RedirectView("/index/reset-password?reset=true&resetsuccess=true");
         }
-        return new RedirectView("/Plume/index/reset-password?reset=true&resetsucess=false");
+        return new RedirectView("/index/reset-password?reset=true&resetsucess=false");
     }
 
     @PostMapping("/requesthelp")
@@ -138,9 +138,9 @@ public class IndexController {
         boolean success = emailService.sendHelpEmail(name,email,message);
 
         if (success){
-            return new RedirectView("/Plume/index/contact?success=true");
+            return new RedirectView("/index/contact?success=true");
         } else {
-            return new RedirectView(("/Plume/index/contact?error=true"));
+            return new RedirectView(("/index/contact?error=true"));
         }
     }
 }

@@ -55,7 +55,7 @@ public class DBController {
     public RedirectView uploadPhotoController(@RequestParam("profile-pic-path") MultipartFile file) throws IOException {
         String url = gcpStorageService.uploadFileToBucket(file);
         profilePicService.storeProfilePic(url, authService.getCurrentUser());
-        return new RedirectView("/Plume/user/settings?success");
+        return new RedirectView("/user/settings?success");
     }
 
 }

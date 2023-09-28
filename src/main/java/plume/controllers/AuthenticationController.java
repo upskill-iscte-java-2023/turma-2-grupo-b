@@ -54,9 +54,9 @@ public class AuthenticationController {
 
         boolean success = authenticationService.registerUser(email, name, password);
         if (success) {
-            return new RedirectView("/Plume/auth/signup?success=true");
+            return new RedirectView("/auth/signup?success=true");
         } else {
-            return new RedirectView("/Plume/auth/signup?error=true");
+            return new RedirectView("/auth/signup?error=true");
         }
     }
 
@@ -65,9 +65,9 @@ public class AuthenticationController {
     public RedirectView verifyUser(@RequestParam("verification-text") String token) {
         boolean validated = authenticationService.validateUser(token);
         if (validated) {
-            return new RedirectView("/Plume/user/dashboard");
+            return new RedirectView("/user/dashboard");
         } else {
-            return new RedirectView("/Plume/auth/signup?success=true&verification=false");
+            return new RedirectView("/auth/signup?success=true&verification=false");
         }
     }
 
@@ -83,12 +83,12 @@ public class AuthenticationController {
             SecurityContextHolder.getContext().setAuthentication(authentication);
 
             //Redirect view.
-            return new RedirectView("/Plume/user/dashboard");
+            return new RedirectView("/user/dashboard");
         } else if (user != null && !user.isVerified()) {
-            return new RedirectView("/Plume/auth/login?validationfail=true");
+            return new RedirectView("auth/login?validationfail=true");
         }
         //Return user to error page on bad login attempt.
-        return new RedirectView("/Plume/auth/login?error=true");
+        return new RedirectView("/auth/login?error=true");
     }
 
 }
