@@ -267,6 +267,7 @@ input::-moz-focus-inner {
  */
 input {
   line-height: normal;
+  color: rgba(0,0,0,60%);
 }
 /**
  * It's recommended that you don't attempt to style these elements.

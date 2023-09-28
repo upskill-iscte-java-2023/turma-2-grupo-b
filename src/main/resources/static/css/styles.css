@@ -2128,7 +2128,7 @@ label[for="description"] {
 }
 
 #description {
-  color: #544444;
+  color: rgba(0,0,0,60%);
 }
 
 /* Style the centered image to fit within the modal */
