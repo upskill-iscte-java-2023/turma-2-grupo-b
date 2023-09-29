@@ -26,7 +26,7 @@
 <body>
 <div class="w-users-userformpagewrap full-page-wrapper">
     <c:if test="${empty param.reset}">
-        <a href="/index/" class="form-page-logo-link w-inline-block"><img src="/images/Untitled-design-26_1.png"
+        <a href="/" class="form-page-logo-link w-inline-block"><img src="/images/Untitled-design-26_1.png"
                                                                           loading="lazy" alt="" class="form-page-logo"></a>
         <div class="w-users-userresetpasswordformwrapper admin-form-card center-align">
         <c:if test="${param.success}">
@@ -38,7 +38,7 @@
                     password.</p>
             </div>
         </c:if>
-        <form method="post" action="/index/sendreset">
+        <form method="post" action="/sendreset">
             <div class="w-users-userformheader form-card-header">
                 <h2 class="heading h3">Reset Password</h2>
                 <p class="paragraph small">Enter your email and we will send you a password reset link.</p>
@@ -61,7 +61,7 @@
         </c:if>
     </c:if>
     <c:if test="${not empty param.reset}">
-        <form method="post" id="resetPasswordForm" action="/index/resetpass">
+        <form method="post" id="resetPasswordForm" action="/resetpass">
             <div class="w-users-userformheader form-card-header">
                 <h2 class="heading h3">Reset Password</h2>
                 <p class="paragraph small">Confirm your new password.</p>

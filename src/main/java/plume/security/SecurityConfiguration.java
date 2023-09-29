@@ -30,7 +30,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                     .disable()
                     .authorizeRequests()
                     .antMatchers("/css/**", "/images/**", "/js/**").permitAll()
-                    .antMatchers("/index/**").permitAll()
+                    .antMatchers("/**").permitAll()
                     .antMatchers("/auth/**").permitAll()
                     .antMatchers("/user/**").authenticated()
 
@@ -38,7 +38,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
                     .logout()
                     .logoutUrl("/auth/logout")
-                    .logoutSuccessUrl("/index/")
+                    .logoutSuccessUrl("/")
                     .permitAll() // Allow anyone to access the logout URL
                     .logoutRequestMatcher(new AntPathRequestMatcher("/auth/logout", "POST")) // Specify the HTTP method
                     .clearAuthentication(true)

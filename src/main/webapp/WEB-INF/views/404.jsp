@@ -26,7 +26,7 @@
       <h1 class="heading h1">Page not found</h1>
       <p class="paragraph">The page you are looking for doesn&#x27;t exist or has been moved.</p>
       <div class="spacer _24"></div>
-      <a href="/index/" class="button white w-button">Go to Home</a>
+      <a href="/" class="button white w-button">Go to Home</a>
     </div>
   </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64f615e4cfda04626e2eee44" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

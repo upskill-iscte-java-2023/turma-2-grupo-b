@@ -13,7 +13,7 @@ import plume.services.EmailService;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/index")
+@RequestMapping("/")
 @CrossOrigin("*")
 public class IndexController {
 
@@ -111,9 +111,9 @@ public class IndexController {
         Optional<ApplicationUser> user = userRepository.findByUsername(email);
         if (user.isPresent()){
             emailService.sendResetPasswordEmail(email);
-            return new RedirectView("/index/reset-password?success=true");
+            return new RedirectView("/reset-password?success=true");
         }
-        return new RedirectView("/index/reset-password?error=true");
+        return new RedirectView("/reset-password?error=true");
     }
     
 
@@ -123,9 +123,9 @@ public class IndexController {
                                          @RequestParam("password") String password){
         boolean success = authService.changePassword(email,password,resetToken);
         if (success){
-            return new RedirectView("/index/reset-password?reset=true&resetsuccess=true");
+            return new RedirectView("/reset-password?reset=true&resetsuccess=true");
         }
-        return new RedirectView("/index/reset-password?reset=true&resetsucess=false");
+        return new RedirectView("/reset-password?reset=true&resetsucess=false");
     }
 
     @PostMapping("/requesthelp")
@@ -138,9 +138,9 @@ public class IndexController {
         boolean success = emailService.sendHelpEmail(name,email,message);
 
         if (success){
-            return new RedirectView("/index/contact?success=true");
+            return new RedirectView("/contact?success=true");
         } else {
-            return new RedirectView(("/index/contact?error=true"));
+            return new RedirectView(("/contact?error=true"));
         }
     }
 }

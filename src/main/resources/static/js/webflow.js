@@ -31906,7 +31906,7 @@
       var _constants = require_constants2();
       var _mutations = require_mutations();
       function getLoginLinks() {
-        return Array.prototype.slice.call(document.links).filter((link) => link.getAttribute("href") === "/index/login");
+        return Array.prototype.slice.call(document.links).filter((link) => link.getAttribute("href") === "/login");
       }
       function handleLoginRedirects() {
         getLoginLinks().forEach((link) => {
@@ -32292,7 +32292,7 @@
             (0, _utils.hideElement)(errorState);
             asyncSignUpUser((0, _fields.getFieldValueById)("email", commonFields) || "", (0, _fields.getFieldValueById)("name", commonFields) || "", (0, _fields.getFieldValueById)("password", commonFields) || "", (0, _fields.getFieldValueById)("accept-privacy", commonFields) || false, (0, _fields.getFieldValueById)("accept-communications", commonFields) || false, customFields, inviteToken).then(() => {
               if (inviteToken) {
-                window.location = "/index/login";
+                window.location = "/login";
               } else {
                 (0, _utils.hideElement)(form);
                 (0, _utils.showAndFocusElement)(verificationMessage);
@@ -32352,12 +32352,12 @@
         if (window.Webflow.env("preview")) {
           return;
         }
-        window.location = "/index/login";
+        window.location = "/login";
       }
       function handleLogOutButtonClick(event) {
         event.preventDefault();
         asyncLogOutUser().then(() => {
-          window.Webflow.location("/index/");
+          window.Webflow.location("/");
         });
       }
       function handleLogInLogOutButton() {

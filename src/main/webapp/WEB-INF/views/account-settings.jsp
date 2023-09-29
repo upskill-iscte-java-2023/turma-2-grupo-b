@@ -227,7 +227,7 @@
         <!-- Navbar Tablet and Below -->
         <div class="nav-wrapper" style="background-image: url('/images/Fotos.png')">
             <div class="nav-leftwrapper">
-                <a href="/index/" style="position: relative; top: 5px;">
+                <a href="/" style="position: relative; top: 5px;">
                     <img src="/images/Untitled-design-26_1.png">
                 </a>
 
@@ -276,7 +276,7 @@
         <div data-collapse="medium" data-animation="default" data-duration="400" fs-scrolldisable-element="smart-nav"
              data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav maintain-desktop">
             <div class="navbar-container">
-                <a href="/index/" class="navbar2_logo-link w-nav-brand"><img src="../images/Untitled-design-26.png"
+                <a href="/" class="navbar2_logo-link w-nav-brand"><img src="../images/Untitled-design-26.png"
                                                                              loading="lazy" alt=""
                                                                              class="navbar2_logo desktop"><img
                         src="../images/1_5.png" loading="lazy" width="150" height="Auto" alt=""

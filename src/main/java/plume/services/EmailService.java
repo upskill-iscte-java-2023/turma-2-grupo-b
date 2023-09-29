@@ -450,7 +450,7 @@ public class EmailService {
                             "                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\n" +
                             "                      <tr>\n" +
                             "                        <td align=\"center\" bgcolor=\"#1a82e2\" style=\"border-radius: 6px;\">\n" +
-                            "                           <a href='http://http://64.226.88.119:8080/index/reset-password?reset=" + verificationToken + "' target='_blank' style='display: inline-block; padding: 16px 36px; font-family: \"Source Sans Pro\", Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;'>Reset Password</a>" +
+                            "                           <a href='http://64.226.88.119:8080/reset-password?reset=" + verificationToken + "' target='_blank' style='display: inline-block; padding: 16px 36px; font-family: \"Source Sans Pro\", Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px;'>Reset Password</a>" +
                             "                        </td>\n" +
                             "                      </tr>\n" +
                             "                    </table>\n" +

@@ -25,7 +25,7 @@
 </head>
 <body>
 <div class="w-users-userformpagewrap full-page-wrapper">
-    <a href="/index/" class="form-page-logo-link w-inline-block"><img src="/images/Untitled-design-26_1.png"
+    <a href="/" class="form-page-logo-link w-inline-block"><img src="/images/Untitled-design-26_1.png"
                                                                       loading="lazy" alt="" class="form-page-logo"></a>
     <div class="w-users-userloginformwrapper admin-form-card">
         <form method="post" action="/auth/login-attempt">
@@ -71,7 +71,7 @@
         </div>
             </c:if>
     </div>
-    <a href="/index/reset-password" class="below-card-link">Forgot your password?</a>
+    <a href="/reset-password" class="below-card-link">Forgot your password?</a>
 </div>
 </body>
 </html>

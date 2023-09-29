@@ -41,7 +41,7 @@
 <!-- Navbar Tablet and Below -->
 <div class="nav-wrapper">
     <div class="nav-leftwrapper">
-        <a href="/index/" style="position: relative; top: 5px;">
+        <a href="/" style="position: relative; top: 5px;">
             <img src="/images/Untitled-design-26_1.png">
         </a>
 
@@ -88,7 +88,7 @@
 <div data-collapse="medium" data-animation="default" data-duration="400" fs-scrolldisable-element="smart-nav"
      data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav maintain-desktop">
     <div class="navbar-container">
-        <a href="/index/" class="navbar2_logo-link w-nav-brand"><img src="../images/Untitled-design-26.png"
+        <a href="/" class="navbar2_logo-link w-nav-brand"><img src="../images/Untitled-design-26.png"
                                                                      loading="lazy" alt=""
                                                                      class="navbar2_logo desktop"><img
                 src="../images/1_5.png" loading="lazy" width="150" height="Auto" alt=""
@@ -314,7 +314,7 @@
     <div class="footer-container w-container">
         <div class="w-layout-grid footer-grid">
             <div id="w-node-b8d7be4a-ce45-83ab-5947-02d204c8bff0-cf3fcb86" class="footer-logo-block">
-                <a data-ix="logo" href="/index/" class="footer-logo w-nav-brand"><img
+                <a data-ix="logo" href="/" class="footer-logo w-nav-brand"><img
                         src="/images/Untitled-design-26_1.png" width="204" alt="" class="image-3"></a>
                 <p class="paragraph small">Built by Potato Labs Inc.<br>for Plumers with lots of Plumage<br></p>
                 <div class="spacer _16"></div>
@@ -322,10 +322,10 @@
             </div>
             <div class="footer-links-container">
                 <h5 class="footer-header">Website</h5>
-                <a href="/index/" class="footer-link">Home</a>
-                <a href="/index/contact" class="footer-link">Contact Us</a>
-                <a href="/index/terms" class="footer-link">Terms &amp; Conditions</a>
-                <a href="/index/privacy-policy" class="footer-link">Privacy Policy</a>
+                <a href="/" class="footer-link">Home</a>
+                <a href="/contact" class="footer-link">Contact Us</a>
+                <a href="/terms" class="footer-link">Terms &amp; Conditions</a>
+                <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
             </div>
             <div class="footer-links-container">
                 <h5 class="footer-header">Membership</h5>
@@ -339,7 +339,7 @@
                 <sec:authorize access="isAuthenticated()">
                     <a href="/user/dashboard" class="footer-link">User Account</a>
                 </sec:authorize>
-                <a href="/index/reset-password" class="footer-link">Reset Password </a>
+                <a href="/reset-password" class="footer-link">Reset Password </a>
             </div>
         </div>
     </div>

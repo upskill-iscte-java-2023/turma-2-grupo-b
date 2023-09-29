@@ -30,7 +30,7 @@
 <!-- navbar tablet and below -->
 <div class="nav-wrapper" style="background-image: url('/images/Fotos.png')">
   <div class="nav-leftwrapper">
-    <a href="/index/">
+    <a href="/">
       <img src="/images/Untitled-design-26_1.png">
     </a>
 
@@ -68,8 +68,8 @@
               </form>
             </a></li>
           </sec:authorize>
-          <li><a class="listFonts" href="/index/subscription">Subscriptions</a></li>
-          <li><a class="listFonts" href="/index/our-team">Our Team</a></li>
+          <li><a class="listFonts" href="/subscription">Subscriptions</a></li>
+          <li><a class="listFonts" href="/our-team">Our Team</a></li>
           <sec:authorize access="isAuthenticated()">
             <li><a class="listFonts" href="/user/map">Start Birding</a></li>
             <li><a class="listFonts" href="/user/challenges">Challenges</a></li>
@@ -87,8 +87,8 @@
 <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease-out-quint"
      data-easing2="ease" data-no-scroll="1" role="banner" class="nav-bar w-nav">
   <div class="uui-navbar07_container-2">
-    <a href="/index/" class="uui-navbar07_logo-link-2 w-nav-brand">
-      <div href="/index/" class="uui-logo_component-2"><img src="/images/Untitled-design-26_1.png" loading="lazy"
+    <a href="/" class="uui-navbar07_logo-link-2 w-nav-brand">
+      <div href="/" class="uui-logo_component-2"><img src="/images/Untitled-design-26_1.png" loading="lazy"
                                                             width="Auto" id="plume-home" alt=""
                                                             class="uui-logo_logotype-2">
       </div>
@@ -208,8 +208,8 @@
             </nav>
           </div>
         </sec:authorize>
-        <a href="/index/subscription" class="uui-navbar07_link-2 w-nav-link">Subscription Plans</a>
-        <a href="/index/our-team" class="uui-navbar07_link-2 w-nav-link">Our Team</a>
+        <a href="/subscription" class="uui-navbar07_link-2 w-nav-link">Subscription Plans</a>
+        <a href="/our-team" class="uui-navbar07_link-2 w-nav-link">Our Team</a>
       </div>
       <div class="uui-navbar07_menu-right-2">
         <div class="uui-navbar07_button-wrapper-2">
@@ -246,7 +246,7 @@
           <div class="spacer _32"></div>
           <div class="form-card">
             <div class="form w-form">
-              <form id="email-form" name="email-form" method="POST" action="/index/requesthelp" class="form">
+              <form id="email-form" name="email-form" method="POST" action="/requesthelp" class="form">
                 <div class="w-layout-grid form-2-grid">
                   <div class="field-block">
                     <label for="First-Name">
@@ -295,17 +295,17 @@
     <div class="footer-container w-container">
       <div class="w-layout-grid footer-grid">
         <div id="w-node-b8d7be4a-ce45-83ab-5947-02d204c8bff0-cf3fcb86" class="footer-logo-block">
-          <a data-ix="logo" href="/index/" class="footer-logo w-nav-brand"><img src="/images/Untitled-design-26_1.png" width="204" alt="" class="image-3"></a>
+          <a data-ix="logo" href="/" class="footer-logo w-nav-brand"><img src="/images/Untitled-design-26_1.png" width="204" alt="" class="image-3"></a>
           <p class="paragraph small">Built by Potato Labs Inc.<br>for Plumers with lots of Plumage<br></p>
           <div class="spacer _16"></div>
           <div class="paragraph small">© 2023 Potato Labs Inc. All Potatoes Reserved.</div>
         </div>
         <div class="footer-links-container">
           <h5 class="footer-header">Website</h5>
-          <a href="/index/" class="footer-link">Home</a>
-          <a href="/index/contact" aria-current="page" class="footer-link w--current">Contact</a>
-          <a href="/index/terms" class="footer-link">Terms &amp; Conditions</a>
-          <a href="/index/privacy-policy" class="footer-link">Privacy Policy</a>
+          <a href="/" class="footer-link">Home</a>
+          <a href="/contact" aria-current="page" class="footer-link w--current">Contact</a>
+          <a href="/terms" class="footer-link">Terms &amp; Conditions</a>
+          <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
         </div>
         <div class="footer-links-container">
           <h5 class="footer-header">Membership</h5>
@@ -319,7 +319,7 @@
           <sec:authorize access="isAuthenticated()">
             <a href="/user/dashboard" class="footer-link">User Account</a>
           </sec:authorize>
-          <a href="/index/reset-password" class="footer-link">Reset Password </a>
+          <a href="/reset-password" class="footer-link">Reset Password </a>
         </div>
       </div>
     </div>
