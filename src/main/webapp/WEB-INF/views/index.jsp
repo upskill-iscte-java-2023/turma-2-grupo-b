@@ -187,7 +187,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="/error/404" class="uui-navbar07_dropdown-link-2 w-inline-block">
+                                <a href="/user/payments" class="uui-navbar07_dropdown-link-2 w-inline-block">
                                     <div class="uui-navbar07_icon-wrapper-2">
                                         <div class="pricing-icon-1x1-xsmall-3 w-embed">
                                             <svg width="24" height="25" viewbox="0 0 24 25" fill="none"
@@ -242,10 +242,18 @@
 <div class="page-wrapper">
     <header class="header-image-landingpage">
         <div class="container">
+            <sec:authorize access="hasRole('ROLE_ANONYMOUS')">
             <div class="div-block-4">
                 <p class="paragraph large"><em class="italic-text-2">Nature&#x27;s Elegance Captured</em></p>
                 <a href="/auth/signup" class="button w-button">Start Birding</a>
             </div>
+            </sec:authorize>
+            <sec:authorize access="isAuthenticated()">
+                <div class="div-block-4">
+                    <p class="paragraph large"><em class="italic-text-2">Nature&#x27;s Elegance Captured</em></p>
+                    <a href="/user/map" class="button w-button">Start Birding</a>
+                </div>
+            </sec:authorize>
         </div>
     </header>
     <div class="site-body">
