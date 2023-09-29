@@ -44247,7 +44247,7 @@
             var latitude;
             var longitude;
 
-            if ("geolocation" in navigator) {
+            if (navigator.geolocation) {
                 // Check if geolocation is available in the browser
                 navigator.geolocation.getCurrentPosition(
                     function(position) {
@@ -44319,7 +44319,7 @@
             var latitude;
             var longitude;
 
-            if ("geolocation" in navigator) {
+            if (navigator.geolocation) {
                 // Check if geolocation is available in the browser
                 navigator.geolocation.getCurrentPosition(
                     function(position) {
