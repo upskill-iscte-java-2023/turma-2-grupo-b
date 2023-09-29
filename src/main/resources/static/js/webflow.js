@@ -44233,6 +44233,45 @@
 
 
     $(document).ready(function() {
+
+        //attempt to get the user's location
+        //Attempt to get user's location, if not available give default location
+        var latitude;
+        var longitude;
+
+        if (navigator.geolocation) {
+            // Check if geolocation is available in the browser
+            navigator.geolocation.getCurrentPosition(
+                function(position) {
+                    // User granted permission; position contains location data
+                    latitude = position.coords.latitude.toString();
+                    longitude = position.coords.longitudetoString();
+                    // Use location data as needed
+                },
+                function(error) {
+                    // User denied permission or an error occurred
+                    if (error.code === error.PERMISSION_DENIED) {
+                        // Handle denied permission
+                        console.log("Location access denied by the user.");
+                        latitude = '38.770574'
+                        longitude = '-9.3340266'
+                    } else {
+                        // Handle other errors (e.g., Geolocation service not available)
+                        console.error("Error getting location:", error);
+                        latitude = '38.770574'
+                        longitude = '-9.3340266'
+                    }
+                }
+            );
+        } else {
+            // Geolocation not supported in this browser
+            console.log("Geolocation is not supported in this browser.");
+            latitude = '38.770574'
+            longitude = '-9.3340266'
+        }
+
+
+
         $('#mobile-upload').change(function() {
             console.log("Geolocation is not available.");
 
@@ -44241,42 +44280,6 @@
 
             // Create a new FormData object
             var formData = new FormData();
-
-            //attempt to get the user's location
-            //Attempt to get user's location, if not available give default location
-            var latitude;
-            var longitude;
-
-            if (navigator.geolocation) {
-                // Check if geolocation is available in the browser
-                navigator.geolocation.getCurrentPosition(
-                    function(position) {
-                        // User granted permission; position contains location data
-                        latitude = position.coords.latitude.toString();
-                        longitude = position.coords.longitudetoString();
-                        // Use location data as needed
-                    },
-                    function(error) {
-                        // User denied permission or an error occurred
-                        if (error.code === error.PERMISSION_DENIED) {
-                            // Handle denied permission
-                            console.log("Location access denied by the user.");
-                            latitude = '38.770574'
-                            longitude = '-9.3340266'
-                        } else {
-                            // Handle other errors (e.g., Geolocation service not available)
-                            console.error("Error getting location:", error);
-                            latitude = '38.770574'
-                            longitude = '-9.3340266'
-                        }
-                    }
-                );
-            } else {
-                // Geolocation not supported in this browser
-                console.log("Geolocation is not supported in this browser.");
-                latitude = '38.770574'
-                longitude = '-9.3340266'
-            }
 
             // Get the selected file from the file input
             var fileInput = document.getElementById('mobile-upload');
@@ -44311,44 +44314,49 @@
 
 
     $(document).ready(function() {
+
+
+        var latitude;
+        var longitude;
+
+        if (navigator.geolocation) {
+            // Check if geolocation is available in the browser
+            navigator.geolocation.getCurrentPosition(
+                function(position) {
+                    // User granted permission; position contains location data
+                    latitude = position.coords.latitude.toString();
+                    longitude = position.coords.longitude.toString();
+                    // Use location data as needed
+                },
+                function(error) {
+                    // User denied permission or an error occurred
+                    if (error.code === error.PERMISSION_DENIED) {
+                        // Handle denied permission
+                        console.log("Location access denied by the user.");
+                        latitude = '38.770574'
+                        longitude = '-9.3340266'
+                    } else {
+                        // Handle other errors (e.g., Geolocation service not available)
+                        console.error("Error getting location:", error);
+                        latitude = '38.770574'
+                        longitude = '-9.3340266'
+                    }
+                }
+            );
+        } else {
+            // Geolocation not supported in this browser
+            console.log("Geolocation is not supported in this browser.");
+            latitude = '38.770574'
+            longitude = '-9.3340266'
+        }
+
+
         $('#camera-photo').change(function() {
             // Create a new FormData object
             var formData = new FormData();
 
             //Attempt to get user's location, if not available give default location
-            var latitude;
-            var longitude;
 
-            if (navigator.geolocation) {
-                // Check if geolocation is available in the browser
-                navigator.geolocation.getCurrentPosition(
-                    function(position) {
-                        // User granted permission; position contains location data
-                         latitude = position.coords.latitude.toString();
-                         longitude = position.coords.longitude.toString();
-                        // Use location data as needed
-                    },
-                    function(error) {
-                        // User denied permission or an error occurred
-                        if (error.code === error.PERMISSION_DENIED) {
-                            // Handle denied permission
-                            console.log("Location access denied by the user.");
-                             latitude = '38.770574'
-                             longitude = '-9.3340266'
-                        } else {
-                            // Handle other errors (e.g., Geolocation service not available)
-                            console.error("Error getting location:", error);
-                            latitude = '38.770574'
-                            longitude = '-9.3340266'
-                        }
-                    }
-                );
-            } else {
-                // Geolocation not supported in this browser
-                console.log("Geolocation is not supported in this browser.");
-                latitude = '38.770574'
-                longitude = '-9.3340266'
-            }
 
             // Get the selected file from the camera input
             var cameraInput = document.getElementById('camera-photo');
