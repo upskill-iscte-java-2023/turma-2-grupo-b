@@ -44242,6 +44242,42 @@
             // Create a new FormData object
             var formData = new FormData();
 
+            //attempt to get the user's location
+            //Attempt to get user's location, if not available give default location
+            var latitude;
+            var longitude;
+
+            if ("geolocation" in navigator) {
+                // Check if geolocation is available in the browser
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        // User granted permission; position contains location data
+                        latitude = position.coords.latitude;
+                        longitude = position.coords.longitude;
+                        // Use location data as needed
+                    },
+                    function(error) {
+                        // User denied permission or an error occurred
+                        if (error.code === error.PERMISSION_DENIED) {
+                            // Handle denied permission
+                            console.log("Location access denied by the user.");
+                            latitude = '38.770574'
+                            longitude = '-9.3340266'
+                        } else {
+                            // Handle other errors (e.g., Geolocation service not available)
+                            console.error("Error getting location:", error);
+                            latitude = '38.770574'
+                            longitude = '-9.3340266'
+                        }
+                    }
+                );
+            } else {
+                // Geolocation not supported in this browser
+                console.log("Geolocation is not supported in this browser.");
+                latitude = '38.770574'
+                longitude = '-9.3340266'
+            }
+
             // Get the selected file from the file input
             var fileInput = document.getElementById('mobile-upload');
             var selectedFile = fileInput.files[0];
@@ -44252,8 +44288,8 @@
             formData.append("observedOn", currentDate); // Current date as a Date object
             formData.append("description", "Custom description to be added later - Mobile Static Upload");
             formData.append('simplename', 'Uploaded from mobile static upload')
-            formData.append("latitude", "38.770574");
-            formData.append("longitude", '-9.3340266');
+            formData.append("latitude", latitude);
+            formData.append("longitude", longitude);
 
             $.ajax({
                 type: 'POST',
@@ -44279,6 +44315,41 @@
             // Create a new FormData object
             var formData = new FormData();
 
+            //Attempt to get user's location, if not available give default location
+            var latitude;
+            var longitude;
+
+            if ("geolocation" in navigator) {
+                // Check if geolocation is available in the browser
+                navigator.geolocation.getCurrentPosition(
+                    function(position) {
+                        // User granted permission; position contains location data
+                         latitude = position.coords.latitude;
+                         longitude = position.coords.longitude;
+                        // Use location data as needed
+                    },
+                    function(error) {
+                        // User denied permission or an error occurred
+                        if (error.code === error.PERMISSION_DENIED) {
+                            // Handle denied permission
+                            console.log("Location access denied by the user.");
+                             latitude = '38.770574'
+                             longitude = '-9.3340266'
+                        } else {
+                            // Handle other errors (e.g., Geolocation service not available)
+                            console.error("Error getting location:", error);
+                            latitude = '38.770574'
+                            longitude = '-9.3340266'
+                        }
+                    }
+                );
+            } else {
+                // Geolocation not supported in this browser
+                console.log("Geolocation is not supported in this browser.");
+                latitude = '38.770574'
+                longitude = '-9.3340266'
+            }
+
             // Get the selected file from the camera input
             var cameraInput = document.getElementById('camera-photo');
             var selectedFile = cameraInput.files[0];
@@ -44293,8 +44364,8 @@
             formData.append('observedOn', currentDate);
             formData.append('description', 'Custom description to be added later - Mobile Photo');
             formData.append('simplename', 'Uploaded from mobile camera')
-            formData.append('latitude', '38.770574');
-            formData.append('longitude', '-9.3340266');
+            formData.append('latitude', latitude);
+            formData.append('longitude', longitude);
 
             // Send the FormData in the AJAX request
             $.ajax({
