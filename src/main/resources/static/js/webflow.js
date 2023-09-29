@@ -44245,7 +44245,7 @@
                 function(position) {
                     // User granted permission; position contains location data
                     latitude = position.coords.latitude.toString();
-                    longitude = position.coords.longitudetoString();
+                    longitude = position.coords.longitude.toString();
                     // Use location data as needed
                 },
                 function(error) {
