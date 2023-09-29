@@ -44252,8 +44252,8 @@
                 navigator.geolocation.getCurrentPosition(
                     function(position) {
                         // User granted permission; position contains location data
-                        latitude = position.coords.latitude;
-                        longitude = position.coords.longitude;
+                        latitude = position.coords.latitude.toString();
+                        longitude = position.coords.longitudetoString();
                         // Use location data as needed
                     },
                     function(error) {
@@ -44324,8 +44324,8 @@
                 navigator.geolocation.getCurrentPosition(
                     function(position) {
                         // User granted permission; position contains location data
-                         latitude = position.coords.latitude;
-                         longitude = position.coords.longitude;
+                         latitude = position.coords.latitude.toString();
+                         longitude = position.coords.longitude.toString();
                         // Use location data as needed
                     },
                     function(error) {
